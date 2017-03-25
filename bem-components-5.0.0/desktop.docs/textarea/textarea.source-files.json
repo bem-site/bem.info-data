@@ -1,0 +1,144 @@
+[
+    {
+        "entity": {
+            "block": "textarea"
+        },
+        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "common.blocks/textarea/textarea.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "textarea"
+        },
+        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "tech": "bh.js",
+        "path": "common.blocks/textarea/textarea.bh.js"
+    },
+    {
+        "entity": {
+            "block": "textarea"
+        },
+        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "tech": "css",
+        "path": "common.blocks/textarea/textarea.css"
+    },
+    {
+        "entity": {
+            "block": "textarea"
+        },
+        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/textarea/textarea.deps.js"
+    },
+    {
+        "entity": {
+            "block": "textarea"
+        },
+        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "tech": "en.md",
+        "path": "common.blocks/textarea/textarea.en.md"
+    },
+    {
+        "entity": {
+            "block": "textarea"
+        },
+        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/textarea/textarea.js"
+    },
+    {
+        "entity": {
+            "block": "textarea"
+        },
+        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "tech": "post.css",
+        "path": "common.blocks/textarea/textarea.post.css"
+    },
+    {
+        "entity": {
+            "block": "textarea"
+        },
+        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/textarea/textarea.ru.md"
+    },
+    {
+        "entity": {
+            "block": "textarea"
+        },
+        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "tech": "tests",
+        "path": "common.blocks/textarea/textarea.tests",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "textarea"
+        },
+        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "tech": "tmpl-specs",
+        "path": "common.blocks/textarea/textarea.tmpl-specs",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "textarea",
+            "modName": "theme",
+            "modVal": "islands"
+        },
+        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/design/common.blocks",
+        "tech": "css",
+        "path": "design/common.blocks/textarea/_theme/textarea_theme_islands.css"
+    },
+    {
+        "entity": {
+            "block": "textarea",
+            "modName": "theme",
+            "modVal": "islands"
+        },
+        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/design/common.blocks",
+        "tech": "post.css",
+        "path": "design/common.blocks/textarea/_theme/textarea_theme_islands.post.css"
+    },
+    {
+        "entity": {
+            "block": "textarea",
+            "modName": "theme",
+            "modVal": "simple"
+        },
+        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/design/common.blocks",
+        "tech": "css",
+        "path": "design/common.blocks/textarea/_theme/textarea_theme_simple.css"
+    },
+    {
+        "entity": {
+            "block": "textarea",
+            "modName": "theme",
+            "modVal": "simple"
+        },
+        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/design/common.blocks",
+        "tech": "post.css",
+        "path": "design/common.blocks/textarea/_theme/textarea_theme_simple.post.css"
+    },
+    {
+        "entity": {
+            "block": "textarea",
+            "modName": "theme",
+            "modVal": "islands"
+        },
+        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/design/desktop.blocks",
+        "tech": "ie.css",
+        "path": "design/desktop.blocks/textarea/_theme/textarea_theme_islands.ie.css"
+    },
+    {
+        "entity": {
+            "block": "textarea",
+            "modName": "theme",
+            "modVal": "islands"
+        },
+        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/design/desktop.blocks",
+        "tech": "ie.post.css",
+        "path": "design/desktop.blocks/textarea/_theme/textarea_theme_islands.ie.post.css"
+    }
+]

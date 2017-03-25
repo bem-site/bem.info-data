@@ -1,0 +1,194 @@
+<h1 class="article__heading article__heading_1" id="radio-group-2"><a href="#radio-group-2" class="article__heading-anchor"></a>radio-group</h1><p>Используется для отображения группы однотипных переключателей, реализованных блоком <a href="../radio/radio.ru.md">radio</a>.</p>
+<h2 class="article__heading article__heading_2" id="Обзор-блока-36"><a href="#Обзор-блока-36" class="article__heading-anchor"></a>Обзор блока</h2><h3 class="article__heading article__heading_3" id="Модификаторы-блока-62"><a href="#Модификаторы-блока-62" class="article__heading-anchor"></a>Модификаторы блока</h3><table>
+<thead>
+<tr>
+<th>Модификатор</th>
+<th>Допустимые значения</th>
+<th>Способы использования</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#type">type</a></td>
+<td><code>&#39;button&#39;</code>, <code>&#39;line&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>Тип группы радиопереключателей.</td>
+</tr>
+<tr>
+<td><a href="#disabled">disabled</a></td>
+<td><code>true</code></td>
+<td><code>BEMJSON</code>, <code>JS</code></td>
+<td>Неактивное состояние.</td>
+</tr>
+<tr>
+<td><a href="#focused">focused</a></td>
+<td><code>true</code></td>
+<td><code>BEMJSON</code>, <code>JS</code></td>
+<td>Фокус на блоке.</td>
+</tr>
+<tr>
+<td><a href="#theme">theme</a></td>
+<td><code>&#39;islands&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>Стилевое оформление.</td>
+</tr>
+<tr>
+<td><a href="#size">size</a></td>
+<td><code>&#39;m&#39;</code>, <code>&#39;l&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>Размер радиопереключателей в группе. Используется только для радиопереключателей с <a href="#theme">модификатором theme в значении islands</a>.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="Специализированные-поля-блока-66"><a href="#Специализированные-поля-блока-66" class="article__heading-anchor"></a>Специализированные поля блока</h3><table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>Тип</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#name">name</a></td>
+<td><code>String</code></td>
+<td>Уникальное имя блока.</td>
+</tr>
+<tr>
+<td><a href="#val">val</a></td>
+<td><code>String</code>, <code>Number</code></td>
+<td>Значение выбранного радиопереключателя.</td>
+</tr>
+<tr>
+<td><a href="#opt">options</a></td>
+<td><code>Array</code></td>
+<td>Набор значений для каждого радиопереключателя группы. Каждому <a href="../radio/radio.ru.md#type">типу радиопереключателя</a> соответствует разный <a href="#optset">набор значений</a>.</td>
+</tr>
+</tbody>
+</table>
+<h2 class="article__heading article__heading_2" id="Обзор-блока-37"><a href="#Обзор-блока-37" class="article__heading-anchor"></a>Обзор блока</h2><p>Блок <code>radio-group</code> позволяет управлять внешним видом и состоянием вложенных радиопереключателей и выбирать только один пункт из предопределенного списка.</p>
+<h3 class="article__heading article__heading_3" id="Модификаторы-блока-63"><a href="#Модификаторы-блока-63" class="article__heading-anchor"></a>Модификаторы блока</h3><p><a name="type"></a></p>
+<h4 class="article__heading article__heading_4" id="Модификатор-codetypecode-13"><a href="#Модификатор-codetypecode-13" class="article__heading-anchor"></a>Модификатор <code>type</code></h4><p>Допустимые значения: <code>&#39;button&#39;</code>, <code>&#39;line&#39;</code>.</p>
+<p>Способ использования: <code>BEMJSON</code>.</p>
+<p><a name="type-button"></a></p>
+<h5 class="article__heading article__heading_5" id="Кнопочный-радиопереключатель-модификатор-codetypecode-в-значении-codebuttoncode-1"><a href="#Кнопочный-радиопереключатель-модификатор-codetypecode-в-значении-codebuttoncode-1" class="article__heading-anchor"></a>Кнопочный радиопереключатель (модификатор <code>type</code> в значении <code>button</code>)</h5><p>Позволяет реализовать блок <code>radio-group</code> с помощью радиопереключателей с типом <a href="../radio/radio.ru.md/#type">button</a>. Все радиопереключатели группы в данном случае всегда располагаются в линию.</p>
+<!-- bem-example: tmp/data/bem-components-5.0.0/touch-phone.examples/radio-group/hxyEoPL_9RQdbHH7QTaLX7PsrM4 -->
+<p><a name="type-line"></a></p>
+<h5 class="article__heading article__heading_5" id="Выравнивание-модификатор-codetypecode-в-значении-codelinecode-3"><a href="#Выравнивание-модификатор-codetypecode-в-значении-codelinecode-3" class="article__heading-anchor"></a>Выравнивание (модификатор <code>type</code> в значении <code>line</code>)</h5><p>Применяется к группе радиопереключателей для выравнивания их в линию.</p>
+<!-- bem-example: tmp/data/bem-components-5.0.0/touch-phone.examples/radio-group/OaIXoBW9czGqglrN6iwkxBpuw9Q -->
+<p><a name="disabled"></a></p>
+<h4 class="article__heading article__heading_4" id="Модификатор-codedisabledcode-23"><a href="#Модификатор-codedisabledcode-23" class="article__heading-anchor"></a>Модификатор <code>disabled</code></h4><p>Допустимое значение: <code>true</code>.</p>
+<p>Способы использования: <code>BEMJSON</code>, <code>JS</code>.</p>
+<p>Отвечает за неактивное состояние, при котором блок виден, но недоступен для действий пользователя.</p>
+<p>Модификатор может быть установлен:</p>
+<ul>
+<li>всей группе радиопереключателей</li>
+</ul>
+<!-- bem-example: tmp/data/bem-components-5.0.0/touch-phone.examples/radio-group/vVHJ4ZqofLupovWWeD7ERQh80qY -->
+<!-- bem-example: tmp/data/bem-components-5.0.0/touch-phone.examples/radio-group/RNF3sttH__DyDz5CLgTr-B6IfI4 -->
+<ul>
+<li>отдельному радиопереключателю в группе</li>
+</ul>
+<!-- bem-example: tmp/data/bem-components-5.0.0/touch-phone.examples/radio-group/4Iu4Tu6Jqzn4-1tfpXnKhYLZfL4 -->
+<!-- bem-example: tmp/data/bem-components-5.0.0/touch-phone.examples/radio-group/Y23vTSgjYbTTC8mMLEoRlb1TldA -->
+<p><a name="focused"></a></p>
+<h4 class="article__heading article__heading_4" id="Модификатор-codefocusedcode-19"><a href="#Модификатор-codefocusedcode-19" class="article__heading-anchor"></a>Модификатор <code>focused</code></h4><p>Допустимое значение: <code>true</code>.</p>
+<p>Способы использования: <code>BEMJSON</code>, <code>JS</code>.</p>
+<p>Отвечает за наличие фокуса на блоке.</p>
+<p>Выставляется автоматически при получении блоком фокуса.</p>
+<pre><code class="lang-javascript">{
+    <span class="hljs-attr">block</span> : <span class="hljs-string">'radio-group'</span>,
+    <span class="hljs-attr">mods</span> : { <span class="hljs-attr">theme</span> : <span class="hljs-string">'islands'</span>, <span class="hljs-attr">size</span> : <span class="hljs-string">'m'</span>, <span class="hljs-attr">type</span> : <span class="hljs-string">'button'</span>, <span class="hljs-attr">focused</span> : <span class="hljs-literal">true</span> },
+    <span class="hljs-attr">name</span> : <span class="hljs-string">'radio-button'</span>,
+    <span class="hljs-attr">val</span> : <span class="hljs-number">2</span>,
+    <span class="hljs-attr">options</span> : [
+        { <span class="hljs-attr">val</span> : <span class="hljs-number">1</span>, <span class="hljs-attr">text</span> : <span class="hljs-string">'Футбол'</span> },
+        { <span class="hljs-attr">val</span> : <span class="hljs-number">2</span>, <span class="hljs-attr">text</span> : <span class="hljs-string">'Баскетбол'</span> },
+        { <span class="hljs-attr">val</span> : <span class="hljs-number">3</span>, <span class="hljs-attr">text</span> : <span class="hljs-string">'Гандбол'</span> }
+    ]
+}
+</code></pre>
+<pre><code class="lang-javascript">{
+    <span class="hljs-attr">block</span> : <span class="hljs-string">'radio-group'</span>,
+    <span class="hljs-attr">mods</span> : { <span class="hljs-attr">theme</span> : <span class="hljs-string">'islands'</span>, <span class="hljs-attr">size</span> : <span class="hljs-string">'m'</span>, <span class="hljs-attr">focused</span> : <span class="hljs-literal">true</span> },
+    <span class="hljs-attr">name</span> : <span class="hljs-string">'radio'</span>,
+    <span class="hljs-attr">val</span> : <span class="hljs-number">2</span>,
+    <span class="hljs-attr">options</span> : [
+        { <span class="hljs-attr">val</span> : <span class="hljs-number">1</span>, <span class="hljs-attr">text</span> : <span class="hljs-string">'Футбол'</span> },
+        { <span class="hljs-attr">val</span> : <span class="hljs-number">2</span>, <span class="hljs-attr">text</span> : <span class="hljs-string">'Баскетбол'</span> },
+        { <span class="hljs-attr">val</span> : <span class="hljs-number">3</span>, <span class="hljs-attr">text</span> : <span class="hljs-string">'Гандбол'</span> }
+    ]
+}
+</code></pre>
+<p>Способ установки фокуса на блок определяет выбор модификатора: <code>focused</code> или <code>focused-hard</code>. <a href="../../README.ru.md#Модификатор-focused">Читать подробности</a>.</p>
+<p><a name="theme"></a></p>
+<h4 class="article__heading article__heading_4" id="Модификатор-codethemecode-28"><a href="#Модификатор-codethemecode-28" class="article__heading-anchor"></a>Модификатор <code>theme</code></h4><p>Допустимое значение: <code>&#39;islands&#39;</code>.</p>
+<p>Способ использования: <code>BEMJSON</code>.</p>
+<p>Отвечает за стилевое оформление блока.</p>
+<p>Необходимо использовать с модификатором <a href="#size">size</a>.</p>
+<!-- bem-example: tmp/data/bem-components-5.0.0/touch-phone.examples/radio-group/xA7RRbcXKdAwZ0O7RuvssfQymgc -->
+<!-- bem-example: tmp/data/bem-components-5.0.0/touch-phone.examples/radio-group/fwcutxZTkaqN7Zt1OcrVuHn9Bbc -->
+<p><a name="size"></a></p>
+<h4 class="article__heading article__heading_4" id="Модификатор-codesizecode-22"><a href="#Модификатор-codesizecode-22" class="article__heading-anchor"></a>Модификатор <code>size</code></h4><p>Допустимые значения для темы <code>islands</code>: <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>.</p>
+<p>Способ использования: <code>BEMJSON</code>.</p>
+<p>Задает размер всем радиопереключателям в группе.</p>
+<p>Необходимо использовать с модификатором <a href="#theme">theme</a> в значении <code>islands</code>.</p>
+<p><strong>m</strong></p>
+<!-- bem-example: tmp/data/bem-components-5.0.0/touch-phone.examples/radio-group/HeA5WRQB2QHTHEYZaytdPdMor6E -->
+<!-- bem-example: tmp/data/bem-components-5.0.0/touch-phone.examples/radio-group/c5NkYqtobVliFjnHQr52bsuw3wo -->
+<p><strong>l</strong></p>
+<!-- bem-example: tmp/data/bem-components-5.0.0/touch-phone.examples/radio-group/C9FjOq8jm1w7OknSNtVPOfjvATM -->
+<!-- bem-example: tmp/data/bem-components-5.0.0/touch-phone.examples/radio-group/2OwBAUL8orcMJzEsW8Za1oyJ6kc -->
+<h3 class="article__heading article__heading_3" id="Специализированные-поля-блока-67"><a href="#Специализированные-поля-блока-67" class="article__heading-anchor"></a>Специализированные поля блока</h3><p><a name="name"></a></p>
+<h4 class="article__heading article__heading_4" id="Поле-codenamecode-15"><a href="#Поле-codenamecode-15" class="article__heading-anchor"></a>Поле <code>name</code></h4><p>Тип: <code>String</code>.</p>
+<p>Определяет имя группы радиопереключателей.</p>
+<!-- bem-example: tmp/data/bem-components-5.0.0/touch-phone.examples/radio-group/HeA5WRQB2QHTHEYZaytdPdMor6E -->
+<p><a name="val"></a></p>
+<h4 class="article__heading article__heading_4" id="Поле-codevalcode-19"><a href="#Поле-codevalcode-19" class="article__heading-anchor"></a>Поле <code>val</code></h4><p>Тип: <code>String</code>, <code>Number</code>.</p>
+<p>Определяет значение выбранного радиопереключателя.</p>
+<!-- bem-example: tmp/data/bem-components-5.0.0/touch-phone.examples/radio-group/HeA5WRQB2QHTHEYZaytdPdMor6E -->
+<p><a name="opt"></a></p>
+<h4 class="article__heading article__heading_4" id="Поле-codeoptionscode-4"><a href="#Поле-codeoptionscode-4" class="article__heading-anchor"></a>Поле <code>options</code></h4><p>Тип: <code>Array</code>.</p>
+<p>Определяет набор значений для каждого радиопереключателя группы.</p>
+<p><a name="optset"></a>
+Каждому <a href="../radio/radio.ru.md">типу радиопереключателей</a> соответствует разный <strong>набор значений</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>Тип</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>val</code></td>
+<td><code>String</code>, <code>Number</code></td>
+<td>Значение радиопереключателя, которое будет отправлено на сервер, если он выбран.</td>
+</tr>
+<tr>
+<td><code>text</code></td>
+<td><code>String</code></td>
+<td>Текст подписи к радиопереключателю.</td>
+</tr>
+<tr>
+<td><code>disabled</code></td>
+<td><code>Boolean</code></td>
+<td>Неактивное состояние.</td>
+</tr>
+<tr>
+<td><code>icon</code></td>
+<td><code>BEMJSON</code></td>
+<td>Иконка. Формируется блоком <a href="../icon/icon.ru.md">icon</a>. Используется только с <a href="#type">модификатором type в значении button</a>.</td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td><code>String</code></td>
+<td>Текст всплывающей подсказки. Используется только с <a href="#type">модификатором type в значении button</a>.</td>
+</tr>
+</tbody>
+</table>
+<!-- bem-example: tmp/data/bem-components-5.0.0/touch-phone.examples/radio-group/zADplbca5vxzsMI67yt4px3y9Ck -->
+<!-- bem-example: tmp/data/bem-components-5.0.0/touch-phone.examples/radio-group/eZuym4JfFPDIkN2YDm_Abp9yQOE -->
+<!-- bem-example: tmp/data/bem-components-5.0.0/touch-phone.examples/radio-group/TkVl7yaSbnkje_tJFmzi-oDerDs -->

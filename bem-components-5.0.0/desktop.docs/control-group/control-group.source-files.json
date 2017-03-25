@@ -1,0 +1,52 @@
+[
+    {
+        "entity": {
+            "block": "control-group"
+        },
+        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "common.blocks/control-group/control-group.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "control-group"
+        },
+        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "tech": "bh.js",
+        "path": "common.blocks/control-group/control-group.bh.js"
+    },
+    {
+        "entity": {
+            "block": "control-group"
+        },
+        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "tech": "en.md",
+        "path": "common.blocks/control-group/control-group.en.md"
+    },
+    {
+        "entity": {
+            "block": "control-group"
+        },
+        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/control-group/control-group.ru.md"
+    },
+    {
+        "entity": {
+            "block": "control-group"
+        },
+        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "tech": "tests",
+        "path": "common.blocks/control-group/control-group.tests",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "control-group"
+        },
+        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "tech": "tmpl-specs",
+        "path": "common.blocks/control-group/control-group.tmpl-specs",
+        "isDir": true
+    }
+]
