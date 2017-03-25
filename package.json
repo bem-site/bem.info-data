@@ -1,0 +1,10 @@
+{
+  "name": "bem.info-data",
+  "version": "1.0.0",
+  "description": "Data for https://bem.info",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bem-site/bem.info-data.git"
+  },
+  "author": "Vitaly Harisov <vitaly@harisov.name>"
+}
