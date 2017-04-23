@@ -1,0 +1,12 @@
+{
+    "10-modal": [
+        {
+            "entity": {
+                "block": "test"
+            },
+            "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks/modal/modal.examples/10-modal.blocks",
+            "tech": "js",
+            "path": "common.blocks/modal/modal.examples/10-modal.blocks/test/test.js"
+        }
+    ]
+}

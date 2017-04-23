@@ -1,0 +1,186 @@
+[
+    {
+        "entity": {
+            "block": "radio-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "common.blocks/radio-group/radio-group.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "radio-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "bh.js",
+        "path": "common.blocks/radio-group/radio-group.bh.js"
+    },
+    {
+        "entity": {
+            "block": "radio-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/radio-group/radio-group.deps.js"
+    },
+    {
+        "entity": {
+            "block": "radio-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "en.md",
+        "path": "common.blocks/radio-group/radio-group.en.md"
+    },
+    {
+        "entity": {
+            "block": "radio-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/radio-group/radio-group.js"
+    },
+    {
+        "entity": {
+            "block": "radio-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/radio-group/radio-group.ru.md"
+    },
+    {
+        "entity": {
+            "block": "radio-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/radio-group/radio-group.spec.js"
+    },
+    {
+        "entity": {
+            "block": "radio-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "tests",
+        "path": "common.blocks/radio-group/radio-group.tests",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "radio-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "tmpl-specs",
+        "path": "common.blocks/radio-group/radio-group.tmpl-specs",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "radio-group",
+            "modName": "mode",
+            "modVal": "radio-check"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "common.blocks/radio-group/_mode/radio-group_mode_radio-check.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "radio-group",
+            "modName": "mode",
+            "modVal": "radio-check"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "bh.js",
+        "path": "common.blocks/radio-group/_mode/radio-group_mode_radio-check.bh.js"
+    },
+    {
+        "entity": {
+            "block": "radio-group",
+            "modName": "mode",
+            "modVal": "radio-check"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/radio-group/_mode/radio-group_mode_radio-check.js"
+    },
+    {
+        "entity": {
+            "block": "radio-group",
+            "modName": "mode",
+            "modVal": "radio-check"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/radio-group/_mode/radio-group_mode_radio-check.spec.js"
+    },
+    {
+        "entity": {
+            "block": "radio-group",
+            "modName": "type",
+            "modVal": "button"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/radio-group/_type/radio-group_type_button.deps.js"
+    },
+    {
+        "entity": {
+            "block": "radio-group",
+            "modName": "theme",
+            "modVal": "islands"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/design/common.blocks",
+        "tech": "css",
+        "path": "design/common.blocks/radio-group/_theme/radio-group_theme_islands.css"
+    },
+    {
+        "entity": {
+            "block": "radio-group",
+            "modName": "theme",
+            "modVal": "islands"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/design/common.blocks",
+        "tech": "deps.js",
+        "path": "design/common.blocks/radio-group/_theme/radio-group_theme_islands.deps.js"
+    },
+    {
+        "entity": {
+            "block": "radio-group",
+            "modName": "theme",
+            "modVal": "islands"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/design/common.blocks",
+        "tech": "post.css",
+        "path": "design/common.blocks/radio-group/_theme/radio-group_theme_islands.post.css"
+    },
+    {
+        "entity": {
+            "block": "radio-group",
+            "modName": "theme",
+            "modVal": "simple"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/design/common.blocks",
+        "tech": "css",
+        "path": "design/common.blocks/radio-group/_theme/radio-group_theme_simple.css"
+    },
+    {
+        "entity": {
+            "block": "radio-group",
+            "modName": "theme",
+            "modVal": "simple"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/design/common.blocks",
+        "tech": "deps.js",
+        "path": "design/common.blocks/radio-group/_theme/radio-group_theme_simple.deps.js"
+    },
+    {
+        "entity": {
+            "block": "radio-group",
+            "modName": "theme",
+            "modVal": "simple"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/design/common.blocks",
+        "tech": "post.css",
+        "path": "design/common.blocks/radio-group/_theme/radio-group_theme_simple.post.css"
+    }
+]

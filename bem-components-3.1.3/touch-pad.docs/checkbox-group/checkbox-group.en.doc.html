@@ -1,0 +1,198 @@
+<h1 class="article__heading article__heading_1" id="checkbox-group-5"><a href="#checkbox-group-5" class="article__heading-anchor"></a>checkbox-group</h1><p>Use this block for managing a group of <a href="../checkbox/checkbox.en.md">checkboxes</a>.</p>
+<h2 class="article__heading article__heading_2" id="overview-43"><a href="#overview-43" class="article__heading-anchor"></a>Overview</h2><h3 class="article__heading article__heading_3" id="modifiers-of-the-block-78"><a href="#modifiers-of-the-block-78" class="article__heading-anchor"></a>Modifiers of the block</h3><table>
+<thead>
+<tr>
+<th>Modifier</th>
+<th>Acceptable values</th>
+<th>Use cases</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#checkboxtype">type</a></td>
+<td><code>&#39;button&#39;</code>, <code>&#39;line&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>The type of checkbox group.</td>
+</tr>
+<tr>
+<td><a href="#checkboxdisabled">disabled</a></td>
+<td><code>true</code></td>
+<td><code>BEMJSON</code>, <code>JS</code></td>
+<td>The disabled state.</td>
+</tr>
+<tr>
+<td><a href="#checkboxfocused">focused</a></td>
+<td><code>true</code></td>
+<td><code>BEMJSON</code>, <code>JS</code></td>
+<td>The block is in focus.</td>
+</tr>
+<tr>
+<td><a href="#checkboxtheme">theme</a></td>
+<td><code>&#39;islands&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>A custom design.</td>
+</tr>
+<tr>
+<td><a href="#checkboxsize">size</a></td>
+<td><code>&#39;m&#39;</code>, <code>&#39;l&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>The size of checkbox group. Use sizes only for checkboxes with the <a href="#checkboxtheme">theme modifier set to islands</a>.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="custom-fields-of-the-block-78"><a href="#custom-fields-of-the-block-78" class="article__heading-anchor"></a>Custom fields of the block</h3><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#checkboxname">name</a></td>
+<td><code>String</code></td>
+<td>The block unique name.</td>
+</tr>
+<tr>
+<td><a href="#val">val</a></td>
+<td><code>Array</code></td>
+<td>A set of values for the selected checkboxes.</td>
+</tr>
+<tr>
+<td><a href="#checkboxopt">options</a></td>
+<td><code>Array</code></td>
+<td>A set of values for each checkbox of the group. Each checkbox has its own <a href="#checkboxoptset">set of values</a>.</td>
+</tr>
+</tbody>
+</table>
+<h2 class="article__heading article__heading_2" id="block-description-41"><a href="#block-description-41" class="article__heading-anchor"></a>Block description</h2><p>Use the <code>checkbox-group</code> block to control the size, state, and appearance of the checkboxes in the group.</p>
+<h3 class="article__heading article__heading_3" id="modifiers-of-the-block-79"><a href="#modifiers-of-the-block-79" class="article__heading-anchor"></a>Modifiers of the block</h3><p><a name="checkboxtype"></a></p>
+<h4 class="article__heading article__heading_4" id="codetypecode-modifier-16"><a href="#codetypecode-modifier-16" class="article__heading-anchor"></a><code>type</code> modifier</h4><p>Acceptable values: <code>&#39;button&#39;</code>, <code>&#39;line&#39;</code>.</p>
+<p>Use case: <code>BEMJSON</code>.</p>
+<p><a name="checkboxtype-button"></a></p>
+<h5 class="article__heading article__heading_5" id="a-codebuttoncode-based-checkbox-group-codetypecode-modifier-with-codebuttoncode-value-2"><a href="#a-codebuttoncode-based-checkbox-group-codetypecode-modifier-with-codebuttoncode-value-2" class="article__heading-anchor"></a>A <code>button</code>-based checkbox group (<code>type</code> modifier with <code>button</code> value)</h5><p>Implements the <code>checkbox-group</code> block using the <a href="../checkbox/checkbox.en.md/#checkboxtype">button-based</a> type of checkboxes.</p>
+<p>Grouped button-based checkboxes are always aligned in a line.</p>
+<!-- bem-example: tmp/data/bem-components-3.1.3/touch-pad.examples/checkbox-group/d13H0eWvdvd0_Sp8OO5ztPUBdDM -->
+<p><a name="checkboxtype-line"></a></p>
+<h5 class="article__heading article__heading_5" id="a-codelinecode-aligned-checkbox-group-codetypecode-modifier-with-codelinecode-value-2"><a href="#a-codelinecode-aligned-checkbox-group-codetypecode-modifier-with-codelinecode-value-2" class="article__heading-anchor"></a>A <code>line</code>-aligned checkbox group (<code>type</code> modifier with <code>line</code> value)</h5><p>The modifier aligns all checkboxes of the group in a line.</p>
+<!-- bem-example: tmp/data/bem-components-3.1.3/touch-pad.examples/checkbox-group/mG2Np68rfJMJ13x7dbqfVIxJ1NQ -->
+<p><a name="checkboxdisabled"></a></p>
+<h4 class="article__heading article__heading_4" id="codedisabledcode-modifier-29"><a href="#codedisabledcode-modifier-29" class="article__heading-anchor"></a><code>disabled</code> modifier</h4><p>Acceptable value: <code>true</code>.</p>
+<p>Use cases: <code>BEMJSON</code>, <code>JS</code>.</p>
+<p>The modifier makes the block inactive. The disabled block is visible but not available for user actions.</p>
+<p>The modifier can be applied to:</p>
+<ul>
+<li>The checkbox-group:</li>
+</ul>
+<!-- bem-example: tmp/data/bem-components-3.1.3/touch-pad.examples/checkbox-group/HdRLgQfi00piD9ZepDPK3OAUSmA -->
+<!-- bem-example: tmp/data/bem-components-3.1.3/touch-pad.examples/checkbox-group/0yLwM8Jy9HSx3G-ibB4eWWO55Yk -->
+<ul>
+<li>The separate checkbox of the group:</li>
+</ul>
+<!-- bem-example: tmp/data/bem-components-3.1.3/touch-pad.examples/checkbox-group/2YM_smIyavzfXzdnRhny0giccVc -->
+<!-- bem-example: tmp/data/bem-components-3.1.3/touch-pad.examples/checkbox-group/jkfmxr3vlYcu_pd2_GuSBZolnr8 -->
+<p><a name="checkboxfocused"></a></p>
+<h4 class="article__heading article__heading_4" id="codefocusedcode-modifier-25"><a href="#codefocusedcode-modifier-25" class="article__heading-anchor"></a><code>focused</code> modifier</h4><p>Acceptable value: <code>true</code>.</p>
+<p>Use cases: <code>BEMJSON</code>, <code>JS</code>.</p>
+<p>The modifier puts the focus on the block.</p>
+<pre><code class="lang-javascript">{
+    <span class="hljs-attr">block</span> : <span class="hljs-string">'checkbox-group'</span>,
+    <span class="hljs-attr">mods</span> : { <span class="hljs-attr">theme</span> : <span class="hljs-string">'islands'</span>, <span class="hljs-attr">size</span> : <span class="hljs-string">'m'</span>, <span class="hljs-attr">focused</span> : <span class="hljs-literal">true</span> },
+    <span class="hljs-attr">name</span> : <span class="hljs-string">'checkbox'</span>,
+    <span class="hljs-attr">val</span> : [<span class="hljs-number">2</span>],
+    <span class="hljs-attr">options</span> : [
+        { <span class="hljs-attr">val</span> : <span class="hljs-number">1</span>, <span class="hljs-attr">text</span> : <span class="hljs-string">'Block'</span> },
+        { <span class="hljs-attr">val</span> : <span class="hljs-number">2</span>, <span class="hljs-attr">text</span> : <span class="hljs-string">'Element'</span> },
+        { <span class="hljs-attr">val</span> : <span class="hljs-number">3</span>, <span class="hljs-attr">text</span> : <span class="hljs-string">'Modifier'</span> }
+    ]
+}
+</code></pre>
+<pre><code class="lang-javascript">{
+    <span class="hljs-attr">block</span> : <span class="hljs-string">'checkbox-group'</span>,
+    <span class="hljs-attr">mods</span> : { <span class="hljs-attr">theme</span> : <span class="hljs-string">'islands'</span>, <span class="hljs-attr">size</span> : <span class="hljs-string">'m'</span>, <span class="hljs-attr">type</span> : <span class="hljs-string">'button'</span>, <span class="hljs-attr">focused</span> : <span class="hljs-literal">true</span> },
+    <span class="hljs-attr">name</span> : <span class="hljs-string">'checkbox-button'</span>,
+    <span class="hljs-attr">val</span> : [<span class="hljs-number">2</span>],
+    <span class="hljs-attr">options</span> : [
+        { <span class="hljs-attr">val</span> : <span class="hljs-number">1</span>, <span class="hljs-attr">text</span> : <span class="hljs-string">'Block'</span> },
+        { <span class="hljs-attr">val</span> : <span class="hljs-number">2</span>, <span class="hljs-attr">text</span> : <span class="hljs-string">'Element'</span> },
+        { <span class="hljs-attr">val</span> : <span class="hljs-number">3</span>, <span class="hljs-attr">text</span> : <span class="hljs-string">'Modifier'</span> }
+    ]
+}
+</code></pre>
+<p><a name="checkboxtheme"></a></p>
+<h4 class="article__heading article__heading_4" id="codethemecode-modifier-35"><a href="#codethemecode-modifier-35" class="article__heading-anchor"></a><code>theme</code> modifier</h4><p>Acceptable value: <code>&#39;islands&#39;</code>.</p>
+<p>Use case: <code>BEMJSON</code>.</p>
+<p>The modifier gives the block a custom design.</p>
+<p>The islands theme requires the <a href="#checkboxsize">size</a> modifier.</p>
+<!-- bem-example: tmp/data/bem-components-3.1.3/touch-pad.examples/checkbox-group/KscdpvftxDVNnUrr_4SJKcklHu8 -->
+<!-- bem-example: tmp/data/bem-components-3.1.3/touch-pad.examples/checkbox-group/vzYjDRQUYU0s1RkKSJesb-Eir_Q -->
+<p><a name="checkboxsize"></a></p>
+<h4 class="article__heading article__heading_4" id="codesizecode-modifier-29"><a href="#codesizecode-modifier-29" class="article__heading-anchor"></a><code>size</code> modifier</h4><p>Acceptable values for the <code>islands</code> theme: <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>.</p>
+<p>Use case: <code>BEMJSON</code>.</p>
+<p>Use the <code>size</code> modifier only for blocks with the <code>islands</code> <a href="#checkboxthemes">theme</a>.</p>
+<p>Sets the size value for all types of checkbox groups.</p>
+<p><strong>m</strong></p>
+<!-- bem-example: tmp/data/bem-components-3.1.3/touch-pad.examples/checkbox-group/tF13ShLKTLZ1SspXyOjcKcsPzZg -->
+<!-- bem-example: tmp/data/bem-components-3.1.3/touch-pad.examples/checkbox-group/7gv4FrW3k5ddZ25ne_FMV1pHLY8 -->
+<p><strong>l</strong></p>
+<!-- bem-example: tmp/data/bem-components-3.1.3/touch-pad.examples/checkbox-group/ztJ1IwCOWA7j25tLXhIB3Wp75No -->
+<!-- bem-example: tmp/data/bem-components-3.1.3/touch-pad.examples/checkbox-group/vI8Dk7_AZkIwpnHm5ShP9eSvSOo -->
+<h3 class="article__heading article__heading_3" id="custom-fields-of-the-block-79"><a href="#custom-fields-of-the-block-79" class="article__heading-anchor"></a>Custom fields of the block</h3><p><a name="checkboxname"></a></p>
+<h4 class="article__heading article__heading_4" id="codenamecode-field-21"><a href="#codenamecode-field-21" class="article__heading-anchor"></a><code>name</code> field</h4><p>Type: <code>String</code></p>
+<p>Specifies the block unique name.</p>
+<!-- bem-example: tmp/data/bem-components-3.1.3/touch-pad.examples/checkbox-group/KO5h_nwVqVissemADn1DvuRcE5A -->
+<p><a name="val"></a></p>
+<h4 class="article__heading article__heading_4" id="codevalcode-field-24"><a href="#codevalcode-field-24" class="article__heading-anchor"></a><code>val</code> field</h4><p>Type: <code>Array</code>.</p>
+<p>Specifies a set of values for the selected checkboxes.</p>
+<!-- bem-example: tmp/data/bem-components-3.1.3/touch-pad.examples/checkbox-group/fvfBJ1tyb4y9mNgUKEvE5jWyGXo -->
+<p><a name="checkboxopt"></a></p>
+<h4 class="article__heading article__heading_4" id="codeoptionscode-field-6"><a href="#codeoptionscode-field-6" class="article__heading-anchor"></a><code>options</code> field</h4><p>Type: <code>Array</code></p>
+<p>Specifies a set of values for each checkbox of the group.</p>
+<p><a name="checkboxoptset"></a></p>
+<p>Each checkbox has its own set of values.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>val</code></td>
+<td><code>String</code>, <code>Number</code></td>
+<td>The value to send to the server if the checkbox is selected.</td>
+</tr>
+<tr>
+<td><code>text</code></td>
+<td><code>String</code></td>
+<td>The checkbox label, or the button label if the <code>type</code> modifier is set to <code>button</code>.</td>
+</tr>
+<tr>
+<td><code>disabled</code></td>
+<td><code>Boolean</code></td>
+<td>The disabled state.</td>
+</tr>
+<tr>
+<td><code>icon</code></td>
+<td><code>BEMJSON</code></td>
+<td>The checkbox icon, which is created by the <a href="../icon/icon.en.md">icon</a> block. Use icons only for checkboxes with the <code>type</code> modifier set to <code>button</code>.</td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td><code>String</code></td>
+<td>Tooltip content. Use tooltips only for checkboxes with <code>type</code> modifier set to <code>button</code>.</td>
+</tr>
+<tr>
+<td><code>id</code></td>
+<td><code>String</code></td>
+<td>The checkbox unique ID.</td>
+</tr>
+</tbody>
+</table>
+<!-- bem-example: tmp/data/bem-components-3.1.3/touch-pad.examples/checkbox-group/QPsY-r7Sa_Ce-A9wLGMQ5APZJBs -->
+<!-- bem-example: tmp/data/bem-components-3.1.3/touch-pad.examples/checkbox-group/_d3n5_6jZoo1ZM4ekBGaQFCk5jA -->
+<!-- bem-example: tmp/data/bem-components-3.1.3/touch-pad.examples/checkbox-group/f4usVOOdklJLyZ2kuBwiDKzMgJw -->

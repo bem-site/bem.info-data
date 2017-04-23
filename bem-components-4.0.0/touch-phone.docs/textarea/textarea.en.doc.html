@@ -1,0 +1,139 @@
+<h1 class="article__heading article__heading_1" id="textarea-3"><a href="#textarea-3" class="article__heading-anchor"></a>textarea</h1><p>Use this block for creating a text area that allows to enter multiple lines of a text.</p>
+<h2 class="article__heading article__heading_2" id="overview-38"><a href="#overview-38" class="article__heading-anchor"></a>Overview</h2><h3 class="article__heading article__heading_3" id="modifiers-of-the-block-68"><a href="#modifiers-of-the-block-68" class="article__heading-anchor"></a>Modifiers of the block</h3><table>
+<thead>
+<tr>
+<th>Modifier</th>
+<th>Acceptable values</th>
+<th>Use cases</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#width">width</a></td>
+<td><code>&#39;available&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>The maximum allowed width of the text area.</td>
+</tr>
+<tr>
+<td><a href="#disabled">disabled</a></td>
+<td><code>true</code></td>
+<td><code>BEMJSON</code>, <code>JS</code></td>
+<td>The disabled state.</td>
+</tr>
+<tr>
+<td><a href="#focused">focused</a></td>
+<td><code>true</code></td>
+<td><code>BEMJSON</code>, <code>JS</code></td>
+<td>The block is in focus.</td>
+</tr>
+<tr>
+<td><a href="#theme">theme</a></td>
+<td><code>&#39;islands&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>A custom design.</td>
+</tr>
+<tr>
+<td><a href="#size">size</a></td>
+<td><code>&#39;s&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>, <code>&#39;xl&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>The size of the text area. Use sizes only for text areas when the <a href="#themes">theme modifier is set to islands</a>.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="custom-fields-of-the-block-70"><a href="#custom-fields-of-the-block-70" class="article__heading-anchor"></a>Custom fields of the block</h3><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#name">name</a></td>
+<td><code>String</code></td>
+<td>The unique block name.</td>
+</tr>
+<tr>
+<td><a href="#val">val</a></td>
+<td><code>String</code>, <code>Number</code></td>
+<td>Default content of the text area.</td>
+</tr>
+<tr>
+<td><a href="#placeholder">placeholder</a></td>
+<td><code>String</code></td>
+<td>The hint in the text area.</td>
+</tr>
+<tr>
+<td><a href="#id">id</a></td>
+<td><code>String</code></td>
+<td>The unique identifier of the block.</td>
+</tr>
+<tr>
+<td><a href="#tab">tabIndex</a></td>
+<td><code>Number</code></td>
+<td>The order when navigating through controls on a page by pressing the <code>Tab</code> key.</td>
+</tr>
+</tbody>
+</table>
+<h2 class="article__heading article__heading_2" id="block-description-36"><a href="#block-description-36" class="article__heading-anchor"></a>Block description</h2><p>Use the <code>textarea</code> block to create the text area that allows to enter multiple lines of the text.</p>
+<h3 class="article__heading article__heading_3" id="modifiers-of-the-block-69"><a href="#modifiers-of-the-block-69" class="article__heading-anchor"></a>Modifiers of the block</h3><p><a name="width"></a></p>
+<h4 class="article__heading article__heading_4" id="codewidthcode-modifier-5"><a href="#codewidthcode-modifier-5" class="article__heading-anchor"></a><code>width</code> modifier</h4><p>Acceptable value:<code>&#39;available&#39;</code>.</p>
+<p>Use cases: <code>BEMJSON</code>.</p>
+<p>Use to set the maximum available width of the text area.</p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/touch-phone.examples/textarea/pJeX4Q07jnpEp6U11Cp0keGQo70 -->
+<p><a name="disabled"></a></p>
+<h4 class="article__heading article__heading_4" id="codedisabledcode-modifier-25"><a href="#codedisabledcode-modifier-25" class="article__heading-anchor"></a><code>disabled</code> modifier</h4><p>Acceptable value:<code>true</code>.</p>
+<p>Use cases: <code>BEMJSON</code>, <code>JS</code>.</p>
+<p>The modifier makes the block inactive. The disabled block is visible but not available for user actions.</p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/touch-phone.examples/textarea/XAPjzgafRKVofPoeeT52G7_hIDA -->
+<p><a name="focused"></a></p>
+<h4 class="article__heading article__heading_4" id="codefocusedcode-modifier-21"><a href="#codefocusedcode-modifier-21" class="article__heading-anchor"></a><code>focused</code> modifier</h4><p>Acceptable value:<code>true</code>.</p>
+<p>Use cases: <code>BEMJSON</code>, <code>JS</code>.</p>
+<p>The modifier puts the focus on the block.</p>
+<pre><code class="lang-javascript">{
+    <span class="hljs-attr">block</span> : <span class="hljs-string">'textarea'</span>,
+    <span class="hljs-attr">mods</span> : { <span class="hljs-attr">theme</span> : <span class="hljs-string">'islands'</span>, <span class="hljs-attr">size</span> : <span class="hljs-string">'m'</span>, <span class="hljs-attr">focused</span> : <span class="hljs-literal">true</span> },
+    <span class="hljs-attr">placeholder</span> : <span class="hljs-string">'Your text should be here'</span>
+}
+</code></pre>
+<p><a name="theme"></a></p>
+<h4 class="article__heading article__heading_4" id="codethemecode-modifier-31"><a href="#codethemecode-modifier-31" class="article__heading-anchor"></a><code>theme</code> modifier</h4><p>Acceptable value:<code>&#39;islands&#39;</code>.</p>
+<p>Use case: <code>BEMJSON</code>.</p>
+<p>The modifier gives the block a custom design.</p>
+<p>The <code>islands</code> theme requires the <a href="#size">size</a> modifier.</p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/touch-phone.examples/textarea/RoWaGA2LxUw5NOpaQseamIqRJUA -->
+<p><a name="size"></a></p>
+<h4 class="article__heading article__heading_4" id="codesizecode-modifier-25"><a href="#codesizecode-modifier-25" class="article__heading-anchor"></a><code>size</code> modifier</h4><p>Acceptable values for the <code>islands</code> theme: <code>&#39;s&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>, <code>&#39;xl&#39;</code>.</p>
+<p>Use case: <code>BEMJSON</code>.</p>
+<p>Use the <code>size</code> modifier only for blocks with the <code>islands</code> <a href="#themes">theme</a>.</p>
+<p>Sets the size value for all types of text areas.</p>
+<p><strong>s</strong></p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/touch-phone.examples/textarea/9waljgu_yffXsKH4VH8A65C0gGI -->
+<p><strong>m</strong></p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/touch-phone.examples/textarea/zLh5pSBbewHk5DAVPJqy4CZ90Ek -->
+<p><strong>l</strong></p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/touch-phone.examples/textarea/NrhAiQgMVJmugw8V35EtNPC5S_s -->
+<p><strong>xl</strong></p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/touch-phone.examples/textarea/CP--OUqVzuU184ZdgrTfh47zN-0 -->
+<h3 class="article__heading article__heading_3" id="custom-fields-of-the-block-71"><a href="#custom-fields-of-the-block-71" class="article__heading-anchor"></a>Custom fields of the block</h3><p><a name="name"></a></p>
+<h4 class="article__heading article__heading_4" id="codenamecode-field-17"><a href="#codenamecode-field-17" class="article__heading-anchor"></a><code>name</code> field</h4><p>Type: <code>String</code>.</p>
+<p>Specifies the block unique name.</p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/touch-phone.examples/textarea/b6c0fdkzoYLLmuRsB571EoF_hlk -->
+<p><a name="val"></a></p>
+<h4 class="article__heading article__heading_4" id="codevalcode-field-21"><a href="#codevalcode-field-21" class="article__heading-anchor"></a><code>val</code> field</h4><p>Type: <code>String</code>.</p>
+<p>Specifies the content of the text area.</p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/touch-phone.examples/textarea/9fiRGrPdL2aH0665r1zKAAZbvg4 -->
+<p><a name="placeholder"></a></p>
+<h4 class="article__heading article__heading_4" id="codeplaceholdercode-field-3"><a href="#codeplaceholdercode-field-3" class="article__heading-anchor"></a><code>placeholder</code> field</h4><p>Type: <code>String</code>.</p>
+<p>Specifies the hint in the text area.</p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/touch-phone.examples/textarea/wKBAxL1c7lPdBN3pM7MqZxZNF0g -->
+<p><a name="id"></a></p>
+<h4 class="article__heading article__heading_4" id="codeidcode-field-7"><a href="#codeidcode-field-7" class="article__heading-anchor"></a><code>id</code> field</h4><p>Type: <code>String</code>.</p>
+<p>Specifies the text area unique ID.</p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/touch-phone.examples/textarea/TWUbFcUUqgPdJL4OmQWC-3S-G3o -->
+<p><a name="tab"></a></p>
+<h4 class="article__heading article__heading_4" id="codetabindexcode-field-11"><a href="#codetabindexcode-field-11" class="article__heading-anchor"></a><code>tabIndex</code> field</h4><p>Type: <code>Number</code>.</p>
+<p>Specifies the tab order when pressing <code>Tab</code> to navigate between controls on a page.</p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/touch-phone.examples/textarea/dVWcRwiGBsMXK-2KuvvZ8NEe9vw -->

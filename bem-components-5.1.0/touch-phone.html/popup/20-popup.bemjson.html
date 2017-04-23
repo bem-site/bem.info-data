@@ -1,0 +1,802 @@
+{
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'page'</span>,
+    <span class="hljs-attr">title</span>: <span class="hljs-string">'20-popup'</span>,
+    <span class="hljs-attr">head</span>: [
+        {
+            <span class="hljs-attr">elem</span>: <span class="hljs-string">'conditional-comment'</span>,
+            <span class="hljs-attr">condition</span>: <span class="hljs-string">'&gt; IE 8'</span>,
+            <span class="hljs-attr">msieOnly</span>: <span class="hljs-literal">false</span>,
+            <span class="hljs-attr">content</span>: {
+                <span class="hljs-attr">elem</span>: <span class="hljs-string">'css'</span>,
+                <span class="hljs-attr">url</span>: <span class="hljs-string">'20-popup.css'</span>
+            }
+        },
+        {
+            <span class="hljs-attr">elem</span>: <span class="hljs-string">'conditional-comment'</span>,
+            <span class="hljs-attr">condition</span>: <span class="hljs-string">'&lt;= IE 8'</span>,
+            <span class="hljs-attr">content</span>: {
+                <span class="hljs-attr">elem</span>: <span class="hljs-string">'css'</span>,
+                <span class="hljs-attr">url</span>: <span class="hljs-string">'20-popup.ie.css'</span>
+            }
+        }
+    ],
+    <span class="hljs-attr">scripts</span>: [
+        {
+            <span class="hljs-attr">elem</span>: <span class="hljs-string">'js'</span>,
+            <span class="hljs-attr">url</span>: <span class="hljs-string">'20-popup.js'</span>
+        }
+    ],
+    <span class="hljs-attr">mods</span>: {
+        <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>
+    },
+    <span class="hljs-attr">content</span>: [
+        {
+            <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+            <span class="hljs-attr">mix</span>: {
+                <span class="hljs-attr">block</span>: <span class="hljs-string">'z-index-group'</span>,
+                <span class="hljs-attr">mods</span>: {
+                    <span class="hljs-attr">level</span>: <span class="hljs-number">9</span>
+                }
+            },
+            <span class="hljs-attr">attrs</span>: {
+                <span class="hljs-attr">style</span>: <span class="hljs-string">'position : fixed; left : 0; top : 0; background-color : #eee; padding : 10px;'</span>
+            },
+            <span class="hljs-attr">js</span>: <span class="hljs-literal">true</span>,
+            <span class="hljs-attr">content</span>: [
+                {
+                    <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                    <span class="hljs-attr">mods</span>: {
+                        <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>
+                    },
+                    <span class="hljs-attr">content</span>: <span class="hljs-string">'owner in fixed'</span>
+                },
+                {
+                    <span class="hljs-attr">block</span>: <span class="hljs-string">'popup'</span>,
+                    <span class="hljs-attr">mix</span>: {
+                        <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                        <span class="hljs-attr">elem</span>: <span class="hljs-string">'popup'</span>
+                    },
+                    <span class="hljs-attr">mods</span>: {
+                        <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>,
+                        <span class="hljs-attr">target</span>: <span class="hljs-string">'anchor'</span>
+                    },
+                    <span class="hljs-attr">content</span>: <span class="hljs-string">'popup on fixed owner &lt;br /&gt;also i\'m not autoclosable'</span>
+                }
+            ]
+        },
+        {
+            <span class="hljs-attr">block</span>: <span class="hljs-string">'directions'</span>,
+            <span class="hljs-attr">content</span>: [
+                {
+                    <span class="hljs-attr">elem</span>: <span class="hljs-string">'row'</span>,
+                    <span class="hljs-attr">content</span>: [
+                        {
+                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'cell'</span>
+                        },
+                        {
+                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'cell'</span>,
+                            <span class="hljs-attr">elemMods</span>: {
+                                <span class="hljs-attr">align</span>: <span class="hljs-string">'left'</span>
+                            },
+                            <span class="hljs-attr">content</span>: {
+                                <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                <span class="hljs-attr">js</span>: <span class="hljs-literal">true</span>,
+                                <span class="hljs-attr">content</span>: [
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>
+                                        },
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'top-left'</span>
+                                    },
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'popup'</span>,
+                                        <span class="hljs-attr">mix</span>: {
+                                            <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'popup'</span>
+                                        },
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">target</span>: <span class="hljs-string">'anchor'</span>,
+                                            <span class="hljs-attr">autoclosable</span>: <span class="hljs-literal">true</span>,
+                                            <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>
+                                        },
+                                        <span class="hljs-attr">directions</span>: [
+                                            <span class="hljs-string">'top-left'</span>
+                                        ],
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'the popup'</span>
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'cell'</span>,
+                            <span class="hljs-attr">elemMods</span>: {
+                                <span class="hljs-attr">align</span>: <span class="hljs-string">'center'</span>
+                            },
+                            <span class="hljs-attr">content</span>: {
+                                <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                <span class="hljs-attr">js</span>: <span class="hljs-literal">true</span>,
+                                <span class="hljs-attr">content</span>: [
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>
+                                        },
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'top-center'</span>
+                                    },
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'popup'</span>,
+                                        <span class="hljs-attr">mix</span>: {
+                                            <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'popup'</span>
+                                        },
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">target</span>: <span class="hljs-string">'anchor'</span>,
+                                            <span class="hljs-attr">autoclosable</span>: <span class="hljs-literal">true</span>,
+                                            <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>
+                                        },
+                                        <span class="hljs-attr">directions</span>: [
+                                            <span class="hljs-string">'top-center'</span>
+                                        ],
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'the popup'</span>
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'cell'</span>,
+                            <span class="hljs-attr">elemMods</span>: {
+                                <span class="hljs-attr">align</span>: <span class="hljs-string">'right'</span>
+                            },
+                            <span class="hljs-attr">content</span>: {
+                                <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                <span class="hljs-attr">js</span>: <span class="hljs-literal">true</span>,
+                                <span class="hljs-attr">content</span>: [
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>
+                                        },
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'top-right'</span>
+                                    },
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'popup'</span>,
+                                        <span class="hljs-attr">mix</span>: {
+                                            <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'popup'</span>
+                                        },
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">target</span>: <span class="hljs-string">'anchor'</span>,
+                                            <span class="hljs-attr">autoclosable</span>: <span class="hljs-literal">true</span>,
+                                            <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>
+                                        },
+                                        <span class="hljs-attr">directions</span>: [
+                                            <span class="hljs-string">'top-right'</span>
+                                        ],
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'the popup'</span>
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'cell'</span>
+                        }
+                    ]
+                },
+                {
+                    <span class="hljs-attr">elem</span>: <span class="hljs-string">'row'</span>,
+                    <span class="hljs-attr">content</span>: [
+                        {
+                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'cell'</span>,
+                            <span class="hljs-attr">elemMods</span>: {
+                                <span class="hljs-attr">align</span>: <span class="hljs-string">'right'</span>
+                            },
+                            <span class="hljs-attr">content</span>: {
+                                <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                <span class="hljs-attr">js</span>: <span class="hljs-literal">true</span>,
+                                <span class="hljs-attr">content</span>: [
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>
+                                        },
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'left-top'</span>
+                                    },
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'popup'</span>,
+                                        <span class="hljs-attr">mix</span>: {
+                                            <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'popup'</span>
+                                        },
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">target</span>: <span class="hljs-string">'anchor'</span>,
+                                            <span class="hljs-attr">autoclosable</span>: <span class="hljs-literal">true</span>,
+                                            <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>
+                                        },
+                                        <span class="hljs-attr">directions</span>: [
+                                            <span class="hljs-string">'left-top'</span>
+                                        ],
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'the popup'</span>
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'cell'</span>,
+                            <span class="hljs-attr">elemMods</span>: {
+                                <span class="hljs-attr">align</span>: <span class="hljs-string">'center'</span>,
+                                <span class="hljs-attr">border</span>: <span class="hljs-string">'yes'</span>
+                            },
+                            <span class="hljs-attr">attrs</span>: {
+                                <span class="hljs-attr">colspan</span>: <span class="hljs-number">3</span>,
+                                <span class="hljs-attr">rowspan</span>: <span class="hljs-number">3</span>
+                            },
+                            <span class="hljs-attr">content</span>: {
+                                <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                <span class="hljs-attr">js</span>: {
+                                    <span class="hljs-attr">position</span>: [
+                                        <span class="hljs-number">50</span>,
+                                        <span class="hljs-number">50</span>
+                                    ]
+                                },
+                                <span class="hljs-attr">content</span>: [
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>
+                                        },
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'popup at 50x50'</span>
+                                    },
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'popup'</span>,
+                                        <span class="hljs-attr">mix</span>: {
+                                            <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'popup'</span>
+                                        },
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">target</span>: <span class="hljs-string">'position'</span>,
+                                            <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>
+                                        },
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'the popup'</span>
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'cell'</span>,
+                            <span class="hljs-attr">elemMods</span>: {
+                                <span class="hljs-attr">align</span>: <span class="hljs-string">'left'</span>
+                            },
+                            <span class="hljs-attr">content</span>: {
+                                <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                <span class="hljs-attr">js</span>: <span class="hljs-literal">true</span>,
+                                <span class="hljs-attr">content</span>: [
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>
+                                        },
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'right-top'</span>
+                                    },
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'popup'</span>,
+                                        <span class="hljs-attr">mix</span>: {
+                                            <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'popup'</span>
+                                        },
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">target</span>: <span class="hljs-string">'anchor'</span>,
+                                            <span class="hljs-attr">autoclosable</span>: <span class="hljs-literal">true</span>,
+                                            <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>
+                                        },
+                                        <span class="hljs-attr">directions</span>: [
+                                            <span class="hljs-string">'right-top'</span>
+                                        ],
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'the popup'</span>
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    <span class="hljs-attr">elem</span>: <span class="hljs-string">'row'</span>,
+                    <span class="hljs-attr">content</span>: [
+                        {
+                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'cell'</span>,
+                            <span class="hljs-attr">elemMods</span>: {
+                                <span class="hljs-attr">align</span>: <span class="hljs-string">'right'</span>
+                            },
+                            <span class="hljs-attr">content</span>: {
+                                <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                <span class="hljs-attr">js</span>: <span class="hljs-literal">true</span>,
+                                <span class="hljs-attr">content</span>: [
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>
+                                        },
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'left-center'</span>
+                                    },
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'popup'</span>,
+                                        <span class="hljs-attr">mix</span>: {
+                                            <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'popup'</span>
+                                        },
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">target</span>: <span class="hljs-string">'anchor'</span>,
+                                            <span class="hljs-attr">autoclosable</span>: <span class="hljs-literal">true</span>,
+                                            <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>
+                                        },
+                                        <span class="hljs-attr">directions</span>: [
+                                            <span class="hljs-string">'left-center'</span>
+                                        ],
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'the popup'</span>
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'cell'</span>,
+                            <span class="hljs-attr">elemMods</span>: {
+                                <span class="hljs-attr">align</span>: <span class="hljs-string">'left'</span>
+                            },
+                            <span class="hljs-attr">content</span>: {
+                                <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                <span class="hljs-attr">js</span>: <span class="hljs-literal">true</span>,
+                                <span class="hljs-attr">content</span>: [
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>
+                                        },
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'right-center'</span>
+                                    },
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'popup'</span>,
+                                        <span class="hljs-attr">mix</span>: {
+                                            <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'popup'</span>
+                                        },
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">target</span>: <span class="hljs-string">'anchor'</span>,
+                                            <span class="hljs-attr">autoclosable</span>: <span class="hljs-literal">true</span>,
+                                            <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>
+                                        },
+                                        <span class="hljs-attr">directions</span>: [
+                                            <span class="hljs-string">'right-center'</span>
+                                        ],
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'the popup'</span>
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    <span class="hljs-attr">elem</span>: <span class="hljs-string">'row'</span>,
+                    <span class="hljs-attr">content</span>: [
+                        {
+                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'cell'</span>,
+                            <span class="hljs-attr">elemMods</span>: {
+                                <span class="hljs-attr">align</span>: <span class="hljs-string">'right'</span>
+                            },
+                            <span class="hljs-attr">content</span>: {
+                                <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                <span class="hljs-attr">js</span>: <span class="hljs-literal">true</span>,
+                                <span class="hljs-attr">content</span>: [
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>
+                                        },
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'left-bottom'</span>
+                                    },
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'popup'</span>,
+                                        <span class="hljs-attr">mix</span>: {
+                                            <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'popup'</span>
+                                        },
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">target</span>: <span class="hljs-string">'anchor'</span>,
+                                            <span class="hljs-attr">autoclosable</span>: <span class="hljs-literal">true</span>,
+                                            <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>
+                                        },
+                                        <span class="hljs-attr">directions</span>: [
+                                            <span class="hljs-string">'left-bottom'</span>
+                                        ],
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'the popup'</span>
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'cell'</span>,
+                            <span class="hljs-attr">elemMods</span>: {
+                                <span class="hljs-attr">align</span>: <span class="hljs-string">'left'</span>
+                            },
+                            <span class="hljs-attr">content</span>: {
+                                <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                <span class="hljs-attr">js</span>: <span class="hljs-literal">true</span>,
+                                <span class="hljs-attr">content</span>: [
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>
+                                        },
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'right-bottom'</span>
+                                    },
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'popup'</span>,
+                                        <span class="hljs-attr">mix</span>: {
+                                            <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'popup'</span>
+                                        },
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">target</span>: <span class="hljs-string">'anchor'</span>,
+                                            <span class="hljs-attr">autoclosable</span>: <span class="hljs-literal">true</span>,
+                                            <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>
+                                        },
+                                        <span class="hljs-attr">directions</span>: [
+                                            <span class="hljs-string">'right-bottom'</span>
+                                        ],
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'the popup'</span>
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    <span class="hljs-attr">elem</span>: <span class="hljs-string">'row'</span>,
+                    <span class="hljs-attr">content</span>: [
+                        {
+                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'cell'</span>
+                        },
+                        {
+                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'cell'</span>,
+                            <span class="hljs-attr">elemMods</span>: {
+                                <span class="hljs-attr">align</span>: <span class="hljs-string">'left'</span>
+                            },
+                            <span class="hljs-attr">content</span>: {
+                                <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                <span class="hljs-attr">js</span>: <span class="hljs-literal">true</span>,
+                                <span class="hljs-attr">content</span>: [
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>
+                                        },
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'bottom-left'</span>
+                                    },
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'popup'</span>,
+                                        <span class="hljs-attr">mix</span>: {
+                                            <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'popup'</span>
+                                        },
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">target</span>: <span class="hljs-string">'anchor'</span>,
+                                            <span class="hljs-attr">autoclosable</span>: <span class="hljs-literal">true</span>,
+                                            <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>
+                                        },
+                                        <span class="hljs-attr">directions</span>: [
+                                            <span class="hljs-string">'bottom-left'</span>
+                                        ],
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'the popup'</span>
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'cell'</span>,
+                            <span class="hljs-attr">elemMods</span>: {
+                                <span class="hljs-attr">align</span>: <span class="hljs-string">'center'</span>
+                            },
+                            <span class="hljs-attr">content</span>: {
+                                <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                <span class="hljs-attr">js</span>: <span class="hljs-literal">true</span>,
+                                <span class="hljs-attr">content</span>: [
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>
+                                        },
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'bottom-center'</span>
+                                    },
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'popup'</span>,
+                                        <span class="hljs-attr">mix</span>: {
+                                            <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'popup'</span>
+                                        },
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">target</span>: <span class="hljs-string">'anchor'</span>,
+                                            <span class="hljs-attr">autoclosable</span>: <span class="hljs-literal">true</span>,
+                                            <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>
+                                        },
+                                        <span class="hljs-attr">directions</span>: [
+                                            <span class="hljs-string">'bottom-center'</span>
+                                        ],
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'the popup'</span>
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'cell'</span>,
+                            <span class="hljs-attr">elemMods</span>: {
+                                <span class="hljs-attr">align</span>: <span class="hljs-string">'right'</span>
+                            },
+                            <span class="hljs-attr">content</span>: {
+                                <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                <span class="hljs-attr">js</span>: <span class="hljs-literal">true</span>,
+                                <span class="hljs-attr">content</span>: [
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>
+                                        },
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'bottom-right'</span>
+                                    },
+                                    {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'popup'</span>,
+                                        <span class="hljs-attr">mix</span>: {
+                                            <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'popup'</span>
+                                        },
+                                        <span class="hljs-attr">mods</span>: {
+                                            <span class="hljs-attr">target</span>: <span class="hljs-string">'anchor'</span>,
+                                            <span class="hljs-attr">autoclosable</span>: <span class="hljs-literal">true</span>,
+                                            <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>
+                                        },
+                                        <span class="hljs-attr">directions</span>: [
+                                            <span class="hljs-string">'bottom-right'</span>
+                                        ],
+                                        <span class="hljs-attr">content</span>: <span class="hljs-string">'the popup'</span>
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'cell'</span>
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+            <span class="hljs-attr">js</span>: <span class="hljs-literal">true</span>,
+            <span class="hljs-attr">content</span>: [
+                {
+                    <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                    <span class="hljs-attr">mods</span>: {
+                        <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>
+                    },
+                    <span class="hljs-attr">content</span>: <span class="hljs-string">'nested popups'</span>
+                },
+                {
+                    <span class="hljs-attr">block</span>: <span class="hljs-string">'popup'</span>,
+                    <span class="hljs-attr">mix</span>: {
+                        <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                        <span class="hljs-attr">elem</span>: <span class="hljs-string">'popup'</span>
+                    },
+                    <span class="hljs-attr">mods</span>: {
+                        <span class="hljs-attr">target</span>: <span class="hljs-string">'anchor'</span>,
+                        <span class="hljs-attr">autoclosable</span>: <span class="hljs-literal">true</span>,
+                        <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>
+                    },
+                    <span class="hljs-attr">content</span>: [
+                        <span class="hljs-string">'just popup '</span>,
+                        {
+                            <span class="hljs-attr">tag</span>: <span class="hljs-string">'button'</span>,
+                            <span class="hljs-attr">content</span>: <span class="hljs-string">'native button, should not hide popup'</span>
+                        },
+                        {
+                            <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                            <span class="hljs-attr">js</span>: <span class="hljs-literal">true</span>,
+                            <span class="hljs-attr">content</span>: [
+                                {
+                                    <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                                    <span class="hljs-attr">mods</span>: {
+                                        <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>
+                                    },
+                                    <span class="hljs-attr">content</span>: <span class="hljs-string">'open nested popup'</span>
+                                },
+                                {
+                                    <span class="hljs-attr">block</span>: <span class="hljs-string">'popup'</span>,
+                                    <span class="hljs-attr">mix</span>: {
+                                        <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                        <span class="hljs-attr">elem</span>: <span class="hljs-string">'popup'</span>
+                                    },
+                                    <span class="hljs-attr">mods</span>: {
+                                        <span class="hljs-attr">target</span>: <span class="hljs-string">'anchor'</span>,
+                                        <span class="hljs-attr">autoclosable</span>: <span class="hljs-literal">true</span>,
+                                        <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>
+                                    },
+                                    <span class="hljs-attr">content</span>: <span class="hljs-string">'the nested popup'</span>
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            <span class="hljs-attr">tag</span>: <span class="hljs-string">'br'</span>
+        },
+        {
+            <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+            <span class="hljs-attr">js</span>: <span class="hljs-literal">true</span>,
+            <span class="hljs-attr">content</span>: [
+                {
+                    <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                    <span class="hljs-attr">mods</span>: {
+                        <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>
+                    },
+                    <span class="hljs-attr">content</span>: <span class="hljs-string">'destructing popup'</span>
+                },
+                {
+                    <span class="hljs-attr">block</span>: <span class="hljs-string">'popup'</span>,
+                    <span class="hljs-attr">mix</span>: {
+                        <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                        <span class="hljs-attr">elem</span>: <span class="hljs-string">'popup'</span>
+                    },
+                    <span class="hljs-attr">mods</span>: {
+                        <span class="hljs-attr">target</span>: <span class="hljs-string">'anchor'</span>,
+                        <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>
+                    },
+                    <span class="hljs-attr">content</span>: {
+                        <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                        <span class="hljs-attr">mix</span>: {
+                            <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'destructor'</span>
+                        },
+                        <span class="hljs-attr">mods</span>: {
+                            <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>
+                        },
+                        <span class="hljs-attr">content</span>: <span class="hljs-string">'destruct parent of my anchor'</span>
+                    }
+                }
+            ]
+        },
+        {
+            <span class="hljs-attr">tag</span>: <span class="hljs-string">'br'</span>
+        },
+        {
+            <span class="hljs-attr">block</span>: <span class="hljs-string">'summon-test'</span>,
+            <span class="hljs-attr">js</span>: <span class="hljs-literal">true</span>,
+            <span class="hljs-attr">content</span>: [
+                {
+                    <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                    <span class="hljs-attr">js</span>: <span class="hljs-literal">true</span>,
+                    <span class="hljs-attr">content</span>: [
+                        {
+                            <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                            <span class="hljs-attr">mods</span>: {
+                                <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>
+                            },
+                            <span class="hljs-attr">content</span>: <span class="hljs-string">'open popup'</span>
+                        },
+                        <span class="hljs-string">' '</span>,
+                        {
+                            <span class="hljs-attr">block</span>: <span class="hljs-string">'popup'</span>,
+                            <span class="hljs-attr">mix</span>: {
+                                <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                <span class="hljs-attr">elem</span>: <span class="hljs-string">'popup'</span>
+                            },
+                            <span class="hljs-attr">mods</span>: {
+                                <span class="hljs-attr">target</span>: <span class="hljs-string">'anchor'</span>,
+                                <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>
+                            },
+                            <span class="hljs-attr">zIndexGroupLevel</span>: <span class="hljs-number">1</span>,
+                            <span class="hljs-attr">content</span>: {
+                                <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                                <span class="hljs-attr">mix</span>: {
+                                    <span class="hljs-attr">block</span>: <span class="hljs-string">'summon-test'</span>,
+                                    <span class="hljs-attr">elem</span>: <span class="hljs-string">'summoner'</span>
+                                },
+                                <span class="hljs-attr">mods</span>: {
+                                    <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>
+                                },
+                                <span class="hljs-attr">content</span>: <span class="hljs-string">'summon popup to me'</span>
+                            }
+                        }
+                    ]
+                },
+                {
+                    <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                    <span class="hljs-attr">js</span>: <span class="hljs-literal">true</span>,
+                    <span class="hljs-attr">content</span>: [
+                        {
+                            <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                            <span class="hljs-attr">mods</span>: {
+                                <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>
+                            },
+                            <span class="hljs-attr">content</span>: <span class="hljs-string">'open popup'</span>
+                        },
+                        <span class="hljs-string">' '</span>,
+                        {
+                            <span class="hljs-attr">block</span>: <span class="hljs-string">'popup'</span>,
+                            <span class="hljs-attr">mix</span>: {
+                                <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                                <span class="hljs-attr">elem</span>: <span class="hljs-string">'popup'</span>
+                            },
+                            <span class="hljs-attr">mods</span>: {
+                                <span class="hljs-attr">target</span>: <span class="hljs-string">'anchor'</span>,
+                                <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>
+                            },
+                            <span class="hljs-attr">zIndexGroupLevel</span>: <span class="hljs-number">2</span>,
+                            <span class="hljs-attr">content</span>: {
+                                <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                                <span class="hljs-attr">mix</span>: {
+                                    <span class="hljs-attr">block</span>: <span class="hljs-string">'summon-test'</span>,
+                                    <span class="hljs-attr">elem</span>: <span class="hljs-string">'summoner'</span>
+                                },
+                                <span class="hljs-attr">mods</span>: {
+                                    <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>
+                                },
+                                <span class="hljs-attr">content</span>: <span class="hljs-string">'summon popup to me'</span>
+                            }
+                        }
+                    ]
+                },
+                {
+                    <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                    <span class="hljs-attr">mix</span>: {
+                        <span class="hljs-attr">block</span>: <span class="hljs-string">'summon-test'</span>,
+                        <span class="hljs-attr">elem</span>: <span class="hljs-string">'summoner'</span>
+                    },
+                    <span class="hljs-attr">mods</span>: {
+                        <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>
+                    },
+                    <span class="hljs-attr">content</span>: <span class="hljs-string">'summon popup to me'</span>
+                },
+                {
+                    <span class="hljs-attr">block</span>: <span class="hljs-string">'popup'</span>,
+                    <span class="hljs-attr">mix</span>: {
+                        <span class="hljs-attr">block</span>: <span class="hljs-string">'summon-test'</span>,
+                        <span class="hljs-attr">elem</span>: <span class="hljs-string">'popup'</span>
+                    },
+                    <span class="hljs-attr">mods</span>: {
+                        <span class="hljs-attr">target</span>: <span class="hljs-string">'anchor'</span>,
+                        <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>
+                    },
+                    <span class="hljs-attr">content</span>: <span class="hljs-string">'summoned popup'</span>
+                }
+            ]
+        },
+        {
+            <span class="hljs-attr">block</span>: <span class="hljs-string">'scrollable'</span>,
+            <span class="hljs-attr">content</span>: {
+                <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                <span class="hljs-attr">js</span>: <span class="hljs-literal">true</span>,
+                <span class="hljs-attr">content</span>: [
+                    <span class="hljs-string">'scroll to center'</span>,
+                    {
+                        <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                        <span class="hljs-attr">mods</span>: {
+                            <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>
+                        },
+                        <span class="hljs-attr">content</span>: <span class="hljs-string">'open popup'</span>
+                    },
+                    {
+                        <span class="hljs-attr">block</span>: <span class="hljs-string">'popup'</span>,
+                        <span class="hljs-attr">mix</span>: {
+                            <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+                            <span class="hljs-attr">elem</span>: <span class="hljs-string">'popup'</span>
+                        },
+                        <span class="hljs-attr">mods</span>: {
+                            <span class="hljs-attr">target</span>: <span class="hljs-string">'anchor'</span>,
+                            <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>
+                        },
+                        <span class="hljs-attr">content</span>: <span class="hljs-string">'in scrollable'</span>
+                    }
+                ]
+            }
+        }
+    ]
+}

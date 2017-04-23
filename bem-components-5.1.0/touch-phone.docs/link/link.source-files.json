@@ -1,0 +1,172 @@
+[
+    {
+        "entity": {
+            "block": "link"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "common.blocks/link/link.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "link"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "bh.js",
+        "path": "common.blocks/link/link.bh.js"
+    },
+    {
+        "entity": {
+            "block": "link"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "css",
+        "path": "common.blocks/link/link.css"
+    },
+    {
+        "entity": {
+            "block": "link"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/link/link.deps.js"
+    },
+    {
+        "entity": {
+            "block": "link"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "en.md",
+        "path": "common.blocks/link/link.en.md"
+    },
+    {
+        "entity": {
+            "block": "link"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/link/link.js"
+    },
+    {
+        "entity": {
+            "block": "link"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "post.css",
+        "path": "common.blocks/link/link.post.css"
+    },
+    {
+        "entity": {
+            "block": "link"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/link/link.ru.md"
+    },
+    {
+        "entity": {
+            "block": "link"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/link/link.spec.js"
+    },
+    {
+        "entity": {
+            "block": "link"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "tests",
+        "path": "common.blocks/link/link.tests",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "link"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "tmpl-specs",
+        "path": "common.blocks/link/link.tmpl-specs",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "link",
+            "modName": "pseudo",
+            "modVal": true
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "common.blocks/link/_pseudo/link_pseudo.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "link",
+            "modName": "pseudo",
+            "modVal": true
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "bh.js",
+        "path": "common.blocks/link/_pseudo/link_pseudo.bh.js"
+    },
+    {
+        "entity": {
+            "block": "link",
+            "modName": "pseudo",
+            "modVal": true
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/link/_pseudo/link_pseudo.js"
+    },
+    {
+        "entity": {
+            "block": "link",
+            "modName": "pseudo",
+            "modVal": true
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/link/_pseudo/link_pseudo.spec.js"
+    },
+    {
+        "entity": {
+            "block": "link",
+            "modName": "theme",
+            "modVal": "islands"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/design/common.blocks",
+        "tech": "css",
+        "path": "design/common.blocks/link/_theme/link_theme_islands.css"
+    },
+    {
+        "entity": {
+            "block": "link",
+            "modName": "theme",
+            "modVal": "islands"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/design/common.blocks",
+        "tech": "post.css",
+        "path": "design/common.blocks/link/_theme/link_theme_islands.post.css"
+    },
+    {
+        "entity": {
+            "block": "link",
+            "modName": "theme",
+            "modVal": "simple"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/design/common.blocks",
+        "tech": "css",
+        "path": "design/common.blocks/link/_theme/link_theme_simple.css"
+    },
+    {
+        "entity": {
+            "block": "link",
+            "modName": "theme",
+            "modVal": "simple"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/design/common.blocks",
+        "tech": "post.css",
+        "path": "design/common.blocks/link/_theme/link_theme_simple.post.css"
+    }
+]

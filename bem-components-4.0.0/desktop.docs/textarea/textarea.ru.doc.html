@@ -1,0 +1,145 @@
+<h1 class="article__heading article__heading_1" id="textarea"><a href="#textarea" class="article__heading-anchor"></a>textarea</h1><p>Используется для создания текстовой области.</p>
+<h2 class="article__heading article__heading_2" id="Обзор-блока-19"><a href="#Обзор-блока-19" class="article__heading-anchor"></a>Обзор блока</h2><h3 class="article__heading article__heading_3" id="Модификаторы-блока-32"><a href="#Модификаторы-блока-32" class="article__heading-anchor"></a>Модификаторы блока</h3><table>
+<thead>
+<tr>
+<th>Модификатор</th>
+<th>Допустимые значения</th>
+<th>Способы использования</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#width">width</a></td>
+<td><code>&#39;available&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>Максимально допустимая ширина текстовой области.</td>
+</tr>
+<tr>
+<td><a href="#disabled">disabled</a></td>
+<td><code>true</code></td>
+<td><code>BEMJSON</code>, <code>JS</code></td>
+<td>Неактивное состояние.</td>
+</tr>
+<tr>
+<td><a href="#focused">focused</a></td>
+<td><code>true</code></td>
+<td><code>BEMJSON</code>, <code>JS</code></td>
+<td>Фокус на блоке.</td>
+</tr>
+<tr>
+<td><a href="#theme">theme</a></td>
+<td><code>&#39;islands&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>Стилевое оформление.</td>
+</tr>
+<tr>
+<td><a href="#size">size</a></td>
+<td><code>&#39;s&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>, <code>&#39;xl&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>Размер текстовой области. Используется только для текстовых областей с модификатором <a href="#theme">theme в значении islands</a>.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="Специализированные-поля-блока-34"><a href="#Специализированные-поля-блока-34" class="article__heading-anchor"></a>Специализированные поля блока</h3><table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>Тип</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#name">name</a></td>
+<td><code>String</code></td>
+<td>Имя текстовой области.</td>
+</tr>
+<tr>
+<td><a href="#val">val</a></td>
+<td><code>String</code>, <code>Number</code></td>
+<td>Содержимое текстовой области.</td>
+</tr>
+<tr>
+<td><a href="#placeholder">placeholder</a></td>
+<td><code>String</code></td>
+<td>Подсказка в текстовой области.</td>
+</tr>
+<tr>
+<td><a href="#id">id</a></td>
+<td><code>String</code></td>
+<td>Уникальный идентификатор текстовой области.</td>
+</tr>
+<tr>
+<td><a href="#tab">tabIndex</a></td>
+<td><code>Number</code></td>
+<td>Последовательность перехода между контролами при нажатии на <code>Tab</code>.</td>
+</tr>
+</tbody>
+</table>
+<h2 class="article__heading article__heading_2" id="Описание-блока-17"><a href="#Описание-блока-17" class="article__heading-anchor"></a>Описание блока</h2><p>Блок <code>textarea</code> используется для создания области, в которую можно вводить несколько строк текста.</p>
+<h3 class="article__heading article__heading_3" id="Модификаторы-блока-33"><a href="#Модификаторы-блока-33" class="article__heading-anchor"></a>Модификаторы блока</h3><p><a name="width"></a></p>
+<h4 class="article__heading article__heading_4" id="Модификатор-codewidthcode-2"><a href="#Модификатор-codewidthcode-2" class="article__heading-anchor"></a>Модификатор <code>width</code></h4><p>Допустимое значение: <code>&#39;available&#39;</code>.</p>
+<p>Способы использования: <code>BEMJSON</code>.</p>
+<p>Позволяет растягивать текстовую область на максимально допустимую ширину.</p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/desktop.examples/textarea/kPC23SoWIGFis6Go0lHENIa1Xkg -->
+<p><a name="disabled"></a></p>
+<h4 class="article__heading article__heading_4" id="Модификатор-codedisabledcode-12"><a href="#Модификатор-codedisabledcode-12" class="article__heading-anchor"></a>Модификатор <code>disabled</code></h4><p>Допустимое значение: <code>true</code>.</p>
+<p>Способы использования: <code>BEMJSON</code>, <code>JS</code>.</p>
+<p>Отвечает за неактивное состояние, при котором блок виден, но недоступен для действий пользователя.</p>
+<pre><code class="lang-js"> {
+     <span class="hljs-attr">block</span> : <span class="hljs-string">'textarea'</span>,
+    <span class="hljs-attr">mods</span> : { <span class="hljs-attr">theme</span> : <span class="hljs-string">'islands'</span>, <span class="hljs-attr">size</span> : <span class="hljs-string">'m'</span>, <span class="hljs-attr">disabled</span> : <span class="hljs-literal">true</span> },
+    <span class="hljs-attr">placeholder</span> : <span class="hljs-string">'Ваш текст должен быть здесь'</span>
+ }
+</code></pre>
+<p><a name="focused"></a></p>
+<h4 class="article__heading article__heading_4" id="Модификатор-codefocusedcode-10"><a href="#Модификатор-codefocusedcode-10" class="article__heading-anchor"></a>Модификатор <code>focused</code></h4><p>Допустимое значение:<code>true</code>.</p>
+<p>Способы использования: <code>BEMJSON</code>, <code>JS</code>.</p>
+<p>Выставляется автоматически при получении блоком фокуса.</p>
+<p>Отвечает за наличие фокуса на блоке.</p>
+<pre><code class="lang-javascript">{
+    <span class="hljs-attr">block</span> : <span class="hljs-string">'textarea'</span>,
+    <span class="hljs-attr">mods</span> : { <span class="hljs-attr">theme</span> : <span class="hljs-string">'islands'</span>, <span class="hljs-attr">size</span> : <span class="hljs-string">'m'</span>, <span class="hljs-attr">focused</span> : <span class="hljs-literal">true</span> },
+    <span class="hljs-attr">placeholder</span> : <span class="hljs-string">'Ваш текст должен быть здесь'</span>
+}
+</code></pre>
+<p>Способ установки фокуса на блок определяет выбор модификатора: <code>focused</code> или <code>focused-hard</code>. <a href="../../README.ru.md#Модификатор-focused">Читать подробности</a>.</p>
+<p><a name="theme"></a></p>
+<h4 class="article__heading article__heading_4" id="Модификатор-codethemecode-15"><a href="#Модификатор-codethemecode-15" class="article__heading-anchor"></a>Модификатор <code>theme</code></h4><p>Допустимое значение:<code>&#39;islands&#39;</code>.</p>
+<p>Способы использования: <code>BEMJSON</code>.</p>
+<p>Отвечает за стилевое оформление блока.</p>
+<p>Необходимо использовать с модификатором <a href="#size">size</a>.</p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/desktop.examples/textarea/gQUzfZadYI-avE4Vzr-uToFYrbs -->
+<p><a name="size"></a></p>
+<h4 class="article__heading article__heading_4" id="Модификатор-codesizecode-12"><a href="#Модификатор-codesizecode-12" class="article__heading-anchor"></a>Модификатор <code>size</code></h4><p>Допустимые значения для темы <code>islands</code>: <code>&#39;s&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>, <code>&#39;xl&#39;</code>.</p>
+<p>Способы использования: <code>BEMJSON</code>.</p>
+<p>Необходимо использовать с модификатором <a href="#theme">theme</a> в значении <code>islands</code>.</p>
+<p><strong>s</strong></p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/desktop.examples/textarea/VHOVR6wWvk9ZRrud4G3hxb2iuko -->
+<p><strong>m</strong></p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/desktop.examples/textarea/abt6eE5XlJG6GVyfgi_9z6UMR1M -->
+<p><strong>l</strong></p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/desktop.examples/textarea/RfXkyVzXiR9nuhuv2j7BOLDfjiw -->
+<p><strong>xl</strong></p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/desktop.examples/textarea/UmEKBEhn6sN7ocNHhsKm7m9vouo -->
+<h3 class="article__heading article__heading_3" id="Специализированные-поля-блока-35"><a href="#Специализированные-поля-блока-35" class="article__heading-anchor"></a>Специализированные поля блока</h3><p><a name="name"></a></p>
+<h4 class="article__heading article__heading_4" id="Поле-codenamecode-8"><a href="#Поле-codenamecode-8" class="article__heading-anchor"></a>Поле <code>name</code></h4><p>Тип: <code>String</code>.</p>
+<p>Определяет уникальное имя блока.</p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/desktop.examples/textarea/DX7C_6dvTzn-kr5-glP60cZ-jT8 -->
+<p><a name="val"></a></p>
+<h4 class="article__heading article__heading_4" id="Поле-codevalcode-10"><a href="#Поле-codevalcode-10" class="article__heading-anchor"></a>Поле <code>val</code></h4><p>Тип: <code>String</code>.</p>
+<p>Определяет содержимое текстовой области.</p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/desktop.examples/textarea/heIIfKObBEEyDCIpYdOAl6Yt89A -->
+<p><a name="placeholder"></a></p>
+<h4 class="article__heading article__heading_4" id="Поле-codeplaceholdercode-1"><a href="#Поле-codeplaceholdercode-1" class="article__heading-anchor"></a>Поле <code>placeholder</code></h4><p>Тип: <code>String</code>.</p>
+<p>Определяет текст подсказки.</p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/desktop.examples/textarea/nEdfAEJvJ7EVPPg3hFGQlWRS4Mc -->
+<p><a name="id"></a></p>
+<h4 class="article__heading article__heading_4" id="Поле-codeidcode-3"><a href="#Поле-codeidcode-3" class="article__heading-anchor"></a>Поле <code>id</code></h4><p>Тип: <code>String</code>.</p>
+<p>Определяет уникальный идентификатор текстовой области.</p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/desktop.examples/textarea/4RBrQpbpas4AuvLb67RT2a7Tkes -->
+<p><a name="tab"></a></p>
+<h4 class="article__heading article__heading_4" id="Поле-codetabindexcode-5"><a href="#Поле-codetabindexcode-5" class="article__heading-anchor"></a>Поле <code>tabIndex</code></h4><p>Тип: <code>Number</code>.</p>
+<p>Определяет последовательность перехода между контролами при нажатии на <code>Tab</code>.</p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/desktop.examples/textarea/BLl4xa5t6ZoGAHeup6t9I2ddgo4 -->

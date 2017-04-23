@@ -1,0 +1,196 @@
+[
+    {
+        "entity": {
+            "block": "dropdown"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "common.blocks/dropdown/dropdown.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "dropdown"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "bh.js",
+        "path": "common.blocks/dropdown/dropdown.bh.js"
+    },
+    {
+        "entity": {
+            "block": "dropdown"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/dropdown/dropdown.deps.js"
+    },
+    {
+        "entity": {
+            "block": "dropdown"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "en.md",
+        "path": "common.blocks/dropdown/dropdown.en.md"
+    },
+    {
+        "entity": {
+            "block": "dropdown"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/dropdown/dropdown.js"
+    },
+    {
+        "entity": {
+            "block": "dropdown"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/dropdown/dropdown.ru.md"
+    },
+    {
+        "entity": {
+            "block": "dropdown"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/dropdown/dropdown.spec.js"
+    },
+    {
+        "entity": {
+            "block": "dropdown"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "tests",
+        "path": "common.blocks/dropdown/dropdown.tests",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "dropdown"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "tmpl-specs",
+        "path": "common.blocks/dropdown/dropdown.tmpl-specs",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "dropdown",
+            "modName": "switcher",
+            "modVal": "button"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "common.blocks/dropdown/_switcher/dropdown_switcher_button.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "dropdown",
+            "modName": "switcher",
+            "modVal": "button"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "bh.js",
+        "path": "common.blocks/dropdown/_switcher/dropdown_switcher_button.bh.js"
+    },
+    {
+        "entity": {
+            "block": "dropdown",
+            "modName": "switcher",
+            "modVal": "button"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/dropdown/_switcher/dropdown_switcher_button.deps.js"
+    },
+    {
+        "entity": {
+            "block": "dropdown",
+            "modName": "switcher",
+            "modVal": "button"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/dropdown/_switcher/dropdown_switcher_button.js"
+    },
+    {
+        "entity": {
+            "block": "dropdown",
+            "modName": "switcher",
+            "modVal": "button"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/dropdown/_switcher/dropdown_switcher_button.spec.js"
+    },
+    {
+        "entity": {
+            "block": "dropdown",
+            "modName": "switcher",
+            "modVal": "link"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "common.blocks/dropdown/_switcher/dropdown_switcher_link.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "dropdown",
+            "modName": "switcher",
+            "modVal": "link"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "bh.js",
+        "path": "common.blocks/dropdown/_switcher/dropdown_switcher_link.bh.js"
+    },
+    {
+        "entity": {
+            "block": "dropdown",
+            "modName": "switcher",
+            "modVal": "link"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/dropdown/_switcher/dropdown_switcher_link.deps.js"
+    },
+    {
+        "entity": {
+            "block": "dropdown",
+            "modName": "switcher",
+            "modVal": "link"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/dropdown/_switcher/dropdown_switcher_link.js"
+    },
+    {
+        "entity": {
+            "block": "dropdown",
+            "modName": "switcher",
+            "modVal": "link"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/dropdown/_switcher/dropdown_switcher_link.spec.js"
+    },
+    {
+        "entity": {
+            "block": "dropdown",
+            "modName": "theme",
+            "modVal": "islands"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/design/common.blocks",
+        "tech": "deps.js",
+        "path": "design/common.blocks/dropdown/_theme/dropdown_theme_islands.deps.js"
+    },
+    {
+        "entity": {
+            "block": "dropdown",
+            "modName": "theme",
+            "modVal": "simple"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/design/common.blocks",
+        "tech": "deps.js",
+        "path": "design/common.blocks/dropdown/_theme/dropdown_theme_simple.deps.js"
+    }
+]

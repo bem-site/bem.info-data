@@ -1,0 +1,187 @@
+<h1 class="article__heading article__heading_1" id="popup-4"><a href="#popup-4" class="article__heading-anchor"></a>popup</h1><p>Используется для создания блоков, открывающихся поверх остальных слоев страницы.</p>
+<h2 class="article__heading article__heading_2" id="Обзор-блока-53"><a href="#Обзор-блока-53" class="article__heading-anchor"></a>Обзор блока</h2><h3 class="article__heading article__heading_3" id="Модификаторы-блока-90"><a href="#Модификаторы-блока-90" class="article__heading-anchor"></a>Модификаторы блока</h3><table>
+<thead>
+<tr>
+<th>Модификатор</th>
+<th>Допустимые значения</th>
+<th>Способы использования</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#target">target</a></td>
+<td><code>&#39;anchor&#39;</code>, <code>&#39;position&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>Точка открытия всплывающего окна.</td>
+</tr>
+<tr>
+<td><a href="#visible">visible</a></td>
+<td><code>true</code></td>
+<td><code>JS</code></td>
+<td>Видимость всплывающего окна.</td>
+</tr>
+<tr>
+<td><a href="#autoclosable">autoclosable</a></td>
+<td><code>true</code></td>
+<td><code>BEMJSON</code></td>
+<td>Автоматическое скрытие всплывающего окна.</td>
+</tr>
+<tr>
+<td><a href="#theme">theme</a></td>
+<td><code>&#39;islands&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>Стилевое оформление.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="Специализированные-поля-блока-94"><a href="#Специализированные-поля-блока-94" class="article__heading-anchor"></a>Специализированные поля блока</h3><table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>Тип</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#directions">directions</a></td>
+<td><code>Array</code></td>
+<td>Расположение (в порядке приоритета) относительно точки открытия. Используется только для всплывающих окон с модификатором <a href="#popuptarget">target</a>.</td>
+</tr>
+<tr>
+<td><a href="#mainOffset">mainOffset</a></td>
+<td><code>Number</code></td>
+<td>Смещение в пикселях всплывающего окна относительно основного направления. Используется только с модификатором <a href="#popuptarget">target</a>.</td>
+</tr>
+<tr>
+<td><a href="#secondaryOffset">secondaryOffset</a></td>
+<td><code>Number</code></td>
+<td>Смещение в пикселях всплывающего окна относительно второстепенного направления. Используется только с модификатором <a href="#popuptarget">target</a>.</td>
+</tr>
+<tr>
+<td><a href="#viewportOffset">viewportOffset</a></td>
+<td><code>Number</code></td>
+<td>Минимально допустимое смещение в пикселях всплывающего окна от края окна браузера. Используется только с модификатором <a href="#popuptarget">target</a>.</td>
+</tr>
+<tr>
+<td><a href="#zIndexGroupLevel">zIndexGroupLevel</a></td>
+<td><code>Number</code></td>
+<td>Уровень слоя для открывающихся всплывающих окон. Использует блок <a href="../z-index-group/z-index-group.ru.md">z-index-group</a>.</td>
+</tr>
+</tbody>
+</table>
+<h2 class="article__heading article__heading_2" id="Описание-блока-49"><a href="#Описание-блока-49" class="article__heading-anchor"></a>Описание блока</h2><p>Блок <code>popup</code> используется для создания всплывающих окон поверх остальных слоев страницы. Позволяет изменять их состояние, поведение и внешний вид.</p>
+<h3 class="article__heading article__heading_3" id="Модификаторы-блока-91"><a href="#Модификаторы-блока-91" class="article__heading-anchor"></a>Модификаторы блока</h3><p><a name="target"></a></p>
+<h4 class="article__heading article__heading_4" id="Модификатор-codetargetcode-2"><a href="#Модификатор-codetargetcode-2" class="article__heading-anchor"></a>Модификатор <code>target</code></h4><p>Допустимые значения: <code>&#39;anchor&#39;</code>, <code>&#39;position&#39;</code>.</p>
+<p>Способ использования: <code>BEMJSON</code>.</p>
+<p>Модификатор <code>target</code> определяет точку открытия всплывающего окна.</p>
+<p><a name="target-anchor"></a></p>
+<h5 class="article__heading article__heading_5" id="Якорь-модификатор-codetargetcode-в-значении-codeanchorcode-2"><a href="#Якорь-модификатор-codetargetcode-в-значении-codeanchorcode-2" class="article__heading-anchor"></a>Якорь (модификатор <code>target</code> в значении <code>anchor</code>)</h5><p>Позволяет использовать в качестве точки открытия всплывающего окна блок или элемент.</p>
+<p>Поддерживается многоуровневая вложенность всплывающих окон (из каждого открытого блока <code>popup</code> может быть вызван другой). Одновременно с закрытием всплывающего окна закрываются все его дочерние окна.</p>
+<p>Необходимо использовать метод <a href="https://ru.bem.info/libs/bem-components/v2/desktop/popup/jsdoc/">setAnchor</a>.</p>
+<h5 class="article__heading article__heading_5" id="Координаты-модификатор-codetargetcode-в-значении-codepositioncode-2"><a href="#Координаты-модификатор-codetargetcode-в-значении-codepositioncode-2" class="article__heading-anchor"></a>Координаты (модификатор <code>target</code> в значении <code>position</code>)</h5><p>Позволяет задавать точку открытия всплывающего окна координатами.</p>
+<p>Необходимо использовать метод <a href="https://ru.bem.info/libs/bem-components/v2/desktop/popup/jsdoc/">setPosition</a>.</p>
+<p><a name="visible"></a></p>
+<h4 class="article__heading article__heading_4" id="Модификатор-codevisiblecode-7"><a href="#Модификатор-codevisiblecode-7" class="article__heading-anchor"></a>Модификатор <code>visible</code></h4><p>Допустимое значение: <code>true</code>.</p>
+<p>Способы использования: <code>JS</code>.</p>
+<p>Выставляется при открытии всплывающего окна.</p>
+<p>Отвечает за видимость всплывающего окна на странице.</p>
+<p><a name="autoclosable"></a></p>
+<h4 class="article__heading article__heading_4" id="Модификатор-codeautoclosablecode-5"><a href="#Модификатор-codeautoclosablecode-5" class="article__heading-anchor"></a>Модификатор <code>autoclosable</code></h4><p>Допустимое значение: <code>true</code>.</p>
+<p>Способ использования: <code>BEMJSON</code>.</p>
+<p>При наличии модификатора <code>autoclosable</code> блок скрывается по клику вне зоны всплывающего окна или по нажатию кнопки <code>Escape</code>.</p>
+<pre><code class="lang-javascript">{
+    <span class="hljs-attr">block</span> : <span class="hljs-string">'popup'</span>,
+    <span class="hljs-attr">mods</span> : { <span class="hljs-attr">theme</span> : <span class="hljs-string">'islands'</span>, <span class="hljs-attr">autoclosable</span> : <span class="hljs-literal">true</span> },
+    <span class="hljs-attr">content</span> : <span class="hljs-string">'Содержимое всплывающего окна'</span>
+}
+</code></pre>
+<p><a name="theme"></a></p>
+<h4 class="article__heading article__heading_4" id="Модификатор-codethemecode-40"><a href="#Модификатор-codethemecode-40" class="article__heading-anchor"></a>Модификатор <code>theme</code></h4><p>Допустимое значение: <code>&#39;islands&#39;</code>.</p>
+<p>Способ использования: <code>BEMJSON</code>.</p>
+<p>Отвечает за стилевое оформление блока.</p>
+<pre><code class="lang-javascript">{
+    <span class="hljs-attr">block</span> : <span class="hljs-string">'popup'</span>,
+    <span class="hljs-attr">mods</span> : { <span class="hljs-attr">theme</span> : <span class="hljs-string">'islands'</span> },
+    <span class="hljs-attr">content</span> : <span class="hljs-string">'Содержимое всплывающего окна'</span>
+}
+</code></pre>
+<h3 class="article__heading article__heading_3" id="Специализированные-поля-блока-95"><a href="#Специализированные-поля-блока-95" class="article__heading-anchor"></a>Специализированные поля блока</h3><p><a name="directions"></a></p>
+<h4 class="article__heading article__heading_4" id="Поле-codedirectionscode-2"><a href="#Поле-codedirectionscode-2" class="article__heading-anchor"></a>Поле <code>directions</code></h4><p>Тип: <code>Array</code>.</p>
+<p>Определяет расположение всплывающего окна относительно точки открытия.</p>
+<p>Используется только для всплывающих окон с модификатором <a href=#target>target</a>.</p>
+<p><a name="directions-type"></a>
+Расположение блока определяется автоматически, исходя из массива допустимых направлений (в порядке приоритета) и положения точки открытия на странице. У всех допустимых направлений есть основной и второстепенный параметры. Например, для направления <code>bottom-left</code> параметр <code>bottom</code> является основным, а <code>left</code> — второстепенным.</p>
+<p>По умолчанию используется следующий массив допустимых направлений:</p>
+<ul>
+<li>bottom-left</li>
+<li>bottom-center</li>
+<li>bottom-right</li>
+<li>top-left</li>
+<li>top-center</li>
+<li>top-right</li>
+<li>right-top</li>
+<li>right-center</li>
+<li>right-bottom</li>
+<li>left-top</li>
+<li>left-center</li>
+<li>left-bottom</li>
+</ul>
+<p>Для управления расположением всплывающего окна необходимо указать массив направлений открытия. При этом из значений массива будет выбрано наиболее подходящее, исходя из положения точки открытия на странице.</p>
+<p>Например, если требуется, чтобы всплывающее окно раскрывалось над точкой открытия:</p>
+<pre><code class="lang-javascript">{
+    <span class="hljs-attr">block</span> : <span class="hljs-string">'popup'</span>,
+    <span class="hljs-attr">mods</span> : { <span class="hljs-attr">autoclosable</span> : <span class="hljs-literal">true</span>, <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>, <span class="hljs-attr">target</span> : <span class="hljs-string">'anchor'</span> },
+    <span class="hljs-attr">directions</span> : [<span class="hljs-string">'top-left'</span>, <span class="hljs-string">'top-center'</span>, <span class="hljs-string">'top-right'</span>],
+    <span class="hljs-attr">content</span> : <span class="hljs-string">'Содержимое всплывающего окна'</span>
+}
+</code></pre>
+<p>Если необходимо разместить всплывающее окно справа по центру:</p>
+<pre><code class="lang-javascript">{
+    <span class="hljs-attr">block</span> : <span class="hljs-string">'popup'</span>,
+    <span class="hljs-attr">mods</span> : { <span class="hljs-attr">autoclosable</span> : <span class="hljs-literal">true</span>, <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>, <span class="hljs-attr">target</span> : <span class="hljs-string">'anchor'</span> },
+    <span class="hljs-attr">directions</span> : [<span class="hljs-string">'right-center'</span>],
+    <span class="hljs-attr">content</span> : <span class="hljs-string">'Содержимое всплывающего окна'</span>
+}
+</code></pre>
+<p><a name="mainOffset"></a></p>
+<h4 class="article__heading article__heading_4" id="Поле-codemainoffsetcode-2"><a href="#Поле-codemainoffsetcode-2" class="article__heading-anchor"></a>Поле <code>mainOffset</code></h4><p>Тип: <code>Number</code>.</p>
+<p>Определяет смещение в пикселях всплывающего окна относительно <a href="#directions-type">основного</a> направления.</p>
+<p>Используется только с модификатором <a href="#target">target</a>.</p>
+<pre><code class="lang-javascript">{
+    <span class="hljs-attr">block</span> : <span class="hljs-string">'popup'</span>,
+    <span class="hljs-attr">mods</span> : { <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>, <span class="hljs-attr">target</span> : <span class="hljs-string">'anchor'</span> },
+    <span class="hljs-attr">directions</span> : [<span class="hljs-string">'right-center'</span>],
+    <span class="hljs-attr">content</span> : <span class="hljs-string">'Содержимое всплывающего окна'</span>,
+    <span class="hljs-attr">mainOffset</span> : <span class="hljs-number">100</span>
+}
+</code></pre>
+<p><a name="secondaryOffset"></a></p>
+<h4 class="article__heading article__heading_4" id="Поле-codesecondaryoffsetcode-2"><a href="#Поле-codesecondaryoffsetcode-2" class="article__heading-anchor"></a>Поле <code>secondaryOffset</code></h4><p>Тип: <code>Number</code>.</p>
+<p>Определяет смещение в пикселях всплывающего окна относительно <a href="#directions-type">второстепенного</a> направления.</p>
+<p>Используется только с модификатором <a href="#target">target</a>.</p>
+<pre><code class="lang-javascript">{
+    <span class="hljs-attr">block</span> : <span class="hljs-string">'popup'</span>,
+    <span class="hljs-attr">mods</span> : { <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>, <span class="hljs-attr">target</span> : <span class="hljs-string">'anchor'</span> },
+    <span class="hljs-attr">directions</span> : [<span class="hljs-string">'right-center'</span>],
+    <span class="hljs-attr">content</span> : <span class="hljs-string">'Содержимое всплывающего окна'</span>,
+    <span class="hljs-attr">secondaryOffset</span> : <span class="hljs-number">100</span>
+}
+</code></pre>
+<p><a name="viewportOffset"></a></p>
+<h4 class="article__heading article__heading_4" id="Поле-codeviewportoffsetcode-2"><a href="#Поле-codeviewportoffsetcode-2" class="article__heading-anchor"></a>Поле <code>viewportOffset</code></h4><p>Тип: <code>Number</code>.</p>
+<p>Определяет минимально допустимое смещение в пикселях всплывающего окна от края окна браузера.</p>
+<p>Используется только с модификатором <a href="#target">target</a>.</p>
+<pre><code class="lang-javascript">{
+    <span class="hljs-attr">block</span> : <span class="hljs-string">'popup'</span>,
+    <span class="hljs-attr">mods</span> : { <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>, <span class="hljs-attr">target</span> : <span class="hljs-string">'anchor'</span> },
+    <span class="hljs-attr">directions</span> : [<span class="hljs-string">'right-center'</span>],
+    <span class="hljs-attr">content</span> : <span class="hljs-string">'Содержимое всплывающего окна'</span>,
+    <span class="hljs-attr">viewportOffset</span> : <span class="hljs-number">100</span>
+}
+</code></pre>
+<p><a name="zIndexGroupLevel"></a></p>
+<h4 class="article__heading article__heading_4" id="Поле-codezindexgrouplevelcode-5"><a href="#Поле-codezindexgrouplevelcode-5" class="article__heading-anchor"></a>Поле <code>zIndexGroupLevel</code></h4><p>Тип: <code>Number</code>.</p>
+<p>Определяет уровень слоя для каждого всплывающего окна.</p>
+<p>Использует блок <a href="../z-index-group/z-index-group.ru.md">z-index-group</a>.</p>

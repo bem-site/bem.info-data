@@ -1,0 +1,201 @@
+[
+    {
+        "entity": {
+            "block": "modal"
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "common.blocks/modal/modal.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "modal"
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks",
+        "tech": "bh.js",
+        "path": "common.blocks/modal/modal.bh.js"
+    },
+    {
+        "entity": {
+            "block": "modal"
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks",
+        "tech": "css",
+        "path": "common.blocks/modal/modal.css"
+    },
+    {
+        "entity": {
+            "block": "modal"
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/modal/modal.deps.js"
+    },
+    {
+        "entity": {
+            "block": "modal"
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks",
+        "tech": "en.md",
+        "path": "common.blocks/modal/modal.en.md"
+    },
+    {
+        "entity": {
+            "block": "modal"
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks",
+        "tech": "examples",
+        "path": "common.blocks/modal/modal.examples",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "modal"
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/modal/modal.js"
+    },
+    {
+        "entity": {
+            "block": "modal"
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks",
+        "tech": "post.css",
+        "path": "common.blocks/modal/modal.post.css"
+    },
+    {
+        "entity": {
+            "block": "modal"
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/modal/modal.ru.md"
+    },
+    {
+        "entity": {
+            "block": "modal"
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/modal/modal.spec.js"
+    },
+    {
+        "entity": {
+            "block": "modal"
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks",
+        "tech": "tests",
+        "path": "common.blocks/modal/modal.tests",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "modal"
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks",
+        "tech": "tmpl-specs",
+        "path": "common.blocks/modal/modal.tmpl-specs",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "modal",
+            "modName": "autoclosable",
+            "modVal": true
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/modal/_autoclosable/modal_autoclosable.deps.js"
+    },
+    {
+        "entity": {
+            "block": "modal",
+            "modName": "autoclosable",
+            "modVal": true
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/modal/_autoclosable/modal_autoclosable.js"
+    },
+    {
+        "entity": {
+            "block": "modal",
+            "modName": "autoclosable",
+            "modVal": true
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/modal/_autoclosable/modal_autoclosable.spec.js"
+    },
+    {
+        "entity": {
+            "block": "modal",
+            "modName": "theme",
+            "modVal": "islands"
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/design/common.blocks",
+        "tech": "css",
+        "path": "design/common.blocks/modal/_theme/modal_theme_islands.css"
+    },
+    {
+        "entity": {
+            "block": "modal",
+            "modName": "theme",
+            "modVal": "islands"
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/design/common.blocks",
+        "tech": "js",
+        "path": "design/common.blocks/modal/_theme/modal_theme_islands.js"
+    },
+    {
+        "entity": {
+            "block": "modal",
+            "modName": "theme",
+            "modVal": "islands"
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/design/common.blocks",
+        "tech": "post.css",
+        "path": "design/common.blocks/modal/_theme/modal_theme_islands.post.css"
+    },
+    {
+        "entity": {
+            "block": "modal",
+            "modName": "theme",
+            "modVal": "simple"
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/design/common.blocks",
+        "tech": "css",
+        "path": "design/common.blocks/modal/_theme/modal_theme_simple.css"
+    },
+    {
+        "entity": {
+            "block": "modal",
+            "modName": "theme",
+            "modVal": "simple"
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/design/common.blocks",
+        "tech": "post.css",
+        "path": "design/common.blocks/modal/_theme/modal_theme_simple.post.css"
+    },
+    {
+        "entity": {
+            "block": "modal",
+            "modName": "theme",
+            "modVal": "islands"
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/design/desktop.blocks",
+        "tech": "ie.css",
+        "path": "design/desktop.blocks/modal/_theme/modal_theme_islands.ie.css"
+    },
+    {
+        "entity": {
+            "block": "modal",
+            "modName": "theme",
+            "modVal": "islands"
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/design/desktop.blocks",
+        "tech": "ie.post.css",
+        "path": "design/desktop.blocks/modal/_theme/modal_theme_islands.ie.post.css"
+    }
+]

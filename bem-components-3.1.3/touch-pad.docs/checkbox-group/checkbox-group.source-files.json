@@ -1,0 +1,146 @@
+[
+    {
+        "entity": {
+            "block": "checkbox-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "common.blocks/checkbox-group/checkbox-group.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "checkbox-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "bh.js",
+        "path": "common.blocks/checkbox-group/checkbox-group.bh.js"
+    },
+    {
+        "entity": {
+            "block": "checkbox-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/checkbox-group/checkbox-group.deps.js"
+    },
+    {
+        "entity": {
+            "block": "checkbox-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "en.md",
+        "path": "common.blocks/checkbox-group/checkbox-group.en.md"
+    },
+    {
+        "entity": {
+            "block": "checkbox-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/checkbox-group/checkbox-group.js"
+    },
+    {
+        "entity": {
+            "block": "checkbox-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/checkbox-group/checkbox-group.ru.md"
+    },
+    {
+        "entity": {
+            "block": "checkbox-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/checkbox-group/checkbox-group.spec.js"
+    },
+    {
+        "entity": {
+            "block": "checkbox-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "tests",
+        "path": "common.blocks/checkbox-group/checkbox-group.tests",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "checkbox-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "tmpl-specs",
+        "path": "common.blocks/checkbox-group/checkbox-group.tmpl-specs",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "checkbox-group",
+            "modName": "type",
+            "modVal": "button"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/checkbox-group/_type/checkbox-group_type_button.deps.js"
+    },
+    {
+        "entity": {
+            "block": "checkbox-group",
+            "modName": "theme",
+            "modVal": "islands"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/design/common.blocks",
+        "tech": "css",
+        "path": "design/common.blocks/checkbox-group/_theme/checkbox-group_theme_islands.css"
+    },
+    {
+        "entity": {
+            "block": "checkbox-group",
+            "modName": "theme",
+            "modVal": "islands"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/design/common.blocks",
+        "tech": "deps.js",
+        "path": "design/common.blocks/checkbox-group/_theme/checkbox-group_theme_islands.deps.js"
+    },
+    {
+        "entity": {
+            "block": "checkbox-group",
+            "modName": "theme",
+            "modVal": "islands"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/design/common.blocks",
+        "tech": "styl",
+        "path": "design/common.blocks/checkbox-group/_theme/checkbox-group_theme_islands.styl"
+    },
+    {
+        "entity": {
+            "block": "checkbox-group",
+            "modName": "theme",
+            "modVal": "simple"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/design/common.blocks",
+        "tech": "css",
+        "path": "design/common.blocks/checkbox-group/_theme/checkbox-group_theme_simple.css"
+    },
+    {
+        "entity": {
+            "block": "checkbox-group",
+            "modName": "theme",
+            "modVal": "simple"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/design/common.blocks",
+        "tech": "deps.js",
+        "path": "design/common.blocks/checkbox-group/_theme/checkbox-group_theme_simple.deps.js"
+    },
+    {
+        "entity": {
+            "block": "checkbox-group",
+            "modName": "theme",
+            "modVal": "simple"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/design/common.blocks",
+        "tech": "styl",
+        "path": "design/common.blocks/checkbox-group/_theme/checkbox-group_theme_simple.styl"
+    }
+]

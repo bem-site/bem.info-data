@@ -1,0 +1,54 @@
+{
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'page'</span>,
+    <span class="hljs-attr">title</span>: <span class="hljs-string">'10-modal.js'</span>,
+    <span class="hljs-attr">head</span>: [
+        {
+            <span class="hljs-attr">elem</span>: <span class="hljs-string">'conditional-comment'</span>,
+            <span class="hljs-attr">condition</span>: <span class="hljs-string">'&gt; IE 8'</span>,
+            <span class="hljs-attr">msieOnly</span>: <span class="hljs-literal">false</span>,
+            <span class="hljs-attr">content</span>: {
+                <span class="hljs-attr">elem</span>: <span class="hljs-string">'css'</span>,
+                <span class="hljs-attr">url</span>: <span class="hljs-string">'10-modal.css'</span>
+            }
+        },
+        {
+            <span class="hljs-attr">elem</span>: <span class="hljs-string">'conditional-comment'</span>,
+            <span class="hljs-attr">condition</span>: <span class="hljs-string">'&lt;= IE 8'</span>,
+            <span class="hljs-attr">content</span>: {
+                <span class="hljs-attr">elem</span>: <span class="hljs-string">'css'</span>,
+                <span class="hljs-attr">url</span>: <span class="hljs-string">'10-modal.ie.css'</span>
+            }
+        }
+    ],
+    <span class="hljs-attr">scripts</span>: [
+        {
+            <span class="hljs-attr">elem</span>: <span class="hljs-string">'js'</span>,
+            <span class="hljs-attr">url</span>: <span class="hljs-string">'10-modal.js'</span>
+        }
+    ],
+    <span class="hljs-attr">mods</span>: {
+        <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>
+    },
+    <span class="hljs-attr">content</span>: {
+        <span class="hljs-attr">block</span>: <span class="hljs-string">'test'</span>,
+        <span class="hljs-attr">js</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">content</span>: [
+            {
+                <span class="hljs-attr">block</span>: <span class="hljs-string">'link'</span>,
+                <span class="hljs-attr">mods</span>: {
+                    <span class="hljs-attr">pseudo</span>: <span class="hljs-literal">true</span>,
+                    <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>
+                },
+                <span class="hljs-attr">content</span>: <span class="hljs-string">'open islands modal with content interaction'</span>
+            },
+            {
+                <span class="hljs-attr">block</span>: <span class="hljs-string">'modal'</span>,
+                <span class="hljs-attr">mods</span>: {
+                    <span class="hljs-attr">autoclosable</span>: <span class="hljs-literal">true</span>,
+                    <span class="hljs-attr">theme</span>: <span class="hljs-string">'islands'</span>
+                },
+                <span class="hljs-attr">content</span>: <span class="hljs-string">'some information'</span>
+            }
+        ]
+    }
+}

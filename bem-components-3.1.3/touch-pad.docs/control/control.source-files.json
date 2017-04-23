@@ -1,0 +1,42 @@
+[
+    {
+        "entity": {
+            "block": "control"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/control/control.deps.js"
+    },
+    {
+        "entity": {
+            "block": "control"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "en.md",
+        "path": "common.blocks/control/control.en.md"
+    },
+    {
+        "entity": {
+            "block": "control"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/control/control.js"
+    },
+    {
+        "entity": {
+            "block": "control"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/control/control.ru.md"
+    },
+    {
+        "entity": {
+            "block": "control"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/control/control.spec.js"
+    }
+]

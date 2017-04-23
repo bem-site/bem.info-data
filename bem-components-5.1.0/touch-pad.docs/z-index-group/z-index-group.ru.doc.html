@@ -1,0 +1,33 @@
+<h1 class="article__heading article__heading_1" id="z-index-group-4"><a href="#z-index-group-4" class="article__heading-anchor"></a>z-index-group</h1><p>Используется для формирования на странице нескольких слоев блоков, располагающихся друг над другом.</p>
+<h2 class="article__heading article__heading_2" id="Обзор-блока-60"><a href="#Обзор-блока-60" class="article__heading-anchor"></a>Обзор блока</h2><h3 class="article__heading article__heading_3" id="Модификаторы-блока-102"><a href="#Модификаторы-блока-102" class="article__heading-anchor"></a>Модификаторы блока</h3><table>
+<thead>
+<tr>
+<th>Модификатор</th>
+<th>Допустимые значения</th>
+<th>Способы использования</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#index-level">level</a></td>
+<td>Целое число от 0 до 9</td>
+<td><code>BEMJSON</code></td>
+<td>Уровень слоя.</td>
+</tr>
+</tbody>
+</table>
+<h2 class="article__heading article__heading_2" id="Описание-блока-54"><a href="#Описание-блока-54" class="article__heading-anchor"></a>Описание блока</h2><p>Блок <code>z-index-group</code> располагает блоки слоями друг над другом. Их размещением по z-оси управляет модификатор <a href="#index-level">level</a>.</p>
+<h3 class="article__heading article__heading_3" id="Модификаторы-блока-103"><a href="#Модификаторы-блока-103" class="article__heading-anchor"></a>Модификаторы блока</h3><p><a name="index-level"></a></p>
+<h4 class="article__heading article__heading_4" id="Модификатор-codelevelcode-2"><a href="#Модификатор-codelevelcode-2" class="article__heading-anchor"></a>Модификатор <code>level</code></h4><p>Допустимые значения: целые числа от 0 до 9.</p>
+<p>Способы использования: <code>BEMJSON</code>.</p>
+<p>Определяет уровень слоя блока относительно других слоев блоков на странице.</p>
+<p>Чем больше значение модификатора <code>level</code>, тем выше находится слой. При равных значениях <code>level</code> на переднем плане находится тот слой, который в BEMJSON задекларирован позже.</p>
+<p>На примере ниже открывающееся всплывающее окно не перекрывает другие блоки, находящиеся на странице. Например, шапка страницы всегда остается на первом плане:</p>
+<pre><code class="lang-javascript">{
+    <span class="hljs-attr">block</span> : <span class="hljs-string">'popup'</span>,
+    <span class="hljs-attr">mix</span> : { <span class="hljs-attr">block</span> : <span class="hljs-string">'z-index-group'</span>, <span class="hljs-attr">mods</span> : { <span class="hljs-attr">level</span> : <span class="hljs-number">1</span> } },
+    <span class="hljs-attr">content</span> : <span class="hljs-string">'Я блок с { level : 1 }, который находится под блоком с { level : 2 }.'</span>
+    mods : { <span class="hljs-attr">autoclosable</span> : <span class="hljs-literal">true</span>, <span class="hljs-attr">theme</span> : <span class="hljs-string">'normal'</span> },
+}
+</code></pre>

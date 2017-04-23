@@ -1,0 +1,104 @@
+{
+    "10-popup": [
+        {
+            "entity": {
+                "block": "test"
+            },
+            "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks/popup/popup.examples/10-popup.blocks",
+            "tech": "js",
+            "path": "common.blocks/popup/popup.examples/10-popup.blocks/test/test.js"
+        }
+    ],
+    "20-popup": [
+        {
+            "entity": {
+                "block": "directions"
+            },
+            "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks/popup/popup.examples/20-popup.blocks",
+            "tech": "bemhtml.js",
+            "path": "common.blocks/popup/popup.examples/20-popup.blocks/directions/directions.bemhtml.js"
+        },
+        {
+            "entity": {
+                "block": "directions"
+            },
+            "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks/popup/popup.examples/20-popup.blocks",
+            "tech": "bh.js",
+            "path": "common.blocks/popup/popup.examples/20-popup.blocks/directions/directions.bh.js"
+        },
+        {
+            "entity": {
+                "block": "directions"
+            },
+            "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks/popup/popup.examples/20-popup.blocks",
+            "tech": "css",
+            "path": "common.blocks/popup/popup.examples/20-popup.blocks/directions/directions.css"
+        },
+        {
+            "entity": {
+                "block": "page"
+            },
+            "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks/popup/popup.examples/20-popup.blocks",
+            "tech": "css",
+            "path": "common.blocks/popup/popup.examples/20-popup.blocks/page/page.css"
+        },
+        {
+            "entity": {
+                "block": "popup"
+            },
+            "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks/popup/popup.examples/20-popup.blocks",
+            "tech": "css",
+            "path": "common.blocks/popup/popup.examples/20-popup.blocks/popup/popup.css"
+        },
+        {
+            "entity": {
+                "block": "scrollable"
+            },
+            "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks/popup/popup.examples/20-popup.blocks",
+            "tech": "css",
+            "path": "common.blocks/popup/popup.examples/20-popup.blocks/scrollable/scrollable.css"
+        },
+        {
+            "entity": {
+                "block": "summon-test"
+            },
+            "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks/popup/popup.examples/20-popup.blocks",
+            "tech": "css",
+            "path": "common.blocks/popup/popup.examples/20-popup.blocks/summon-test/summon-test.css"
+        },
+        {
+            "entity": {
+                "block": "summon-test"
+            },
+            "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks/popup/popup.examples/20-popup.blocks",
+            "tech": "js",
+            "path": "common.blocks/popup/popup.examples/20-popup.blocks/summon-test/summon-test.js"
+        },
+        {
+            "entity": {
+                "block": "test"
+            },
+            "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks/popup/popup.examples/20-popup.blocks",
+            "tech": "css",
+            "path": "common.blocks/popup/popup.examples/20-popup.blocks/test/test.css"
+        },
+        {
+            "entity": {
+                "block": "test"
+            },
+            "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks/popup/popup.examples/20-popup.blocks",
+            "tech": "js",
+            "path": "common.blocks/popup/popup.examples/20-popup.blocks/test/test.js"
+        },
+        {
+            "entity": {
+                "block": "popup",
+                "modName": "target",
+                "modVal": true
+            },
+            "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks/popup/popup.examples/20-popup.blocks",
+            "tech": "js",
+            "path": "common.blocks/popup/popup.examples/20-popup.blocks/popup/_target/popup_target.js"
+        }
+    ]
+}

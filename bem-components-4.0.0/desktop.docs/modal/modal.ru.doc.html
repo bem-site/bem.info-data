@@ -1,0 +1,83 @@
+<h1 class="article__heading article__heading_1" id="modal"><a href="#modal" class="article__heading-anchor"></a>modal</h1><p>Используется для создания модального окна.</p>
+<h2 class="article__heading article__heading_2" id="Обзор-блока-11"><a href="#Обзор-блока-11" class="article__heading-anchor"></a>Обзор блока</h2><h3 class="article__heading article__heading_3" id="Модификаторы-блока-18"><a href="#Модификаторы-блока-18" class="article__heading-anchor"></a>Модификаторы блока</h3><table>
+<thead>
+<tr>
+<th>Модификатор</th>
+<th>Допустимые значения</th>
+<th>Способы использования</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#visible">visible</a></td>
+<td><code>true</code></td>
+<td><code>JS</code></td>
+<td>Видимость модального окна.</td>
+</tr>
+<tr>
+<td><a href="#autoclosable">autoclosable</a></td>
+<td><code>true</code></td>
+<td><code>BEMJSON</code></td>
+<td>Автоматическое скрытие модального окна.</td>
+</tr>
+<tr>
+<td><a href="#theme">theme</a></td>
+<td><code>&#39;islands&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>Стилевое оформление.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="Специализированные-поля-блока-22"><a href="#Специализированные-поля-блока-22" class="article__heading-anchor"></a>Специализированные поля блока</h3><table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>Тип</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#zIndexGroupLevel">zIndexGroupLevel</a></td>
+<td><code>Number</code></td>
+<td>Уровень слоя модального окна.</td>
+</tr>
+</tbody>
+</table>
+<h2 class="article__heading article__heading_2" id="Описание-блока-11"><a href="#Описание-блока-11" class="article__heading-anchor"></a>Описание блока</h2><h3 class="article__heading article__heading_3" id="Модификаторы-блока-19"><a href="#Модификаторы-блока-19" class="article__heading-anchor"></a>Модификаторы блока</h3><p><a name="visible"></a></p>
+<h4 class="article__heading article__heading_4" id="Модификатор-codevisiblecode"><a href="#Модификатор-codevisiblecode" class="article__heading-anchor"></a>Модификатор <code>visible</code></h4><p>Допустимое значение: <code>true</code>.</p>
+<p>Способы использования: <code>JS</code>.</p>
+<p>Выставляется при открытии модального окна.</p>
+<p>Отвечает за видимость модального окна на странице.</p>
+<p><a name="autoclosable"></a></p>
+<h4 class="article__heading article__heading_4" id="Модификатор-codeautoclosablecode"><a href="#Модификатор-codeautoclosablecode" class="article__heading-anchor"></a>Модификатор <code>autoclosable</code></h4><p>Допустимое значение: <code>true</code>.</p>
+<p>Способ использования: <code>BEMJSON</code>.</p>
+<p>Скрывает блок по клику вне зоны модального окна или по нажатию кнопки <code>Escape</code>.</p>
+<pre><code class="lang-javascript">{
+    <span class="hljs-attr">block</span> : <span class="hljs-string">'modal'</span>,
+    <span class="hljs-attr">mods</span> : { <span class="hljs-attr">theme</span> : <span class="hljs-string">'islands'</span>, <span class="hljs-attr">autoclosable</span> : <span class="hljs-literal">true</span> },
+    <span class="hljs-attr">content</span> : <span class="hljs-string">'Содержимое модального окна'</span>
+}
+</code></pre>
+<p><a name="theme"></a></p>
+<h4 class="article__heading article__heading_4" id="Модификатор-codethemecode-8"><a href="#Модификатор-codethemecode-8" class="article__heading-anchor"></a>Модификатор <code>theme</code></h4><p>Допустимое значение: <code>&#39;islands&#39;</code>.</p>
+<p>Способ использования: <code>BEMJSON</code>.</p>
+<p>Отвечает за стилевое оформление блока.</p>
+<pre><code class="lang-javascript">{
+    <span class="hljs-attr">block</span> : <span class="hljs-string">'modal'</span>,
+    <span class="hljs-attr">mods</span> : { <span class="hljs-attr">theme</span> : <span class="hljs-string">'islands'</span> },
+    <span class="hljs-attr">content</span> : <span class="hljs-string">'Содержимое модального окна'</span>
+}
+</code></pre>
+<h3 class="article__heading article__heading_3" id="Специализированные-поля-блока-23"><a href="#Специализированные-поля-блока-23" class="article__heading-anchor"></a>Специализированные поля блока</h3><p><a name="zIndexGroupLevel"></a></p>
+<h4 class="article__heading article__heading_4" id="Поле-codezindexgrouplevelcode"><a href="#Поле-codezindexgrouplevelcode" class="article__heading-anchor"></a>Поле <code>zIndexGroupLevel</code></h4><p>Тип: <code>Number</code>.</p>
+<p>Определяет уровень слоя для каждого всплывающего окна.</p>
+<p>Использует блок <a href="../z-index-group/z-index-group.ru.md">z-index-group</a>.</p>
+<pre><code class="lang-javascript">{
+    <span class="hljs-attr">block</span> : <span class="hljs-string">'modal'</span>,
+    <span class="hljs-attr">mods</span> : { <span class="hljs-attr">theme</span> : <span class="hljs-string">'islands'</span> },
+    <span class="hljs-attr">content</span> : <span class="hljs-string">'Содержимое модального окна'</span>,
+    <span class="hljs-attr">zIndexGroupLevel</span> : <span class="hljs-number">3</span>
+}
+</code></pre>

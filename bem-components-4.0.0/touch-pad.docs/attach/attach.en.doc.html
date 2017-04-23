@@ -1,0 +1,133 @@
+<h1 class="article__heading article__heading_1" id="attach-5"><a href="#attach-5" class="article__heading-anchor"></a>attach</h1><p>Use this block to upload a file for sending to a server.</p>
+<h2 class="article__heading article__heading_2" id="overview-40"><a href="#overview-40" class="article__heading-anchor"></a>Overview</h2><h3 class="article__heading article__heading_3" id="modifiers-of-the-block-72"><a href="#modifiers-of-the-block-72" class="article__heading-anchor"></a>Modifiers of the block</h3><table>
+<thead>
+<tr>
+<th>Modifier</th>
+<th>Acceptable values</th>
+<th>Use cases</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#disabled">disabled</a></td>
+<td><code>true</code></td>
+<td><code>BEMJSON</code>, <code>JS</code></td>
+<td>The disabled state.</td>
+</tr>
+<tr>
+<td><a href="#focused">focused</a></td>
+<td><code>true</code></td>
+<td><code>BEMJSON</code>, <code>JS</code></td>
+<td>The block is in focus.</td>
+</tr>
+<tr>
+<td><a href="#themes">theme</a></td>
+<td><code>&#39;islands&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>A custom design.</td>
+</tr>
+<tr>
+<td><a href="#size">size</a></td>
+<td><code>&#39;s&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>, <code>&#39;xl&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>The size of the block. Use sizes only with the <a href="#themes">theme modifier set to islands</a>.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="custom-fields-of-the-block-72"><a href="#custom-fields-of-the-block-72" class="article__heading-anchor"></a>Custom fields of the block</h3><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#name">name</a></td>
+<td><code>String</code></td>
+<td>The unique block name.</td>
+</tr>
+<tr>
+<td><a href="#button">button</a></td>
+<td><code>String</code>, <code>BEMJSON</code></td>
+<td>Content of hte button for a file selection.</td>
+</tr>
+<tr>
+<td><a href="#nofiletext">noFileText</a></td>
+<td><code>String</code></td>
+<td>The text message that appears when the file is not selected.</td>
+</tr>
+</tbody>
+</table>
+<h2 class="article__heading article__heading_2" id="block-description-38"><a href="#block-description-38" class="article__heading-anchor"></a>Block description</h2><p>By default this block is visually represented by:</p>
+<ul>
+<li>The <a href="../button/button.en.md">button</a> that opens the system window to upload a file.</li>
+<li>The text message.</li>
+</ul>
+<p>The following elements became available when upload of the file is finished:</p>
+<ul>
+<li>The file icon (the <a href="../icon/icon.en.md">icon</a> block).</li>
+<li>The file name (the <code>text</code> element).</li>
+<li>The element for file deletion (the <code>clear</code> element).</li>
+</ul>
+<p>The block functionality does not support:</p>
+<ul>
+<li>More than one file attaching.</li>
+<li>Drag-and-drop.</li>
+</ul>
+<h3 class="article__heading article__heading_3" id="modifiers-of-the-block-73"><a href="#modifiers-of-the-block-73" class="article__heading-anchor"></a>Modifiers of the block</h3><p><a name="disabled"></a></p>
+<h4 class="article__heading article__heading_4" id="codedisabledcode-modifier-26"><a href="#codedisabledcode-modifier-26" class="article__heading-anchor"></a><code>disabled</code> modifier</h4><p>Acceptable value: <code>true</code>.</p>
+<p>Use case: <code>BEMJSON</code>, <code>JS</code>.</p>
+<p>The modifier makes the block inactive. The disabled block is visible but not available for user actions.</p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/touch-pad.examples/attach/ohkjJa9LplN5sHVE2sog7SQqa8k -->
+<p><a name="focused"></a></p>
+<h4 class="article__heading article__heading_4" id="codefocusedcode-modifier-22"><a href="#codefocusedcode-modifier-22" class="article__heading-anchor"></a><code>focused</code> modifier</h4><p>Acceptable value: <code>true</code>.</p>
+<p>Use case: <code>BEMJSON</code>, <code>JS</code>.</p>
+<p>The modifier puts the focus on the block.</p>
+<pre><code class="lang-javascript">{
+    <span class="hljs-attr">block</span> : <span class="hljs-string">'attach'</span>,
+    <span class="hljs-attr">mods</span> : { <span class="hljs-attr">theme</span> : <span class="hljs-string">'islands'</span>, <span class="hljs-attr">size</span> : <span class="hljs-string">'m'</span>, <span class="hljs-attr">focused</span> : <span class="hljs-literal">true</span> },
+    <span class="hljs-attr">button</span> : <span class="hljs-string">'Select file'</span>,
+    <span class="hljs-attr">noFileText</span> : <span class="hljs-string">'No file selected'</span>
+}
+</code></pre>
+<p><a name="themes"></a></p>
+<h4 class="article__heading article__heading_4" id="codethemecode-modifier-32"><a href="#codethemecode-modifier-32" class="article__heading-anchor"></a><code>theme</code> modifier</h4><p>Acceptable value: <code>&#39;islands&#39;</code>.</p>
+<p>Use case: <code>BEMJSON</code>.</p>
+<p>The modifier gives the block a custom design.</p>
+<p>The <code>islands</code> theme requires the <a href="#buttonsize">size</a> modifier usage.</p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/touch-pad.examples/attach/zc3t8wYXP56oiHiTw9ZOFs4-nUk -->
+<p><a name="size"></a></p>
+<h4 class="article__heading article__heading_4" id="codesizecode-modifier-26"><a href="#codesizecode-modifier-26" class="article__heading-anchor"></a><code>size</code> modifier</h4><p>Acceptable values for the <code>islands</code> theme: <code>&#39;s&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>, <code>&#39;xl&#39;</code>.</p>
+<p>Use case: <code>BEMJSON</code>.</p>
+<p>Use the <code>size</code> modifier only for blocks with the <code>islands</code> <a href="#buttonthemes">theme</a>.</p>
+<p>Sets the size value for all types of attach forms.</p>
+<p><strong>s</strong></p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/touch-pad.examples/attach/B6b9iq_V1QDJHP5iReBiujhhoE0 -->
+<p><strong>m</strong></p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/touch-pad.examples/attach/zc3t8wYXP56oiHiTw9ZOFs4-nUk -->
+<p><strong>l</strong></p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/touch-pad.examples/attach/hZT5c7eLqpPpQcoXJPHcNBSJO84 -->
+<p><strong>xl</strong></p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/touch-pad.examples/attach/rCMW4jrRSjoUzX3ME_6XJQ3osJQ -->
+<h3 class="article__heading article__heading_3" id="custom-fields-of-the-block-73"><a href="#custom-fields-of-the-block-73" class="article__heading-anchor"></a>Custom fields of the block</h3><p><a name="name"></a></p>
+<h4 class="article__heading article__heading_4" id="codenamecode-field-18"><a href="#codenamecode-field-18" class="article__heading-anchor"></a><code>name</code> field</h4><p>Type: <code>String</code>.</p>
+<p>Specifies the block unique name.</p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/touch-pad.examples/attach/YFtccSgTcXN6C2hkMzhLvt5aZWE -->
+<p><a name="button"></a></p>
+<h4 class="article__heading article__heading_4" id="codebuttoncode-field-2"><a href="#codebuttoncode-field-2" class="article__heading-anchor"></a><code>button</code> field</h4><p>Type: <code>String</code>, <code>BEMJSON</code>.</p>
+<p>Specifies the button content:</p>
+<ul>
+<li>The text (<code>String</code>)</li>
+</ul>
+<!-- bem-example: tmp/data/bem-components-4.0.0/touch-pad.examples/attach/jUotDaIt2XqIz9P8VCSBe3w_PoU -->
+<ul>
+<li>The type and appearance (<code>BEMJSON</code>)</li>
+</ul>
+<!-- bem-example: tmp/data/bem-components-4.0.0/touch-pad.examples/attach/U2Gx6pQKl2Zr6MjiQn7eQSZAJ2o -->
+<p><a name="nofiletext"></a></p>
+<h4 class="article__heading article__heading_4" id="codenofiletextcode-field-2"><a href="#codenofiletextcode-field-2" class="article__heading-anchor"></a><code>noFileText</code> field</h4><p>Type: <code>String</code>.</p>
+<p>Specifies the text message when the file is not selected.</p>
+<!-- bem-example: tmp/data/bem-components-4.0.0/touch-pad.examples/attach/zc3t8wYXP56oiHiTw9ZOFs4-nUk -->

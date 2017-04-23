@@ -1,0 +1,32 @@
+[
+    {
+        "entity": {
+            "block": "page",
+            "modName": "theme",
+            "modVal": "islands"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/design/common.blocks",
+        "tech": "css",
+        "path": "design/common.blocks/page/_theme/page_theme_islands.css"
+    },
+    {
+        "entity": {
+            "block": "page",
+            "modName": "theme",
+            "modVal": "islands"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/design/common.blocks",
+        "tech": "deps.js",
+        "path": "design/common.blocks/page/_theme/page_theme_islands.deps.js"
+    },
+    {
+        "entity": {
+            "block": "page",
+            "modName": "theme",
+            "modVal": "islands"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/design/common.blocks",
+        "tech": "post.css",
+        "path": "design/common.blocks/page/_theme/page_theme_islands.post.css"
+    }
+]
