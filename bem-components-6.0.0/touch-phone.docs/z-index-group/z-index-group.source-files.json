@@ -1,0 +1,59 @@
+[
+    {
+        "entity": {
+            "block": "z-index-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-6.0.0/common.blocks",
+        "tech": "css",
+        "path": "common.blocks/z-index-group/z-index-group.css"
+    },
+    {
+        "entity": {
+            "block": "z-index-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-6.0.0/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/z-index-group/z-index-group.deps.js"
+    },
+    {
+        "entity": {
+            "block": "z-index-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-6.0.0/common.blocks",
+        "tech": "en.md",
+        "path": "common.blocks/z-index-group/z-index-group.en.md"
+    },
+    {
+        "entity": {
+            "block": "z-index-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-6.0.0/common.blocks",
+        "tech": "examples",
+        "path": "common.blocks/z-index-group/z-index-group.examples",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "z-index-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-6.0.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/z-index-group/z-index-group.js"
+    },
+    {
+        "entity": {
+            "block": "z-index-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-6.0.0/common.blocks",
+        "tech": "post.css",
+        "path": "common.blocks/z-index-group/z-index-group.post.css"
+    },
+    {
+        "entity": {
+            "block": "z-index-group"
+        },
+        "level": "/Users/vitaly/bem/bem-components-6.0.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/z-index-group/z-index-group.ru.md"
+    }
+]
