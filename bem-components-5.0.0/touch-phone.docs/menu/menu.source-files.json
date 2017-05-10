@@ -3,7 +3,7 @@
         "entity": {
             "block": "menu"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "bemhtml.js",
         "path": "common.blocks/menu/menu.bemhtml.js"
     },
@@ -11,7 +11,7 @@
         "entity": {
             "block": "menu"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "bh.js",
         "path": "common.blocks/menu/menu.bh.js"
     },
@@ -19,7 +19,7 @@
         "entity": {
             "block": "menu"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "css",
         "path": "common.blocks/menu/menu.css"
     },
@@ -27,7 +27,7 @@
         "entity": {
             "block": "menu"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "deps.js",
         "path": "common.blocks/menu/menu.deps.js"
     },
@@ -35,7 +35,7 @@
         "entity": {
             "block": "menu"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "en.md",
         "path": "common.blocks/menu/menu.en.md"
     },
@@ -43,7 +43,7 @@
         "entity": {
             "block": "menu"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "js",
         "path": "common.blocks/menu/menu.js"
     },
@@ -51,7 +51,7 @@
         "entity": {
             "block": "menu"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "post.css",
         "path": "common.blocks/menu/menu.post.css"
     },
@@ -59,7 +59,7 @@
         "entity": {
             "block": "menu"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "ru.md",
         "path": "common.blocks/menu/menu.ru.md"
     },
@@ -67,7 +67,7 @@
         "entity": {
             "block": "menu"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "spec.js",
         "path": "common.blocks/menu/menu.spec.js"
     },
@@ -75,7 +75,7 @@
         "entity": {
             "block": "menu"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "tests",
         "path": "common.blocks/menu/menu.tests",
         "isDir": true
@@ -84,7 +84,7 @@
         "entity": {
             "block": "menu"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "tmpl-specs",
         "path": "common.blocks/menu/menu.tmpl-specs",
         "isDir": true
@@ -94,7 +94,7 @@
             "block": "menu",
             "elem": "group"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "bemhtml.js",
         "path": "common.blocks/menu/__group/menu__group.bemhtml.js"
     },
@@ -103,7 +103,7 @@
             "block": "menu",
             "elem": "group"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "bh.js",
         "path": "common.blocks/menu/__group/menu__group.bh.js"
     },
@@ -112,7 +112,7 @@
             "block": "menu",
             "elem": "group"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "deps.js",
         "path": "common.blocks/menu/__group/menu__group.deps.js"
     },
@@ -121,7 +121,7 @@
             "block": "menu",
             "elem": "item"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "bemhtml.js",
         "path": "common.blocks/menu/__item/menu__item.bemhtml.js"
     },
@@ -130,7 +130,7 @@
             "block": "menu",
             "elem": "item"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "bh.js",
         "path": "common.blocks/menu/__item/menu__item.bh.js"
     },
@@ -139,7 +139,7 @@
             "block": "menu",
             "elem": "item"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "css",
         "path": "common.blocks/menu/__item/menu__item.css"
     },
@@ -148,7 +148,7 @@
             "block": "menu",
             "elem": "item"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "deps.js",
         "path": "common.blocks/menu/__item/menu__item.deps.js"
     },
@@ -157,7 +157,7 @@
             "block": "menu",
             "elem": "item"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "en.md",
         "path": "common.blocks/menu/__item/menu__item.en.md"
     },
@@ -166,7 +166,7 @@
             "block": "menu",
             "elem": "item"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "js",
         "path": "common.blocks/menu/__item/menu__item.js"
     },
@@ -175,7 +175,7 @@
             "block": "menu",
             "elem": "item"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "post.css",
         "path": "common.blocks/menu/__item/menu__item.post.css"
     },
@@ -184,7 +184,7 @@
             "block": "menu",
             "elem": "item"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "ru.md",
         "path": "common.blocks/menu/__item/menu__item.ru.md"
     },
@@ -193,7 +193,7 @@
             "block": "menu",
             "elem": "item"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "spec.js",
         "path": "common.blocks/menu/__item/menu__item.spec.js"
     },
@@ -202,7 +202,7 @@
             "block": "menu",
             "elem": "item"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "tmpl-specs",
         "path": "common.blocks/menu/__item/menu__item.tmpl-specs",
         "isDir": true
@@ -213,7 +213,7 @@
             "modName": "focused",
             "modVal": true
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "bemhtml.js",
         "path": "common.blocks/menu/_focused/menu_focused.bemhtml.js"
     },
@@ -223,7 +223,7 @@
             "modName": "focused",
             "modVal": true
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "bh.js",
         "path": "common.blocks/menu/_focused/menu_focused.bh.js"
     },
@@ -233,7 +233,7 @@
             "modName": "mode",
             "modVal": true
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "js",
         "path": "common.blocks/menu/_mode/menu_mode.js"
     },
@@ -243,7 +243,7 @@
             "modName": "mode",
             "modVal": true
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "spec.js",
         "path": "common.blocks/menu/_mode/menu_mode.spec.js"
     },
@@ -253,7 +253,7 @@
             "modName": "mode",
             "modVal": "check"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "js",
         "path": "common.blocks/menu/_mode/menu_mode_check.js"
     },
@@ -263,7 +263,7 @@
             "modName": "mode",
             "modVal": "check"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "spec.js",
         "path": "common.blocks/menu/_mode/menu_mode_check.spec.js"
     },
@@ -273,7 +273,7 @@
             "modName": "mode",
             "modVal": "radio-check"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "js",
         "path": "common.blocks/menu/_mode/menu_mode_radio-check.js"
     },
@@ -283,7 +283,7 @@
             "modName": "mode",
             "modVal": "radio-check"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "spec.js",
         "path": "common.blocks/menu/_mode/menu_mode_radio-check.spec.js"
     },
@@ -293,7 +293,7 @@
             "modName": "mode",
             "modVal": "radio"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "bemhtml.js",
         "path": "common.blocks/menu/_mode/menu_mode_radio.bemhtml.js"
     },
@@ -303,7 +303,7 @@
             "modName": "mode",
             "modVal": "radio"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "bh.js",
         "path": "common.blocks/menu/_mode/menu_mode_radio.bh.js"
     },
@@ -313,7 +313,7 @@
             "modName": "mode",
             "modVal": "radio"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "js",
         "path": "common.blocks/menu/_mode/menu_mode_radio.js"
     },
@@ -323,7 +323,7 @@
             "modName": "mode",
             "modVal": "radio"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "spec.js",
         "path": "common.blocks/menu/_mode/menu_mode_radio.spec.js"
     },
@@ -334,7 +334,7 @@
             "modName": "type",
             "modVal": "link"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "bemhtml.js",
         "path": "common.blocks/menu/__item/_type/menu__item_type_link.bemhtml.js"
     },
@@ -345,7 +345,7 @@
             "modName": "type",
             "modVal": "link"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "bh.js",
         "path": "common.blocks/menu/__item/_type/menu__item_type_link.bh.js"
     },
@@ -356,7 +356,7 @@
             "modName": "type",
             "modVal": "link"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "deps.js",
         "path": "common.blocks/menu/__item/_type/menu__item_type_link.deps.js"
     },
@@ -367,7 +367,7 @@
             "modName": "type",
             "modVal": "link"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "js",
         "path": "common.blocks/menu/__item/_type/menu__item_type_link.js"
     },
@@ -378,7 +378,7 @@
             "modName": "type",
             "modVal": "link"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "spec.js",
         "path": "common.blocks/menu/__item/_type/menu__item_type_link.spec.js"
     },
@@ -388,7 +388,7 @@
             "modName": "theme",
             "modVal": "islands"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/design/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/design/common.blocks",
         "tech": "css",
         "path": "design/common.blocks/menu/_theme/menu_theme_islands.css"
     },
@@ -398,7 +398,7 @@
             "modName": "theme",
             "modVal": "islands"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/design/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/design/common.blocks",
         "tech": "deps.js",
         "path": "design/common.blocks/menu/_theme/menu_theme_islands.deps.js"
     },
@@ -408,7 +408,7 @@
             "modName": "theme",
             "modVal": "islands"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/design/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/design/common.blocks",
         "tech": "post.css",
         "path": "design/common.blocks/menu/_theme/menu_theme_islands.post.css"
     },
@@ -418,7 +418,7 @@
             "modName": "theme",
             "modVal": "simple"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/design/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/design/common.blocks",
         "tech": "css",
         "path": "design/common.blocks/menu/_theme/menu_theme_simple.css"
     },
@@ -428,7 +428,7 @@
             "modName": "theme",
             "modVal": "simple"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/design/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/design/common.blocks",
         "tech": "deps.js",
         "path": "design/common.blocks/menu/_theme/menu_theme_simple.deps.js"
     },
@@ -438,7 +438,7 @@
             "modName": "theme",
             "modVal": "simple"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/design/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/design/common.blocks",
         "tech": "post.css",
         "path": "design/common.blocks/menu/_theme/menu_theme_simple.post.css"
     },
@@ -449,7 +449,7 @@
             "modName": "theme",
             "modVal": "islands"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/design/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/design/common.blocks",
         "tech": "css",
         "path": "design/common.blocks/menu/__item/_theme/menu__item_theme_islands.css"
     },
@@ -460,7 +460,7 @@
             "modName": "theme",
             "modVal": "islands"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/design/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/design/common.blocks",
         "tech": "post.css",
         "path": "design/common.blocks/menu/__item/_theme/menu__item_theme_islands.post.css"
     },
@@ -471,7 +471,7 @@
             "modName": "theme",
             "modVal": "simple"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/design/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/design/common.blocks",
         "tech": "css",
         "path": "design/common.blocks/menu/__item/_theme/menu__item_theme_simple.css"
     },
@@ -482,7 +482,7 @@
             "modName": "theme",
             "modVal": "simple"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/design/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/design/common.blocks",
         "tech": "post.css",
         "path": "design/common.blocks/menu/__item/_theme/menu__item_theme_simple.post.css"
     }

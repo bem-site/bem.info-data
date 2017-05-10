@@ -64,21 +64,6 @@
                     ]
                 }
             },
-            "cookie": {
-                "bemdecl.js": "desktop.docs/cookie/cookie.bemdecl.js",
-                "data.json": "desktop.docs/cookie/cookie.data.json",
-                "en.doc.html": "desktop.docs/cookie/cookie.en.doc.html",
-                "en.md": "desktop.docs/cookie/cookie.en.md",
-                "jsdoc.html": "desktop.docs/cookie/cookie.jsdoc.html",
-                "jsdoc.json": "desktop.docs/cookie/cookie.jsdoc.json",
-                "jsdoc.md": "desktop.docs/cookie/cookie.jsdoc.md",
-                "meta.json": "desktop.docs/cookie/cookie.meta.json",
-                "ru.doc.html": "desktop.docs/cookie/cookie.ru.doc.html",
-                "ru.md": "desktop.docs/cookie/cookie.ru.md",
-                "source-files.json": "desktop.docs/cookie/cookie.source-files.json",
-                "uk.doc.html": "desktop.docs/cookie/cookie.uk.doc.html",
-                "uk.md": "desktop.docs/cookie/cookie.uk.md"
-            },
             "dom": {
                 "bemdecl.js": "desktop.docs/dom/dom.bemdecl.js",
                 "data.json": "desktop.docs/dom/dom.data.json",
@@ -108,6 +93,21 @@
                 "source-files.json": "desktop.docs/events/events.source-files.json",
                 "uk.doc.html": "desktop.docs/events/events.uk.doc.html",
                 "uk.md": "desktop.docs/events/events.uk.md"
+            },
+            "cookie": {
+                "bemdecl.js": "desktop.docs/cookie/cookie.bemdecl.js",
+                "data.json": "desktop.docs/cookie/cookie.data.json",
+                "en.doc.html": "desktop.docs/cookie/cookie.en.doc.html",
+                "en.md": "desktop.docs/cookie/cookie.en.md",
+                "jsdoc.html": "desktop.docs/cookie/cookie.jsdoc.html",
+                "jsdoc.json": "desktop.docs/cookie/cookie.jsdoc.json",
+                "jsdoc.md": "desktop.docs/cookie/cookie.jsdoc.md",
+                "meta.json": "desktop.docs/cookie/cookie.meta.json",
+                "ru.doc.html": "desktop.docs/cookie/cookie.ru.doc.html",
+                "ru.md": "desktop.docs/cookie/cookie.ru.md",
+                "source-files.json": "desktop.docs/cookie/cookie.source-files.json",
+                "uk.doc.html": "desktop.docs/cookie/cookie.uk.doc.html",
+                "uk.md": "desktop.docs/cookie/cookie.uk.md"
             },
             "functions": {
                 "bemdecl.js": "desktop.docs/functions/functions.bemdecl.js",
@@ -184,21 +184,6 @@
                 "uk.doc.html": "desktop.docs/identify/identify.uk.doc.html",
                 "uk.md": "desktop.docs/identify/identify.uk.md"
             },
-            "idle": {
-                "bemdecl.js": "desktop.docs/idle/idle.bemdecl.js",
-                "data.json": "desktop.docs/idle/idle.data.json",
-                "en.doc.html": "desktop.docs/idle/idle.en.doc.html",
-                "en.md": "desktop.docs/idle/idle.en.md",
-                "jsdoc.html": "desktop.docs/idle/idle.jsdoc.html",
-                "jsdoc.json": "desktop.docs/idle/idle.jsdoc.json",
-                "jsdoc.md": "desktop.docs/idle/idle.jsdoc.md",
-                "meta.json": "desktop.docs/idle/idle.meta.json",
-                "ru.doc.html": "desktop.docs/idle/idle.ru.doc.html",
-                "ru.md": "desktop.docs/idle/idle.ru.md",
-                "source-files.json": "desktop.docs/idle/idle.source-files.json",
-                "uk.doc.html": "desktop.docs/idle/idle.uk.doc.html",
-                "uk.md": "desktop.docs/idle/idle.uk.md"
-            },
             "inherit": {
                 "bemdecl.js": "desktop.docs/inherit/inherit.bemdecl.js",
                 "data.json": "desktop.docs/inherit/inherit.data.json",
@@ -213,6 +198,21 @@
                 "source-files.json": "desktop.docs/inherit/inherit.source-files.json",
                 "uk.doc.html": "desktop.docs/inherit/inherit.uk.doc.html",
                 "uk.md": "desktop.docs/inherit/inherit.uk.md"
+            },
+            "idle": {
+                "bemdecl.js": "desktop.docs/idle/idle.bemdecl.js",
+                "data.json": "desktop.docs/idle/idle.data.json",
+                "en.doc.html": "desktop.docs/idle/idle.en.doc.html",
+                "en.md": "desktop.docs/idle/idle.en.md",
+                "jsdoc.html": "desktop.docs/idle/idle.jsdoc.html",
+                "jsdoc.json": "desktop.docs/idle/idle.jsdoc.json",
+                "jsdoc.md": "desktop.docs/idle/idle.jsdoc.md",
+                "meta.json": "desktop.docs/idle/idle.meta.json",
+                "ru.doc.html": "desktop.docs/idle/idle.ru.doc.html",
+                "ru.md": "desktop.docs/idle/idle.ru.md",
+                "source-files.json": "desktop.docs/idle/idle.source-files.json",
+                "uk.doc.html": "desktop.docs/idle/idle.uk.doc.html",
+                "uk.md": "desktop.docs/idle/idle.uk.md"
             },
             "jquery": {
                 "bemdecl.js": "desktop.docs/jquery/jquery.bemdecl.js",
@@ -727,21 +727,6 @@
                     ]
                 }
             },
-            "strings": {
-                "bemdecl.js": "desktop.docs/strings/strings.bemdecl.js",
-                "data.json": "desktop.docs/strings/strings.data.json",
-                "en.doc.html": "desktop.docs/strings/strings.en.doc.html",
-                "en.md": "desktop.docs/strings/strings.en.md",
-                "jsdoc.html": "desktop.docs/strings/strings.jsdoc.html",
-                "jsdoc.json": "desktop.docs/strings/strings.jsdoc.json",
-                "jsdoc.md": "desktop.docs/strings/strings.jsdoc.md",
-                "meta.json": "desktop.docs/strings/strings.meta.json",
-                "ru.doc.html": "desktop.docs/strings/strings.ru.doc.html",
-                "ru.md": "desktop.docs/strings/strings.ru.md",
-                "source-files.json": "desktop.docs/strings/strings.source-files.json",
-                "uk.doc.html": "desktop.docs/strings/strings.uk.doc.html",
-                "uk.md": "desktop.docs/strings/strings.uk.md"
-            },
             "tick": {
                 "bemdecl.js": "desktop.docs/tick/tick.bemdecl.js",
                 "data.json": "desktop.docs/tick/tick.data.json",
@@ -756,6 +741,21 @@
                 "source-files.json": "desktop.docs/tick/tick.source-files.json",
                 "uk.doc.html": "desktop.docs/tick/tick.uk.doc.html",
                 "uk.md": "desktop.docs/tick/tick.uk.md"
+            },
+            "strings": {
+                "bemdecl.js": "desktop.docs/strings/strings.bemdecl.js",
+                "data.json": "desktop.docs/strings/strings.data.json",
+                "en.doc.html": "desktop.docs/strings/strings.en.doc.html",
+                "en.md": "desktop.docs/strings/strings.en.md",
+                "jsdoc.html": "desktop.docs/strings/strings.jsdoc.html",
+                "jsdoc.json": "desktop.docs/strings/strings.jsdoc.json",
+                "jsdoc.md": "desktop.docs/strings/strings.jsdoc.md",
+                "meta.json": "desktop.docs/strings/strings.meta.json",
+                "ru.doc.html": "desktop.docs/strings/strings.ru.doc.html",
+                "ru.md": "desktop.docs/strings/strings.ru.md",
+                "source-files.json": "desktop.docs/strings/strings.source-files.json",
+                "uk.doc.html": "desktop.docs/strings/strings.uk.doc.html",
+                "uk.md": "desktop.docs/strings/strings.uk.md"
             },
             "ua": {
                 "bemdecl.js": "desktop.docs/ua/ua.bemdecl.js",
@@ -828,6 +828,21 @@
             }
         },
         "touch-pad": {
+            "cookie": {
+                "bemdecl.js": "touch-pad.docs/cookie/cookie.bemdecl.js",
+                "data.json": "touch-pad.docs/cookie/cookie.data.json",
+                "en.doc.html": "touch-pad.docs/cookie/cookie.en.doc.html",
+                "en.md": "touch-pad.docs/cookie/cookie.en.md",
+                "jsdoc.html": "touch-pad.docs/cookie/cookie.jsdoc.html",
+                "jsdoc.json": "touch-pad.docs/cookie/cookie.jsdoc.json",
+                "jsdoc.md": "touch-pad.docs/cookie/cookie.jsdoc.md",
+                "meta.json": "touch-pad.docs/cookie/cookie.meta.json",
+                "ru.doc.html": "touch-pad.docs/cookie/cookie.ru.doc.html",
+                "ru.md": "touch-pad.docs/cookie/cookie.ru.md",
+                "source-files.json": "touch-pad.docs/cookie/cookie.source-files.json",
+                "uk.doc.html": "touch-pad.docs/cookie/cookie.uk.doc.html",
+                "uk.md": "touch-pad.docs/cookie/cookie.uk.md"
+            },
             "clearfix": {
                 "bemdecl.js": "touch-pad.docs/clearfix/clearfix.bemdecl.js",
                 "data.json": "touch-pad.docs/clearfix/clearfix.data.json",
@@ -888,21 +903,6 @@
                         "touch-pad.examples/clearfix/wFi3J1HiUfyXYvh0qv3FWFV_l7Q/wFi3J1HiUfyXYvh0qv3FWFV_l7Q.uk.html"
                     ]
                 }
-            },
-            "cookie": {
-                "bemdecl.js": "touch-pad.docs/cookie/cookie.bemdecl.js",
-                "data.json": "touch-pad.docs/cookie/cookie.data.json",
-                "en.doc.html": "touch-pad.docs/cookie/cookie.en.doc.html",
-                "en.md": "touch-pad.docs/cookie/cookie.en.md",
-                "jsdoc.html": "touch-pad.docs/cookie/cookie.jsdoc.html",
-                "jsdoc.json": "touch-pad.docs/cookie/cookie.jsdoc.json",
-                "jsdoc.md": "touch-pad.docs/cookie/cookie.jsdoc.md",
-                "meta.json": "touch-pad.docs/cookie/cookie.meta.json",
-                "ru.doc.html": "touch-pad.docs/cookie/cookie.ru.doc.html",
-                "ru.md": "touch-pad.docs/cookie/cookie.ru.md",
-                "source-files.json": "touch-pad.docs/cookie/cookie.source-files.json",
-                "uk.doc.html": "touch-pad.docs/cookie/cookie.uk.doc.html",
-                "uk.md": "touch-pad.docs/cookie/cookie.uk.md"
             },
             "dom": {
                 "bemdecl.js": "touch-pad.docs/dom/dom.bemdecl.js",
@@ -1054,20 +1054,20 @@
                 "uk.doc.html": "touch-pad.docs/jquery/jquery.uk.doc.html",
                 "uk.md": "touch-pad.docs/jquery/jquery.uk.md"
             },
-            "keyboard": {
-                "bemdecl.js": "touch-pad.docs/keyboard/keyboard.bemdecl.js",
-                "data.json": "touch-pad.docs/keyboard/keyboard.data.json",
-                "en.doc.html": "touch-pad.docs/keyboard/keyboard.en.doc.html",
-                "en.md": "touch-pad.docs/keyboard/keyboard.en.md",
-                "jsdoc.html": "touch-pad.docs/keyboard/keyboard.jsdoc.html",
-                "jsdoc.json": "touch-pad.docs/keyboard/keyboard.jsdoc.json",
-                "jsdoc.md": "touch-pad.docs/keyboard/keyboard.jsdoc.md",
-                "meta.json": "touch-pad.docs/keyboard/keyboard.meta.json",
-                "ru.doc.html": "touch-pad.docs/keyboard/keyboard.ru.doc.html",
-                "ru.md": "touch-pad.docs/keyboard/keyboard.ru.md",
-                "source-files.json": "touch-pad.docs/keyboard/keyboard.source-files.json",
-                "uk.doc.html": "touch-pad.docs/keyboard/keyboard.uk.doc.html",
-                "uk.md": "touch-pad.docs/keyboard/keyboard.uk.md"
+            "objects": {
+                "bemdecl.js": "touch-pad.docs/objects/objects.bemdecl.js",
+                "data.json": "touch-pad.docs/objects/objects.data.json",
+                "en.doc.html": "touch-pad.docs/objects/objects.en.doc.html",
+                "en.md": "touch-pad.docs/objects/objects.en.md",
+                "jsdoc.html": "touch-pad.docs/objects/objects.jsdoc.html",
+                "jsdoc.json": "touch-pad.docs/objects/objects.jsdoc.json",
+                "jsdoc.md": "touch-pad.docs/objects/objects.jsdoc.md",
+                "meta.json": "touch-pad.docs/objects/objects.meta.json",
+                "ru.doc.html": "touch-pad.docs/objects/objects.ru.doc.html",
+                "ru.md": "touch-pad.docs/objects/objects.ru.md",
+                "source-files.json": "touch-pad.docs/objects/objects.source-files.json",
+                "uk.doc.html": "touch-pad.docs/objects/objects.uk.doc.html",
+                "uk.md": "touch-pad.docs/objects/objects.uk.md"
             },
             "loader": {
                 "bemdecl.js": "touch-pad.docs/loader/loader.bemdecl.js",
@@ -1099,20 +1099,74 @@
                 "uk.doc.html": "touch-pad.docs/next-tick/next-tick.uk.doc.html",
                 "uk.md": "touch-pad.docs/next-tick/next-tick.uk.md"
             },
-            "objects": {
-                "bemdecl.js": "touch-pad.docs/objects/objects.bemdecl.js",
-                "data.json": "touch-pad.docs/objects/objects.data.json",
-                "en.doc.html": "touch-pad.docs/objects/objects.en.doc.html",
-                "en.md": "touch-pad.docs/objects/objects.en.md",
-                "jsdoc.html": "touch-pad.docs/objects/objects.jsdoc.html",
-                "jsdoc.json": "touch-pad.docs/objects/objects.jsdoc.json",
-                "jsdoc.md": "touch-pad.docs/objects/objects.jsdoc.md",
-                "meta.json": "touch-pad.docs/objects/objects.meta.json",
-                "ru.doc.html": "touch-pad.docs/objects/objects.ru.doc.html",
-                "ru.md": "touch-pad.docs/objects/objects.ru.md",
-                "source-files.json": "touch-pad.docs/objects/objects.source-files.json",
-                "uk.doc.html": "touch-pad.docs/objects/objects.uk.doc.html",
-                "uk.md": "touch-pad.docs/objects/objects.uk.md"
+            "keyboard": {
+                "bemdecl.js": "touch-pad.docs/keyboard/keyboard.bemdecl.js",
+                "data.json": "touch-pad.docs/keyboard/keyboard.data.json",
+                "en.doc.html": "touch-pad.docs/keyboard/keyboard.en.doc.html",
+                "en.md": "touch-pad.docs/keyboard/keyboard.en.md",
+                "jsdoc.html": "touch-pad.docs/keyboard/keyboard.jsdoc.html",
+                "jsdoc.json": "touch-pad.docs/keyboard/keyboard.jsdoc.json",
+                "jsdoc.md": "touch-pad.docs/keyboard/keyboard.jsdoc.md",
+                "meta.json": "touch-pad.docs/keyboard/keyboard.meta.json",
+                "ru.doc.html": "touch-pad.docs/keyboard/keyboard.ru.doc.html",
+                "ru.md": "touch-pad.docs/keyboard/keyboard.ru.md",
+                "source-files.json": "touch-pad.docs/keyboard/keyboard.source-files.json",
+                "uk.doc.html": "touch-pad.docs/keyboard/keyboard.uk.doc.html",
+                "uk.md": "touch-pad.docs/keyboard/keyboard.uk.md"
+            },
+            "strings": {
+                "bemdecl.js": "touch-pad.docs/strings/strings.bemdecl.js",
+                "data.json": "touch-pad.docs/strings/strings.data.json",
+                "en.doc.html": "touch-pad.docs/strings/strings.en.doc.html",
+                "en.md": "touch-pad.docs/strings/strings.en.md",
+                "jsdoc.html": "touch-pad.docs/strings/strings.jsdoc.html",
+                "jsdoc.json": "touch-pad.docs/strings/strings.jsdoc.json",
+                "jsdoc.md": "touch-pad.docs/strings/strings.jsdoc.md",
+                "meta.json": "touch-pad.docs/strings/strings.meta.json",
+                "ru.doc.html": "touch-pad.docs/strings/strings.ru.doc.html",
+                "ru.md": "touch-pad.docs/strings/strings.ru.md",
+                "source-files.json": "touch-pad.docs/strings/strings.source-files.json",
+                "uk.doc.html": "touch-pad.docs/strings/strings.uk.doc.html",
+                "uk.md": "touch-pad.docs/strings/strings.uk.md"
+            },
+            "ua": {
+                "bemdecl.js": "touch-pad.docs/ua/ua.bemdecl.js",
+                "data.json": "touch-pad.docs/ua/ua.data.json",
+                "en.doc.html": "touch-pad.docs/ua/ua.en.doc.html",
+                "en.md": "touch-pad.docs/ua/ua.en.md",
+                "jsdoc.html": "touch-pad.docs/ua/ua.jsdoc.html",
+                "jsdoc.json": "touch-pad.docs/ua/ua.jsdoc.json",
+                "jsdoc.md": "touch-pad.docs/ua/ua.jsdoc.md",
+                "meta.json": "touch-pad.docs/ua/ua.meta.json",
+                "ru.doc.html": "touch-pad.docs/ua/ua.ru.doc.html",
+                "ru.md": "touch-pad.docs/ua/ua.ru.md",
+                "source-files.json": "touch-pad.docs/ua/ua.source-files.json",
+                "uk.doc.html": "touch-pad.docs/ua/ua.uk.doc.html",
+                "uk.md": "touch-pad.docs/ua/ua.uk.md",
+                "examples": {
+                    "xwdM5EFeTinUwG_RSViGelI1y8": [
+                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.bemdecl.js",
+                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.bemhtml.js",
+                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.bemjson.js",
+                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.borschik.browser.js",
+                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.browser.bemhtml.js",
+                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.browser.js",
+                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.css",
+                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.deps.js",
+                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.en.html",
+                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.html",
+                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.ie.css",
+                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.js",
+                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.js-js.bemdecl.js",
+                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.js.bemdecl.js",
+                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.js.deps.js",
+                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.pre.js",
+                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.ru.html",
+                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.template.bemdecl.js",
+                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.template.deps.js",
+                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.uk.html"
+                    ]
+                }
             },
             "page": {
                 "bemdecl.js": "touch-pad.docs/page/page.bemdecl.js",
@@ -1441,20 +1495,20 @@
                     ]
                 }
             },
-            "strings": {
-                "bemdecl.js": "touch-pad.docs/strings/strings.bemdecl.js",
-                "data.json": "touch-pad.docs/strings/strings.data.json",
-                "en.doc.html": "touch-pad.docs/strings/strings.en.doc.html",
-                "en.md": "touch-pad.docs/strings/strings.en.md",
-                "jsdoc.html": "touch-pad.docs/strings/strings.jsdoc.html",
-                "jsdoc.json": "touch-pad.docs/strings/strings.jsdoc.json",
-                "jsdoc.md": "touch-pad.docs/strings/strings.jsdoc.md",
-                "meta.json": "touch-pad.docs/strings/strings.meta.json",
-                "ru.doc.html": "touch-pad.docs/strings/strings.ru.doc.html",
-                "ru.md": "touch-pad.docs/strings/strings.ru.md",
-                "source-files.json": "touch-pad.docs/strings/strings.source-files.json",
-                "uk.doc.html": "touch-pad.docs/strings/strings.uk.doc.html",
-                "uk.md": "touch-pad.docs/strings/strings.uk.md"
+            "uri": {
+                "bemdecl.js": "touch-pad.docs/uri/uri.bemdecl.js",
+                "data.json": "touch-pad.docs/uri/uri.data.json",
+                "en.doc.html": "touch-pad.docs/uri/uri.en.doc.html",
+                "en.md": "touch-pad.docs/uri/uri.en.md",
+                "jsdoc.html": "touch-pad.docs/uri/uri.jsdoc.html",
+                "jsdoc.json": "touch-pad.docs/uri/uri.jsdoc.json",
+                "jsdoc.md": "touch-pad.docs/uri/uri.jsdoc.md",
+                "meta.json": "touch-pad.docs/uri/uri.meta.json",
+                "ru.doc.html": "touch-pad.docs/uri/uri.ru.doc.html",
+                "ru.md": "touch-pad.docs/uri/uri.ru.md",
+                "source-files.json": "touch-pad.docs/uri/uri.source-files.json",
+                "uk.doc.html": "touch-pad.docs/uri/uri.uk.doc.html",
+                "uk.md": "touch-pad.docs/uri/uri.uk.md"
             },
             "tick": {
                 "bemdecl.js": "touch-pad.docs/tick/tick.bemdecl.js",
@@ -1470,60 +1524,6 @@
                 "source-files.json": "touch-pad.docs/tick/tick.source-files.json",
                 "uk.doc.html": "touch-pad.docs/tick/tick.uk.doc.html",
                 "uk.md": "touch-pad.docs/tick/tick.uk.md"
-            },
-            "ua": {
-                "bemdecl.js": "touch-pad.docs/ua/ua.bemdecl.js",
-                "data.json": "touch-pad.docs/ua/ua.data.json",
-                "en.doc.html": "touch-pad.docs/ua/ua.en.doc.html",
-                "en.md": "touch-pad.docs/ua/ua.en.md",
-                "jsdoc.html": "touch-pad.docs/ua/ua.jsdoc.html",
-                "jsdoc.json": "touch-pad.docs/ua/ua.jsdoc.json",
-                "jsdoc.md": "touch-pad.docs/ua/ua.jsdoc.md",
-                "meta.json": "touch-pad.docs/ua/ua.meta.json",
-                "ru.doc.html": "touch-pad.docs/ua/ua.ru.doc.html",
-                "ru.md": "touch-pad.docs/ua/ua.ru.md",
-                "source-files.json": "touch-pad.docs/ua/ua.source-files.json",
-                "uk.doc.html": "touch-pad.docs/ua/ua.uk.doc.html",
-                "uk.md": "touch-pad.docs/ua/ua.uk.md",
-                "examples": {
-                    "xwdM5EFeTinUwG_RSViGelI1y8": [
-                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.bemdecl.js",
-                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.bemhtml.js",
-                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.bemjson.js",
-                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.borschik.browser.js",
-                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.browser.bemhtml.js",
-                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.browser.js",
-                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.css",
-                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.deps.js",
-                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.en.html",
-                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.html",
-                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.ie.css",
-                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.js",
-                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.js-js.bemdecl.js",
-                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.js.bemdecl.js",
-                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.js.deps.js",
-                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.pre.js",
-                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.ru.html",
-                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.template.bemdecl.js",
-                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.template.deps.js",
-                        "touch-pad.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.uk.html"
-                    ]
-                }
-            },
-            "uri": {
-                "bemdecl.js": "touch-pad.docs/uri/uri.bemdecl.js",
-                "data.json": "touch-pad.docs/uri/uri.data.json",
-                "en.doc.html": "touch-pad.docs/uri/uri.en.doc.html",
-                "en.md": "touch-pad.docs/uri/uri.en.md",
-                "jsdoc.html": "touch-pad.docs/uri/uri.jsdoc.html",
-                "jsdoc.json": "touch-pad.docs/uri/uri.jsdoc.json",
-                "jsdoc.md": "touch-pad.docs/uri/uri.jsdoc.md",
-                "meta.json": "touch-pad.docs/uri/uri.meta.json",
-                "ru.doc.html": "touch-pad.docs/uri/uri.ru.doc.html",
-                "ru.md": "touch-pad.docs/uri/uri.ru.md",
-                "source-files.json": "touch-pad.docs/uri/uri.source-files.json",
-                "uk.doc.html": "touch-pad.docs/uri/uri.uk.doc.html",
-                "uk.md": "touch-pad.docs/uri/uri.uk.md"
             },
             "vow": {
                 "bemdecl.js": "touch-pad.docs/vow/vow.bemdecl.js",
@@ -1693,6 +1693,21 @@
                 "uk.doc.html": "touch-phone.docs/i-bem-dom/i-bem-dom.uk.doc.html",
                 "uk.md": "touch-phone.docs/i-bem-dom/i-bem-dom.uk.md"
             },
+            "i18n": {
+                "bemdecl.js": "touch-phone.docs/i18n/i18n.bemdecl.js",
+                "data.json": "touch-phone.docs/i18n/i18n.data.json",
+                "en.doc.html": "touch-phone.docs/i18n/i18n.en.doc.html",
+                "en.md": "touch-phone.docs/i18n/i18n.en.md",
+                "jsdoc.html": "touch-phone.docs/i18n/i18n.jsdoc.html",
+                "jsdoc.json": "touch-phone.docs/i18n/i18n.jsdoc.json",
+                "jsdoc.md": "touch-phone.docs/i18n/i18n.jsdoc.md",
+                "meta.json": "touch-phone.docs/i18n/i18n.meta.json",
+                "ru.doc.html": "touch-phone.docs/i18n/i18n.ru.doc.html",
+                "ru.md": "touch-phone.docs/i18n/i18n.ru.md",
+                "source-files.json": "touch-phone.docs/i18n/i18n.source-files.json",
+                "uk.doc.html": "touch-phone.docs/i18n/i18n.uk.doc.html",
+                "uk.md": "touch-phone.docs/i18n/i18n.uk.md"
+            },
             "identify": {
                 "bemdecl.js": "touch-phone.docs/identify/identify.bemdecl.js",
                 "data.json": "touch-phone.docs/identify/identify.data.json",
@@ -1722,21 +1737,6 @@
                 "source-files.json": "touch-phone.docs/idle/idle.source-files.json",
                 "uk.doc.html": "touch-phone.docs/idle/idle.uk.doc.html",
                 "uk.md": "touch-phone.docs/idle/idle.uk.md"
-            },
-            "i18n": {
-                "bemdecl.js": "touch-phone.docs/i18n/i18n.bemdecl.js",
-                "data.json": "touch-phone.docs/i18n/i18n.data.json",
-                "en.doc.html": "touch-phone.docs/i18n/i18n.en.doc.html",
-                "en.md": "touch-phone.docs/i18n/i18n.en.md",
-                "jsdoc.html": "touch-phone.docs/i18n/i18n.jsdoc.html",
-                "jsdoc.json": "touch-phone.docs/i18n/i18n.jsdoc.json",
-                "jsdoc.md": "touch-phone.docs/i18n/i18n.jsdoc.md",
-                "meta.json": "touch-phone.docs/i18n/i18n.meta.json",
-                "ru.doc.html": "touch-phone.docs/i18n/i18n.ru.doc.html",
-                "ru.md": "touch-phone.docs/i18n/i18n.ru.md",
-                "source-files.json": "touch-phone.docs/i18n/i18n.source-files.json",
-                "uk.doc.html": "touch-phone.docs/i18n/i18n.uk.doc.html",
-                "uk.md": "touch-phone.docs/i18n/i18n.uk.md"
             },
             "inherit": {
                 "bemdecl.js": "touch-phone.docs/inherit/inherit.bemdecl.js",
@@ -1798,21 +1798,6 @@
                 "uk.doc.html": "touch-phone.docs/loader/loader.uk.doc.html",
                 "uk.md": "touch-phone.docs/loader/loader.uk.md"
             },
-            "next-tick": {
-                "bemdecl.js": "touch-phone.docs/next-tick/next-tick.bemdecl.js",
-                "data.json": "touch-phone.docs/next-tick/next-tick.data.json",
-                "en.doc.html": "touch-phone.docs/next-tick/next-tick.en.doc.html",
-                "en.md": "touch-phone.docs/next-tick/next-tick.en.md",
-                "jsdoc.html": "touch-phone.docs/next-tick/next-tick.jsdoc.html",
-                "jsdoc.json": "touch-phone.docs/next-tick/next-tick.jsdoc.json",
-                "jsdoc.md": "touch-phone.docs/next-tick/next-tick.jsdoc.md",
-                "meta.json": "touch-phone.docs/next-tick/next-tick.meta.json",
-                "ru.doc.html": "touch-phone.docs/next-tick/next-tick.ru.doc.html",
-                "ru.md": "touch-phone.docs/next-tick/next-tick.ru.md",
-                "source-files.json": "touch-phone.docs/next-tick/next-tick.source-files.json",
-                "uk.doc.html": "touch-phone.docs/next-tick/next-tick.uk.doc.html",
-                "uk.md": "touch-phone.docs/next-tick/next-tick.uk.md"
-            },
             "objects": {
                 "bemdecl.js": "touch-phone.docs/objects/objects.bemdecl.js",
                 "data.json": "touch-phone.docs/objects/objects.data.json",
@@ -1827,6 +1812,21 @@
                 "source-files.json": "touch-phone.docs/objects/objects.source-files.json",
                 "uk.doc.html": "touch-phone.docs/objects/objects.uk.doc.html",
                 "uk.md": "touch-phone.docs/objects/objects.uk.md"
+            },
+            "next-tick": {
+                "bemdecl.js": "touch-phone.docs/next-tick/next-tick.bemdecl.js",
+                "data.json": "touch-phone.docs/next-tick/next-tick.data.json",
+                "en.doc.html": "touch-phone.docs/next-tick/next-tick.en.doc.html",
+                "en.md": "touch-phone.docs/next-tick/next-tick.en.md",
+                "jsdoc.html": "touch-phone.docs/next-tick/next-tick.jsdoc.html",
+                "jsdoc.json": "touch-phone.docs/next-tick/next-tick.jsdoc.json",
+                "jsdoc.md": "touch-phone.docs/next-tick/next-tick.jsdoc.md",
+                "meta.json": "touch-phone.docs/next-tick/next-tick.meta.json",
+                "ru.doc.html": "touch-phone.docs/next-tick/next-tick.ru.doc.html",
+                "ru.md": "touch-phone.docs/next-tick/next-tick.ru.md",
+                "source-files.json": "touch-phone.docs/next-tick/next-tick.source-files.json",
+                "uk.doc.html": "touch-phone.docs/next-tick/next-tick.uk.doc.html",
+                "uk.md": "touch-phone.docs/next-tick/next-tick.uk.md"
             },
             "page": {
                 "bemdecl.js": "touch-phone.docs/page/page.bemdecl.js",
@@ -2185,6 +2185,21 @@
                 "uk.doc.html": "touch-phone.docs/tick/tick.uk.doc.html",
                 "uk.md": "touch-phone.docs/tick/tick.uk.md"
             },
+            "uri": {
+                "bemdecl.js": "touch-phone.docs/uri/uri.bemdecl.js",
+                "data.json": "touch-phone.docs/uri/uri.data.json",
+                "en.doc.html": "touch-phone.docs/uri/uri.en.doc.html",
+                "en.md": "touch-phone.docs/uri/uri.en.md",
+                "jsdoc.html": "touch-phone.docs/uri/uri.jsdoc.html",
+                "jsdoc.json": "touch-phone.docs/uri/uri.jsdoc.json",
+                "jsdoc.md": "touch-phone.docs/uri/uri.jsdoc.md",
+                "meta.json": "touch-phone.docs/uri/uri.meta.json",
+                "ru.doc.html": "touch-phone.docs/uri/uri.ru.doc.html",
+                "ru.md": "touch-phone.docs/uri/uri.ru.md",
+                "source-files.json": "touch-phone.docs/uri/uri.source-files.json",
+                "uk.doc.html": "touch-phone.docs/uri/uri.uk.doc.html",
+                "uk.md": "touch-phone.docs/uri/uri.uk.md"
+            },
             "ua": {
                 "bemdecl.js": "touch-phone.docs/ua/ua.bemdecl.js",
                 "data.json": "touch-phone.docs/ua/ua.data.json",
@@ -2223,21 +2238,6 @@
                         "touch-phone.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.uk.html"
                     ]
                 }
-            },
-            "uri": {
-                "bemdecl.js": "touch-phone.docs/uri/uri.bemdecl.js",
-                "data.json": "touch-phone.docs/uri/uri.data.json",
-                "en.doc.html": "touch-phone.docs/uri/uri.en.doc.html",
-                "en.md": "touch-phone.docs/uri/uri.en.md",
-                "jsdoc.html": "touch-phone.docs/uri/uri.jsdoc.html",
-                "jsdoc.json": "touch-phone.docs/uri/uri.jsdoc.json",
-                "jsdoc.md": "touch-phone.docs/uri/uri.jsdoc.md",
-                "meta.json": "touch-phone.docs/uri/uri.meta.json",
-                "ru.doc.html": "touch-phone.docs/uri/uri.ru.doc.html",
-                "ru.md": "touch-phone.docs/uri/uri.ru.md",
-                "source-files.json": "touch-phone.docs/uri/uri.source-files.json",
-                "uk.doc.html": "touch-phone.docs/uri/uri.uk.doc.html",
-                "uk.md": "touch-phone.docs/uri/uri.uk.md"
             },
             "vow": {
                 "bemdecl.js": "touch-phone.docs/vow/vow.bemdecl.js",

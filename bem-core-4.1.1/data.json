@@ -79,20 +79,20 @@
                 "uk.doc.html": "desktop.docs/cookie/cookie.uk.doc.html",
                 "uk.md": "desktop.docs/cookie/cookie.uk.md"
             },
-            "dom": {
-                "bemdecl.js": "desktop.docs/dom/dom.bemdecl.js",
-                "data.json": "desktop.docs/dom/dom.data.json",
-                "en.doc.html": "desktop.docs/dom/dom.en.doc.html",
-                "en.md": "desktop.docs/dom/dom.en.md",
-                "jsdoc.html": "desktop.docs/dom/dom.jsdoc.html",
-                "jsdoc.json": "desktop.docs/dom/dom.jsdoc.json",
-                "jsdoc.md": "desktop.docs/dom/dom.jsdoc.md",
-                "meta.json": "desktop.docs/dom/dom.meta.json",
-                "ru.doc.html": "desktop.docs/dom/dom.ru.doc.html",
-                "ru.md": "desktop.docs/dom/dom.ru.md",
-                "source-files.json": "desktop.docs/dom/dom.source-files.json",
-                "uk.doc.html": "desktop.docs/dom/dom.uk.doc.html",
-                "uk.md": "desktop.docs/dom/dom.uk.md"
+            "functions": {
+                "bemdecl.js": "desktop.docs/functions/functions.bemdecl.js",
+                "data.json": "desktop.docs/functions/functions.data.json",
+                "en.doc.html": "desktop.docs/functions/functions.en.doc.html",
+                "en.md": "desktop.docs/functions/functions.en.md",
+                "jsdoc.html": "desktop.docs/functions/functions.jsdoc.html",
+                "jsdoc.json": "desktop.docs/functions/functions.jsdoc.json",
+                "jsdoc.md": "desktop.docs/functions/functions.jsdoc.md",
+                "meta.json": "desktop.docs/functions/functions.meta.json",
+                "ru.doc.html": "desktop.docs/functions/functions.ru.doc.html",
+                "ru.md": "desktop.docs/functions/functions.ru.md",
+                "source-files.json": "desktop.docs/functions/functions.source-files.json",
+                "uk.doc.html": "desktop.docs/functions/functions.uk.doc.html",
+                "uk.md": "desktop.docs/functions/functions.uk.md"
             },
             "events": {
                 "bemdecl.js": "desktop.docs/events/events.bemdecl.js",
@@ -109,20 +109,20 @@
                 "uk.doc.html": "desktop.docs/events/events.uk.doc.html",
                 "uk.md": "desktop.docs/events/events.uk.md"
             },
-            "functions": {
-                "bemdecl.js": "desktop.docs/functions/functions.bemdecl.js",
-                "data.json": "desktop.docs/functions/functions.data.json",
-                "en.doc.html": "desktop.docs/functions/functions.en.doc.html",
-                "en.md": "desktop.docs/functions/functions.en.md",
-                "jsdoc.html": "desktop.docs/functions/functions.jsdoc.html",
-                "jsdoc.json": "desktop.docs/functions/functions.jsdoc.json",
-                "jsdoc.md": "desktop.docs/functions/functions.jsdoc.md",
-                "meta.json": "desktop.docs/functions/functions.meta.json",
-                "ru.doc.html": "desktop.docs/functions/functions.ru.doc.html",
-                "ru.md": "desktop.docs/functions/functions.ru.md",
-                "source-files.json": "desktop.docs/functions/functions.source-files.json",
-                "uk.doc.html": "desktop.docs/functions/functions.uk.doc.html",
-                "uk.md": "desktop.docs/functions/functions.uk.md"
+            "dom": {
+                "bemdecl.js": "desktop.docs/dom/dom.bemdecl.js",
+                "data.json": "desktop.docs/dom/dom.data.json",
+                "en.doc.html": "desktop.docs/dom/dom.en.doc.html",
+                "en.md": "desktop.docs/dom/dom.en.md",
+                "jsdoc.html": "desktop.docs/dom/dom.jsdoc.html",
+                "jsdoc.json": "desktop.docs/dom/dom.jsdoc.json",
+                "jsdoc.md": "desktop.docs/dom/dom.jsdoc.md",
+                "meta.json": "desktop.docs/dom/dom.meta.json",
+                "ru.doc.html": "desktop.docs/dom/dom.ru.doc.html",
+                "ru.md": "desktop.docs/dom/dom.ru.md",
+                "source-files.json": "desktop.docs/dom/dom.source-files.json",
+                "uk.doc.html": "desktop.docs/dom/dom.uk.doc.html",
+                "uk.md": "desktop.docs/dom/dom.uk.md"
             },
             "i-bem": {
                 "bemdecl.js": "desktop.docs/i-bem/i-bem.bemdecl.js",
@@ -184,21 +184,6 @@
                 "uk.doc.html": "desktop.docs/identify/identify.uk.doc.html",
                 "uk.md": "desktop.docs/identify/identify.uk.md"
             },
-            "inherit": {
-                "bemdecl.js": "desktop.docs/inherit/inherit.bemdecl.js",
-                "data.json": "desktop.docs/inherit/inherit.data.json",
-                "en.doc.html": "desktop.docs/inherit/inherit.en.doc.html",
-                "en.md": "desktop.docs/inherit/inherit.en.md",
-                "jsdoc.html": "desktop.docs/inherit/inherit.jsdoc.html",
-                "jsdoc.json": "desktop.docs/inherit/inherit.jsdoc.json",
-                "jsdoc.md": "desktop.docs/inherit/inherit.jsdoc.md",
-                "meta.json": "desktop.docs/inherit/inherit.meta.json",
-                "ru.doc.html": "desktop.docs/inherit/inherit.ru.doc.html",
-                "ru.md": "desktop.docs/inherit/inherit.ru.md",
-                "source-files.json": "desktop.docs/inherit/inherit.source-files.json",
-                "uk.doc.html": "desktop.docs/inherit/inherit.uk.doc.html",
-                "uk.md": "desktop.docs/inherit/inherit.uk.md"
-            },
             "idle": {
                 "bemdecl.js": "desktop.docs/idle/idle.bemdecl.js",
                 "data.json": "desktop.docs/idle/idle.data.json",
@@ -229,20 +214,20 @@
                 "uk.doc.html": "desktop.docs/jquery/jquery.uk.doc.html",
                 "uk.md": "desktop.docs/jquery/jquery.uk.md"
             },
-            "keyboard": {
-                "bemdecl.js": "desktop.docs/keyboard/keyboard.bemdecl.js",
-                "data.json": "desktop.docs/keyboard/keyboard.data.json",
-                "en.doc.html": "desktop.docs/keyboard/keyboard.en.doc.html",
-                "en.md": "desktop.docs/keyboard/keyboard.en.md",
-                "jsdoc.html": "desktop.docs/keyboard/keyboard.jsdoc.html",
-                "jsdoc.json": "desktop.docs/keyboard/keyboard.jsdoc.json",
-                "jsdoc.md": "desktop.docs/keyboard/keyboard.jsdoc.md",
-                "meta.json": "desktop.docs/keyboard/keyboard.meta.json",
-                "ru.doc.html": "desktop.docs/keyboard/keyboard.ru.doc.html",
-                "ru.md": "desktop.docs/keyboard/keyboard.ru.md",
-                "source-files.json": "desktop.docs/keyboard/keyboard.source-files.json",
-                "uk.doc.html": "desktop.docs/keyboard/keyboard.uk.doc.html",
-                "uk.md": "desktop.docs/keyboard/keyboard.uk.md"
+            "inherit": {
+                "bemdecl.js": "desktop.docs/inherit/inherit.bemdecl.js",
+                "data.json": "desktop.docs/inherit/inherit.data.json",
+                "en.doc.html": "desktop.docs/inherit/inherit.en.doc.html",
+                "en.md": "desktop.docs/inherit/inherit.en.md",
+                "jsdoc.html": "desktop.docs/inherit/inherit.jsdoc.html",
+                "jsdoc.json": "desktop.docs/inherit/inherit.jsdoc.json",
+                "jsdoc.md": "desktop.docs/inherit/inherit.jsdoc.md",
+                "meta.json": "desktop.docs/inherit/inherit.meta.json",
+                "ru.doc.html": "desktop.docs/inherit/inherit.ru.doc.html",
+                "ru.md": "desktop.docs/inherit/inherit.ru.md",
+                "source-files.json": "desktop.docs/inherit/inherit.source-files.json",
+                "uk.doc.html": "desktop.docs/inherit/inherit.uk.doc.html",
+                "uk.md": "desktop.docs/inherit/inherit.uk.md"
             },
             "loader": {
                 "bemdecl.js": "desktop.docs/loader/loader.bemdecl.js",
@@ -288,6 +273,36 @@
                 "source-files.json": "desktop.docs/objects/objects.source-files.json",
                 "uk.doc.html": "desktop.docs/objects/objects.uk.doc.html",
                 "uk.md": "desktop.docs/objects/objects.uk.md"
+            },
+            "strings": {
+                "bemdecl.js": "desktop.docs/strings/strings.bemdecl.js",
+                "data.json": "desktop.docs/strings/strings.data.json",
+                "en.doc.html": "desktop.docs/strings/strings.en.doc.html",
+                "en.md": "desktop.docs/strings/strings.en.md",
+                "jsdoc.html": "desktop.docs/strings/strings.jsdoc.html",
+                "jsdoc.json": "desktop.docs/strings/strings.jsdoc.json",
+                "jsdoc.md": "desktop.docs/strings/strings.jsdoc.md",
+                "meta.json": "desktop.docs/strings/strings.meta.json",
+                "ru.doc.html": "desktop.docs/strings/strings.ru.doc.html",
+                "ru.md": "desktop.docs/strings/strings.ru.md",
+                "source-files.json": "desktop.docs/strings/strings.source-files.json",
+                "uk.doc.html": "desktop.docs/strings/strings.uk.doc.html",
+                "uk.md": "desktop.docs/strings/strings.uk.md"
+            },
+            "keyboard": {
+                "bemdecl.js": "desktop.docs/keyboard/keyboard.bemdecl.js",
+                "data.json": "desktop.docs/keyboard/keyboard.data.json",
+                "en.doc.html": "desktop.docs/keyboard/keyboard.en.doc.html",
+                "en.md": "desktop.docs/keyboard/keyboard.en.md",
+                "jsdoc.html": "desktop.docs/keyboard/keyboard.jsdoc.html",
+                "jsdoc.json": "desktop.docs/keyboard/keyboard.jsdoc.json",
+                "jsdoc.md": "desktop.docs/keyboard/keyboard.jsdoc.md",
+                "meta.json": "desktop.docs/keyboard/keyboard.meta.json",
+                "ru.doc.html": "desktop.docs/keyboard/keyboard.ru.doc.html",
+                "ru.md": "desktop.docs/keyboard/keyboard.ru.md",
+                "source-files.json": "desktop.docs/keyboard/keyboard.source-files.json",
+                "uk.doc.html": "desktop.docs/keyboard/keyboard.uk.doc.html",
+                "uk.md": "desktop.docs/keyboard/keyboard.uk.md"
             },
             "page": {
                 "bemdecl.js": "desktop.docs/page/page.bemdecl.js",
@@ -727,36 +742,6 @@
                     ]
                 }
             },
-            "strings": {
-                "bemdecl.js": "desktop.docs/strings/strings.bemdecl.js",
-                "data.json": "desktop.docs/strings/strings.data.json",
-                "en.doc.html": "desktop.docs/strings/strings.en.doc.html",
-                "en.md": "desktop.docs/strings/strings.en.md",
-                "jsdoc.html": "desktop.docs/strings/strings.jsdoc.html",
-                "jsdoc.json": "desktop.docs/strings/strings.jsdoc.json",
-                "jsdoc.md": "desktop.docs/strings/strings.jsdoc.md",
-                "meta.json": "desktop.docs/strings/strings.meta.json",
-                "ru.doc.html": "desktop.docs/strings/strings.ru.doc.html",
-                "ru.md": "desktop.docs/strings/strings.ru.md",
-                "source-files.json": "desktop.docs/strings/strings.source-files.json",
-                "uk.doc.html": "desktop.docs/strings/strings.uk.doc.html",
-                "uk.md": "desktop.docs/strings/strings.uk.md"
-            },
-            "tick": {
-                "bemdecl.js": "desktop.docs/tick/tick.bemdecl.js",
-                "data.json": "desktop.docs/tick/tick.data.json",
-                "en.doc.html": "desktop.docs/tick/tick.en.doc.html",
-                "en.md": "desktop.docs/tick/tick.en.md",
-                "jsdoc.html": "desktop.docs/tick/tick.jsdoc.html",
-                "jsdoc.json": "desktop.docs/tick/tick.jsdoc.json",
-                "jsdoc.md": "desktop.docs/tick/tick.jsdoc.md",
-                "meta.json": "desktop.docs/tick/tick.meta.json",
-                "ru.doc.html": "desktop.docs/tick/tick.ru.doc.html",
-                "ru.md": "desktop.docs/tick/tick.ru.md",
-                "source-files.json": "desktop.docs/tick/tick.source-files.json",
-                "uk.doc.html": "desktop.docs/tick/tick.uk.doc.html",
-                "uk.md": "desktop.docs/tick/tick.uk.md"
-            },
             "ua": {
                 "bemdecl.js": "desktop.docs/ua/ua.bemdecl.js",
                 "data.json": "desktop.docs/ua/ua.data.json",
@@ -795,6 +780,21 @@
                         "desktop.examples/ua/xwdM5EFeTinUwG_RSViGelI1y8/xwdM5EFeTinUwG_RSViGelI1y8.uk.html"
                     ]
                 }
+            },
+            "tick": {
+                "bemdecl.js": "desktop.docs/tick/tick.bemdecl.js",
+                "data.json": "desktop.docs/tick/tick.data.json",
+                "en.doc.html": "desktop.docs/tick/tick.en.doc.html",
+                "en.md": "desktop.docs/tick/tick.en.md",
+                "jsdoc.html": "desktop.docs/tick/tick.jsdoc.html",
+                "jsdoc.json": "desktop.docs/tick/tick.jsdoc.json",
+                "jsdoc.md": "desktop.docs/tick/tick.jsdoc.md",
+                "meta.json": "desktop.docs/tick/tick.meta.json",
+                "ru.doc.html": "desktop.docs/tick/tick.ru.doc.html",
+                "ru.md": "desktop.docs/tick/tick.ru.md",
+                "source-files.json": "desktop.docs/tick/tick.source-files.json",
+                "uk.doc.html": "desktop.docs/tick/tick.uk.doc.html",
+                "uk.md": "desktop.docs/tick/tick.uk.md"
             },
             "uri": {
                 "bemdecl.js": "desktop.docs/uri/uri.bemdecl.js",
@@ -904,21 +904,6 @@
                 "uk.doc.html": "touch-pad.docs/cookie/cookie.uk.doc.html",
                 "uk.md": "touch-pad.docs/cookie/cookie.uk.md"
             },
-            "dom": {
-                "bemdecl.js": "touch-pad.docs/dom/dom.bemdecl.js",
-                "data.json": "touch-pad.docs/dom/dom.data.json",
-                "en.doc.html": "touch-pad.docs/dom/dom.en.doc.html",
-                "en.md": "touch-pad.docs/dom/dom.en.md",
-                "jsdoc.html": "touch-pad.docs/dom/dom.jsdoc.html",
-                "jsdoc.json": "touch-pad.docs/dom/dom.jsdoc.json",
-                "jsdoc.md": "touch-pad.docs/dom/dom.jsdoc.md",
-                "meta.json": "touch-pad.docs/dom/dom.meta.json",
-                "ru.doc.html": "touch-pad.docs/dom/dom.ru.doc.html",
-                "ru.md": "touch-pad.docs/dom/dom.ru.md",
-                "source-files.json": "touch-pad.docs/dom/dom.source-files.json",
-                "uk.doc.html": "touch-pad.docs/dom/dom.uk.doc.html",
-                "uk.md": "touch-pad.docs/dom/dom.uk.md"
-            },
             "events": {
                 "bemdecl.js": "touch-pad.docs/events/events.bemdecl.js",
                 "data.json": "touch-pad.docs/events/events.data.json",
@@ -964,21 +949,6 @@
                 "uk.doc.html": "touch-pad.docs/i-bem/i-bem.uk.doc.html",
                 "uk.md": "touch-pad.docs/i-bem/i-bem.uk.md"
             },
-            "i18n": {
-                "bemdecl.js": "touch-pad.docs/i18n/i18n.bemdecl.js",
-                "data.json": "touch-pad.docs/i18n/i18n.data.json",
-                "en.doc.html": "touch-pad.docs/i18n/i18n.en.doc.html",
-                "en.md": "touch-pad.docs/i18n/i18n.en.md",
-                "jsdoc.html": "touch-pad.docs/i18n/i18n.jsdoc.html",
-                "jsdoc.json": "touch-pad.docs/i18n/i18n.jsdoc.json",
-                "jsdoc.md": "touch-pad.docs/i18n/i18n.jsdoc.md",
-                "meta.json": "touch-pad.docs/i18n/i18n.meta.json",
-                "ru.doc.html": "touch-pad.docs/i18n/i18n.ru.doc.html",
-                "ru.md": "touch-pad.docs/i18n/i18n.ru.md",
-                "source-files.json": "touch-pad.docs/i18n/i18n.source-files.json",
-                "uk.doc.html": "touch-pad.docs/i18n/i18n.uk.doc.html",
-                "uk.md": "touch-pad.docs/i18n/i18n.uk.md"
-            },
             "i-bem-dom": {
                 "bemdecl.js": "touch-pad.docs/i-bem-dom/i-bem-dom.bemdecl.js",
                 "data.json": "touch-pad.docs/i-bem-dom/i-bem-dom.data.json",
@@ -993,6 +963,21 @@
                 "source-files.json": "touch-pad.docs/i-bem-dom/i-bem-dom.source-files.json",
                 "uk.doc.html": "touch-pad.docs/i-bem-dom/i-bem-dom.uk.doc.html",
                 "uk.md": "touch-pad.docs/i-bem-dom/i-bem-dom.uk.md"
+            },
+            "i18n": {
+                "bemdecl.js": "touch-pad.docs/i18n/i18n.bemdecl.js",
+                "data.json": "touch-pad.docs/i18n/i18n.data.json",
+                "en.doc.html": "touch-pad.docs/i18n/i18n.en.doc.html",
+                "en.md": "touch-pad.docs/i18n/i18n.en.md",
+                "jsdoc.html": "touch-pad.docs/i18n/i18n.jsdoc.html",
+                "jsdoc.json": "touch-pad.docs/i18n/i18n.jsdoc.json",
+                "jsdoc.md": "touch-pad.docs/i18n/i18n.jsdoc.md",
+                "meta.json": "touch-pad.docs/i18n/i18n.meta.json",
+                "ru.doc.html": "touch-pad.docs/i18n/i18n.ru.doc.html",
+                "ru.md": "touch-pad.docs/i18n/i18n.ru.md",
+                "source-files.json": "touch-pad.docs/i18n/i18n.source-files.json",
+                "uk.doc.html": "touch-pad.docs/i18n/i18n.uk.doc.html",
+                "uk.md": "touch-pad.docs/i18n/i18n.uk.md"
             },
             "identify": {
                 "bemdecl.js": "touch-pad.docs/identify/identify.bemdecl.js",
@@ -1539,6 +1524,21 @@
                 "source-files.json": "touch-pad.docs/vow/vow.source-files.json",
                 "uk.doc.html": "touch-pad.docs/vow/vow.uk.doc.html",
                 "uk.md": "touch-pad.docs/vow/vow.uk.md"
+            },
+            "dom": {
+                "bemdecl.js": "touch-pad.docs/dom/dom.bemdecl.js",
+                "data.json": "touch-pad.docs/dom/dom.data.json",
+                "en.doc.html": "touch-pad.docs/dom/dom.en.doc.html",
+                "en.md": "touch-pad.docs/dom/dom.en.md",
+                "jsdoc.html": "touch-pad.docs/dom/dom.jsdoc.html",
+                "jsdoc.json": "touch-pad.docs/dom/dom.jsdoc.json",
+                "jsdoc.md": "touch-pad.docs/dom/dom.jsdoc.md",
+                "meta.json": "touch-pad.docs/dom/dom.meta.json",
+                "ru.doc.html": "touch-pad.docs/dom/dom.ru.doc.html",
+                "ru.md": "touch-pad.docs/dom/dom.ru.md",
+                "source-files.json": "touch-pad.docs/dom/dom.source-files.json",
+                "uk.doc.html": "touch-pad.docs/dom/dom.uk.doc.html",
+                "uk.md": "touch-pad.docs/dom/dom.uk.md"
             }
         },
         "touch-phone": {
@@ -1708,21 +1708,6 @@
                 "uk.doc.html": "touch-phone.docs/i18n/i18n.uk.doc.html",
                 "uk.md": "touch-phone.docs/i18n/i18n.uk.md"
             },
-            "identify": {
-                "bemdecl.js": "touch-phone.docs/identify/identify.bemdecl.js",
-                "data.json": "touch-phone.docs/identify/identify.data.json",
-                "en.doc.html": "touch-phone.docs/identify/identify.en.doc.html",
-                "en.md": "touch-phone.docs/identify/identify.en.md",
-                "jsdoc.html": "touch-phone.docs/identify/identify.jsdoc.html",
-                "jsdoc.json": "touch-phone.docs/identify/identify.jsdoc.json",
-                "jsdoc.md": "touch-phone.docs/identify/identify.jsdoc.md",
-                "meta.json": "touch-phone.docs/identify/identify.meta.json",
-                "ru.doc.html": "touch-phone.docs/identify/identify.ru.doc.html",
-                "ru.md": "touch-phone.docs/identify/identify.ru.md",
-                "source-files.json": "touch-phone.docs/identify/identify.source-files.json",
-                "uk.doc.html": "touch-phone.docs/identify/identify.uk.doc.html",
-                "uk.md": "touch-phone.docs/identify/identify.uk.md"
-            },
             "idle": {
                 "bemdecl.js": "touch-phone.docs/idle/idle.bemdecl.js",
                 "data.json": "touch-phone.docs/idle/idle.data.json",
@@ -1738,50 +1723,20 @@
                 "uk.doc.html": "touch-phone.docs/idle/idle.uk.doc.html",
                 "uk.md": "touch-phone.docs/idle/idle.uk.md"
             },
-            "inherit": {
-                "bemdecl.js": "touch-phone.docs/inherit/inherit.bemdecl.js",
-                "data.json": "touch-phone.docs/inherit/inherit.data.json",
-                "en.doc.html": "touch-phone.docs/inherit/inherit.en.doc.html",
-                "en.md": "touch-phone.docs/inherit/inherit.en.md",
-                "jsdoc.html": "touch-phone.docs/inherit/inherit.jsdoc.html",
-                "jsdoc.json": "touch-phone.docs/inherit/inherit.jsdoc.json",
-                "jsdoc.md": "touch-phone.docs/inherit/inherit.jsdoc.md",
-                "meta.json": "touch-phone.docs/inherit/inherit.meta.json",
-                "ru.doc.html": "touch-phone.docs/inherit/inherit.ru.doc.html",
-                "ru.md": "touch-phone.docs/inherit/inherit.ru.md",
-                "source-files.json": "touch-phone.docs/inherit/inherit.source-files.json",
-                "uk.doc.html": "touch-phone.docs/inherit/inherit.uk.doc.html",
-                "uk.md": "touch-phone.docs/inherit/inherit.uk.md"
-            },
-            "jquery": {
-                "bemdecl.js": "touch-phone.docs/jquery/jquery.bemdecl.js",
-                "data.json": "touch-phone.docs/jquery/jquery.data.json",
-                "en.doc.html": "touch-phone.docs/jquery/jquery.en.doc.html",
-                "en.md": "touch-phone.docs/jquery/jquery.en.md",
-                "jsdoc.html": "touch-phone.docs/jquery/jquery.jsdoc.html",
-                "jsdoc.json": "touch-phone.docs/jquery/jquery.jsdoc.json",
-                "jsdoc.md": "touch-phone.docs/jquery/jquery.jsdoc.md",
-                "meta.json": "touch-phone.docs/jquery/jquery.meta.json",
-                "ru.doc.html": "touch-phone.docs/jquery/jquery.ru.doc.html",
-                "ru.md": "touch-phone.docs/jquery/jquery.ru.md",
-                "source-files.json": "touch-phone.docs/jquery/jquery.source-files.json",
-                "uk.doc.html": "touch-phone.docs/jquery/jquery.uk.doc.html",
-                "uk.md": "touch-phone.docs/jquery/jquery.uk.md"
-            },
-            "keyboard": {
-                "bemdecl.js": "touch-phone.docs/keyboard/keyboard.bemdecl.js",
-                "data.json": "touch-phone.docs/keyboard/keyboard.data.json",
-                "en.doc.html": "touch-phone.docs/keyboard/keyboard.en.doc.html",
-                "en.md": "touch-phone.docs/keyboard/keyboard.en.md",
-                "jsdoc.html": "touch-phone.docs/keyboard/keyboard.jsdoc.html",
-                "jsdoc.json": "touch-phone.docs/keyboard/keyboard.jsdoc.json",
-                "jsdoc.md": "touch-phone.docs/keyboard/keyboard.jsdoc.md",
-                "meta.json": "touch-phone.docs/keyboard/keyboard.meta.json",
-                "ru.doc.html": "touch-phone.docs/keyboard/keyboard.ru.doc.html",
-                "ru.md": "touch-phone.docs/keyboard/keyboard.ru.md",
-                "source-files.json": "touch-phone.docs/keyboard/keyboard.source-files.json",
-                "uk.doc.html": "touch-phone.docs/keyboard/keyboard.uk.doc.html",
-                "uk.md": "touch-phone.docs/keyboard/keyboard.uk.md"
+            "identify": {
+                "bemdecl.js": "touch-phone.docs/identify/identify.bemdecl.js",
+                "data.json": "touch-phone.docs/identify/identify.data.json",
+                "en.doc.html": "touch-phone.docs/identify/identify.en.doc.html",
+                "en.md": "touch-phone.docs/identify/identify.en.md",
+                "jsdoc.html": "touch-phone.docs/identify/identify.jsdoc.html",
+                "jsdoc.json": "touch-phone.docs/identify/identify.jsdoc.json",
+                "jsdoc.md": "touch-phone.docs/identify/identify.jsdoc.md",
+                "meta.json": "touch-phone.docs/identify/identify.meta.json",
+                "ru.doc.html": "touch-phone.docs/identify/identify.ru.doc.html",
+                "ru.md": "touch-phone.docs/identify/identify.ru.md",
+                "source-files.json": "touch-phone.docs/identify/identify.source-files.json",
+                "uk.doc.html": "touch-phone.docs/identify/identify.uk.doc.html",
+                "uk.md": "touch-phone.docs/identify/identify.uk.md"
             },
             "loader": {
                 "bemdecl.js": "touch-phone.docs/loader/loader.bemdecl.js",
@@ -1797,6 +1752,21 @@
                 "source-files.json": "touch-phone.docs/loader/loader.source-files.json",
                 "uk.doc.html": "touch-phone.docs/loader/loader.uk.doc.html",
                 "uk.md": "touch-phone.docs/loader/loader.uk.md"
+            },
+            "inherit": {
+                "bemdecl.js": "touch-phone.docs/inherit/inherit.bemdecl.js",
+                "data.json": "touch-phone.docs/inherit/inherit.data.json",
+                "en.doc.html": "touch-phone.docs/inherit/inherit.en.doc.html",
+                "en.md": "touch-phone.docs/inherit/inherit.en.md",
+                "jsdoc.html": "touch-phone.docs/inherit/inherit.jsdoc.html",
+                "jsdoc.json": "touch-phone.docs/inherit/inherit.jsdoc.json",
+                "jsdoc.md": "touch-phone.docs/inherit/inherit.jsdoc.md",
+                "meta.json": "touch-phone.docs/inherit/inherit.meta.json",
+                "ru.doc.html": "touch-phone.docs/inherit/inherit.ru.doc.html",
+                "ru.md": "touch-phone.docs/inherit/inherit.ru.md",
+                "source-files.json": "touch-phone.docs/inherit/inherit.source-files.json",
+                "uk.doc.html": "touch-phone.docs/inherit/inherit.uk.doc.html",
+                "uk.md": "touch-phone.docs/inherit/inherit.uk.md"
             },
             "next-tick": {
                 "bemdecl.js": "touch-phone.docs/next-tick/next-tick.bemdecl.js",
@@ -2253,6 +2223,36 @@
                 "source-files.json": "touch-phone.docs/vow/vow.source-files.json",
                 "uk.doc.html": "touch-phone.docs/vow/vow.uk.doc.html",
                 "uk.md": "touch-phone.docs/vow/vow.uk.md"
+            },
+            "keyboard": {
+                "bemdecl.js": "touch-phone.docs/keyboard/keyboard.bemdecl.js",
+                "data.json": "touch-phone.docs/keyboard/keyboard.data.json",
+                "en.doc.html": "touch-phone.docs/keyboard/keyboard.en.doc.html",
+                "en.md": "touch-phone.docs/keyboard/keyboard.en.md",
+                "jsdoc.html": "touch-phone.docs/keyboard/keyboard.jsdoc.html",
+                "jsdoc.json": "touch-phone.docs/keyboard/keyboard.jsdoc.json",
+                "jsdoc.md": "touch-phone.docs/keyboard/keyboard.jsdoc.md",
+                "meta.json": "touch-phone.docs/keyboard/keyboard.meta.json",
+                "ru.doc.html": "touch-phone.docs/keyboard/keyboard.ru.doc.html",
+                "ru.md": "touch-phone.docs/keyboard/keyboard.ru.md",
+                "source-files.json": "touch-phone.docs/keyboard/keyboard.source-files.json",
+                "uk.doc.html": "touch-phone.docs/keyboard/keyboard.uk.doc.html",
+                "uk.md": "touch-phone.docs/keyboard/keyboard.uk.md"
+            },
+            "jquery": {
+                "bemdecl.js": "touch-phone.docs/jquery/jquery.bemdecl.js",
+                "data.json": "touch-phone.docs/jquery/jquery.data.json",
+                "en.doc.html": "touch-phone.docs/jquery/jquery.en.doc.html",
+                "en.md": "touch-phone.docs/jquery/jquery.en.md",
+                "jsdoc.html": "touch-phone.docs/jquery/jquery.jsdoc.html",
+                "jsdoc.json": "touch-phone.docs/jquery/jquery.jsdoc.json",
+                "jsdoc.md": "touch-phone.docs/jquery/jquery.jsdoc.md",
+                "meta.json": "touch-phone.docs/jquery/jquery.meta.json",
+                "ru.doc.html": "touch-phone.docs/jquery/jquery.ru.doc.html",
+                "ru.md": "touch-phone.docs/jquery/jquery.ru.md",
+                "source-files.json": "touch-phone.docs/jquery/jquery.source-files.json",
+                "uk.doc.html": "touch-phone.docs/jquery/jquery.uk.doc.html",
+                "uk.md": "touch-phone.docs/jquery/jquery.uk.md"
             }
         }
     },

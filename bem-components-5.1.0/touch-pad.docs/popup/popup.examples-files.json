@@ -60,22 +60,6 @@
         },
         {
             "entity": {
-                "block": "scrollable"
-            },
-            "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks/popup/popup.examples/20-popup.blocks",
-            "tech": "css",
-            "path": "common.blocks/popup/popup.examples/20-popup.blocks/scrollable/scrollable.css"
-        },
-        {
-            "entity": {
-                "block": "scrollable"
-            },
-            "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks/popup/popup.examples/20-popup.blocks",
-            "tech": "post.css",
-            "path": "common.blocks/popup/popup.examples/20-popup.blocks/scrollable/scrollable.post.css"
-        },
-        {
-            "entity": {
                 "block": "popup"
             },
             "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks/popup/popup.examples/20-popup.blocks",
@@ -89,6 +73,22 @@
             "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks/popup/popup.examples/20-popup.blocks",
             "tech": "post.css",
             "path": "common.blocks/popup/popup.examples/20-popup.blocks/popup/popup.post.css"
+        },
+        {
+            "entity": {
+                "block": "scrollable"
+            },
+            "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks/popup/popup.examples/20-popup.blocks",
+            "tech": "css",
+            "path": "common.blocks/popup/popup.examples/20-popup.blocks/scrollable/scrollable.css"
+        },
+        {
+            "entity": {
+                "block": "scrollable"
+            },
+            "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks/popup/popup.examples/20-popup.blocks",
+            "tech": "post.css",
+            "path": "common.blocks/popup/popup.examples/20-popup.blocks/scrollable/scrollable.post.css"
         },
         {
             "entity": {

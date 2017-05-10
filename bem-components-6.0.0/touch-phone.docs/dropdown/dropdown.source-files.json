@@ -76,6 +76,15 @@
     {
         "entity": {
             "block": "dropdown",
+            "elem": "switcher"
+        },
+        "level": "/Users/vitaly/bem/bem-components-6.0.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/dropdown/__switcher/dropdown__switcher.js"
+    },
+    {
+        "entity": {
+            "block": "dropdown",
             "modName": "switcher",
             "modVal": "button"
         },
@@ -172,15 +181,6 @@
         "level": "/Users/vitaly/bem/bem-components-6.0.0/common.blocks",
         "tech": "spec.js",
         "path": "common.blocks/dropdown/_switcher/dropdown_switcher_link.spec.js"
-    },
-    {
-        "entity": {
-            "block": "dropdown",
-            "elem": "switcher"
-        },
-        "level": "/Users/vitaly/bem/bem-components-6.0.0/common.blocks",
-        "tech": "js",
-        "path": "common.blocks/dropdown/__switcher/dropdown__switcher.js"
     },
     {
         "entity": {

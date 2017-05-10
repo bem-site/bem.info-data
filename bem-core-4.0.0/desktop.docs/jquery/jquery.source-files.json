@@ -34,6 +34,15 @@
     {
         "entity": {
             "block": "jquery",
+            "elem": "event"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/jquery/__event/jquery__event.ru.md"
+    },
+    {
+        "entity": {
+            "block": "jquery",
             "elem": "config"
         },
         "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
@@ -48,15 +57,6 @@
         "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
         "tech": "ru.md",
         "path": "common.blocks/jquery/__config/jquery__config.ru.md"
-    },
-    {
-        "entity": {
-            "block": "jquery",
-            "elem": "event"
-        },
-        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
-        "tech": "ru.md",
-        "path": "common.blocks/jquery/__event/jquery__event.ru.md"
     },
     {
         "entity": {

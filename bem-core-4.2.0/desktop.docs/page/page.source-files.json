@@ -76,24 +76,6 @@
     {
         "entity": {
             "block": "page",
-            "elem": "js"
-        },
-        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
-        "tech": "bemhtml.js",
-        "path": "common.blocks/page/__js/page__js.bemhtml.js"
-    },
-    {
-        "entity": {
-            "block": "page",
-            "elem": "js"
-        },
-        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
-        "tech": "bh.js",
-        "path": "common.blocks/page/__js/page__js.bh.js"
-    },
-    {
-        "entity": {
-            "block": "page",
             "elem": "css"
         },
         "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
@@ -108,6 +90,24 @@
         "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
         "tech": "bh.js",
         "path": "common.blocks/page/__css/page__css.bh.js"
+    },
+    {
+        "entity": {
+            "block": "page",
+            "elem": "js"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "common.blocks/page/__js/page__js.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "page",
+            "elem": "js"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "bh.js",
+        "path": "common.blocks/page/__js/page__js.bh.js"
     },
     {
         "entity": {

@@ -3,7 +3,7 @@
         "entity": {
             "block": "image"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "bemhtml.js",
         "path": "common.blocks/image/image.bemhtml.js"
     },
@@ -11,7 +11,7 @@
         "entity": {
             "block": "image"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "bh.js",
         "path": "common.blocks/image/image.bh.js"
     },
@@ -19,7 +19,7 @@
         "entity": {
             "block": "image"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "css",
         "path": "common.blocks/image/image.css"
     },
@@ -27,7 +27,7 @@
         "entity": {
             "block": "image"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "en.md",
         "path": "common.blocks/image/image.en.md"
     },
@@ -35,7 +35,7 @@
         "entity": {
             "block": "image"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "post.css",
         "path": "common.blocks/image/image.post.css"
     },
@@ -43,7 +43,7 @@
         "entity": {
             "block": "image"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "ru.md",
         "path": "common.blocks/image/image.ru.md"
     },
@@ -51,7 +51,7 @@
         "entity": {
             "block": "image"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "tests",
         "path": "common.blocks/image/image.tests",
         "isDir": true
@@ -60,7 +60,7 @@
         "entity": {
             "block": "image"
         },
-        "level": "/Users/vitaly/bem/bem.info/.cache/libs/bem-components-5.0.0/common.blocks",
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "tmpl-specs",
         "path": "common.blocks/image/image.tmpl-specs",
         "isDir": true

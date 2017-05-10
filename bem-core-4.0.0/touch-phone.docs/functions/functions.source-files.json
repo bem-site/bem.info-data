@@ -26,24 +26,6 @@
     {
         "entity": {
             "block": "functions",
-            "elem": "debounce"
-        },
-        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
-        "tech": "spec.js",
-        "path": "common.blocks/functions/__debounce/functions__debounce.spec.js"
-    },
-    {
-        "entity": {
-            "block": "functions",
-            "elem": "debounce"
-        },
-        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
-        "tech": "vanilla.js",
-        "path": "common.blocks/functions/__debounce/functions__debounce.vanilla.js"
-    },
-    {
-        "entity": {
-            "block": "functions",
             "elem": "throttle"
         },
         "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
@@ -58,5 +40,23 @@
         "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
         "tech": "vanilla.js",
         "path": "common.blocks/functions/__throttle/functions__throttle.vanilla.js"
+    },
+    {
+        "entity": {
+            "block": "functions",
+            "elem": "debounce"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/functions/__debounce/functions__debounce.spec.js"
+    },
+    {
+        "entity": {
+            "block": "functions",
+            "elem": "debounce"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "vanilla.js",
+        "path": "common.blocks/functions/__debounce/functions__debounce.vanilla.js"
     }
 ]

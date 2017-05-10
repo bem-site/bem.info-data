@@ -182,24 +182,6 @@
     {
         "entity": {
             "block": "attach",
-            "elem": "text"
-        },
-        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
-        "tech": "bemhtml.js",
-        "path": "common.blocks/attach/__text/attach__text.bemhtml.js"
-    },
-    {
-        "entity": {
-            "block": "attach",
-            "elem": "text"
-        },
-        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
-        "tech": "bh.js",
-        "path": "common.blocks/attach/__text/attach__text.bh.js"
-    },
-    {
-        "entity": {
-            "block": "attach",
             "elem": "no-file"
         },
         "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
@@ -214,6 +196,24 @@
         "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
         "tech": "bh.js",
         "path": "common.blocks/attach/__no-file/attach__no-file.bh.js"
+    },
+    {
+        "entity": {
+            "block": "attach",
+            "elem": "text"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "common.blocks/attach/__text/attach__text.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "attach",
+            "elem": "text"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "bh.js",
+        "path": "common.blocks/attach/__text/attach__text.bh.js"
     },
     {
         "entity": {
