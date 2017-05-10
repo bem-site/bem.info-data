@@ -1,0 +1,35 @@
+<h1 class="article__heading article__heading_1" id="identify-1"><a href="#identify-1" class="article__heading-anchor"></a>identify</h1><p>This block provides a function for working with unique identifiers. It allows you to:</p>
+<ul>
+<li>Create object identifiers.</li>
+<li>Check whether objects have an identifier.</li>
+<li>Create a unique identifier string.</li>
+</ul>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li>[<code>obj {Object}</code>] – The object to identify.</li>
+<li>[<code>onlyGet {Boolean}</code>] – Flag for checking whether the object has an identifier. If <code>true</code>, the function returns a string with the identifier if the object was previously assigned an identifier. By default, <code>false</code>.</li>
+</ul>
+<p><strong>Return value:</strong> <code>String</code>. A string with the identifier assigned to the object. Subsequent calls will always return the same identifier.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'identify'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">identify</span>) </span>{
+    <span class="hljs-keyword">var</span> a = {},
+        b = {},
+        identA = identify(a);
+
+    <span class="hljs-built_in">console</span>.log(identA === identify(a)); <span class="hljs-comment">//true</span>
+    <span class="hljs-built_in">console</span>.log(identA === identify(b)); <span class="hljs-comment">//false</span>
+});
+</code></pre>
+<p>When called without arguments, the function returns a string with a unique identifier every time.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'identify'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">identify</span>) </span>{
+    <span class="hljs-keyword">var</span> a = identify(),
+        b = identify();
+
+    <span class="hljs-built_in">console</span>.log(a === b); <span class="hljs-comment">//false</span>
+});
+</code></pre>
+<h2 class="article__heading article__heading_2" id="public-block-technologies-5"><a href="#public-block-technologies-5" class="article__heading-anchor"></a>Public block technologies</h2><p>The block is implemented in:</p>
+<ul>
+<li><code>vanilla.js</code></li>
+</ul>

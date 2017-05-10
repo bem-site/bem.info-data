@@ -1,0 +1,137 @@
+<h1 class="article__heading article__heading_1" id="dom-1"><a href="#dom-1" class="article__heading-anchor"></a>dom</h1><p>This block provides an object with a set of methods for working with the DOM tree.</p>
+<h2 class="article__heading article__heading_2" id="overview-1"><a href="#overview-1" class="article__heading-anchor"></a>Overview</h2><h3 class="article__heading article__heading_3" id="object-properties-and-methods-2"><a href="#object-properties-and-methods-2" class="article__heading-anchor"></a>Object properties and methods</h3><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Return type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#fields-contains">contains</a>(<br><code>ctx {jQuery}</code>,<br><code>domElem {jQuery}</code>)</td>
+<td><code>Boolean</code></td>
+<td>Checks whether a DOM element contains another DOM element.</td>
+</tr>
+<tr>
+<td><a href="#fields-getFocused">getFocused</a>(<br><code>domElem {jQuery}</code>)</td>
+<td><code>jQuery</code></td>
+<td>Gets a reference to the DOM element that is in focus.</td>
+</tr>
+<tr>
+<td><a href="#fields-containsFocus">containsFocus</a>(<br><code>domElem {jQuery}</code>)</td>
+<td><code>Boolean</code></td>
+<td>Checks whether a DOM element or its descendants contains the focus.</td>
+</tr>
+<tr>
+<td><a href="#fields-isFocusable">isFocusable</a>(<br><code>domElem {jQuery}</code>)</td>
+<td><code>Boolean</code></td>
+<td>Checks whether the DOM element is in focus.</td>
+</tr>
+<tr>
+<td><a href="#fields-isEditable">isEditable</a>(<br><code>domElem {jQuery}</code>)</td>
+<td><code>Boolean</code></td>
+<td>Checks whether text can be entered in the DOM element.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="public-block-technologies-2"><a href="#public-block-technologies-2" class="article__heading-anchor"></a>Public block technologies</h3><p>The block is implemented in:</p>
+<ul>
+<li><code>js</code></li>
+</ul>
+<h2 class="article__heading article__heading_2" id="description-1"><a href="#description-1" class="article__heading-anchor"></a>Description</h2><p><a name="fields"></a></p>
+<h3 class="article__heading article__heading_3" id="object-properties-and-methods-3"><a href="#object-properties-and-methods-3" class="article__heading-anchor"></a>Object properties and methods</h3><p><a name="fields-contains"></a></p>
+<h4 class="article__heading article__heading_4" id="codecontainscode-method"><a href="#codecontainscode-method" class="article__heading-anchor"></a><code>contains</code> method</h4><p>Use this method to check whether a <code>ctx</code> DOM element contains <code>domElem</code>.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>ctx {jQuery}</code> – The DOM element to search inside. Required argument.</li>
+<li><code>domElem {jQuery}</code> – The DOM element to search for. Required argument.</li>
+</ul>
+<p><strong>Return value:</strong> <code>Boolean</code>. If found, then <code>true</code>.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'dom'</span>, <span class="hljs-string">'jquery'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">dom, $</span>) </span>{
+
+<span class="hljs-comment">/*
+&lt;div class="block1"&gt;
+  &lt;div class="block2"&gt;&lt;/div&gt;
+&lt;/div&gt;
+*/</span>
+
+dom.contains($(<span class="hljs-string">'.block1'</span>), $(<span class="hljs-string">'.block2'</span>));  <span class="hljs-comment">// true</span>
+
+});
+</code></pre>
+<p><a name="fields-getFocused"></a></p>
+<h4 class="article__heading article__heading_4" id="codegetfocusedcode-method"><a href="#codegetfocusedcode-method" class="article__heading-anchor"></a><code>getFocused</code> method</h4><p>Gets a reference to the DOM element that is in focus.</p>
+<p>Doesn&#39;t accept arguments.</p>
+<p><strong>Return value:</strong> <code>jQuery</code> – The object in focus.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'dom'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">dom</span>) </span>{
+
+dom.getFocused(); <span class="hljs-comment">// a reference to the element in focus</span>
+
+});
+</code></pre>
+<p><a name="fields-containsFocus"></a></p>
+<h4 class="article__heading article__heading_4" id="codecontainsfocuscode-method"><a href="#codecontainsfocuscode-method" class="article__heading-anchor"></a><code>containsFocus</code> method</h4><p>This method checks whether the focus is on the DOM element passed in the argument or one of its descendants.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>domElem {jQuery}</code> – The DOM element to check. Required argument.</li>
+</ul>
+<p><strong>Return value:</strong> <code>Boolean</code>. If this element is in focus, then <code>true</code>.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'dom'</span>, <span class="hljs-string">'jquery'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">dom, $</span>) </span>{
+
+<span class="hljs-comment">/*
+&lt;div class="block1"&gt;
+  &lt;input class="block1__control"&gt;&lt;/div&gt;
+&lt;/div&gt;
+*/</span>
+
+$(<span class="hljs-string">'.block1__control'</span>).focus();
+dom.containsFocus($(<span class="hljs-string">'.block1'</span>));  <span class="hljs-comment">// true</span>
+
+});
+</code></pre>
+<p><a name="fields-isFocusable"></a></p>
+<h4 class="article__heading article__heading_4" id="codeisfocusablecode-method"><a href="#codeisfocusablecode-method" class="article__heading-anchor"></a><code>isFocusable</code> method</h4><p>This method checks whether the user&#39;s browser can set the focus on the DOM element passed in the argument.   </p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>domElem {jQuery}</code> – The DOM element to check. Required argument. If there are mutiple DOM elements in the jQuery chain, the first one is checked.</li>
+</ul>
+<p><strong>Return value:</strong> <code>Boolean</code>. If the focus can be set on this element, then <code>true</code>.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'dom'</span>, <span class="hljs-string">'jquery'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">dom, $</span>) </span>{
+
+<span class="hljs-comment">/*
+&lt;div class="menu"&gt;
+  &lt;a class="menu__item" href="/"&gt;Link 1&lt;/a&gt;
+&lt;/div&gt;
+*/</span>
+
+dom.isFocusable($(<span class="hljs-string">'.menu__item'</span>)); <span class="hljs-comment">// true</span>
+
+<span class="hljs-comment">/*
+&lt;div class="menu"&gt;
+  &lt;span class="menu__item menu__item_current"&gt;Link 1&lt;/span&gt;
+&lt;/div&gt;
+*/</span>
+
+dom.isFocusable($(<span class="hljs-string">'.menu__item'</span>)); <span class="hljs-comment">// false</span>
+
+});
+</code></pre>
+<p><a name="fields-isEditable"></a></p>
+<h4 class="article__heading article__heading_4" id="codeiseditablecode-method"><a href="#codeiseditablecode-method" class="article__heading-anchor"></a><code>isEditable</code> method</h4><p>This method checks whether text can be entered in the DOM element passed in the argument. In other words, you can use this method to check whether the element is an input field, text field, and so on.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>domElem {jQuery}</code> – The DOM element to check. Required argument. If there are mutiple DOM elements in the jQuery chain, the first one is checked.</li>
+</ul>
+<p><strong>Return value:</strong> <code>Boolean</code>. If text can be entered in the DOM element, then <code>true</code>.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'dom'</span>, <span class="hljs-string">'jquery'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">dom, $</span>) </span>{
+
+dom.isEditable($(<span class="hljs-string">'input, textarea'</span>)); <span class="hljs-comment">// true</span>
+
+});
+</code></pre>

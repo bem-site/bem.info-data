@@ -1,0 +1,253 @@
+<h1 class="article__heading article__heading_1" id="inherit-1"><a href="#inherit-1" class="article__heading-anchor"></a>inherit</h1><p>This block provides a function for declaring and inheriting classes.</p>
+<h2 class="article__heading article__heading_2" id="overview-5"><a href="#overview-5" class="article__heading-anchor"></a>Overview</h2><h3 class="article__heading article__heading_3" id="usage"><a href="#usage" class="article__heading-anchor"></a>Usage</h3><table>
+<thead>
+<tr>
+<th>Use</th>
+<th>Signature</th>
+<th>Return type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#runmode-declare">Declaring a base class</a></td>
+<td>inherit(<br><code>props {Object}</code>, <br><code>[staticProps {Object}]</code>)</td>
+<td><code>Function</code></td>
+<td>Use for creating (declaring) a base class from the object properties.</td>
+</tr>
+<tr>
+<td><a href="#runmode-extend">Creating a derived class</a></td>
+<td>inherit(<br><code>BaseClass {Function}</code>&#124;<code>{Array}</code>, <br><code>props {Object}</code>, <br><code>[staticProps {Object}]</code>)</td>
+<td><code>Function</code></td>
+<td>Use for inheriting and redefining the properties and methods of a base class.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="special-fields-of-the-declared-class"><a href="#special-fields-of-the-declared-class" class="article__heading-anchor"></a>Special fields of the declared class</h3><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Data type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#constructor">__constructor</a></td>
+<td><code>Function</code></td>
+<td>The function that will be called when creating a class instance.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="special-fields-of-the-declared-class-instance"><a href="#special-fields-of-the-declared-class-instance" class="article__heading-anchor"></a>Special fields of the declared class instance</h3><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Data type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#self">__self</a></td>
+<td><code>*</code></td>
+<td>Allows you to access the class and its instance.</td>
+</tr>
+<tr>
+<td><a href="#base">__base</a></td>
+<td><code>Function</code></td>
+<td>Allows you to use the methods of the base class inside the derived class (super call).</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="public-block-technologies-7"><a href="#public-block-technologies-7" class="article__heading-anchor"></a>Public block technologies</h3><p>The block is implemented in:</p>
+<ul>
+<li><code>vanilla.js</code></li>
+</ul>
+<h2 class="article__heading article__heading_2" id="description-5"><a href="#description-5" class="article__heading-anchor"></a>Description</h2><p>Use the <code>inherit</code> function to:</p>
+<ul>
+<li>Create a class using a declaration.</li>
+<li>Set a constructor method.</li>
+<li>Use mix-ins.</li>
+<li>Call the methods of the base implementation (super call).</li>
+<li>Get access to static properties of a class from its instance.</li>
+</ul>
+<p>This is the main block inheritance mechanism in <code>bem-core</code>.</p>
+<p>The function is polymorphic and, depending on the first argument type, it can be used for:</p>
+<ul>
+<li><code>Object</code> type – declaring the base class.</li>
+<li><code>Function</code> type – deriving a class from the base class.</li>
+</ul>
+<p>The signature of the function&#39;s other arguments depends on how it is run.</p>
+<h3 class="article__heading article__heading_3" id="usage-1"><a href="#usage-1" class="article__heading-anchor"></a>Usage</h3><p><a name="runmode-declare"></a></p>
+<h4 class="article__heading article__heading_4" id="declaring-a-base-class"><a href="#declaring-a-base-class" class="article__heading-anchor"></a>Declaring a base class</h4><p>This approach allows you to define the base class by passing the function an object with the class properties.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>props {Object}</code> – An object with its own properties for the base class. Required argument.</li>
+<li>[<code>staticProps {Object}</code>] – An object with static properties of the base class.</li>
+</ul>
+<p><strong>Return value:</strong> <code>Function</code>. The fully-formed class.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'inherit'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">inherit</span>) </span>{
+
+<span class="hljs-keyword">var</span> props = {}, <span class="hljs-comment">// object for the base class properties</span>
+    baseClass = inherit(props); <span class="hljs-comment">// base class</span>
+
+});
+</code></pre>
+<h5 class="article__heading article__heading_5" id="base-class-with-static-properties"><a href="#base-class-with-static-properties" class="article__heading-anchor"></a>Base class with static properties</h5><p>Properties of the <code>staticProps</code> object are added as static properties for the class being created.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'inherit'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">inherit</span>) </span>{
+
+<span class="hljs-keyword">var</span> A = inherit(props, {
+    <span class="hljs-attr">callMe</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'mr.Static'</span>);
+    }
+});
+
+A.callMe(); <span class="hljs-comment">// mr.Static</span>
+
+});
+</code></pre>
+<h5 class="article__heading article__heading_5" id="special-fields-of-the-declared-class-1"><a href="#special-fields-of-the-declared-class-1" class="article__heading-anchor"></a>Special fields of the declared class</h5><p><a name="constructor"></a></p>
+<h6 class="article__heading article__heading_6" id="code__constructorcode-field"><a href="#code__constructorcode-field" class="article__heading-anchor"></a><code>__constructor</code> field</h6><p>Type: <code>Function</code>.</p>
+<p>The object with the base class properties can contain the reserved <code>__constructor</code> property, a function that is called automatically when a class instance is created.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'inherit'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">inherit</span>) </span>{
+
+<span class="hljs-keyword">var</span> A = inherit({
+        <span class="hljs-attr">__constructor</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">property</span>) </span>{ <span class="hljs-comment">// constructor</span>
+            <span class="hljs-keyword">this</span>.property = property;
+        },
+
+        <span class="hljs-attr">getProperty</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.property + <span class="hljs-string">' of instanceA'</span>;
+        }
+    }),
+    aInst = <span class="hljs-keyword">new</span> A(<span class="hljs-string">'Property'</span>);
+
+aInst.getProperty(); <span class="hljs-comment">// Property of instanceA</span>
+
+});
+</code></pre>
+<p><a name="runmode-extend"></a></p>
+<h4 class="article__heading article__heading_4" id="creating-a-derived-class"><a href="#creating-a-derived-class" class="article__heading-anchor"></a>Creating a derived class</h4><p>This approach allows you to create a derived class from the base class and the objects with the static properties and the custom properties.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>BaseClass {Function} | {Array}</code> – The base class. Can be an array of mix-in functions. Required argument.</li>
+<li><code>props {Object}</code> – Custom properties (added to the prototype). Required argument.</li>
+<li>[<code>staticProps {Object}</code>] – Static properties.</li>
+</ul>
+<p>If one of the objects contains properties that already exist in the base class, the base class properties are redefined.</p>
+<p><strong>Return value:</strong> <code>Function</code>. Derived class.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'inherit'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">inherit</span>) </span>{
+
+<span class="hljs-keyword">var</span> A = inherit({
+    <span class="hljs-attr">getType</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'A'</span>;
+    }
+});
+
+<span class="hljs-comment">// class derived from A</span>
+<span class="hljs-keyword">var</span> B = inherit(A, {
+    <span class="hljs-attr">getType</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-comment">// redefinition + super call</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.__base() + <span class="hljs-string">'B'</span>;
+    }
+});
+
+<span class="hljs-keyword">var</span> instanceOfB = <span class="hljs-keyword">new</span> B();
+
+instanceOfB.getType(); <span class="hljs-comment">// returns 'AB'</span>
+
+});
+</code></pre>
+<h5 class="article__heading article__heading_5" id="creating-a-derived-class-with-mix-ins"><a href="#creating-a-derived-class-with-mix-ins" class="article__heading-anchor"></a>Creating a derived class with mix-ins</h5><p>When declaring a derived class, you can specify an additional set of functions. Their properties will be mixed in to the created class. To do this, the first argument for <code>inherit</code> should specify an array that has the base class as its first element, followed by the functions to mix in.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'inherit'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">inherit</span>) </span>{
+
+<span class="hljs-keyword">var</span> A = inherit({
+    <span class="hljs-attr">getA</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'A'</span>;
+    }
+});
+
+<span class="hljs-keyword">var</span> B = inherit({
+    <span class="hljs-attr">getB</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'B'</span>;
+    }
+});
+
+<span class="hljs-comment">// class derived from A and B</span>
+<span class="hljs-keyword">var</span> C = inherit([A, B], {
+    <span class="hljs-attr">getAll</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.getA() + <span class="hljs-keyword">this</span>.getB();
+    }
+});
+
+<span class="hljs-keyword">var</span> instanceOfC = <span class="hljs-keyword">new</span> C();
+
+instanceOfC.getAll(); <span class="hljs-comment">// returns 'AB'</span>
+
+});
+</code></pre>
+<h5 class="article__heading article__heading_5" id="special-fields-of-the-declared-class-instance-1"><a href="#special-fields-of-the-declared-class-instance-1" class="article__heading-anchor"></a>Special fields of the declared class instance</h5><p><a name="self"></a></p>
+<h6 class="article__heading article__heading_6" id="code__selfcode-field"><a href="#code__selfcode-field" class="article__heading-anchor"></a><code>__self</code> field</h6><p>Type: <code>*</code>.</p>
+<p>Allows you to access the class and its instance.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'inherit'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">inherit</span>) </span>{
+
+<span class="hljs-keyword">var</span> A = inherit({
+        <span class="hljs-attr">getStaticProperty</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.__self.staticMethod; <span class="hljs-comment">// access to static methods</span>
+        }
+    }, {
+        <span class="hljs-attr">staticProperty</span> : <span class="hljs-string">'staticA'</span>,
+
+        <span class="hljs-attr">staticMethod</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.staticProperty;
+        }
+    }),
+    aInst = <span class="hljs-keyword">new</span> A();
+
+aInst.getStaticProperty(); <span class="hljs-comment">//staticA</span>
+
+});
+</code></pre>
+<p><a name="base"></a></p>
+<h6 class="article__heading article__heading_6" id="code__basecode-1"><a href="#code__basecode-1" class="article__heading-anchor"></a><code>__base</code></h6><p>Type: <code>Function</code>.</p>
+<p>Allows you to call base class methods inside the derived class (super call). When used in a static method, it will call the static method of the same name in the base class.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'inherit'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">inherit</span>) </span>{
+
+<span class="hljs-keyword">var</span> A = inherit({
+    <span class="hljs-attr">getType</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'A'</span>;
+    }
+}, {
+    <span class="hljs-attr">staticProperty</span> : <span class="hljs-string">'staticA'</span>,
+
+    <span class="hljs-attr">staticMethod</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.staticProperty;
+    }
+});
+
+<span class="hljs-comment">// class derived from A</span>
+<span class="hljs-keyword">var</span> B = inherit(A, {
+    <span class="hljs-attr">getType</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-comment">// redefinition + super call</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.__base() + <span class="hljs-string">'B'</span>;
+    }
+}, {
+    <span class="hljs-attr">staticMethod</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-comment">// static redefinition + super call</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.__base() + <span class="hljs-string">' of staticB'</span>;
+    }
+});
+
+<span class="hljs-keyword">var</span> instanceOfB = <span class="hljs-keyword">new</span> B();
+
+instanceOfB.getType(); <span class="hljs-comment">// returns 'AB'</span>
+B.staticMethod(); <span class="hljs-comment">// returns 'staticA of staticB'</span>
+
+});
+</code></pre>
+<p><a name="extra-examples"></a></p>
+<h3 class="article__heading article__heading_3" id="more-examples"><a href="#more-examples" class="article__heading-anchor"></a>More examples</h3><p>For more examples, see the repository of the <a href="https://github.com/dfilatov/inherit">inherit</a> library.</p>

@@ -1,0 +1,353 @@
+<h1 class="article__heading article__heading_1" id="events-5"><a href="#events-5" class="article__heading-anchor"></a>events</h1><p>This block provides a set of JS classes for working with events.</p>
+<h2 class="article__heading article__heading_2" id="overview-32"><a href="#overview-32" class="article__heading-anchor"></a>Overview</h2><h3 class="article__heading article__heading_3" id="classes-provided-by-the-block-2"><a href="#classes-provided-by-the-block-2" class="article__heading-anchor"></a>Classes provided by the block</h3><table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Constructor</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#class-Event">Event</a></td>
+<td>Event(<br><code>type {String}</code>, <br><code>target {Object}</code>)</td>
+<td>Creates the event object and changes and checks its states.</td>
+</tr>
+<tr>
+<td><a href="#class-Emitter">Emitter</a></td>
+<td>-</td>
+<td>Generates events and subscriptions to them.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="properties-and-methods-of-the-class-object-6"><a href="#properties-and-methods-of-the-class-object-6" class="article__heading-anchor"></a>Properties and methods of the class object</h3><table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Name</th>
+<th>Type or return value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#class-Event">Event</a></td>
+<td><a href="#fields-type">type</a></td>
+<td><code>String</code></td>
+<td>Type of event.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#fields-result">result</a></td>
+<td><code>*</code></td>
+<td>The result returned by the event&#39;s last handler.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#fields-target">target</a></td>
+<td><code>Object</code></td>
+<td>The object where the event occurred.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#fields-data">data</a></td>
+<td><code>*</code></td>
+<td>Data to pass to the handler as an argument.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#fields-preventDefault">preventDefault</a>()</td>
+<td>-</td>
+<td>Allows you to prevent execution of the default action for the event.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#fields-isDefaultPrevented">isDefaultPrevented</a>()</td>
+<td><code>Boolean</code></td>
+<td>Checks whether the default action for the event was prevented from being executed.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#fields-stopPropagation">stopPropagation</a>()</td>
+<td>-</td>
+<td>Allows you to stop event propagation.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#fields-isPropagationStopped">isPropagationStopped</a>()</td>
+<td><code>Boolean</code></td>
+<td>Checks whether event propagation was stopped.</td>
+</tr>
+<tr>
+<td><a href="#class-Emitter">Emitter</a></td>
+<td><a href="#fields-on">on</a>(<br><code>type {String}</code>, <br><code>[data {Object}]</code>, <br><code>fn {Function}</code>, <br><code>[ {Object} ctx]</code>)</td>
+<td>-</td>
+<td>Subscribes to a specific type of event.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#fields-once">once</a>(<br><code>type {String}</code>, <br><code>[data {Object}]</code>, <br><code>fn {Function}</code>, <br><code>[ctx {Object}]</code>)</td>
+<td>-</td>
+<td>Subscribes to a specific type of event. The handler executes only once.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#fields-un">un</a>(<br><code>type {String}</code>, <br><code>fn {Function}</code>, <br><code>[ctx {Object}]</code>)</td>
+<td>-</td>
+<td>Unsubscribes to a specific type of event.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#fields-emit">emit</a>(<br><code>type {String</code>&#124;<code>events:Event}</code>, <br><code>[data {Object}]</code>)</td>
+<td>-</td>
+<td>Generates an event.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="elements-of-the-block-28"><a href="#elements-of-the-block-28" class="article__heading-anchor"></a>Elements of the block</h3><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Usage</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-channels">channels</a></td>
+<td><code>JS</code></td>
+<td>Used for working with named event channels.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="functions-provided-by-block-elements-2"><a href="#functions-provided-by-block-elements-2" class="article__heading-anchor"></a>Functions provided by block elements</h3><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Function</th>
+<th>Return type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-channels">channels</a></td>
+<td>channels(<br><code>[id {String}]</code>, <br><code>[drop {Boolean}]</code>)</td>
+<td><code>Object</code>&#124;<code>undefined</code></td>
+<td>Creates or deletes a named event channel.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="public-block-technologies-41"><a href="#public-block-technologies-41" class="article__heading-anchor"></a>Public block technologies</h3><p>The block is implemented in:</p>
+<ul>
+<li><code>vanilla.js</code></li>
+</ul>
+<h2 class="article__heading article__heading_2" id="description-28"><a href="#description-28" class="article__heading-anchor"></a>Description</h2><p><a name="class-Event"></a></p>
+<h3 class="article__heading article__heading_3" id="codeeventcode-class-2"><a href="#codeeventcode-class-2" class="article__heading-anchor"></a><code>Event</code> class</h3><p>You can use this class to instantiate an event object by indicating its type and source. To do this, use the <code>Event</code> constructor function.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>type {String}</code> – Type of event. Required argument.</li>
+<li><code>target {Object}</code> – Object (source) where the event occurred. Required argument.</li>
+</ul>
+<p><strong>Return value:</strong> <code>Event</code>. The event object.</p>
+<p><a name="fields-Event"></a></p>
+<h4 class="article__heading article__heading_4" id="properties-and-methods-of-the-class-object-7"><a href="#properties-and-methods-of-the-class-object-7" class="article__heading-anchor"></a>Properties and methods of the class object</h4><p><a name="fields-type"></a></p>
+<h5 class="article__heading article__heading_5" id="codetypecode-property-2"><a href="#codetypecode-property-2" class="article__heading-anchor"></a><code>type</code> property</h5><p>Type: <code>String</code>.</p>
+<p>Type of event.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">events</span>) </span>{
+
+    <span class="hljs-keyword">var</span> myevent = <span class="hljs-keyword">new</span> events.Event(<span class="hljs-string">'myevent'</span>, <span class="hljs-keyword">this</span>);
+    <span class="hljs-built_in">console</span>.log(myevent.type); <span class="hljs-comment">// 'myevent'</span>
+
+});
+</code></pre>
+<p><a name="fields-type"></a></p>
+<h5 class="article__heading article__heading_5" id="codetargetcode-property-2"><a href="#codetargetcode-property-2" class="article__heading-anchor"></a><code>target</code> property</h5><p>Type: <code>Object</code>.</p>
+<p>The object where the event occurred.</p>
+<p><a name="fields-result"></a></p>
+<h5 class="article__heading article__heading_5" id="coderesultcode-property-2"><a href="#coderesultcode-property-2" class="article__heading-anchor"></a><code>result</code> property</h5><p>Type: <code>*</code>.</p>
+<p>Contains the data returned by the event&#39;s last handler function.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">events</span>) </span>{
+
+    <span class="hljs-keyword">var</span> myEmitter = <span class="hljs-keyword">new</span> events.Emitter();
+    myEmitter.on(<span class="hljs-string">'myevent'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-keyword">return</span> <span class="hljs-string">'hi-hi-hi'</span>; });
+
+    <span class="hljs-keyword">var</span> myEvent = <span class="hljs-keyword">new</span> events.Event(<span class="hljs-string">'myevent'</span>);
+    myEmitter.emit(myEvent)
+
+    <span class="hljs-built_in">console</span>.log(myEvent.result);    <span class="hljs-comment">// 'hi-hi-hi'</span>
+});
+</code></pre>
+<p><a name="fields-data"></a></p>
+<h5 class="article__heading article__heading_5" id="codedatacode-property-2"><a href="#codedatacode-property-2" class="article__heading-anchor"></a><code>data</code> property</h5><p>Type: <code>*</code>.</p>
+<p>Contains the data passed to the event&#39;s handler function as an argument.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">events</span>) </span>{
+
+    <span class="hljs-keyword">var</span> myEmitter = <span class="hljs-keyword">new</span> events.Emitter();
+    myEmitter.on(<span class="hljs-string">'myevent'</span>, <span class="hljs-string">'my-data'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{ <span class="hljs-built_in">console</span>.log(e.data); });
+
+    myEmitter.emit(<span class="hljs-string">'myevent'</span>); <span class="hljs-comment">// my-data</span>
+});
+</code></pre>
+<p><a name="fields-preventDefault"></a></p>
+<h5 class="article__heading article__heading_5" id="codepreventdefaultcode-method-2"><a href="#codepreventdefaultcode-method-2" class="article__heading-anchor"></a><code>preventDefault</code> method</h5><p>Allows you to prevent execution of the default action for the event.</p>
+<p>Doesn&#39;t accept arguments.</p>
+<p>No return value.</p>
+<p><a name="fields-isDefaultPrevented"></a></p>
+<h5 class="article__heading article__heading_5" id="codeisdefaultpreventedcode-method-2"><a href="#codeisdefaultpreventedcode-method-2" class="article__heading-anchor"></a><code>isDefaultPrevented</code> method</h5><p>Allows you to check whether the default action for the event was prevented from being executed.</p>
+<p>Doesn&#39;t accept arguments.</p>
+<p><strong>Return value:</strong> <code>Boolean</code>. If the default action for the event was prevented from being executed, it is <code>true</code>.</p>
+<p><a name="fields-stopPropagation"></a></p>
+<h5 class="article__heading article__heading_5" id="codestoppropagationcode-method-2"><a href="#codestoppropagationcode-method-2" class="article__heading-anchor"></a><code>stopPropagation</code> method</h5><p>Allows you to stop event propagation.</p>
+<p>Doesn&#39;t accept arguments.</p>
+<p>No return value.</p>
+<p><a name="fields-isPropagationStopped"></a></p>
+<h5 class="article__heading article__heading_5" id="codeispropagationstoppedcode-method-2"><a href="#codeispropagationstoppedcode-method-2" class="article__heading-anchor"></a><code>isPropagationStopped</code> method</h5><p>Allows you to check whether event propagation was stopped.</p>
+<p>Doesn&#39;t accept arguments.</p>
+<p><strong>Return value:</strong> <code>Boolean</code>. If event propagation was stopped, it is <code>true</code>.</p>
+<p><a name="class-Emitter"></a></p>
+<h3 class="article__heading article__heading_3" id="codeemittercode-class-2"><a href="#codeemittercode-class-2" class="article__heading-anchor"></a><code>Emitter</code> class</h3><p>This class instantiates objects that you can use for generating events and subscribing to them.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">events</span>) </span>{
+
+    <span class="hljs-keyword">var</span> myEmitter = <span class="hljs-keyword">new</span> events.Emitter();
+
+});
+</code></pre>
+<p><a name="fields-Event"></a></p>
+<h4 class="article__heading article__heading_4" id="properties-and-methods-of-the-class-object-8"><a href="#properties-and-methods-of-the-class-object-8" class="article__heading-anchor"></a>Properties and methods of the class object</h4><p><a name="fields-on"></a></p>
+<h5 class="article__heading article__heading_5" id="codeoncode-method-2"><a href="#codeoncode-method-2" class="article__heading-anchor"></a><code>on</code> method</h5><p>Subscribes to a specific type of event.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>type {String}</code> – The type of event being subscribed to. Required argument.</li>
+<li>[<code>data {Object}</code>] – Additional data available to the handler as the value of the <code>e.data</code> field in the event object.</li>
+<li><code>fn {Function}</code> – The handler function to call for the event. Required argument.</li>
+<li>[<code>ctx {Object}</code>] – Context for the handler function.</li>
+</ul>
+<p>Returns the <code>this</code> object.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">events</span>) </span>{
+
+    <span class="hljs-keyword">var</span> myEmitter = <span class="hljs-keyword">new</span> events.Emitter();
+
+    myEmitter.on(<span class="hljs-string">'myevent'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'foo'</span>); });
+    myEmitter.emit(<span class="hljs-string">'myevent'</span>); <span class="hljs-comment">// 'foo'</span>
+});
+</code></pre>
+<p>In addition, the value of the <code>type</code> argument may be:</p>
+<ul>
+<li>Multiple event types separated by spaces, in order to set a single handler function for all of them.</li>
+</ul>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">events</span>) </span>{
+
+    <span class="hljs-keyword">var</span> myEmitter = <span class="hljs-keyword">new</span> events.Emitter();
+
+    myEmitter.on(<span class="hljs-string">'myevent1 myevent2'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{ <span class="hljs-built_in">console</span>.log(e.type) });
+
+    myEmitter.emit(<span class="hljs-string">'myevent1'</span>); <span class="hljs-comment">// 'myevent1'</span>
+    myEmitter.emit(<span class="hljs-string">'myevent2'</span>); <span class="hljs-comment">// 'myevent2'</span>
+});
+</code></pre>
+<ul>
+<li>A hash of <code>{ &#39;event-1&#39; : handler-1, ... , &#39;event-n&#39; : handler-n }</code>, in order to set multiple handlers for different event types.</li>
+</ul>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">events</span>) </span>{
+
+    <span class="hljs-keyword">var</span> myEmitter = <span class="hljs-keyword">new</span> events.Emitter();
+
+    myEmitter.on({
+        <span class="hljs-attr">myevent1</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{ <span class="hljs-built_in">console</span>.log(e.type) },
+        <span class="hljs-attr">myevent2</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{ <span class="hljs-built_in">console</span>.log(e.type) }
+    });  
+
+    myEmitter.emit(<span class="hljs-string">'myevent1'</span>); <span class="hljs-comment">// 'myevent1'</span>
+    myEmitter.emit(<span class="hljs-string">'myevent2'</span>); <span class="hljs-comment">// 'myevent2'</span>
+});
+</code></pre>
+<p>The same is true for the <code>once</code> and <code>un</code> methods.</p>
+<p><a name="fields-once"></a></p>
+<h5 class="article__heading article__heading_5" id="codeoncecode-method-2"><a href="#codeoncecode-method-2" class="article__heading-anchor"></a><code>once</code> method</h5><p>Identical to the <code>on</code> method, but it only executes once. After the first event, the subscription is removed.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>type {String}</code> – The type of event being subscribed to. Required argument.</li>
+<li>[<code>data {Object}</code>] – Additional data available as the value of the <code>e.data</code> field in the event object.</li>
+<li><code>fn {Function}</code> – The handler function to call for the event. Required argument.</li>
+<li>[<code>ctx {Object}</code>] – Context for the handler function.</li>
+</ul>
+<p>Returns the <code>this</code> object.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">events</span>) </span>{
+
+    <span class="hljs-keyword">var</span> myEmitter = <span class="hljs-keyword">new</span> events.Emitter();
+
+    myEmitter.on(<span class="hljs-string">'myevent'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'foo'</span>) });
+
+    myEmitter.emit(<span class="hljs-string">'myevent'</span>); <span class="hljs-comment">// 'foo'</span>
+    myEmitter.emit(<span class="hljs-string">'myevent'</span>); <span class="hljs-comment">//handler isn't called</span>
+});
+</code></pre>
+<p><a name="fields-un"></a></p>
+<h5 class="article__heading article__heading_5" id="codeuncode-method-2"><a href="#codeuncode-method-2" class="article__heading-anchor"></a><code>un</code> method</h5><p>Removes a previously set subscription to a specific type of event.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>type {String}</code> – The type of event being unsubscribed from. Required argument.</li>
+<li>[<code>fn {Function}</code>] – The handler to delete.</li>
+<li>[<code>ctx {Object}</code>] – The handler context.</li>
+</ul>
+<p>The method returns a reference to the <code>this</code> object.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">events</span>) </span>{
+
+    <span class="hljs-keyword">var</span> myEmitter = <span class="hljs-keyword">new</span> events.Emitter(),
+        shout = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'foo'</span>) };
+
+    myEmitter.on(<span class="hljs-string">'myevent'</span>, shout);
+    myEmitter.emit(<span class="hljs-string">'myevent'</span>); <span class="hljs-comment">// 'foo'</span>
+
+    myEmitter.un(<span class="hljs-string">'myevent'</span>, shout);
+    myEmitter.emit(<span class="hljs-string">'myevent'</span>); <span class="hljs-comment">//handler isn't called</span>
+});
+</code></pre>
+<p><a name="fields-emit"></a></p>
+<h5 class="article__heading article__heading_5" id="codeemitcode-method-2"><a href="#codeemitcode-method-2" class="article__heading-anchor"></a><code>emit</code> method</h5><p>Generates an event.</p>
+<p>This method calls all the handler functions set for the event.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>type {String|events:Event}</code> – The event to generate, in the form of a string or a prepared event object. Required argument.</li>
+<li>[<code>data {Object}</code>] – Additional data available as the second argument of the handler function.</li>
+</ul>
+<p>Returns the <code>this</code> object.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">events</span>) </span>{
+
+    <span class="hljs-keyword">var</span> myEmitter = <span class="hljs-keyword">new</span> events.Emitter();
+
+    myEmitter.on(<span class="hljs-string">'myevent'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e, data</span>) </span>{ <span class="hljs-built_in">console</span>.log(data) });
+    myEmitter.emit(<span class="hljs-string">'myevent'</span>, <span class="hljs-string">'ololo'</span>);  <span class="hljs-comment">// 'ololo'</span>
+});
+</code></pre>
+<h4 class="article__heading article__heading_4" id="static-methods-of-the-class-2"><a href="#static-methods-of-the-class-2" class="article__heading-anchor"></a>Static methods of the class</h4><p>The set of static methods and their signatures is exactly the same as for the methods of the object being instantiated by the class.</p>
+
+<p><a name="elems-channels"></a></p>
+<h1 class="article__heading article__heading_1" id="codechannelscode-element-in-the-codeeventscode-block-2"><a href="#codechannelscode-element-in-the-codeeventscode-block-2" class="article__heading-anchor"></a><code>channels</code> element in the <code>events</code> block</h1><p>Use the <code>channels</code> element in the <code>events</code> block for working with named event channels. Named channels allow you to work with events using the observer pattern (also known as the publish-subscribe pattern).</p>
+<p>This element implements a function to:</p>
+<ul>
+<li>Get a reference to a named channel by its <code>id</code>.</li>
+<li>Get a reference to a standard channel.</li>
+<li>Remove a standard channel or a named channel with an <code>id</code>.</li>
+</ul>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li>[<code>id {String}</code>] – Channel ID. If omitted, the default channel is used (<code>&#39;default&#39;</code>).</li>
+<li>[<code>drop {Boolean}</code>] – A boolean flag to remove the channel (when <code>true</code>). By default, <code>false</code>.</li>
+</ul>
+<p><strong>Returned value:</strong></p>
+<ul>
+<li><code>Object</code>. Object of the <code>Emitter</code> &quot;class&quot; – a named channel.</li>
+<li><code>undefined</code>. If the function was called with the <code>drop</code> parameter set to <code>true</code>.</li>
+</ul>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'events__channels'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">channels</span>) </span>{
+
+<span class="hljs-keyword">var</span> myChannel = channels(<span class="hljs-string">'my-channel'</span>);
+myChannel.on(<span class="hljs-string">'test'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e, data</span>) </span>{ <span class="hljs-built_in">console</span>.log(data.foo) });
+
+myChannel.emit(<span class="hljs-string">'test'</span>, { <span class="hljs-attr">foo</span> : <span class="hljs-string">'bar'</span> }); <span class="hljs-comment">// 'bar'</span>
+
+});
+</code></pre>

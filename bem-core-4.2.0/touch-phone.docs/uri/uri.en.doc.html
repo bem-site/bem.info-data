@@ -1,0 +1,113 @@
+<h1 class="article__heading article__heading_1" id="uri-3"><a href="#uri-3" class="article__heading-anchor"></a>uri</h1><p>This block provides an object with a set of methods for decoding a URI-encoded string.</p>
+<h2 class="article__heading article__heading_2" id="overview-29"><a href="#overview-29" class="article__heading-anchor"></a>Overview</h2><h3 class="article__heading article__heading_3" id="properties-and-methods-of-the-object-24"><a href="#properties-and-methods-of-the-object-24" class="article__heading-anchor"></a>Properties and methods of the object</h3><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Return type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#fields-decodeURI">decodeURI</a>(<code>str {String}</code>)</td>
+<td><code>String</code></td>
+<td>Decodes a URI.</td>
+</tr>
+<tr>
+<td><a href="#fields-decodeURIComponent">decodeURIComponent</a>(<code>str {String}</code>)</td>
+<td><code>String</code></td>
+<td>Decodes a URI component.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="elements-of-the-block-26"><a href="#elements-of-the-block-26" class="article__heading-anchor"></a>Elements of the block</h3><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Usage</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-querystring">querystring</a></td>
+<td><code>JS</code></td>
+<td>This element provides an object with a set of methods for working with a URI query string. It decodes the string from URI format.</td>
+</tr>
+</tbody>
+</table>
+<h4 class="article__heading article__heading_4" id="properties-and-methods-of-the-object-25"><a href="#properties-and-methods-of-the-object-25" class="article__heading-anchor"></a>Properties and methods of the object</h4><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Name</th>
+<th>Returned value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-querystring">querystring</a></td>
+<td><a href="#elems-querystring-fields-parse">parse</a>(<code>str {String}</code>)</td>
+<td><code>Object</code></td>
+<td>Creates an object using the query parameters from the address bar.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#elems-querystring-fields-stringify">stringify</a>(<code>obj {Object}</code>)</td>
+<td><code>String</code></td>
+<td>Creates a query string based on the object properties.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="public-block-technologies-36"><a href="#public-block-technologies-36" class="article__heading-anchor"></a>Public block technologies</h3><p>The block is implemented in:</p>
+<ul>
+<li><code>vanilla.js</code></li>
+</ul>
+<p><a name="fields"></a></p>
+<h3 class="article__heading article__heading_3" id="properties-and-methods-of-the-object-26"><a href="#properties-and-methods-of-the-object-26" class="article__heading-anchor"></a>Properties and methods of the object</h3><p>Both of these methods function as wrappers for the standard JavaScript methods <code>decodeURI</code> and <code>decodeURIComponent</code>.</p>
+<p>As they execute, the methods check whether the passed string is in UTF-8 format. If not, they generate an error.</p>
+<p><a name="fields-decodeURI"></a></p>
+<h4 class="article__heading article__heading_4" id="codedecodeuricode-method-1"><a href="#codedecodeuricode-method-1" class="article__heading-anchor"></a><code>decodeURI</code> method</h4><p>Decodes a URI. This method is identical to the standard JavaScript method <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURI">decodeURI</a>, but it supports Cyrillic encoding <code>CP-1251</code>.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>str {String}</code> – A string with escape sequences. Required argument.</li>
+</ul>
+<p><strong>Return value:</strong> <code>String</code>. If escape sequences are not found in the string, the method returns the string without any changes.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require(<span class="hljs-string">'uri'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">uri</span>)</span>{
+    uri.decodeURI(<span class="hljs-string">"https://developer.mozilla.org/ru/docs/JavaScript_%D1%88%D0%B5%D0%BB%D0%BB%D1%8B"</span>);
+    <span class="hljs-comment">// "https://developer.mozilla.org/ru/docs/JavaScript_Shells"</span>
+})
+</code></pre>
+<p><a name="fields-decodeURIComponent"></a></p>
+<h4 class="article__heading article__heading_4" id="codedecodeuricomponentcode-method-1"><a href="#codedecodeuricomponentcode-method-1" class="article__heading-anchor"></a><code>decodeURIComponent</code> method</h4><p>Decodes a URI component. This method is identical to the standard JavaScript method <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent">decodeURIComponent</a>, but it supports Cyrillic encoding <code>CP-1251</code>.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>str {String}</code> – A string with escape sequences. Required argument.</li>
+</ul>
+<p><strong>Return value:</strong> <code>String</code>. If escape sequences are not found in the string, the method returns the string without any changes.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require(<span class="hljs-string">'uri'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">uri</span>)</span>{
+    uri.decodeURIComponent(<span class="hljs-string">"JavaScript_%D1%88%D0%B5%D0%BB%D0%BB%D1%8B"</span>);
+    <span class="hljs-comment">// "JavaScript_Shells"</span>
+})
+</code></pre>
+<p><a name="elems"></a></p>
+<h3 class="article__heading article__heading_3" id="elements-of-the-block-27"><a href="#elements-of-the-block-27" class="article__heading-anchor"></a>Elements of the block</h3><p><a name="elems-querystring"></a></p>
+<h4 class="article__heading article__heading_4" id="codequerystringcode-element-1"><a href="#codequerystringcode-element-1" class="article__heading-anchor"></a><code>querystring</code> element</h4><p>This element provides an object with a set of methods for working with a URI query string.</p>
+<p><a name="elems-name-fields"></a></p>
+<h3 class="article__heading article__heading_3" id="properties-and-methods-of-the-object-27"><a href="#properties-and-methods-of-the-object-27" class="article__heading-anchor"></a>Properties and methods of the object</h3><p><a name="elems-querystring-fields-parse"></a></p>
+<h4 class="article__heading article__heading_4" id="codeparsecode-method-1"><a href="#codeparsecode-method-1" class="article__heading-anchor"></a><code>parse</code> method</h4><p>Creates an object using the parameters from a URI query string.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>str {String}</code> – A string with parameters as key-value pairs. The <code>=</code> symbol separates a key from its value. Pairs are separated by the <code>&amp;</code> symbol. During parsing, keys and values are decoded from URI format. Required argument.</li>
+</ul>
+<p><strong>Return value:</strong> <code>Object</code>. The object created from the parameters in the address bar.</p>
+<p><a name="elems-querystring-fields-stringify"></a></p>
+<h4 class="article__heading article__heading_4" id="codestringifycode-method-1"><a href="#codestringifycode-method-1" class="article__heading-anchor"></a><code>stringify</code> method</h4><p>Creates a URI query string from an object.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>obj {Object}</code> – The object to create the string from. Required argument.</li>
+</ul>
+<p><strong>Return value:</strong> <code>String</code>. Property names are separated from values by the <code>=</code> symbol, and the <code>&amp;</code> symbol separates pairs in the string.</p>

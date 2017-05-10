@@ -1,0 +1,211 @@
+<h1 class="article__heading article__heading_1" id="jquery-5"><a href="#jquery-5" class="article__heading-anchor"></a>jquery</h1><p>This block is for downloading the <a href="https://jquery.com">jQuery</a> library and its extensions and enabling them on a page.
+Extensions are enabled via dependencies on the block elements.</p>
+<h2 class="article__heading article__heading_2" id="usage-10"><a href="#usage-10" class="article__heading-anchor"></a>Usage</h2><pre><code class="lang-js">modules.require([<span class="hljs-string">'jquery'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$</span>) </span>{
+    <span class="hljs-built_in">console</span>.log($);
+});
+</code></pre>
+<h2 class="article__heading article__heading_2" id="overview-36"><a href="#overview-36" class="article__heading-anchor"></a>Overview</h2><h3 class="article__heading article__heading_3" id="elements-of-the-block-31"><a href="#elements-of-the-block-31" class="article__heading-anchor"></a>Elements of the block</h3><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Usage</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-config">config</a></td>
+<td><code>JS</code></td>
+<td>jQuery configuration.</td>
+</tr>
+<tr>
+<td><a href="#elems-event">event</a></td>
+<td><code>JS</code></td>
+<td>Extensions for the jQuery event model.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="properties-and-methods-of-the-block-elements-6"><a href="#properties-and-methods-of-the-block-elements-6" class="article__heading-anchor"></a>Properties and methods of the block elements</h3><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Name</th>
+<th>Return type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-config">config</a></td>
+<td><a href="#fields-url">url</a></td>
+<td><code>String</code></td>
+<td>String with the URL for connecting the jQuery library.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="events-of-the-block-elements-2"><a href="#events-of-the-block-elements-2" class="article__heading-anchor"></a>Events of the block elements</h3><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-event">event</a></td>
+<td><a href="#events-pointerclick">pointerclick</a></td>
+<td>Eliminates the delay of the <code>click</code> event on touch devices.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#events-pointerover">pointerover</a></td>
+<td>Generated when the pointer on the input device is over an element.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#events-pointerenter">pointerenter</a></td>
+<td>Generated when the pointer enters an element&#39;s active area.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#events-pointerdown">pointerdown</a></td>
+<td>Generated when the input device enters the active button state.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#events-pointermove">pointermove</a></td>
+<td>Generated when the pointer&#39;s coordinates change.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#events-pointerup">pointerup</a></td>
+<td>Generated when exiting the active button state.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#events-pointerout">pointerout</a></td>
+<td>Generated when the pointer leaves the area over an element.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#events-pointerleave">pointerleave</a></td>
+<td>Generated when the pointer leaves an element&#39;s active area.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#events-pointerpress">pointerpress</a></td>
+<td>Generated on the <code>pointerdown</code> event.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#events-pointerrelease">pointerrelease</a></td>
+<td>Generated on the <code>pointerup</code> and <code>pointercancel</code> events.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#events-pointercancel">pointercancel</a></td>
+<td>Generated when more pointer events are not expected to occur, or after generating the <code>pointerdown</code> event.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="public-block-technologies-46"><a href="#public-block-technologies-46" class="article__heading-anchor"></a>Public block technologies</h3><p>The block is implemented in:</p>
+<ul>
+<li><code>js</code></li>
+</ul>
+
+<p><a name="elems-event"></a></p>
+<h1 class="article__heading article__heading_1" id="codeeventcode-element-in-the-codejquerycode-block-2"><a href="#codeeventcode-element-in-the-codejquerycode-block-2" class="article__heading-anchor"></a><code>event</code> element in the <code>jquery</code> block</h1><p>This element implements support for additional types of jQuery events. The additional types are enabled using the corresponding values of the <code>type</code> modifier.</p>
+<p><a name="modifiers"></a></p>
+<h2 class="article__heading article__heading_2" id="element-modifiers-2"><a href="#element-modifiers-2" class="article__heading-anchor"></a>Element modifiers</h2><p><a name="modifiers-name"></a></p>
+<h3 class="article__heading article__heading_3" id="codetypecode-modifier-4"><a href="#codetypecode-modifier-4" class="article__heading-anchor"></a><code>type</code> modifier</h3><p>Provides a set of polyfills that implement the abstraction layer over jQuery events on input devices. This allows you to create a shared logic for different platforms (desktop, phone, etc.) and supplement it with methods specific to the device type.</p>
+<p>Each polyfill adds a set of <strong>pointer events</strong> for creating hardware agnostic logic.</p>
+<p>All the pointer events are jQuery user events. Subscribe to pointer events in the standard way:</p>
+<pre><code class="lang-js">modules.define(<span class="hljs-string">'pointer-test'</span>, [<span class="hljs-string">'i-bem-dom'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">provide, bemDom</span>) </span>{
+
+provide(bemDom.declBlock(<span class="hljs-keyword">this</span>.name, <span class="hljs-comment">/** @lends pointer-test.prototype */</span> {
+    <span class="hljs-attr">onSetMod</span> : {
+        <span class="hljs-attr">js</span> : {
+            <span class="hljs-attr">inited</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+                <span class="hljs-comment">// subscribing to pointerpress on the block itself during initialization</span>
+                <span class="hljs-keyword">this</span>._domEvents().on(<span class="hljs-string">'pointerpress'</span>, <span class="hljs-keyword">this</span>._onPress);
+            }
+        }
+    },
+    <span class="hljs-attr">_onPress</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+        <span class="hljs-built_in">console</span>.log(e.type);
+        <span class="hljs-comment">// subscribing to pointerrelease when calling the pointerpress handler</span>
+        <span class="hljs-keyword">this</span>._domEvents().on(<span class="hljs-string">'pointerrelease'</span>, <span class="hljs-keyword">this</span>._onRelease);
+    },
+    <span class="hljs-attr">_onRelease</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+        <span class="hljs-built_in">console</span>.log(e.type);
+        <span class="hljs-comment">// unsubscribing from pointerrelease when calling the pointerrelease handler</span>
+        <span class="hljs-keyword">this</span>._domEvents().un(<span class="hljs-string">'pointerrelease'</span>, <span class="hljs-keyword">this</span>._onRelease);
+    }
+}));
+});
+</code></pre>
+<p>Different polyfills are enabled depending on the modifier&#39;s value.</p>
+<p><a name="modifiers-type-pointer"></a></p>
+<h4 class="article__heading article__heading_4" id="codetypecode-modifier-with-the-codepointercode-value-2"><a href="#codetypecode-modifier-with-the-codepointercode-value-2" class="article__heading-anchor"></a><code>type</code> modifier with the <code>pointer</code> value</h4><p>This is a modifier for enabling all types of pointer events. It doesn&#39;t introduce additional logic.</p>
+<p><a name="modifiers-type-pointerclick"></a></p>
+<h4 class="article__heading article__heading_4" id="codetypecode-modifier-with-the-codepointerclickcode-value-2"><a href="#codetypecode-modifier-with-the-codepointerclickcode-value-2" class="article__heading-anchor"></a><code>type</code> modifier with the <code>pointerclick</code> value</h4><p>Enables a polyfill that implements the <code>pointerclick</code> event.</p>
+<p><a name="events-pointerclick"></a></p>
+<h5 class="article__heading article__heading_5" id="codepointerclickcode-event-2"><a href="#codepointerclickcode-event-2" class="article__heading-anchor"></a><code>pointerclick</code> event</h5><p>Generated for a left click or a touch on the device screen. Using <code>pointerclick</code> eliminates the delay of the <code>click</code> event on touch devices.</p>
+<p><a name="modifiers-type-pointernative"></a></p>
+<h4 class="article__heading article__heading_4" id="codetypecode-modifier-with-the-codepointernativecode-value-2"><a href="#codetypecode-modifier-with-the-codepointernativecode-value-2" class="article__heading-anchor"></a><code>type</code> modifier with the <code>pointernative</code> value</h4><p>Enables a polyfill that implements the basic functionality of the <a href="http://www.w3.org/TR/pointerevents/">W3C Pointer Events</a> model.</p>
+<p>The following set of events is available with the modifier:</p>
+<p><a name="events-pointerover"></a></p>
+<h5 class="article__heading article__heading_5" id="codepointerovercode-event-2"><a href="#codepointerovercode-event-2" class="article__heading-anchor"></a><code>pointerover</code> event</h5><p>Generated:</p>
+<ul>
+<li>When the pointer is over an element.</li>
+<li>Before a <code>pointerdown</code> event for devices that don&#39;t support <code>hover</code>.</li>
+</ul>
+<p><a name="events-pointerenter"></a></p>
+<h5 class="article__heading article__heading_5" id="codepointerentercode-event-2"><a href="#codepointerentercode-event-2" class="article__heading-anchor"></a><code>pointerenter</code> event</h5><p>Generated:</p>
+<ul>
+<li>When the pointer enters the element&#39;s <em>active area</em>. When the pointer is over the element or one of its descendants.</li>
+<li>On a <code>pointerdown</code> event for devices that don&#39;t support <code>hover</code>.</li>
+</ul>
+<p>This event is the same as <code>pointerover</code>, but it doesn&#39;t bubble.</p>
+<p><a name="events-pointerdown"></a></p>
+<h5 class="article__heading article__heading_5" id="codepointerdowncode-event-2"><a href="#codepointerdowncode-event-2" class="article__heading-anchor"></a><code>pointerdown</code> event</h5><p>Generated when the input device is in the <em>active buttons</em> state.</p>
+<ul>
+<li>For a mouse, this is when at least one button is pressed.</li>
+<li>For pen and touch devices, this is when physical contact is made with the device screen.</li>
+</ul>
+<p><a name="events-pointermove"></a></p>
+<h5 class="article__heading article__heading_5" id="codepointermovecode-event-2"><a href="#codepointermovecode-event-2" class="article__heading-anchor"></a><code>pointermove</code> event</h5><p>Generated when the pointer&#39;s coordinates change.</p>
+<p><a name="events-pointerup"></a></p>
+<h5 class="article__heading article__heading_5" id="codepointerupcode-event-2"><a href="#codepointerupcode-event-2" class="article__heading-anchor"></a><code>pointerup</code> event</h5><p>Generated when exiting the <em>active button</em> state:</p>
+<ul>
+<li>For a mouse, this is the transition from having one or more buttons pressed to the state of no buttons pressed.</li>
+<li>For pen and touch devices, this is when physical contact is removed from the device screen.</li>
+</ul>
+<p><a name="events-pointerout"></a></p>
+<h5 class="article__heading article__heading_5" id="codepointeroutcode-event-2"><a href="#codepointeroutcode-event-2" class="article__heading-anchor"></a><code>pointerout</code> event</h5><p>Generated when the pointer leaves the element&#39;s <em>active area</em>:</p>
+<ul>
+<li>When the pointer leaves the area over the element or one of its descendants.</li>
+<li>After <code>pointerup</code> and <code>pointercancel</code> events for devices that don&#39;t support <code>hover</code>. For example, when the stylus or finger leaves the device&#39;s working area.</li>
+</ul>
+<p><a name="events-pointerleave"></a></p>
+<h5 class="article__heading article__heading_5" id="codepointerleavecode-event-2"><a href="#codepointerleavecode-event-2" class="article__heading-anchor"></a><code>pointerleave</code> event</h5><p>Generated when the pointer leaves the element&#39;s <em>active area</em>:</p>
+<ul>
+<li>When the pointer leaves the area over the element or one of its descendants.</li>
+<li>After <code>pointerup</code> and <code>pointercancel</code> events for devices that don&#39;t support <code>hover</code>.</li>
+</ul>
+<p>This event is the same as <code>pointerout</code>, but it doesn&#39;t bubble.</p>
+<p><a name="events-pointercancel"></a></p>
+<h5 class="article__heading article__heading_5" id="codepointercancelcode-event-2"><a href="#codepointercancelcode-event-2" class="article__heading-anchor"></a><code>pointercancel</code> event</h5><p>Generated when:</p>
+<ul>
+<li>Further pointer events are not expected to occur (for example, after changing hardware settings).</li>
+<li>The <code>pointerdown</code> event has been generated, if the pointer was used for zooming the page.</li>
+</ul>
+<p>For example, this event is generated when changing the device orientation while it is in the <em>active buttons</em> state. Or after reaching the maximum number of simultaneous clicks on the device.</p>
+<p>After generating the <code>pointercancel</code> event, the <code>pointerout</code> and <code>pointerleave</code> events are generated in succession.</p>
+<p><a name="modifiers-type-pointerpressrealease"></a></p>
+<h4 class="article__heading article__heading_4" id="codetypecode-modifier-with-the-codepointerpressreleasecode-value-2"><a href="#codetypecode-modifier-with-the-codepointerpressreleasecode-value-2" class="article__heading-anchor"></a><code>type</code> modifier with the <code>pointerpressrelease</code> value</h4><p>Enables a polyfill that implements the <code>pointerpress</code> and <code>pointerrelease</code> events. The polyfill uses Pointer Events.</p>
+<p><a name="events-pointerpress"></a></p>
+<h5 class="article__heading article__heading_5" id="codepointerpresscode-event-2"><a href="#codepointerpresscode-event-2" class="article__heading-anchor"></a><code>pointerpress</code> event</h5><p>Generated on the <code>pointerdown</code> event.</p>
+<p><a name="events-pointerrelease"></a></p>
+<h5 class="article__heading article__heading_5" id="codepointerreleasecode-event-2"><a href="#codepointerreleasecode-event-2" class="article__heading-anchor"></a><code>pointerrelease</code> event</h5><p>Generated on the <code>pointerup</code> and <code>pointercancel</code> events.</p>

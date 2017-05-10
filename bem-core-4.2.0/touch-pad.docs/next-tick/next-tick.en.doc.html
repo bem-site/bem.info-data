@@ -1,0 +1,40 @@
+<h1 class="article__heading article__heading_1" id="next-tick-4"><a href="#next-tick-4" class="article__heading-anchor"></a>next-tick</h1><p>This block provides a function that performs an asynchronous call of the callback function passed as an argument in the next tick of the event loop.</p>
+<p><code>next-tick</code> – A polyfill that implements:</p>
+<ul>
+<li>A simulated event loop for outdated browser versions.</li>
+<li>A unified interface for working with various browsers and NodeJS.</li>
+</ul>
+<p>This function works in cases when you need the callback to be invoked after the other functions in the event loop have finished. For example, you need to be sure that data will be available that is dynamically calculated in the current loop.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>fn {Function}</code> – The function to invoke in the next event loop. Required argument.</li>
+</ul>
+<p>No return value.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'next-tick'</span>, <span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">nextTick, events</span>) </span>{
+
+<span class="hljs-keyword">var</span> event = <span class="hljs-keyword">new</span> events.Event();
+
+nextTick(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ event.emit(<span class="hljs-string">'click'</span>) }); 
+
+<span class="hljs-comment">// ···</span> 
+
+event.on(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{ <span class="hljs-built_in">console</span>.log(e.type) })
+});
+</code></pre>
+<h2 class="article__heading article__heading_2" id="order-of-callbacks-2"><a href="#order-of-callbacks-2" class="article__heading-anchor"></a>Order of callbacks</h2><p>The block forms a queue within the event cycle, adding each subsequent callback function to the end of the queue. The callbacks are invoked in order.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'next-tick'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">nextTick</span>) </span>{
+
+<span class="hljs-keyword">var</span> order = [];
+
+nextTick(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ order.push(<span class="hljs-number">1</span>); });
+nextTick(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ order.push(<span class="hljs-number">2</span>); });
+nextTick(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ order.push(<span class="hljs-number">3</span>); });
+nextTick(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-built_in">console</span>.log(order); }); <span class="hljs-comment">// should be [1, 2, 3]</span>
+});
+</code></pre>
+<h2 class="article__heading article__heading_2" id="public-block-technologies-49"><a href="#public-block-technologies-49" class="article__heading-anchor"></a>Public block technologies</h2><p>The block is implemented in:</p>
+<ul>
+<li><code>vanilla.js</code></li>
+</ul>

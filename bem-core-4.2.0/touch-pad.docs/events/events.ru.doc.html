@@ -1,0 +1,353 @@
+<h1 class="article__heading article__heading_1" id="events-4"><a href="#events-4" class="article__heading-anchor"></a>events</h1><p>Блок предоставляет набор JS-классов, реализующий механизмы работы с событиями.</p>
+<h2 class="article__heading article__heading_2" id="Обзор-36"><a href="#Обзор-36" class="article__heading-anchor"></a>Обзор</h2><h3 class="article__heading article__heading_3" id="Классы-предоставляемые-блоком-2"><a href="#Классы-предоставляемые-блоком-2" class="article__heading-anchor"></a>Классы, предоставляемые блоком</h3><table>
+<thead>
+<tr>
+<th>Класс</th>
+<th>Конструктор</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#class-Event">Event</a></td>
+<td>Event(<br><code>type {String}</code>, <br><code>target {Object}</code>)</td>
+<td>Служит для создания объекта события, изменения и проверки его состояний.</td>
+</tr>
+<tr>
+<td><a href="#class-Emitter">Emitter</a></td>
+<td>-</td>
+<td>Служит для генерации событий и подписки на них.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="Свойства-и-методы-объекта-класса-6"><a href="#Свойства-и-методы-объекта-класса-6" class="article__heading-anchor"></a>Свойства и методы объекта класса</h3><table>
+<thead>
+<tr>
+<th>Класс</th>
+<th>Имя</th>
+<th>Тип или возвращаемое значение</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#class-Event">Event</a></td>
+<td><a href="#fields-type">type</a></td>
+<td><code>String</code></td>
+<td>Тип события.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#fields-result">result</a></td>
+<td><code>*</code></td>
+<td>Результат, возвращенный последним обработчиком события.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#fields-target">target</a></td>
+<td><code>Object</code></td>
+<td>Объект на котором возникло событие.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#fields-data">data</a></td>
+<td><code>*</code></td>
+<td>Данные, передаваемые как аргумент обработчику.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#fields-preventDefault">preventDefault</a>()</td>
+<td>-</td>
+<td>Позволяет предотвратить выполнение стандартного действия предусмотренного для события.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#fields-isDefaultPrevented">isDefaultPrevented</a>()</td>
+<td><code>Boolean</code></td>
+<td>Проверяет, было ли предотвращено выполнение стандартного действия, предусмотренного для события.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#fields-stopPropagation">stopPropagation</a>()</td>
+<td>-</td>
+<td>Позволяет остановить всплывание события.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#fields-isPropagationStopped">isPropagationStopped</a>()</td>
+<td><code>Boolean</code></td>
+<td>Проверяет, было ли остановлено всплывание события.</td>
+</tr>
+<tr>
+<td><a href="#class-Emitter">Emitter</a></td>
+<td><a href="#fields-on">on</a>(<br><code>type {String}</code>, <br><code>[data {Object}]</code>, <br><code>fn {Function}</code>, <br><code>[ {Object} ctx]</code>)</td>
+<td>-</td>
+<td>Служит для подписки на событие определенного типа.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#fields-once">once</a>(<br><code>type {String}</code>, <br><code>[data {Object}]</code>, <br><code>fn {Function}</code>, <br><code>[ctx {Object}]</code>)</td>
+<td>-</td>
+<td>Служит для подписки на событие определенного типа. Обработчик выполняется единожды.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#fields-un">un</a>(<br><code>type {String}</code>, <br><code>fn {Function}</code>, <br><code>[ctx {Object}]</code>)</td>
+<td>-</td>
+<td>Служит для удаления подписки на событие определенного типа.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#fields-emit">emit</a>(<br><code>type {String</code>&#124;<code>events:Event}</code>, <br><code>[data {Object}]</code>)</td>
+<td>-</td>
+<td>Служит для генерации события.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="Элементы-блока-33"><a href="#Элементы-блока-33" class="article__heading-anchor"></a>Элементы блока</h3><table>
+<thead>
+<tr>
+<th>Элемент</th>
+<th>Способы использования</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-channels">channels</a></td>
+<td><code>JS</code></td>
+<td>Предназначен для работы с именованными каналами событий.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="Функции-предоставляемые-элементами-блока-2"><a href="#Функции-предоставляемые-элементами-блока-2" class="article__heading-anchor"></a>Функции предоставляемые элементами блока</h3><table>
+<thead>
+<tr>
+<th>Элемент</th>
+<th>Функция</th>
+<th>Тип возвращаемого значения</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-channels">channels</a></td>
+<td>channels(<br><code>[id {String}]</code>, <br><code>[drop {Boolean}]</code>)</td>
+<td><code>Object</code>&#124;<code>undefined</code></td>
+<td>Создает или удаляет именованный канал событий.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="Публичные-технологии-блока-45"><a href="#Публичные-технологии-блока-45" class="article__heading-anchor"></a>Публичные технологии блока</h3><p>Блок реализован в технологиях:</p>
+<ul>
+<li><code>vanilla.js</code></li>
+</ul>
+<h2 class="article__heading article__heading_2" id="Описание-28"><a href="#Описание-28" class="article__heading-anchor"></a>Описание</h2><p><a name="class-Event"></a></p>
+<h3 class="article__heading article__heading_3" id="Класс-codeeventcode-2"><a href="#Класс-codeeventcode-2" class="article__heading-anchor"></a>Класс <code>Event</code></h3><p>С помощью класса можно инстанцировать объект события, указав его тип и источник. Для этого нужно воспользоваться функцией-конструктором <code>Event</code>.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>type {String}</code> – тип события. Обязательный аргумент.</li>
+<li><code>target {Object}</code> – объект (источник) на котором событие возникло. Обязательный аргумент.</li>
+</ul>
+<p><strong>Возвращаемое значение:</strong> <code>Event</code>. Объект события.</p>
+<p><a name="fields-Event"></a></p>
+<h4 class="article__heading article__heading_4" id="Свойства-и-методы-объекта-класса-7"><a href="#Свойства-и-методы-объекта-класса-7" class="article__heading-anchor"></a>Свойства и методы объекта класса</h4><p><a name="fields-type"></a></p>
+<h5 class="article__heading article__heading_5" id="Свойство-codetypecode-2"><a href="#Свойство-codetypecode-2" class="article__heading-anchor"></a>Свойство <code>type</code></h5><p>Тип: <code>String</code>.</p>
+<p>Тип события.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">events</span>) </span>{
+
+    <span class="hljs-keyword">var</span> myevent = <span class="hljs-keyword">new</span> events.Event(<span class="hljs-string">'myevent'</span>, <span class="hljs-keyword">this</span>);
+    <span class="hljs-built_in">console</span>.log(myevent.type); <span class="hljs-comment">// 'myevent'</span>
+
+});
+</code></pre>
+<p><a name="fields-type"></a></p>
+<h5 class="article__heading article__heading_5" id="Свойство-codetargetcode-2"><a href="#Свойство-codetargetcode-2" class="article__heading-anchor"></a>Свойство <code>target</code></h5><p>Тип: <code>Object</code>.</p>
+<p>Объект, на котором возникло событие.</p>
+<p><a name="fields-result"></a></p>
+<h5 class="article__heading article__heading_5" id="Свойство-coderesultcode-2"><a href="#Свойство-coderesultcode-2" class="article__heading-anchor"></a>Свойство <code>result</code></h5><p>Тип: <code>*</code>.</p>
+<p>Содержит данные, возвращаемые последней функцией-обработчиком события.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">events</span>) </span>{
+
+    <span class="hljs-keyword">var</span> myEmitter = <span class="hljs-keyword">new</span> events.Emitter();
+    myEmitter.on(<span class="hljs-string">'myevent'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-keyword">return</span> <span class="hljs-string">'hi-hi-hi'</span>; });
+
+    <span class="hljs-keyword">var</span> myEvent = <span class="hljs-keyword">new</span> events.Event(<span class="hljs-string">'myevent'</span>);
+    myEmitter.emit(myEvent)
+
+    <span class="hljs-built_in">console</span>.log(myEvent.result);    <span class="hljs-comment">// 'hi-hi-hi'</span>
+});
+</code></pre>
+<p><a name="fields-data"></a></p>
+<h5 class="article__heading article__heading_5" id="Свойство-codedatacode-2"><a href="#Свойство-codedatacode-2" class="article__heading-anchor"></a>Свойство <code>data</code></h5><p>Тип: <code>*</code>.</p>
+<p>Содержит данные, передаваемые функции-обработчику события в качестве аргумента.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">events</span>) </span>{
+
+    <span class="hljs-keyword">var</span> myEmitter = <span class="hljs-keyword">new</span> events.Emitter();
+    myEmitter.on(<span class="hljs-string">'myevent'</span>, <span class="hljs-string">'my-data'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{ <span class="hljs-built_in">console</span>.log(e.data); });
+
+    myEmitter.emit(<span class="hljs-string">'myevent'</span>); <span class="hljs-comment">// my-data</span>
+});
+</code></pre>
+<p><a name="fields-preventDefault"></a></p>
+<h5 class="article__heading article__heading_5" id="Метод-codepreventdefaultcode-2"><a href="#Метод-codepreventdefaultcode-2" class="article__heading-anchor"></a>Метод <code>preventDefault</code></h5><p>Позволяет предотвратить выполнение стандартного действия предусмотренного для события.</p>
+<p>Не принимает аргументов.</p>
+<p>Не имеет возвращаемого значения.</p>
+<p><a name="fields-isDefaultPrevented"></a></p>
+<h5 class="article__heading article__heading_5" id="Метод-codeisdefaultpreventedcode-2"><a href="#Метод-codeisdefaultpreventedcode-2" class="article__heading-anchor"></a>Метод <code>isDefaultPrevented</code></h5><p>Позволяет проверить было ли предотвращено выполнение стандартного действия для события.</p>
+<p>Не принимает аргументов.</p>
+<p><strong>Возвращаемое значение:</strong> <code>Boolean</code>. В случае, если выполнение стандартного действия было предотвращено – <code>true</code>.</p>
+<p><a name="fields-stopPropagation"></a></p>
+<h5 class="article__heading article__heading_5" id="Метод-codestoppropagationcode-2"><a href="#Метод-codestoppropagationcode-2" class="article__heading-anchor"></a>Метод <code>stopPropagation</code></h5><p>Позволяет остановить всплывание события.</p>
+<p>Не принимает аргументов.</p>
+<p>Не имеет возвращаемого значения.</p>
+<p><a name="fields-isPropagationStopped"></a></p>
+<h5 class="article__heading article__heading_5" id="Метод-codeispropagationstoppedcode-2"><a href="#Метод-codeispropagationstoppedcode-2" class="article__heading-anchor"></a>Метод <code>isPropagationStopped</code></h5><p>Позволяет проверить, было ли остановлено всплывание события.</p>
+<p>Не принимает аргументов.</p>
+<p><strong>Возвращаемое значение:</strong> <code>Boolean</code>. В случае, если всплывание события было остановлено – <code>true</code>.</p>
+<p><a name="class-Emitter"></a></p>
+<h3 class="article__heading article__heading_3" id="Класс-codeemittercode-2"><a href="#Класс-codeemittercode-2" class="article__heading-anchor"></a>Класс <code>Emitter</code></h3><p>Класс позволяет инстанцировать объекты, с помощью которых можно генерировать события и осуществлять подписку на них.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">events</span>) </span>{
+
+    <span class="hljs-keyword">var</span> myEmitter = <span class="hljs-keyword">new</span> events.Emitter();
+
+});
+</code></pre>
+<p><a name="fields-Event"></a></p>
+<h4 class="article__heading article__heading_4" id="Свойства-и-методы-объекта-класса-8"><a href="#Свойства-и-методы-объекта-класса-8" class="article__heading-anchor"></a>Свойства и методы объекта класса</h4><p><a name="fields-on"></a></p>
+<h5 class="article__heading article__heading_5" id="Метод-codeoncode-2"><a href="#Метод-codeoncode-2" class="article__heading-anchor"></a>Метод <code>on</code></h5><p>Служит для подписки на событие определенного типа.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>type {String}</code> – тип события, на которое производится подписка. Обязательный аргумент.</li>
+<li>[<code>data {Object}</code>] – дополнительные данные, доступные обработчику как значение поля <code>e.data</code> объекта события.</li>
+<li><code>fn {Function}</code> – функция-обработчик, вызываемая для события. Обязательный аргумент.</li>
+<li>[<code>ctx {Object}</code>] – контекст функции-обработчика.</li>
+</ul>
+<p>Возвращает объект <code>this</code>.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">events</span>) </span>{
+
+    <span class="hljs-keyword">var</span> myEmitter = <span class="hljs-keyword">new</span> events.Emitter();
+
+    myEmitter.on(<span class="hljs-string">'myevent'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'foo'</span>); });
+    myEmitter.emit(<span class="hljs-string">'myevent'</span>); <span class="hljs-comment">// 'foo'</span>
+});
+</code></pre>
+<p>Кроме того, значением аргумента <code>type</code> могут быть:</p>
+<ul>
+<li>несколько типов событий, перечисленных через пробел – чтобы установить для них общую функцию-обработчик;</li>
+</ul>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">events</span>) </span>{
+
+    <span class="hljs-keyword">var</span> myEmitter = <span class="hljs-keyword">new</span> events.Emitter();
+
+    myEmitter.on(<span class="hljs-string">'myevent1 myevent2'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{ <span class="hljs-built_in">console</span>.log(e.type) });
+
+    myEmitter.emit(<span class="hljs-string">'myevent1'</span>); <span class="hljs-comment">// 'myevent1'</span>
+    myEmitter.emit(<span class="hljs-string">'myevent2'</span>); <span class="hljs-comment">// 'myevent2'</span>
+});
+</code></pre>
+<ul>
+<li>хеш вида <code>{ &#39;событие-1&#39; : обработчик-1, ... , &#39;событие-n&#39; : обработчик-n }</code> – чтобы установить сразу несколько обработчиков для разных типов событий;</li>
+</ul>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">events</span>) </span>{
+
+    <span class="hljs-keyword">var</span> myEmitter = <span class="hljs-keyword">new</span> events.Emitter();
+
+    myEmitter.on({
+        <span class="hljs-attr">myevent1</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{ <span class="hljs-built_in">console</span>.log(e.type) },
+        <span class="hljs-attr">myevent2</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{ <span class="hljs-built_in">console</span>.log(e.type) }
+    });  
+
+    myEmitter.emit(<span class="hljs-string">'myevent1'</span>); <span class="hljs-comment">// 'myevent1'</span>
+    myEmitter.emit(<span class="hljs-string">'myevent2'</span>); <span class="hljs-comment">// 'myevent2'</span>
+});
+</code></pre>
+<p>Сказанное выше верно и для методов <code>once</code> и <code>un</code>.</p>
+<p><a name="fields-once"></a></p>
+<h5 class="article__heading article__heading_5" id="Метод-codeoncecode-2"><a href="#Метод-codeoncecode-2" class="article__heading-anchor"></a>Метод <code>once</code></h5><p>Идентичен методу <code>on</code>, но выполняется единожды – после первого события подписка удаляется.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>type {String}</code> – тип события, на которое производится подписка. Обязательный аргумент.</li>
+<li>[<code>data {Object}</code>] – дополнительные данные, доступные как значение поля <code>e.data</code> объекта события.</li>
+<li><code>fn {Function}</code> – функция-обработчик, вызываемая для события. Обязательный аргумент.</li>
+<li>[<code>ctx {Object}</code>] – контекст функции-обработчика.</li>
+</ul>
+<p>Возвращает объект <code>this</code>.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">events</span>) </span>{
+
+    <span class="hljs-keyword">var</span> myEmitter = <span class="hljs-keyword">new</span> events.Emitter();
+
+    myEmitter.on(<span class="hljs-string">'myevent'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'foo'</span>) });
+
+    myEmitter.emit(<span class="hljs-string">'myevent'</span>); <span class="hljs-comment">// 'foo'</span>
+    myEmitter.emit(<span class="hljs-string">'myevent'</span>); <span class="hljs-comment">// обработчик не вызывается</span>
+});
+</code></pre>
+<p><a name="fields-un"></a></p>
+<h5 class="article__heading article__heading_5" id="Метод-codeuncode-2"><a href="#Метод-codeuncode-2" class="article__heading-anchor"></a>Метод <code>un</code></h5><p>Служит для удаления установленной ранее подписки на событие определенного типа.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>type {String}</code> – тип события, подписка на которое удаляется. Обязательный аргумент.</li>
+<li>[<code>fn {Function}</code>] – удаляемый обработчик.</li>
+<li>[<code>ctx {Object}</code>] – контекст обработчика.</li>
+</ul>
+<p>Метод возвращает ссылку на объект <code>this</code>.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">events</span>) </span>{
+
+    <span class="hljs-keyword">var</span> myEmitter = <span class="hljs-keyword">new</span> events.Emitter(),
+        shout = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'foo'</span>) };
+
+    myEmitter.on(<span class="hljs-string">'myevent'</span>, shout);
+    myEmitter.emit(<span class="hljs-string">'myevent'</span>); <span class="hljs-comment">// 'foo'</span>
+
+    myEmitter.un(<span class="hljs-string">'myevent'</span>, shout);
+    myEmitter.emit(<span class="hljs-string">'myevent'</span>); <span class="hljs-comment">// обработчик не вызывается</span>
+});
+</code></pre>
+<p><a name="fields-emit"></a></p>
+<h5 class="article__heading article__heading_5" id="Метод-codeemitcode-2"><a href="#Метод-codeemitcode-2" class="article__heading-anchor"></a>Метод <code>emit</code></h5><p>Служит для генерации события.</p>
+<p>Метод вызывает все функции-обработчики, заданные для события.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>type {String|events:Event}</code> – генерируемое событие в виде строки или готового объекта события. Обязательный аргумент.</li>
+<li>[<code>data {Object}</code>] – дополнительные данные, доступные как второй аргумент функции-обработчика.</li>
+</ul>
+<p>Возвращает объект <code>this</code>.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">events</span>) </span>{
+
+    <span class="hljs-keyword">var</span> myEmitter = <span class="hljs-keyword">new</span> events.Emitter();
+
+    myEmitter.on(<span class="hljs-string">'myevent'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e, data</span>) </span>{ <span class="hljs-built_in">console</span>.log(data) });
+    myEmitter.emit(<span class="hljs-string">'myevent'</span>, <span class="hljs-string">'ololo'</span>);  <span class="hljs-comment">// 'ololo'</span>
+});
+</code></pre>
+<h4 class="article__heading article__heading_4" id="Статические-методы-класса-2"><a href="#Статические-методы-класса-2" class="article__heading-anchor"></a>Статические методы класса</h4><p>Набор и сигнатуры статических методов идентичны набору и сигнатурам методов объекта, инстанцируемого классом.</p>
+
+<p><a name="elems-channels"></a></p>
+<h1 class="article__heading article__heading_1" id="Элемент-codechannelscode-блока-codeeventscode-2"><a href="#Элемент-codechannelscode-блока-codeeventscode-2" class="article__heading-anchor"></a>Элемент <code>channels</code> блока <code>events</code></h1><p>Элемент <code>channels</code> блока <code>events</code> предназначен для работы с именованными каналами событий. Именные каналы позволяют организовать работу с событиями, используя шаблон проектирования «наблюдатель» (также известный как Publisher-subscriber).</p>
+<p>Элемент реализует функцию, позволяющую:</p>
+<ul>
+<li>получить ссылку на именной канал по <code>id</code>;</li>
+<li>получить ссылку на стандартный канал;</li>
+<li>удалить канал – стандартный или по <code>id</code>.</li>
+</ul>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li>[<code>id {String}</code>] – Идентификатор канала. Если не задан будет использоваться канал по умолчанию (<code>&#39;default&#39;</code>).</li>
+<li>[<code>drop {Boolean}</code>] – Логический флаг, указывающий (в значении <code>true</code>) на необходимость удалить канал. По умолчанию <code>false</code>.</li>
+</ul>
+<p><strong>Возвращаемое значение:</strong></p>
+<ul>
+<li><code>Object</code>. Объект «класса» <code>Emitter</code> – именной канал.</li>
+<li><code>undefined</code>. В случае если функция была вызвана с параметром <code>drop</code> в значении <code>true</code>.</li>
+</ul>
+<p>Пример:</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'events__channels'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">channels</span>) </span>{
+
+<span class="hljs-keyword">var</span> myChannel = channels(<span class="hljs-string">'my-channel'</span>);
+myChannel.on(<span class="hljs-string">'test'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e, data</span>) </span>{ <span class="hljs-built_in">console</span>.log(data.foo) });
+
+myChannel.emit(<span class="hljs-string">'test'</span>, { <span class="hljs-attr">foo</span> : <span class="hljs-string">'bar'</span> }); <span class="hljs-comment">// 'bar'</span>
+
+});
+</code></pre>

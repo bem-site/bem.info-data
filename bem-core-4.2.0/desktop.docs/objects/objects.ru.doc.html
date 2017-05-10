@@ -1,0 +1,87 @@
+<h1 class="article__heading article__heading_1" id="objects"><a href="#objects" class="article__heading-anchor"></a>objects</h1><p>Блок предоставляет объект, содержащий набор методов для работы с объектами JavaScript.</p>
+<h2 class="article__heading article__heading_2" id="Обзор-9"><a href="#Обзор-9" class="article__heading-anchor"></a>Обзор</h2><h3 class="article__heading article__heading_3" id="Свойства-и-методы-объекта-10"><a href="#Свойства-и-методы-объекта-10" class="article__heading-anchor"></a>Свойства и методы объекта</h3><table>
+<thead>
+<tr>
+<th>Имя</th>
+<th>Тип возвращаемого значения</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#fields-extend">extend</a>(<br><code>target {Object}</code>, <br><code>source {Object}</code>)</td>
+<td><code>Object</code></td>
+<td>Расширяет объект свойствами другого объекта.</td>
+</tr>
+<tr>
+<td><a href="#fields-isEmpty">isEmpty</a>(<code>obj {Object}</code>)</td>
+<td><code>Boolean</code></td>
+<td>Позволяет выяснить пуст ли переданный объект.</td>
+</tr>
+<tr>
+<td><a href="#fields-each">each</a>(<br><code>obj {Object}</code>, <br><code>fn {Function}</code>, <br><code>[ctx {Object}]</code>)</td>
+<td>-</td>
+<td>Итеративно обходит собственные свойства объекта.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="Публичные-технологии-блока-12"><a href="#Публичные-технологии-блока-12" class="article__heading-anchor"></a>Публичные технологии блока</h3><p>Блок реализован в технологиях:</p>
+<ul>
+<li><code>vanilla.js</code></li>
+</ul>
+<h2 class="article__heading article__heading_2" id="Описание-8"><a href="#Описание-8" class="article__heading-anchor"></a>Описание</h2><p><a name="fields"></a></p>
+<h3 class="article__heading article__heading_3" id="Свойства-и-методы-объекта-11"><a href="#Свойства-и-методы-объекта-11" class="article__heading-anchor"></a>Свойства и методы объекта</h3><p><a name="fields-extend"></a></p>
+<h4 class="article__heading article__heading_4" id="Метод-codeextendcode"><a href="#Метод-codeextendcode" class="article__heading-anchor"></a>Метод <code>extend</code></h4><p>Расширяет объект свойствами другого объекта. Копируются только собственные свойства, не полученные по цепочке прототипов.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>target {Object}</code> – целевой объект. Обязательный аргумент.</li>
+<li><code>source {Object}</code> – объект, свойства которого добавляются к целевому. Может быть передано несколько объектов. Свойства каждого из них будут добавлены к целевому. Обязательный аргумент.</li>
+</ul>
+<p><strong>Возвращаемое значение:</strong> <code>Object</code>. Целевой объект с добавленными свойствами.</p>
+<p>Пример:</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'objects'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">objects</span>) </span>{
+
+<span class="hljs-keyword">var</span> obj1 = { <span class="hljs-attr">a</span> : <span class="hljs-number">1</span>, <span class="hljs-attr">b</span> : <span class="hljs-number">2</span> },
+    obj2 = { <span class="hljs-attr">b</span> : <span class="hljs-number">3</span>, <span class="hljs-attr">c</span> : <span class="hljs-number">4</span> };
+
+<span class="hljs-built_in">console</span>.log(objects.extend(obj1, obj2)); <span class="hljs-comment">// { a : 1, b : 3, c : 4 }</span>
+});
+</code></pre>
+<p><a name="fields-isEmpty"></a></p>
+<h4 class="article__heading article__heading_4" id="Метод-codeisemptycode"><a href="#Метод-codeisemptycode" class="article__heading-anchor"></a>Метод <code>isEmpty</code></h4><p>Позволяет выяснить пуст ли переданный объект. Другими словами, имеет ли объект собственные свойства.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>obj {Object}</code> – объект для проверки. Обязательный аргумент.</li>
+</ul>
+<p><strong>Возвращаемое значение:</strong> <code>Boolean</code>. В случае, если объект не имеет собственных свойств – <code>true</code>.</p>
+<p>Пример:</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'objects'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">objects</span>) </span>{
+
+<span class="hljs-keyword">var</span> obj1 = {},
+    obj2 = { <span class="hljs-attr">foo</span> : <span class="hljs-string">'bar'</span> };
+
+<span class="hljs-built_in">console</span>.log(objects.isEmpty(obj1)); <span class="hljs-comment">// true</span>
+<span class="hljs-built_in">console</span>.log(objects.isEmpty(obj2)); <span class="hljs-comment">// false</span>
+});
+</code></pre>
+<p><a name="fields-each"></a></p>
+<h4 class="article__heading article__heading_4" id="Метод-codeeachcode"><a href="#Метод-codeeachcode" class="article__heading-anchor"></a>Метод <code>each</code></h4><p>Служит для итерации по собственным свойствам объекта. Для каждого собственного свойства вызывается функция-обработчик.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>obj {Object}</code> – объект, обход свойств которого производится. Обязательный аргумент.</li>
+<li><code>fn {Function}</code> – функция-обработчик, вызываемая для каждого свойства. Обязательный аргумент.</li>
+<li>[<code>ctx {Object}</code>] – контекст обработчика.</li>
+</ul>
+<p>Не имеет возвращаемого значения.</p>
+<p>Функция-обработчик получает в качестве аргументов значение и ключ свойства объекта, для которого была вызвана.</p>
+<p>Пример:</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'objects'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">objects</span>) </span>{
+    objects.each(
+        { <span class="hljs-attr">a</span> : <span class="hljs-number">1</span>, <span class="hljs-attr">b</span> : <span class="hljs-number">2</span> },
+        <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">val, key</span>) </span>{
+            <span class="hljs-built_in">console</span>.log(key, val);
+        });
+    <span class="hljs-comment">// a 1</span>
+    <span class="hljs-comment">// b 2</span>
+});
+</code></pre>

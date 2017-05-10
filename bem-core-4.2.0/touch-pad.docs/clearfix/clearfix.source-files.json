@@ -1,0 +1,42 @@
+[
+    {
+        "entity": {
+            "block": "clearfix"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "css",
+        "path": "common.blocks/clearfix/clearfix.css"
+    },
+    {
+        "entity": {
+            "block": "clearfix"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "en.md",
+        "path": "common.blocks/clearfix/clearfix.en.md"
+    },
+    {
+        "entity": {
+            "block": "clearfix"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "en.title.txt",
+        "path": "common.blocks/clearfix/clearfix.en.title.txt"
+    },
+    {
+        "entity": {
+            "block": "clearfix"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/clearfix/clearfix.ru.md"
+    },
+    {
+        "entity": {
+            "block": "clearfix"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "ru.title.txt",
+        "path": "common.blocks/clearfix/clearfix.ru.title.txt"
+    }
+]

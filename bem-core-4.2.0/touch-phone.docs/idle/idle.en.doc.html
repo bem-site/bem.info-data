@@ -1,0 +1,127 @@
+<h1 class="article__heading article__heading_1" id="idle-3"><a href="#idle-3" class="article__heading-anchor"></a>idle</h1><p>This block provides an object with a set of methods for generating an event when user activity ends (i.e. the user switches to another window or doesn&#39;t finish actions).</p>
+<h2 class="article__heading article__heading_2" id="overview-19"><a href="#overview-19" class="article__heading-anchor"></a>Overview</h2><h3 class="article__heading article__heading_3" id="object-events-4"><a href="#object-events-4" class="article__heading-anchor"></a>Object events</h3><p>The following events are available:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#events-idle">idle</a></td>
+<td>The browser is idle.</td>
+</tr>
+<tr>
+<td><a href="#events-wakeup">wakeup</a></td>
+<td>The user has resumed activity.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="properties-and-methods-of-the-object-16"><a href="#properties-and-methods-of-the-object-16" class="article__heading-anchor"></a>Properties and methods of the object</h3><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Returned value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#fields-start">start</a>()</td>
+<td>-</td>
+<td>Starts tracking user activity.</td>
+</tr>
+<tr>
+<td><a href="#fields-stop">stop</a>()</td>
+<td>-</td>
+<td>Stops tracking user activity.</td>
+</tr>
+<tr>
+<td><a href="#fields-isIdle">isIdle</a>()</td>
+<td><code>Boolean</code></td>
+<td>Checks the current state.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="block-modifiers-6"><a href="#block-modifiers-6" class="article__heading-anchor"></a>Block modifiers</h3><table>
+<thead>
+<tr>
+<th>Modifier</th>
+<th>Acceptable values</th>
+<th>Usage</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#modifiers-start">start</a></td>
+<td><code>auto</code></td>
+<td><code>JS</code></td>
+<td>Automatically starts tracking user activity.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="public-block-technologies-25"><a href="#public-block-technologies-25" class="article__heading-anchor"></a>Public block technologies</h3><p>The block is implemented in:</p>
+<ul>
+<li><code>js</code></li>
+</ul>
+<h2 class="article__heading article__heading_2" id="description-17"><a href="#description-17" class="article__heading-anchor"></a>Description</h2><p>Subscribing to the block&#39;s event allows you to suspend operations, such as displaying animation, when there isn&#39;t any user activity.</p>
+<p>The block is a descendant of the <code>Emitter</code> class in the <code>events</code> block, which allows it to call these methods.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'idle'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">idle</span>) </span>{
+
+idle
+    .on({
+        <span class="hljs-attr">idle</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// idle event handler</span>
+        },
+        <span class="hljs-attr">wakeup</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// wakeup event handler</span>
+        }
+    })
+    .start(); <span class="hljs-comment">// start event generation</span>
+
+});
+</code></pre>
+<p><a name="events"></a></p>
+<h3 class="article__heading article__heading_3" id="object-events-5"><a href="#object-events-5" class="article__heading-anchor"></a>Object events</h3><p><a name="events-idle"></a></p>
+<h4 class="article__heading article__heading_4" id="codeidlecode-event-1"><a href="#codeidlecode-event-1" class="article__heading-anchor"></a><code>idle</code> event</h4><p>Generated when user activity ends.</p>
+<p><a name="events-wakeup"></a></p>
+<h4 class="article__heading article__heading_4" id="codewakeupcode-event-1"><a href="#codewakeupcode-event-1" class="article__heading-anchor"></a><code>wakeup</code> event</h4><p>Generated when user activity resumes.</p>
+<p><a name="fields"></a></p>
+<h3 class="article__heading article__heading_3" id="properties-and-methods-of-the-object-17"><a href="#properties-and-methods-of-the-object-17" class="article__heading-anchor"></a>Properties and methods of the object</h3><p><a name="fields-start"></a></p>
+<h4 class="article__heading article__heading_4" id="codestartcode-method-2"><a href="#codestartcode-method-2" class="article__heading-anchor"></a><code>start</code> method</h4><p>Starts tracking user activity.</p>
+<p>Doesn&#39;t accept arguments.</p>
+<p>No return value.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'idle'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">idle</span>) </span>{
+
+idle.start()
+
+});
+</code></pre>
+<p><a name="fields-stop"></a></p>
+<h4 class="article__heading article__heading_4" id="codestopcode-method-2"><a href="#codestopcode-method-2" class="article__heading-anchor"></a><code>stop</code> method</h4><p>Stops user activity tracking.</p>
+<p>Doesn&#39;t accept arguments.</p>
+<p>No return value.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'idle'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">idle</span>) </span>{
+
+idle.start() <span class="hljs-comment">// start tracking activity</span>
+idle.stop() <span class="hljs-comment">// stop tracking activity</span>
+
+});
+</code></pre>
+<p><a name="fields-isIdle"></a></p>
+<h4 class="article__heading article__heading_4" id="codeisidlecode-method-1"><a href="#codeisidlecode-method-1" class="article__heading-anchor"></a><code>isIdle</code> method</h4><p>Checks whether there is any user activity.</p>
+<p>Doesn&#39;t accept arguments.</p>
+<p><strong>Return value:</strong> <code>Boolean</code>. If there isn&#39;t any activity, <code>true</code>.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'idle'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">idle</span>) </span>{
+
+idle.isIdle() <span class="hljs-comment">// true or false, depending on the current state</span>
+
+});
+</code></pre>
+<p><a name="modifiers"></a></p>
+<h3 class="article__heading article__heading_3" id="block-modifiers-7"><a href="#block-modifiers-7" class="article__heading-anchor"></a>Block modifiers</h3><p><a name="modifiers-start"></a></p>
+<h4 class="article__heading article__heading_4" id="codestartcode-modifier-2"><a href="#codestartcode-modifier-2" class="article__heading-anchor"></a><code>start</code> modifier</h4><p>Acceptable values: <code>&#39;auto&#39;</code>.</p>
+<p>Usage: enabled in the <code>deps.js</code> dependencies file.</p>
+<p>Automatically starts tracking user activity.</p>

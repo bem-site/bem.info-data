@@ -1,0 +1,34 @@
+[
+    {
+        "entity": {
+            "block": "inherit"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "en.md",
+        "path": "common.blocks/inherit/inherit.en.md"
+    },
+    {
+        "entity": {
+            "block": "inherit"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/inherit/inherit.ru.md"
+    },
+    {
+        "entity": {
+            "block": "inherit"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/inherit/inherit.spec.js"
+    },
+    {
+        "entity": {
+            "block": "inherit"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "vanilla.js",
+        "path": "common.blocks/inherit/inherit.vanilla.js"
+    }
+]

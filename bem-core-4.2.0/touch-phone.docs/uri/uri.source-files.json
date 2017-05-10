@@ -1,0 +1,61 @@
+[
+    {
+        "entity": {
+            "block": "uri"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "en.md",
+        "path": "common.blocks/uri/uri.en.md"
+    },
+    {
+        "entity": {
+            "block": "uri"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/uri/uri.ru.md"
+    },
+    {
+        "entity": {
+            "block": "uri"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/uri/uri.spec.js"
+    },
+    {
+        "entity": {
+            "block": "uri"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "vanilla.js",
+        "path": "common.blocks/uri/uri.vanilla.js"
+    },
+    {
+        "entity": {
+            "block": "uri",
+            "elem": "querystring"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/uri/__querystring/uri__querystring.deps.js"
+    },
+    {
+        "entity": {
+            "block": "uri",
+            "elem": "querystring"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/uri/__querystring/uri__querystring.spec.js"
+    },
+    {
+        "entity": {
+            "block": "uri",
+            "elem": "querystring"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "vanilla.js",
+        "path": "common.blocks/uri/__querystring/uri__querystring.vanilla.js"
+    }
+]

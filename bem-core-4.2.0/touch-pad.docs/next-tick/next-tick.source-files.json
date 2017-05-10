@@ -1,0 +1,34 @@
+[
+    {
+        "entity": {
+            "block": "next-tick"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "en.md",
+        "path": "common.blocks/next-tick/next-tick.en.md"
+    },
+    {
+        "entity": {
+            "block": "next-tick"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/next-tick/next-tick.ru.md"
+    },
+    {
+        "entity": {
+            "block": "next-tick"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/next-tick/next-tick.spec.js"
+    },
+    {
+        "entity": {
+            "block": "next-tick"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "vanilla.js",
+        "path": "common.blocks/next-tick/next-tick.vanilla.js"
+    }
+]

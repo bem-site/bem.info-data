@@ -1,0 +1,27 @@
+[
+    {
+        "entity": {
+            "block": "keyboard"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "en.md",
+        "path": "common.blocks/keyboard/keyboard.en.md"
+    },
+    {
+        "entity": {
+            "block": "keyboard"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/keyboard/keyboard.ru.md"
+    },
+    {
+        "entity": {
+            "block": "keyboard",
+            "elem": "codes"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/keyboard/__codes/keyboard__codes.js"
+    }
+]
