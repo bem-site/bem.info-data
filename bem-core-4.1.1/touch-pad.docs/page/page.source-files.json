@@ -1,0 +1,163 @@
+[
+    {
+        "entity": {
+            "block": "page"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "common.blocks/page/page.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "page"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "bh.js",
+        "path": "common.blocks/page/page.bh.js"
+    },
+    {
+        "entity": {
+            "block": "page"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/page/page.deps.js"
+    },
+    {
+        "entity": {
+            "block": "page"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "en.title.txt",
+        "path": "common.blocks/page/page.en.title.txt"
+    },
+    {
+        "entity": {
+            "block": "page"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "examples",
+        "path": "common.blocks/page/page.examples",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "page"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/page/page.ru.md"
+    },
+    {
+        "entity": {
+            "block": "page"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "ru.title.txt",
+        "path": "common.blocks/page/page.ru.title.txt"
+    },
+    {
+        "entity": {
+            "block": "page"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "tmpl-specs",
+        "path": "common.blocks/page/page.tmpl-specs",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "page",
+            "elem": "css"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "common.blocks/page/__css/page__css.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "page",
+            "elem": "css"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "bh.js",
+        "path": "common.blocks/page/__css/page__css.bh.js"
+    },
+    {
+        "entity": {
+            "block": "page",
+            "elem": "js"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "common.blocks/page/__js/page__js.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "page",
+            "elem": "js"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "bh.js",
+        "path": "common.blocks/page/__js/page__js.bh.js"
+    },
+    {
+        "entity": {
+            "block": "page"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/touch.blocks",
+        "tech": "bemhtml.js",
+        "path": "touch.blocks/page/page.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "page"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/touch.blocks",
+        "tech": "bh.js",
+        "path": "touch.blocks/page/page.bh.js"
+    },
+    {
+        "entity": {
+            "block": "page"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/touch.blocks",
+        "tech": "deps.js",
+        "path": "touch.blocks/page/page.deps.js"
+    },
+    {
+        "entity": {
+            "block": "page"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/touch.blocks",
+        "tech": "ru.md",
+        "path": "touch.blocks/page/page.ru.md"
+    },
+    {
+        "entity": {
+            "block": "page"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/touch.blocks",
+        "tech": "tmpl-specs",
+        "path": "touch.blocks/page/page.tmpl-specs",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "page",
+            "elem": "icon"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/touch.blocks",
+        "tech": "bemhtml.js",
+        "path": "touch.blocks/page/__icon/page__icon.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "page",
+            "elem": "icon"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/touch.blocks",
+        "tech": "bh.js",
+        "path": "touch.blocks/page/__icon/page__icon.bh.js"
+    }
+]

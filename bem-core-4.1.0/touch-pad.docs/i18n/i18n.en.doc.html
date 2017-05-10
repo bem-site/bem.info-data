@@ -1,0 +1,28 @@
+<h1 class="article__heading article__heading_1" id="i18n-4"><a href="#i18n-4" class="article__heading-anchor"></a>i18n</h1><p>Block is a function for project internationalization.
+It could be used in browsers and within the Node.js environment.</p>
+<h2 class="article__heading article__heading_2" id="signature-2"><a href="#signature-2" class="article__heading-anchor"></a>Signature</h2><pre><code class="lang-js"><span class="hljs-comment">/**
+ * @exports
+ * @param {String} keyset
+ * @param {String} key
+ * @param {Object} [params]
+ * @returns {String}
+ */</span>
+i18n(keyset, key, params);
+</code></pre>
+<p>Example:</p>
+<pre><code class="lang-js">i18n(<span class="hljs-string">'keyset1'</span>, <span class="hljs-string">'key2'</span>, { <span class="hljs-attr">a</span> : <span class="hljs-string">'1'</span> });
+</code></pre>
+<p>To add translations, use <code>decl</code> method:</p>
+<pre><code class="lang-js">i18n.decl({
+    <span class="hljs-attr">keyset1</span> : {
+        <span class="hljs-attr">key1</span> : <span class="hljs-string">'keyset1 key1 string'</span>,
+        <span class="hljs-attr">key2</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">params</span>) </span>{
+            <span class="hljs-keyword">return</span> <span class="hljs-string">'keyset1 key2 function '</span> + <span class="hljs-built_in">JSON</span>.stringify(params);
+        },
+        <span class="hljs-attr">key3</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">params</span>) </span>{
+            <span class="hljs-keyword">return</span> <span class="hljs-string">'keyset1 key3 '</span> + <span class="hljs-keyword">this</span>(<span class="hljs-string">'keyset1'</span>, <span class="hljs-string">'key2'</span>, params);
+        }
+    }
+});
+</code></pre>
+<p>You can find relevant documentation for building a project with internationalization within a build package <a href="https://ru.bem.info/tools/bem/enb-bem-i18n/readme/">enb-bem-i18n</a> (in Russian only, translation is coming).</p>

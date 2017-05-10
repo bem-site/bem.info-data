@@ -1,0 +1,122 @@
+[
+    {
+        "entity": {
+            "block": "ua"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "common.blocks/ua/ua.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "ua"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "bh.js",
+        "path": "common.blocks/ua/ua.bh.js"
+    },
+    {
+        "entity": {
+            "block": "ua"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "en.title.txt",
+        "path": "common.blocks/ua/ua.en.title.txt"
+    },
+    {
+        "entity": {
+            "block": "ua"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/ua/ua.ru.md"
+    },
+    {
+        "entity": {
+            "block": "ua"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "ru.title.txt",
+        "path": "common.blocks/ua/ua.ru.title.txt"
+    },
+    {
+        "entity": {
+            "block": "ua"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "tmpl-specs",
+        "path": "common.blocks/ua/ua.tmpl-specs",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "ua",
+            "elem": "svg"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "common.blocks/ua/__svg/ua__svg.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "ua",
+            "elem": "svg"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "bh.js",
+        "path": "common.blocks/ua/__svg/ua__svg.bh.js"
+    },
+    {
+        "entity": {
+            "block": "ua",
+            "elem": "svg"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/ua/__svg/ua__svg.deps.js"
+    },
+    {
+        "entity": {
+            "block": "ua",
+            "elem": "svg"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "en.title.txt",
+        "path": "common.blocks/ua/__svg/ua__svg.en.title.txt"
+    },
+    {
+        "entity": {
+            "block": "ua",
+            "elem": "svg"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "ru.title.txt",
+        "path": "common.blocks/ua/__svg/ua__svg.ru.title.txt"
+    },
+    {
+        "entity": {
+            "block": "ua",
+            "elem": "svg"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "tmpl-specs",
+        "path": "common.blocks/ua/__svg/ua__svg.tmpl-specs",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "ua"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/desktop.blocks",
+        "tech": "js",
+        "path": "desktop.blocks/ua/ua.js"
+    },
+    {
+        "entity": {
+            "block": "ua"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/desktop.blocks",
+        "tech": "ru.md",
+        "path": "desktop.blocks/ua/ua.ru.md"
+    }
+]

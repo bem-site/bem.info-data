@@ -1,0 +1,68 @@
+[
+    {
+        "entity": {
+            "block": "i18n"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.1.0/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/i18n/i18n.deps.js"
+    },
+    {
+        "entity": {
+            "block": "i18n"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.1.0/common.blocks",
+        "tech": "en.md",
+        "path": "common.blocks/i18n/i18n.en.md"
+    },
+    {
+        "entity": {
+            "block": "i18n"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.1.0/common.blocks",
+        "tech": "i18n.js",
+        "path": "common.blocks/i18n/i18n.i18n.js"
+    },
+    {
+        "entity": {
+            "block": "i18n"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.1.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/i18n/i18n.ru.md"
+    },
+    {
+        "entity": {
+            "block": "i18n"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.1.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/i18n/i18n.spec.js"
+    },
+    {
+        "entity": {
+            "block": "i18n"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.1.0/common.blocks",
+        "tech": "test.js",
+        "path": "common.blocks/i18n/i18n.test.js"
+    },
+    {
+        "entity": {
+            "block": "i18n"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.1.0/common.blocks",
+        "tech": "tests",
+        "path": "common.blocks/i18n/i18n.tests",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "i18n"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.1.0/common.blocks",
+        "tech": "tmpl-specs",
+        "path": "common.blocks/i18n/i18n.tmpl-specs",
+        "isDir": true
+    }
+]

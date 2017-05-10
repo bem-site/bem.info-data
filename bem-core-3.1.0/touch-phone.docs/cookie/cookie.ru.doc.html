@@ -1,0 +1,75 @@
+<h1 class="article__heading article__heading_1" id="cookie-1"><a href="#cookie-1" class="article__heading-anchor"></a>cookie</h1><p>Блок предоставляет объект, содержащий набор методов для работы с куки браузера (JS-свойство <code>document.cookie</code>).</p>
+<h2 class="article__heading article__heading_2" id="Обзор-23"><a href="#Обзор-23" class="article__heading-anchor"></a>Обзор</h2><h3 class="article__heading article__heading_3" id="Свойства-и-методы-объекта-28"><a href="#Свойства-и-методы-объекта-28" class="article__heading-anchor"></a>Свойства и методы объекта</h3><table>
+<thead>
+<tr>
+<th>Имя</th>
+<th>Возвращаемое значение</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#fields-get">get</a>(<code>{String} name</code>)</td>
+<td><code>{String}</code>&#124;<code>{null}</code></td>
+<td>Cлужит для получения значения, хранящегося в куки браузера.</td>
+</tr>
+<tr>
+<td><a href="#fields-set">set</a>(<code>{String} name</code>, <br><code>{String} val</code>, <br><code>[{Object} options]</code>)</td>
+<td><code>{String}</code></td>
+<td>Cлужит для записи куки с заданным именем.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="Публичные-технологии-блока-27"><a href="#Публичные-технологии-блока-27" class="article__heading-anchor"></a>Публичные технологии блока</h3><p>Блок реализован в технологиях:</p>
+<ul>
+<li><code>js</code></li>
+</ul>
+<h2 class="article__heading article__heading_2" id="Описание-3"><a href="#Описание-3" class="article__heading-anchor"></a>Описание</h2><p><a name="fields"></a></p>
+<h3 class="article__heading article__heading_3" id="Свойства-и-методы-объекта-29"><a href="#Свойства-и-методы-объекта-29" class="article__heading-anchor"></a>Свойства и методы объекта</h3><p><a name="fields-get"></a></p>
+<h4 class="article__heading article__heading_4" id="Метод-codegetcode-1"><a href="#Метод-codegetcode-1" class="article__heading-anchor"></a>Метод <code>get</code></h4><p>Метод служит для получения значения, хранящегося в куки, для имени переданного аргументом.</p>
+<p>Принимаемые аргументы:</p>
+<ul>
+<li><code>name</code> <code>{String}</code> – имя куки. Обязательный аргумент.</li>
+</ul>
+<p>Возвращаемое значение:</p>
+<ul>
+<li><code>{String}</code> в случае если куки с заданным именем было установлено. Значение автоматически декодируется с помощью <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent">decodeURIComponent</a>.</li>
+<li><code>null</code> если куки с заданным именем отсутствует.</li>
+</ul>
+<pre><code class="lang-js">modules.require(<span class="hljs-string">'cookie'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">cookie</span>) </span>{
+
+cookie.set(<span class="hljs-string">'mycookie'</span>, <span class="hljs-string">'foobar'</span>);
+<span class="hljs-built_in">console</span>.log(cookie.get(<span class="hljs-string">'mycookie'</span>)); <span class="hljs-comment">// 'foobar'</span>
+<span class="hljs-built_in">console</span>.log(cookie.get(<span class="hljs-string">'foo'</span>)); <span class="hljs-comment">// null</span>
+
+});
+</code></pre>
+<p><a name="fields-set"></a></p>
+<h4 class="article__heading article__heading_4" id="Метод-codesetcode-1"><a href="#Метод-codesetcode-1" class="article__heading-anchor"></a>Метод <code>set</code></h4><p>Метод служит для записи куки с заданным именем. Помимо имени и значения, методу можно передать хеш с дополнительными параметрами куки.</p>
+<p>Принимаемые аргументы:</p>
+<ul>
+<li><code>name</code> <code>{String}</code> – имя куки. Обязательный аргумент.</li>
+<li><code>val</code> <code>{String}</code> | <code>{null}</code> – строка со значением, ассоциируемым с именем. При установке в качестве значения <code>null</code> куки будет удалено. Обязательный аргумент.</li>
+<li>[<code>options</code> <code>{Object}</code>] – хеш с дополнительными параметрами. В хеше допустимы следующие свойства:<ul>
+<li><code>expires</code> <code>{Number}</code> – срок жизни куки в сутках. При отрицательном значении куки будет удалено. Альтернативно, можно передать в качестве значения сформированный объект даты (<code>new Date()</code>).</li>
+<li><code>path</code> <code>{String}</code> – путь от корня домена внутри которого будет доступно куки.</li>
+<li><code>domain</code> <code>{String}</code> – домен в явном виде. По умолчанию – текущий.</li>
+<li><code>secure</code> <code>{Boolean}</code> – логический флаг, указывающий на необходимость принудительного использования с куки шифрованного соединения SSL. По умолчанию <code>false</code>.</li>
+</ul>
+</li>
+</ul>
+<p>Возвращает объект <code>this</code>.</p>
+<pre><code class="lang-js">modules.require(<span class="hljs-string">'cookie'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">cookie</span>) </span>{
+
+cookie.set(<span class="hljs-string">'mycookie'</span>, <span class="hljs-string">'foobar'</span>, {
+    <span class="hljs-attr">expires</span> : <span class="hljs-number">1</span>, <span class="hljs-comment">// срок жизни одни сутки</span>
+    path : <span class="hljs-string">'/'</span>, <span class="hljs-comment">// доступно для всех страниц домена</span>
+    secure : <span class="hljs-literal">true</span> <span class="hljs-comment">// передавать куки только по SSL</span>
+});
+<span class="hljs-built_in">console</span>.log(cookie.get(<span class="hljs-string">'mycookie'</span>)); <span class="hljs-comment">// 'foobar'</span>
+
+cookie.set(<span class="hljs-string">'mycookie'</span>, <span class="hljs-literal">null</span> }); <span class="hljs-comment">// удаляем куки</span>
+<span class="hljs-built_in">console</span>.log(cookie.get(<span class="hljs-string">'mycookie'</span>)); <span class="hljs-comment">// null</span>
+
+});
+</code></pre>

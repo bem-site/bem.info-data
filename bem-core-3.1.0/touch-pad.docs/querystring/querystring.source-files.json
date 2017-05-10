@@ -1,0 +1,52 @@
+[
+    {
+        "entity": {
+            "block": "querystring"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.1.0/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/querystring/querystring.deps.js"
+    },
+    {
+        "entity": {
+            "block": "querystring"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.1.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/querystring/querystring.ru.md"
+    },
+    {
+        "entity": {
+            "block": "querystring"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.1.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/querystring/querystring.spec.js"
+    },
+    {
+        "entity": {
+            "block": "querystring"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.1.0/common.blocks",
+        "tech": "vanilla.js",
+        "path": "common.blocks/querystring/querystring.vanilla.js"
+    },
+    {
+        "entity": {
+            "block": "querystring",
+            "elem": "uri"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.1.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/querystring/__uri/querystring__uri.spec.js"
+    },
+    {
+        "entity": {
+            "block": "querystring",
+            "elem": "uri"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.1.0/common.blocks",
+        "tech": "vanilla.js",
+        "path": "common.blocks/querystring/__uri/querystring__uri.vanilla.js"
+    }
+]

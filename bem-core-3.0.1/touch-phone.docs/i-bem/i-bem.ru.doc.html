@@ -1,0 +1,177 @@
+<p>Блок-хелпер, позволяющий создавать другие блоки.</p>
+<p>Блок <code>i-bem</code> реализован в технологии <a href="https://ru.bem.info/technology/i-bem/">JS</a>.</p>
+<p>Реализация блока в технологии JS представляет собой <a href="https://ru.bem.info/technology/i-bem/current/i-bem-js/">специализированный JavaScript-фреймворк</a> для веб-разработки в рамках методологии БЭМ.</p>
+
+<h1 class="article__heading article__heading_1" id="Модификатор-codeelem-instancescode-элемента-codedomcode-блока-codei-bemcode-1"><a href="#Модификатор-codeelem-instancescode-элемента-codedomcode-блока-codei-bemcode-1" class="article__heading-anchor"></a>Модификатор <code>elem-instances</code> элемента <code>dom</code> блока <code>i-bem</code></h1><p>Подключение данного модификатора позволяет работать с элементами почти так же, как и с обычными блоками, т.е. любой (но не обязательно каждый) элемент может иметь свой BEM-инстанс. API инстансов элементов аналогично API блоков с некоторыми различиями, описанными ниже.</p>
+<h2 class="article__heading article__heading_2" id="Декларация-1"><a href="#Декларация-1" class="article__heading-anchor"></a>Декларация</h2><p>Декларация элемента</p>
+<pre><code class="lang-javascript">BEMDOM.decl({ <span class="hljs-attr">block</span>: <span class="hljs-string">'menu'</span>, <span class="hljs-attr">elem</span>: <span class="hljs-string">'item'</span> }, { <span class="hljs-comment">/* properties */</span> }, { <span class="hljs-comment">/* static properties */</span> });
+</code></pre>
+<p>Декларация модификатора элемента:</p>
+<pre><code class="lang-javascript">BEMDOM.decl({
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'menu'</span>,
+    <span class="hljs-attr">elem</span>: <span class="hljs-string">'item'</span>,
+    <span class="hljs-attr">modName</span>: <span class="hljs-string">'state'</span>,
+    <span class="hljs-attr">modVal</span>: <span class="hljs-string">'current'</span>
+}, {
+    <span class="hljs-comment">/* properties */</span>
+}, {
+    <span class="hljs-comment">/* static properties */</span>
+});
+</code></pre>
+<p>Модификаторы элементов работают так же, как модификаторы блоков.</p>
+<h2 class="article__heading article__heading_2" id="bem-инстансы-элементов-1"><a href="#bem-инстансы-элементов-1" class="article__heading-anchor"></a>BEM-инстансы элементов</h2><p>Для доступа к BEM-инстансам элементов используется хелпер <code>findElemInstances</code>, API которого аналогично хелперу <code>findElem</code>:</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// поиск всех вложенных элементов 'item'</span>
+<span class="hljs-keyword">this</span>.findElemInstances(<span class="hljs-string">'item'</span>);
+
+<span class="hljs-comment">// строгий поиск всех вложенных элементов 'item'</span>
+<span class="hljs-keyword">this</span>.findElemInstances(<span class="hljs-string">'item'</span>, <span class="hljs-literal">true</span>);
+
+<span class="hljs-comment">// поиск всех вложенных модификаторов элементов 'item'</span>
+<span class="hljs-keyword">this</span>.findElemInstances(<span class="hljs-string">'item'</span>, <span class="hljs-string">'state'</span>, <span class="hljs-string">'current'</span>);
+
+<span class="hljs-comment">// строгий поиск всех вложенных модификаторов элементов 'item'</span>
+<span class="hljs-keyword">this</span>.findElemInstances(<span class="hljs-string">'item'</span>, <span class="hljs-string">'state'</span>, <span class="hljs-string">'current'</span>, <span class="hljs-literal">true</span>);
+
+<span class="hljs-comment">// поиск всех элементов 'item' внутри указанного контекста</span>
+<span class="hljs-keyword">this</span>.findElemInstances(ctx, <span class="hljs-string">'item'</span>);
+
+<span class="hljs-comment">// строгий поиск всех элементов 'item' внутри указанного контекста</span>
+<span class="hljs-keyword">this</span>.findElemInstances(ctx, <span class="hljs-string">'item'</span>, <span class="hljs-literal">true</span>);
+
+<span class="hljs-comment">// поиск всех модификаторов элементов 'item' внутри указанного контекста</span>
+<span class="hljs-keyword">this</span>.findElemInstances(ctx, <span class="hljs-string">'item'</span>, <span class="hljs-string">'state'</span>, <span class="hljs-string">'current'</span>);
+
+<span class="hljs-comment">// строгий поиск всех модификаторов элементов 'item' внутри указанного контекста</span>
+<span class="hljs-keyword">this</span>.findElemInstances(ctx, <span class="hljs-string">'item'</span>, <span class="hljs-string">'state'</span>, <span class="hljs-string">'current'</span>, <span class="hljs-literal">true</span>);
+</code></pre>
+<p>При необходимости, инстансы найденных элементов инициализируются.</p>
+<p>Строгий поиск подразумевает фильтрацию элементов вложенных блоков с таким же именем, как у текущего блока:</p>
+<pre><code class="lang-javascript">{
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'menu'</span>,
+    <span class="hljs-attr">content</span>: [
+        {
+            <span class="hljs-attr">elem</span>: <span class="hljs-string">'item'</span> <span class="hljs-comment">// (1)</span>
+        },
+        {
+            <span class="hljs-attr">block</span>: <span class="hljs-string">'menu'</span>,
+            <span class="hljs-attr">content</span>: {
+                <span class="hljs-attr">elem</span>: <span class="hljs-string">'item'</span> <span class="hljs-comment">// (2)</span>
+            }
+        }
+    ]
+}
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// this =&gt; block 'menu'</span>
+<span class="hljs-keyword">this</span>.findElemInstances(<span class="hljs-string">'item'</span>);         <span class="hljs-comment">// найдет инстансы (1) и (2)</span>
+<span class="hljs-keyword">this</span>.findElemInstances(<span class="hljs-string">'item'</span>, <span class="hljs-literal">true</span>);   <span class="hljs-comment">// найдет только инстанс (1)</span>
+</code></pre>
+<p>По аналогии с хелпером <code>elem</code>, кэширующим результаты своей работы, для минимизации количества операций с DOM рекомендуется использовать кэширующий поиск BEM-инстансов элементов:</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// кэширующий поиск всех вложенных элементов 'item'</span>
+<span class="hljs-keyword">this</span>.elemInstances(<span class="hljs-string">'item'</span>);
+
+<span class="hljs-comment">// кэширующий поиск всех вложенных модификаторов элемента 'item'</span>
+<span class="hljs-keyword">this</span>.elemInstances(<span class="hljs-string">'item'</span>, <span class="hljs-string">'state'</span>, <span class="hljs-string">'current'</span>);
+</code></pre>
+<p>Также с помощью этого хелпера можно вернуть инстансы элементов, расположенных на DOM-нодах указанной jQuery-коллекции:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">this</span>.elemInstances(domElem);
+</code></pre>
+<p>Для поиска одного (первого) BEM-инстанса элемента есть дополнительные формы этих хелперов с аналогичным API:</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// поиск одного вложенного элемента 'item'</span>
+<span class="hljs-keyword">this</span>.findElemInstance(<span class="hljs-string">'item'</span>);
+
+<span class="hljs-comment">// кэширующий поиск одного вложенного элемента 'item'</span>
+<span class="hljs-keyword">this</span>.elemInstance(<span class="hljs-string">'item'</span>);
+
+<span class="hljs-comment">// вернуть инстанс элемента, расположенного на первой DOM-ноде указанной jQuery-коллекции</span>
+<span class="hljs-keyword">this</span>.elemInstance(domElem);
+</code></pre>
+<p>Если необходимо вернуть BEM-инстанс элемента, на DOM-ноде которого подмешаны другие элементы того же блока:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">this</span>.elemInstance(<span class="hljs-keyword">this</span>.elemify(domElem, <span class="hljs-string">'item'</span>));
+</code></pre>
+<h2 class="article__heading article__heading_2" id="Поиск-снаружи-контекста-1"><a href="#Поиск-снаружи-контекста-1" class="article__heading-anchor"></a>Поиск снаружи контекста</h2><p>Существует хелпер для поиска элемента снаружи указанного контекста:</p>
+<pre><code class="lang-javascript">{
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'menu'</span>,
+    <span class="hljs-attr">content</span>: {
+        <span class="hljs-attr">elem</span>: <span class="hljs-string">'item'</span>,
+        <span class="hljs-attr">content</span>: {
+            <span class="hljs-attr">elem</span>: <span class="hljs-string">'link'</span>
+        }
+    }
+}
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// this =&gt; block 'menu'</span>
+<span class="hljs-keyword">this</span>.closestElem(<span class="hljs-keyword">this</span>.elem(<span class="hljs-string">'link'</span>), <span class="hljs-string">'item'</span>);
+</code></pre>
+<p>При поиске от имени BEM-инстанса элемента можно не указывать контекст поиска, тогда поиск будет производиться относительно DOM-ноды этого элемента:</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// this =&gt; element 'menu__link'</span>
+<span class="hljs-keyword">this</span>.closestElem(<span class="hljs-string">'item'</span>);
+</code></pre>
+<p>По аналогии с хелперами <code>elem</code> и <code>findElem</code>, хелпер <code>closestElem</code> возвращает jQuery-коллекцию. Для доступа к BEM-инстансам элементов снаружи контекста используются хелперы <code>closestElemInstance</code> и <code>closestElemInstances</code>:</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// this =&gt; block 'menu'</span>
+<span class="hljs-keyword">this</span>.closestElemInstance(<span class="hljs-keyword">this</span>.elem(<span class="hljs-string">'link'</span>), <span class="hljs-string">'item'</span>);
+<span class="hljs-keyword">this</span>.closestElemInstances(<span class="hljs-keyword">this</span>.elem(<span class="hljs-string">'link'</span>), <span class="hljs-string">'item'</span>);
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// this =&gt; element 'menu__link'</span>
+<span class="hljs-keyword">this</span>.closestElemInstance(<span class="hljs-string">'item'</span>);
+</code></pre>
+<h2 class="article__heading article__heading_2" id="Доступ-к-родительскому-блоку-1"><a href="#Доступ-к-родительскому-блоку-1" class="article__heading-anchor"></a>Доступ к родительскому блоку</h2><p>По аналогии с методом <code>elem</code> для получения элемента блока существует метод <code>block</code> для получения блока элемента.</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// this =&gt; element 'menu__item'</span>
+<span class="hljs-keyword">this</span>.block() <span class="hljs-comment">// эквивалентно this.findBlockOutside('menu') с кэшированием результата поиска</span>
+</code></pre>
+<h2 class="article__heading article__heading_2" id="Поиск-элементов-и-блоков-1"><a href="#Поиск-элементов-и-блоков-1" class="article__heading-anchor"></a>Поиск элементов и блоков</h2><p>Элемент ищет только вложенные в него элементы:</p>
+<pre><code class="lang-javascript">{
+    <span class="hljs-attr">block</span>: <span class="hljs-string">'menu'</span>,
+    <span class="hljs-attr">content</span>: [
+        {
+            <span class="hljs-attr">elem</span>: <span class="hljs-string">'item'</span>,
+            <span class="hljs-attr">content</span>: {
+                <span class="hljs-attr">elem</span>: <span class="hljs-string">'link'</span> <span class="hljs-comment">// (1)</span>
+            }
+        },
+        {
+            <span class="hljs-attr">elem</span>: <span class="hljs-string">'link'</span> <span class="hljs-comment">// (2)</span>
+        }
+    ]
+}
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// this =&gt; element 'menu__item'</span>
+<span class="hljs-keyword">this</span>.findElem(<span class="hljs-string">'link'</span>);  <span class="hljs-comment">// будет найден только элемент (1).</span>
+</code></pre>
+<p>Если нужно найти все элементы <code>&#39;link&#39;</code>, поиск нужно производить от имени блока-родителя:</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// this =&gt; element 'menu__item'</span>
+<span class="hljs-keyword">this</span>.block().findElem(<span class="hljs-string">'link'</span>);    <span class="hljs-comment">// будут найдены элементы (1) и (2).</span>
+</code></pre>
+<p>Все это справедливо также для хелпера <code>elem</code>, хелперов поиска блоков (<code>findBlockInside</code> и др.) и описанных выше хелперов для поиска BEM-инстансов элементов.</p>
+<h2 class="article__heading article__heading_2" id="Реакция-на-установку-модификаторов-1"><a href="#Реакция-на-установку-модификаторов-1" class="article__heading-anchor"></a>Реакция на установку модификаторов</h2><p>Блок делегирует установку модификаторов тем элементам, у которых есть свои BEM-декларации.
+Поэтому обработчики <code>onSetMod</code> элемента выполнятся, если родительский блок установит этому элементу соответствующие модификаторы:</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// this =&gt; element 'menu__item'</span>
+onSetMod: {
+    <span class="hljs-string">'state'</span>: {
+        <span class="hljs-string">'current'</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// код обработчика</span>
+        }
+    }
+}
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// this =&gt; block 'menu'</span>
+<span class="hljs-keyword">this</span>.setMod(<span class="hljs-keyword">this</span>.elem(<span class="hljs-string">'item'</span>), <span class="hljs-string">'state'</span>, <span class="hljs-string">'current'</span>); <span class="hljs-comment">// выполнится задекларированный выше обработчик</span>
+</code></pre>
+<p>Обработчики <code>onElemSetMod</code> блока выполнятся, если инстанс элемента сам установит себе соответствующие модификаторы:</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// this =&gt; block 'menu'</span>
+onElemSetMod: {
+    <span class="hljs-string">'item'</span>: {
+        <span class="hljs-string">'state'</span>: {
+            <span class="hljs-string">'current'</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+                <span class="hljs-comment">// код обработчика</span>
+            }
+        }
+    }
+}
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// this =&gt; element 'menu__item'</span>
+<span class="hljs-keyword">this</span>.setMod(<span class="hljs-string">'state'</span>, <span class="hljs-string">'current'</span>); <span class="hljs-comment">// выполнится задекларированный выше обработчик</span>
+</code></pre>
+<p>Обработчики <code>onElemSetMod</code> в контексте инстанса элемента не используются.</p>
+<h2 class="article__heading article__heading_2" id="Отложенная-инициализация-и-live-события-1"><a href="#Отложенная-инициализация-и-live-события-1" class="article__heading-anchor"></a>Отложенная инициализация и live-события</h2><p>Рекомендуется по возможности всегда использовать отложенную инициализацию BEM-инстансов элементов. Они, как и обычные блоки, поддерживают все хелперы для работы с live-событиями. Кроме того, хелпер <code>liveInitOnBlockEvent</code> имеет дополнительную форму для инициализации по событию родительского блока - для этого просто опускается второй параметр (имя блока):</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">this</span>.liveInitOnBlockEvent(<span class="hljs-string">'switch'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-comment">/* обработчик */</span> });
+</code></pre>

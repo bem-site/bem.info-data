@@ -1,0 +1,37 @@
+<h1 class="article__heading article__heading_1" id="next-tick-2"><a href="#next-tick-2" class="article__heading-anchor"></a>next-tick</h1><p>Блок предоставляет функцию, производящую асинхронный вызов callback-функции, переданной аргументом, в следующем витке событийного цикла. </p>
+<p><code>next-tick</code> – полифил, реализующий:</p>
+<ul>
+<li>симуляцию событийного цикла для старых версий браузеров;</li>
+<li>унифицированный интерфейс для работы с различными браузерами и NodeJS.</li>
+</ul>
+<p>Функция подходит для случаев, когда нужно, чтобы callback был выполнен после того, как другие функции в рамках событийного цикла отработали. Например, чтобы убедиться что доступны данные, динамически вычислявшиеся в текущем цикле.</p>
+<p>Принимаемые аргументы: </p>
+<ul>
+<li><code>fn</code> <code>{Function}</code> – функция, которую нужно вызвать в следующем событийном цикле. Обязательный аргумент.</li>
+</ul>
+<p>Не имеет возвращаемого значения.</p>
+<p>Например:</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'next-tick'</span>, <span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">nextTick, events</span>) </span>{
+    <span class="hljs-keyword">var</span> event = <span class="hljs-keyword">new</span> events.Event();
+
+    nextTick(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ event.emit(<span class="hljs-string">'click'</span>) }); 
+
+    <span class="hljs-comment">// ···</span> 
+
+    event.on(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{ <span class="hljs-built_in">console</span>.log(e.type) })
+});
+</code></pre>
+<h2 class="article__heading article__heading_2" id="Порядок-вызова-callback-2"><a href="#Порядок-вызова-callback-2" class="article__heading-anchor"></a>Порядок вызова callback</h2><p>В рамках событийного цикла работы блок формирует очередь, добавляя каждую следующую callback функцию в ее конец. Порядок вызова callback сохраняется. Например:</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'next-tick'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">nextTick</span>) </span>{
+    <span class="hljs-keyword">var</span> order = [];
+
+    nextTick(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ order.push(<span class="hljs-number">1</span>); });
+    nextTick(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ order.push(<span class="hljs-number">2</span>); });
+    nextTick(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ order.push(<span class="hljs-number">3</span>); });
+    nextTick(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-built_in">console</span>.log(order)); }; <span class="hljs-comment">// should be [1, 2, 3]</span>
+});
+</code></pre>
+<h2 class="article__heading article__heading_2" id="Публичные-технологии-блока-52"><a href="#Публичные-технологии-блока-52" class="article__heading-anchor"></a>Публичные технологии блока</h2><p>Блок реализован в технологиях:</p>
+<ul>
+<li><code>vanilla.js</code></li>
+</ul>

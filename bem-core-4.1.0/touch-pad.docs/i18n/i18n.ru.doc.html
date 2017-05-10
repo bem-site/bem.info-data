@@ -1,0 +1,28 @@
+<h1 class="article__heading article__heading_1" id="i18n-5"><a href="#i18n-5" class="article__heading-anchor"></a>i18n</h1><p>Блок предоставляет функцию для интернационализации проекта.
+Может быть использован в браузере и в node.js-окружении.</p>
+<h2 class="article__heading article__heading_2" id="Сигнатура-2"><a href="#Сигнатура-2" class="article__heading-anchor"></a>Сигнатура</h2><pre><code class="lang-js"><span class="hljs-comment">/**
+ * @exports
+ * @param {String} keyset
+ * @param {String} key
+ * @param {Object} [params]
+ * @returns {String}
+ */</span>
+i18n(keyset, key, params);
+</code></pre>
+<p>Например:</p>
+<pre><code class="lang-js">i18n(<span class="hljs-string">'keyset1'</span>, <span class="hljs-string">'key2'</span>, { <span class="hljs-attr">a</span> : <span class="hljs-string">'1'</span> });
+</code></pre>
+<p>Для добавления переводов используется метод <code>decl</code>:</p>
+<pre><code class="lang-js">i18n.decl({
+    <span class="hljs-attr">keyset1</span> : {
+        <span class="hljs-attr">key1</span> : <span class="hljs-string">'keyset1 key1 string'</span>,
+        <span class="hljs-attr">key2</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">params</span>) </span>{
+            <span class="hljs-keyword">return</span> <span class="hljs-string">'keyset1 key2 function '</span> + <span class="hljs-built_in">JSON</span>.stringify(params);
+        },
+        <span class="hljs-attr">key3</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">params</span>) </span>{
+            <span class="hljs-keyword">return</span> <span class="hljs-string">'keyset1 key3 '</span> + <span class="hljs-keyword">this</span>(<span class="hljs-string">'keyset1'</span>, <span class="hljs-string">'key2'</span>, params);
+        }
+    }
+});
+</code></pre>
+<p>Документацию на сборку проекта с интернационализацией см. в пакете для сборки <a href="https://ru.bem.info/tools/bem/enb-bem-i18n/readme/">enb-bem-i18n</a>.</p>

@@ -1,0 +1,93 @@
+<h1 class="article__heading article__heading_1" id="loader-1"><a href="#loader-1" class="article__heading-anchor"></a>loader</h1><p>Блок <code>loader</code> служит для загрузки и подключения скриптов по URL.</p>
+<h2 class="article__heading article__heading_2" id="Обзор-25"><a href="#Обзор-25" class="article__heading-anchor"></a>Обзор</h2><h3 class="article__heading article__heading_3" id="Модификаторы-блока-8"><a href="#Модификаторы-блока-8" class="article__heading-anchor"></a>Модификаторы блока</h3><table>
+<thead>
+<tr>
+<th>Модификатор</th>
+<th>Допустимые значения</th>
+<th>Способы использования</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#modifiers-type">type</a></td>
+<td><code>&#39;js&#39;</code>, <code>&#39;bundle&#39;</code></td>
+<td><code>JS</code></td>
+<td>Позволяет по URL получить и подключить JS-код или бандл.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="Функции-подключаемые-модификаторами-блока-1"><a href="#Функции-подключаемые-модификаторами-блока-1" class="article__heading-anchor"></a>Функции, подключаемые модификаторами блока</h3><table>
+<thead>
+<tr>
+<th>Модификатор</th>
+<th>Функция</th>
+<th>Возвращаемое значение</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#modifiers-type-js">js</a></td>
+<td>loader(<br><code>{String} id</code>, <br><code>{String} url</code>, <br><code>[{Function} success]</code>, <br><code>[{Function} error]</code>)</td>
+<td>-</td>
+<td>Загружает и подключает фрагмент JavaScript-кода.</td>
+</tr>
+<tr>
+<td><a href="#modifiers-type-bundle">bundle</a></td>
+<td>loader(<br><code>{String} url</code>, <br><code>{Function} success</code>, <br><code>[{Function} error]</code>)</td>
+<td>-</td>
+<td>Загружает и подключает пакет, собранный из CSS и JS-файлов – «бандл».</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="Публичные-технологии-блока-31"><a href="#Публичные-технологии-блока-31" class="article__heading-anchor"></a>Публичные технологии блока</h3><p>Блок реализован в технологиях:</p>
+<ul>
+<li><code>js</code></li>
+</ul>
+<h2 class="article__heading article__heading_2" id="Подробности-18"><a href="#Подробности-18" class="article__heading-anchor"></a>Подробности</h2><p><a name="modifiers"></a></p>
+<h3 class="article__heading article__heading_3" id="Модификаторы-блока-9"><a href="#Модификаторы-блока-9" class="article__heading-anchor"></a>Модификаторы блока</h3><p><a name="modifiers-type"></a></p>
+<h4 class="article__heading article__heading_4" id="Модификатор-codetypecode-3"><a href="#Модификатор-codetypecode-3" class="article__heading-anchor"></a>Модификатор <code>type</code></h4><p>Предоставляет набор функций для загрузки и подключение различных типов данных.</p>
+<p>Допустимые значения: <code>&#39;js&#39;</code>, <code>&#39;bundle&#39;</code>. </p>
+<p>Способ использования: <code>JS</code>.</p>
+<p>В зависимости от значения модификатора <code>type</code> блок <code>loader</code> позволяет получить по URL и подключить:</p>
+<ul>
+<li><code>js</code> – фрагмент JS-кода.  </li>
+<li><code>bundle</code> – пакет, собранный из CSS и JS-файлов – «бандл».  </li>
+</ul>
+<p><a name="modifiers-type-js"></a></p>
+<h5 class="article__heading article__heading_5" id="Модификатор-codetypecode-в-значении-codejscode-1"><a href="#Модификатор-codetypecode-в-значении-codejscode-1" class="article__heading-anchor"></a>Модификатор <code>type</code> в значении <code>js</code></h5><p>Предоставляет функцию, позволяющую загрузить и подключить фрагмент JS-кода.</p>
+<p>Принимаемые аргументы: </p>
+<ul>
+<li><code>{String}</code> <code>url</code> – URL загружаемого фрагмента JS-кода. Обязательный аргумент.</li>
+<li>[<code>{Function}</code> <code>success</code>] – callback-функция, выполняемая по завершению загрузки кода.</li>
+<li>[<code>{Function}</code> <code>error</code>] – callback-функция, выполняемая при ошибке в ходе загрузки кода.</li>
+</ul>
+<p>Не имеет возвращаемого значения. </p>
+<p>Например, <code>loader_type_js</code> может использоваться для загрузки и подключения jQuery:</p>
+<pre><code class="lang-js">modules.define(<span class="hljs-string">'jquery'</span>, [<span class="hljs-string">'loader_type_js'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">provide, loader</span>) </span>{
+
+    loader(
+        <span class="hljs-string">'https://yastatic.net/jquery/2.1.4/jquery.min.js'</span>,
+        <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ provide(jQuery) });
+
+});
+</code></pre>
+<p>Расширенный пример смотрите в блоке <a href="https://github.com/bem/bem-core/blob/v2/common.blocks/jquery/jquery.js">common.blocks/jquery</a> библиотеки <code>bem-core</code>.</p>
+<p><a name="modifiers-type-bundle"></a></p>
+<h5 class="article__heading article__heading_5" id="Модификатор-codetypecode-в-значении-codebundlecode-1"><a href="#Модификатор-codetypecode-в-значении-codebundlecode-1" class="article__heading-anchor"></a>Модификатор <code>type</code> в значении <code>bundle</code></h5><p>Предоставляет функцию, позволяющую загрузить и подключить пакет, собранный из CSS и JS-файлов – «бандл».</p>
+<p>Принимаемые аргументы: </p>
+<ul>
+<li><code>{String}</code> <code>id</code> – идентификатор бандла. Обязательный аргумент.</li>
+<li><code>{String}</code> <code>url</code> – путь до файла бандла в формате URL. Обязательный аргумент.</li>
+<li><code>{Function}</code> <code>onSuccess</code> – callback, вызываемая по завершению загрузки бандла. Обязательный аргумент.</li>
+<li>[<code>{Function}</code> <code>onError</code>] – callback, вызываемая при неудачной загрузке бандла.</li>
+</ul>
+<p>Не имеет возвращаемого значения.</p>
+<p>Спецификации технологии <code>bundle</code> находятся в процессе разработки. Для получения детальной информации пишите на <a href="https://ru.bem.info/forum/">форум</a>.</p>
+<h6 class="article__heading article__heading_6" id="Статический-метод-code_loadedcode-1"><a href="#Статический-метод-code_loadedcode-1" class="article__heading-anchor"></a>Статический метод <code>_loaded</code></h6><p>Функция, подключаемая с модификатором <code>type_bundle</code>, обладает статическим методом – <code>_loaded</code>. Он используется как вспомогательный после успешной загрузки бандла.</p>
+<p>Принимаемые аргументы: </p>
+<ul>
+<li><code>{String}</code> <code>id</code> – идентификатор бандла. Обязательный аргумент.</li>
+</ul>
+<p>Не имеет возвращаемого значения. </p>

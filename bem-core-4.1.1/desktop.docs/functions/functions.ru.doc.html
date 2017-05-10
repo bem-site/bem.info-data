@@ -1,0 +1,129 @@
+<h1 class="article__heading article__heading_1" id="functions"><a href="#functions" class="article__heading-anchor"></a>functions</h1><p>Блок предоставляет объект, содержащий набор методов для работы с функциями JavaScript.</p>
+<h2 class="article__heading article__heading_2" id="Обзор-3"><a href="#Обзор-3" class="article__heading-anchor"></a>Обзор</h2><h3 class="article__heading article__heading_3" id="Свойства-и-методы-объекта-4"><a href="#Свойства-и-методы-объекта-4" class="article__heading-anchor"></a>Свойства и методы объекта</h3><table>
+<thead>
+<tr>
+<th>Имя</th>
+<th>Тип или возвращаемое значение</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#fields-isFunction">isFunction</a>(<code>obj</code> <code>{*}</code>)</td>
+<td><code>{Boolean}</code></td>
+<td>Проверяет, является ли переданный аргумент функцией.</td>
+</tr>
+<tr>
+<td><a href="#fields-noop">noop</a></td>
+<td><code>{Function}</code></td>
+<td>Пустая функция.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="Элементы-блока-1"><a href="#Элементы-блока-1" class="article__heading-anchor"></a>Элементы блока</h3><table>
+<thead>
+<tr>
+<th>Элемент</th>
+<th>Способы использования</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-debounce">debounce</a></td>
+<td><code>JS</code></td>
+<td>Декоратор функции. Объединяет несколько вызовов функции, производимых в заданном временном интервале, в один.</td>
+</tr>
+<tr>
+<td><a href="#elems-throttle">throttle</a></td>
+<td><code>JS</code></td>
+<td>Декоратор функции. Ограничивает частоту выполнения функции до одного раза в указанный период.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="Публичные-технологии-блока-4"><a href="#Публичные-технологии-блока-4" class="article__heading-anchor"></a>Публичные технологии блока</h3><p>Блок реализован в технологиях:</p>
+<ul>
+<li><code>vanilla.js</code></li>
+</ul>
+<h2 class="article__heading article__heading_2" id="Подробности-1"><a href="#Подробности-1" class="article__heading-anchor"></a>Подробности</h2><p><a name="fields"></a></p>
+<h3 class="article__heading article__heading_3" id="Свойства-и-методы-объекта-5"><a href="#Свойства-и-методы-объекта-5" class="article__heading-anchor"></a>Свойства и методы объекта</h3><p><a name="fields-isFunction"></a></p>
+<h4 class="article__heading article__heading_4" id="Метод-codeisfunctioncode"><a href="#Метод-codeisfunctioncode" class="article__heading-anchor"></a>Метод <code>isFunction</code></h4><p>Метод проверяет, является ли переданный аргумент функцией.  </p>
+<p>Принимаемые аргументы: </p>
+<ul>
+<li><code>obj</code> <code>{*}</code> – проверяемый объект. Обязательный аргумент.</li>
+</ul>
+<p>Возвращаемое значение: <code>{Boolean}</code>. В случае, если аргумент является функцией – <code>true</code>.</p>
+<pre><code class="lang-js">modules.require(<span class="hljs-string">'functions'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">func</span>) </span>{
+    <span class="hljs-keyword">var</span> a = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{},
+        b = {};
+    <span class="hljs-built_in">console</span>.log(func.isFunction(a)); <span class="hljs-comment">// true</span>
+    <span class="hljs-built_in">console</span>.log(func.isFunction(b)); <span class="hljs-comment">// false</span>
+});
+</code></pre>
+<p><a name="fields-noop"></a></p>
+<h4 class="article__heading article__heading_4" id="Свойство-codenoopcode"><a href="#Свойство-codenoopcode" class="article__heading-anchor"></a>Свойство <code>noop</code></h4><p>Пустая функция (<code>function() {}</code>).</p>
+<p>Не имеет аргументов и возвращаемого значения.</p>
+<p><code>noop</code> можно использовать в ситуациях, когда для работы требуется функция, но нет смысла добавлять логику. Например в качестве «заглушки» для базовых классов при проектировании в парадигме ООП.</p>
+<pre><code class="lang-js">modules.define(<span class="hljs-string">'base-class'</span>, [<span class="hljs-string">'inherit'</span>, <span class="hljs-string">'functions'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">provide, inherit, functions</span>) </span>{
+
+provide(inherit({
+    <span class="hljs-attr">getData</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">this</span>._sendRequest();
+    },
+
+    <span class="hljs-attr">_sendRequest</span> : functions.noop
+}));
+
+});
+</code></pre>
+<p><a name="elems"></a></p>
+<h3 class="article__heading article__heading_3" id="Элементы-блока-2"><a href="#Элементы-блока-2" class="article__heading-anchor"></a>Элементы блока</h3><p>Элементы блока реализуют набор декораторов функций.</p>
+<p>Декораторы добавляют функции логику, не меняя ее оригинальной сигнатуры.</p>
+<p><a name="elems-debounce"></a></p>
+<h4 class="article__heading article__heading_4" id="Элемент-codedebouncecode"><a href="#Элемент-codedebouncecode" class="article__heading-anchor"></a>Элемент <code>debounce</code></h4><p>Декоратор, откладывающий вызовов функции до истечения задержки. После каждой попытки вызова задержка начинает отсчитываться заново. </p>
+<p>Принимаемые аргументы:</p>
+<ul>
+<li><code>fn</code> <code>{Function}</code> — оригинальная функция. Обязательный аргумент.</li>
+<li><code>timeout</code> <code>{Number}</code> — время задержки в миллисекундах. Обязательный аргумент.</li>
+<li>[<code>invokeAsap</code> <code>{Boolean}</code>] — режим работы <code>debounce</code>. По умолчанию используется первый режим (соответствует значению <code>false</code>).</li>
+<li>[<code>context</code> <code>{Object}</code>] — контекст для выполнения оригинальной функции.</li>
+</ul>
+<p>В зависимости от значения аргумента <code>invokeAsap</code> <code>debounce</code> может работать в двух режимах:</p>
+<ol>
+<li>Вызов оригинальной функции производится по истечению задержки после последней попытки вызова.</li>
+<li>Первый вызов оригинальной функции производится сразу же при вызове декорированной функции. Дальнейшее поведение аналогично режиму 1.</li>
+</ol>
+<p>Возвращаемое значение: <code>{Function}</code>. Декорированная функция.</p>
+<pre><code class="lang-js">modules.require(<span class="hljs-string">'functions__debounce'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">provide, debounce</span>) </span>{
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">log</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'hello!'</span>);
+}
+
+<span class="hljs-keyword">var</span> debouncedLog = debounce(log, <span class="hljs-number">300</span>);
+setInterval(debouncedLog, <span class="hljs-number">50</span>);
+
+});
+</code></pre>
+<p><a name="elems-throttle"></a></p>
+<h4 class="article__heading article__heading_4" id="Элемент-codethrottlecode"><a href="#Элемент-codethrottlecode" class="article__heading-anchor"></a>Элемент <code>throttle</code></h4><p>Декоратор позволяет «затормозить» функцию. Она будет выполняться не чаще одного раза в указанный период, сколько бы раз в течение этого периода ни была вызвана. Все промежуточные вызовы игнорируются.</p>
+<p>Принимаемые аргументы:</p>
+<ul>
+<li><code>fn</code> <code>{Function}</code> — оригинальная функция. Обязательный аргумент.</li>
+<li><code>period</code> <code>{Number}</code> — интервал между вызовами в миллисекундах. Обязательный аргумент.</li>
+<li>[<code>context</code> <code>{Object}</code>] — контекст для выполнения оригинальной функции.</li>
+</ul>
+<p>Возвращаемое значение: <code>{Function}</code>. Декорированная функция.</p>
+<p>Метод удобно использовать, например, для установки ресурсоемких обработчиков для часто генерируемых событий – <code>resize</code>, <code>pointermove</code> и т.п.</p>
+<pre><code class="lang-js">modules.require(<span class="hljs-string">'functions__throttle'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">provide, throttle</span>) </span>{
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">log</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'hello!'</span>);
+}
+
+<span class="hljs-keyword">var</span> throttledLog = throttle(log, <span class="hljs-number">300</span>);
+setInterval(throttledLog, <span class="hljs-number">50</span>);
+
+});
+</code></pre>
+<p>В результате, функция будет выполняться не чаще чем раз в 300 миллисекунд.</p>

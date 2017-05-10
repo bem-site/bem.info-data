@@ -1,0 +1,127 @@
+<h1 class="article__heading article__heading_1" id="idle"><a href="#idle" class="article__heading-anchor"></a>idle</h1><p>Блок предоставляет объект, содержащий набор методов для генерации события в момент прекращения пользовательской активности (т.е. пользователь работает с другим окном или не совершает действий). </p>
+<h2 class="article__heading article__heading_2" id="Обзор-4"><a href="#Обзор-4" class="article__heading-anchor"></a>Обзор</h2><h3 class="article__heading article__heading_3" id="События-объекта"><a href="#События-объекта" class="article__heading-anchor"></a>События объекта</h3><p>Доступен следующий набор событий:</p>
+<table>
+<thead>
+<tr>
+<th>Имя</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#events-idle">idle</a></td>
+<td>Браузер простаивает.</td>
+</tr>
+<tr>
+<td><a href="#events-wakeup">wakeup</a></td>
+<td>Пользователь возобновил активность.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="Свойства-и-методы-объекта-6"><a href="#Свойства-и-методы-объекта-6" class="article__heading-anchor"></a>Свойства и методы объекта</h3><table>
+<thead>
+<tr>
+<th>Имя</th>
+<th>Возвращаемое значение</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#fields-start">start</a>()</td>
+<td>-</td>
+<td>Запуск отслеживания пользовательской активности.</td>
+</tr>
+<tr>
+<td><a href="#fields-stop">stop</a>()</td>
+<td>-</td>
+<td>Остановка отслеживания пользовательской активности.</td>
+</tr>
+<tr>
+<td><a href="#fields-isIdle">isIdle</a>()</td>
+<td><code>{Boolean}</code></td>
+<td>Проверка текущего состояния.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="Модификаторы-блока"><a href="#Модификаторы-блока" class="article__heading-anchor"></a>Модификаторы блока</h3><table>
+<thead>
+<tr>
+<th>Модификатор</th>
+<th>Допустимые значения</th>
+<th>Способы использования</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#modifiers-start">start</a></td>
+<td><code>auto</code></td>
+<td><code>JS</code></td>
+<td>Автоматический запуск отслеживания пользовательской активности.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="Публичные-технологии-блока-6"><a href="#Публичные-технологии-блока-6" class="article__heading-anchor"></a>Публичные технологии блока</h3><p>Блок реализован в технологиях:</p>
+<ul>
+<li><code>js</code></li>
+</ul>
+<h2 class="article__heading article__heading_2" id="Подробности-2"><a href="#Подробности-2" class="article__heading-anchor"></a>Подробности</h2><p>Подписавшись на события блока можно приостанавливать выполнение операций, например, отображение анимации, при отсутствии пользовательской активности.</p>
+<p>Блок наследуется от класса <code>Emitter</code> блока <code>events</code>, что позволяет вызывать его методы.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'idle'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">idle</span>) </span>{
+
+idle
+    .on({
+        <span class="hljs-attr">idle</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// обработчик события idle</span>
+        },
+        <span class="hljs-attr">wakeup</span> : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// обработчик события wakeup</span>
+        }
+    })
+    .start(); <span class="hljs-comment">// запуск генерации событий</span>
+
+});
+</code></pre>
+<p><a name="events"></a></p>
+<h3 class="article__heading article__heading_3" id="События-объекта-1"><a href="#События-объекта-1" class="article__heading-anchor"></a>События объекта</h3><p><a name="events-idle"></a></p>
+<h4 class="article__heading article__heading_4" id="Событие-codeidlecode"><a href="#Событие-codeidlecode" class="article__heading-anchor"></a>Событие <code>idle</code></h4><p>Генерируется при прекращении пользовательской активности.</p>
+<p><a name="events-wakeup"></a></p>
+<h4 class="article__heading article__heading_4" id="Событие-codewakeupcode"><a href="#Событие-codewakeupcode" class="article__heading-anchor"></a>Событие <code>wakeup</code></h4><p>Генерируется в момент возобновления пользовательской активности.</p>
+<p><a name="fields"></a></p>
+<h3 class="article__heading article__heading_3" id="Свойства-и-методы-объекта-7"><a href="#Свойства-и-методы-объекта-7" class="article__heading-anchor"></a>Свойства и методы объекта</h3><p><a name="fields-start"></a></p>
+<h4 class="article__heading article__heading_4" id="Метод-codestartcode"><a href="#Метод-codestartcode" class="article__heading-anchor"></a>Метод <code>start</code></h4><p>Запуск отслеживания пользовательской активности.</p>
+<p>Не принимает аргументов.</p>
+<p>Не имеет возвращаемого значения. </p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'idle'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">idle</span>) </span>{
+
+idle.start()
+
+});
+</code></pre>
+<p><a name="fields-stop"></a></p>
+<h4 class="article__heading article__heading_4" id="Метод-codestopcode"><a href="#Метод-codestopcode" class="article__heading-anchor"></a>Метод <code>stop</code></h4><p>Служит для прекращения отслеживания пользовательской активности.</p>
+<p>Не принимает аргументов.</p>
+<p>Не имеет возвращаемого значения.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'idle'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">idle</span>) </span>{
+
+idle.start() <span class="hljs-comment">// начинаем отслеживать активность</span>
+idle.stop() <span class="hljs-comment">// прекращаем отслеживать активность</span>
+
+});
+</code></pre>
+<p><a name="fields-isIdle"></a></p>
+<h4 class="article__heading article__heading_4" id="Метод-codeisidlecode"><a href="#Метод-codeisidlecode" class="article__heading-anchor"></a>Метод <code>isIdle</code></h4><p>Служит для проверки наличия пользовательской активности.</p>
+<p>Не принимает аргументов.</p>
+<p>Возвращаемое значение: <code>{Boolean}</code>. В случае если активность отсутствует – <code>true</code>.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'idle'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">idle</span>) </span>{
+
+idle.isIdle() <span class="hljs-comment">// true или false, в зависимости от текущего состояния</span>
+
+});
+</code></pre>
+<p><a name="modifiers"></a></p>
+<h3 class="article__heading article__heading_3" id="Модификаторы-блока-1"><a href="#Модификаторы-блока-1" class="article__heading-anchor"></a>Модификаторы блока</h3><p><a name="modifiers-start"></a></p>
+<h4 class="article__heading article__heading_4" id="Модификатор-codestartcode"><a href="#Модификатор-codestartcode" class="article__heading-anchor"></a>Модификатор <code>start</code></h4><p>Допустимые значения: <code>&#39;auto&#39;</code>.</p>
+<p>Способ использования: подключается в файле зависимостей <code>deps.js</code>.</p>
+<p>Автоматический запуск отслеживания пользовательской активности.</p>

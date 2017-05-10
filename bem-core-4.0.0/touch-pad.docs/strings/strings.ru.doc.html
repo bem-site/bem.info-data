@@ -1,0 +1,81 @@
+<h1 class="article__heading article__heading_1" id="strings-2"><a href="#strings-2" class="article__heading-anchor"></a>strings</h1><p>Блок предоставляет хелперы для манипуляций с данными строчного типа. </p>
+<h2 class="article__heading article__heading_2" id="Обзор-46"><a href="#Обзор-46" class="article__heading-anchor"></a>Обзор</h2><h3 class="article__heading article__heading_3" id="Элементы-блока-43"><a href="#Элементы-блока-43" class="article__heading-anchor"></a>Элементы блока</h3><table>
+<thead>
+<tr>
+<th>Элемент</th>
+<th>Способы использования</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-escape">escape</a></td>
+<td><code>JS</code></td>
+<td>Набор методов для экранирования (эскейпинга) управляющих символов XML и HTML.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="Свойства-и-методы-элементов-блока-8"><a href="#Свойства-и-методы-элементов-блока-8" class="article__heading-anchor"></a>Свойства и методы элементов блока</h3><table>
+<thead>
+<tr>
+<th>Элемент</th>
+<th>Имя</th>
+<th>Тип или возвращаемое значение</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-escape">escape</a></td>
+<td><a href="#fields-xml">xml</a>(<code>{String} str</code>)</td>
+<td><code>{String}</code></td>
+<td>Служит для экранирования управляющих символов XML.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#fields-html">html</a>(<code>{String} str</code>)</td>
+<td><code>{String}</code></td>
+<td>Служит для экранирования управляющих символов HTML.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#fields-attr">attr</a>(<code>{String} str</code>)</td>
+<td><code>{String}</code></td>
+<td>Служит для экранирования управляющих символов в HTML и XML атрибутах.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="article__heading article__heading_3" id="Публичные-технологии-блока-57"><a href="#Публичные-технологии-блока-57" class="article__heading-anchor"></a>Публичные технологии блока</h3><p>Блок реализован в технологиях:</p>
+<ul>
+<li><code>vanilla.js</code></li>
+</ul>
+<h2 class="article__heading article__heading_2" id="Подробности-35"><a href="#Подробности-35" class="article__heading-anchor"></a>Подробности</h2><p><a name="elems"></a></p>
+<h3 class="article__heading article__heading_3" id="Элементы-блока-44"><a href="#Элементы-блока-44" class="article__heading-anchor"></a>Элементы блока</h3><p><a name="elems-name"></a></p>
+<h4 class="article__heading article__heading_4" id="Элемент-codeescapecode-2"><a href="#Элемент-codeescapecode-2" class="article__heading-anchor"></a>Элемент <code>escape</code></h4><p>Элемент предоставляет объект, содержащий набор методов для экранирования (эскейпинга) управляющих символов XML и HTML.</p>
+<p><a name="elems-name-fields"></a></p>
+<h3 class="article__heading article__heading_3" id="Свойства-и-методы-объекта-54"><a href="#Свойства-и-методы-объекта-54" class="article__heading-anchor"></a>Свойства и методы объекта</h3><p><a name="elems-name-fields-xml"></a></p>
+<h4 class="article__heading article__heading_4" id="Метод-codexmlcode-2"><a href="#Метод-codexmlcode-2" class="article__heading-anchor"></a>Метод <code>xml</code></h4><p>Служит для экранирования управляющих символов XML. Обрабатываются символы <code>&amp;</code>, <code>&lt;</code>, <code>&gt;</code>.</p>
+<p>Принимаемые аргументы: </p>
+<ul>
+<li><code>str</code> <code>{String}</code> – строка для обработки. Обязательный аргумент. </li>
+</ul>
+<p>Возвращаемое значение: <code>{String}</code>. Строка с экранированными управляющими символами.</p>
+<p><a name="elems-name-fields-html"></a></p>
+<h4 class="article__heading article__heading_4" id="Метод-codehtmlcode-2"><a href="#Метод-codehtmlcode-2" class="article__heading-anchor"></a>Метод <code>html</code></h4><p>Служит для экранирования управляющих символов HTML. Является синонимом метода <code>xml</code>.</p>
+<p><a name="elems-name-fields-attr"></a></p>
+<h4 class="article__heading article__heading_4" id="Метод-codeattrcode-2"><a href="#Метод-codeattrcode-2" class="article__heading-anchor"></a>Метод <code>attr</code></h4><p>Служит для экранирования управляющих символов в HTML и XML атрибутах. Обрабатываются управляющие символы <code>&quot;</code>, <code>\</code>, <code>&#39;</code>, <code>&amp;</code>, <code>&lt;</code>, <code>&gt;</code>.</p>
+<p>Принимаемые аргументы: </p>
+<ul>
+<li><code>str</code> <code>{String}</code> – строка для обработки. Обязательный аргумент. </li>
+</ul>
+<p>Возвращаемое значение: <code>{String}</code>. Строка с экранированными управляющими символами.</p>
+<p>Например, в блоке <a href="https://github.com/bem/bem-components/blob/v2/common.blocks/select/select.js#L237"><code>common.blocks/select</code></a> библиотеки <code>bem-components</code>, <code>strings__escape</code> используется для экранирования управляющих символов в свойстве <code>value</code> HTML-элемента:</p>
+<pre><code class="lang-js">_createControlHTML : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">name, val</span>) </span>{
+        <span class="hljs-comment">// Using string concatenation to not depend on template engines</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'&lt;input '</span> +
+            <span class="hljs-string">'type="hidden" '</span> +
+            <span class="hljs-string">'name="'</span> + name + <span class="hljs-string">'" '</span> +
+            <span class="hljs-string">'class="'</span> + <span class="hljs-keyword">this</span>.buildClass(<span class="hljs-string">'control'</span>) + <span class="hljs-string">'" '</span> +
+            <span class="hljs-string">'value="'</span> + <span class="hljs-built_in">escape</span>.attr(<span class="hljs-keyword">typeof</span> val === <span class="hljs-string">'object'</span>? <span class="hljs-built_in">JSON</span>.stringify(val) : val) + <span class="hljs-string">'"/&gt;'</span>;
+    }
+</code></pre>

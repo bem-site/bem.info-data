@@ -1,0 +1,279 @@
+[
+    {
+        "entity": {
+            "block": "jquery"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/jquery/jquery.deps.js"
+    },
+    {
+        "entity": {
+            "block": "jquery"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/jquery/jquery.js"
+    },
+    {
+        "entity": {
+            "block": "jquery"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/jquery/jquery.ru.md"
+    },
+    {
+        "entity": {
+            "block": "jquery"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "ru.title.txt",
+        "path": "common.blocks/jquery/jquery.ru.title.txt"
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "config"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/jquery/__config/jquery__config.js"
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "config"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/jquery/__config/jquery__config.ru.md"
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "event"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/jquery/__event/jquery__event.ru.md"
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "event",
+            "modName": "type",
+            "modVal": "pointer"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/jquery/__event/_type/jquery__event_type_pointer.deps.js"
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "event",
+            "modName": "type",
+            "modVal": "pointer"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "ru.title.txt",
+        "path": "common.blocks/jquery/__event/_type/jquery__event_type_pointer.ru.title.txt"
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "event",
+            "modName": "type",
+            "modVal": "pointerclick"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/jquery/__event/_type/jquery__event_type_pointerclick.deps.js"
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "event",
+            "modName": "type",
+            "modVal": "pointerclick"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/jquery/__event/_type/jquery__event_type_pointerclick.js"
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "event",
+            "modName": "type",
+            "modVal": "pointerclick"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "ru.title.txt",
+        "path": "common.blocks/jquery/__event/_type/jquery__event_type_pointerclick.ru.title.txt"
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "event",
+            "modName": "type",
+            "modVal": "pointerclick"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/jquery/__event/_type/jquery__event_type_pointerclick.spec.js"
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "event",
+            "modName": "type",
+            "modVal": "pointernative"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/jquery/__event/_type/jquery__event_type_pointernative.deps.js"
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "event",
+            "modName": "type",
+            "modVal": "pointernative"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/jquery/__event/_type/jquery__event_type_pointernative.js"
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "event",
+            "modName": "type",
+            "modVal": "pointernative"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "ru.title.txt",
+        "path": "common.blocks/jquery/__event/_type/jquery__event_type_pointernative.ru.title.txt"
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "event",
+            "modName": "type",
+            "modVal": "pointernative"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/jquery/__event/_type/jquery__event_type_pointernative.spec.js"
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "event",
+            "modName": "type",
+            "modVal": "pointernative"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "tests",
+        "path": "common.blocks/jquery/__event/_type/jquery__event_type_pointernative.tests",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "event",
+            "modName": "type",
+            "modVal": "pointerpressrelease"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/jquery/__event/_type/jquery__event_type_pointerpressrelease.deps.js"
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "event",
+            "modName": "type",
+            "modVal": "pointerpressrelease"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/jquery/__event/_type/jquery__event_type_pointerpressrelease.js"
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "event",
+            "modName": "type",
+            "modVal": "pointerpressrelease"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "ru.title.txt",
+        "path": "common.blocks/jquery/__event/_type/jquery__event_type_pointerpressrelease.ru.title.txt"
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "event",
+            "modName": "type",
+            "modVal": "pointerpressrelease"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/jquery/__event/_type/jquery__event_type_pointerpressrelease.spec.js"
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "event",
+            "modName": "type",
+            "modVal": "pointerpressrelease"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "tests",
+        "path": "common.blocks/jquery/__event/_type/jquery__event_type_pointerpressrelease.tests",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "config"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/desktop.blocks",
+        "tech": "deps.js",
+        "path": "desktop.blocks/jquery/__config/jquery__config.deps.js"
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "config"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/desktop.blocks",
+        "tech": "js",
+        "path": "desktop.blocks/jquery/__config/jquery__config.js"
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "event",
+            "modName": "type",
+            "modVal": "winresize"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/desktop.blocks",
+        "tech": "deps.js",
+        "path": "desktop.blocks/jquery/__event/_type/jquery__event_type_winresize.deps.js"
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "event",
+            "modName": "type",
+            "modVal": "winresize"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/desktop.blocks",
+        "tech": "js",
+        "path": "desktop.blocks/jquery/__event/_type/jquery__event_type_winresize.js"
+    }
+]

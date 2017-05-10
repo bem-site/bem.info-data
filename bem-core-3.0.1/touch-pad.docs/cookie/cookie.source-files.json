@@ -1,0 +1,26 @@
+[
+    {
+        "entity": {
+            "block": "cookie"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.0.1/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/cookie/cookie.js"
+    },
+    {
+        "entity": {
+            "block": "cookie"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.0.1/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/cookie/cookie.ru.md"
+    },
+    {
+        "entity": {
+            "block": "cookie"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.0.1/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/cookie/cookie.spec.js"
+    }
+]

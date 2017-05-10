@@ -1,0 +1,40 @@
+[
+    {
+        "entity": {
+            "block": "loader"
+        },
+        "level": "/Users/vitaly/bem/bem-core-2.9.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/loader/loader.ru.md"
+    },
+    {
+        "entity": {
+            "block": "loader",
+            "modName": "type",
+            "modVal": "bundle"
+        },
+        "level": "/Users/vitaly/bem/bem-core-2.9.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/loader/_type/loader_type_bundle.js"
+    },
+    {
+        "entity": {
+            "block": "loader",
+            "modName": "type",
+            "modVal": "js"
+        },
+        "level": "/Users/vitaly/bem/bem-core-2.9.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/loader/_type/loader_type_js.js"
+    },
+    {
+        "entity": {
+            "block": "loader",
+            "modName": "type",
+            "modVal": "js"
+        },
+        "level": "/Users/vitaly/bem/bem-core-2.9.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/loader/_type/loader_type_js.spec.js"
+    }
+]

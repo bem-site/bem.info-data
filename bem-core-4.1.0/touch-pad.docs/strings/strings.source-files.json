@@ -1,0 +1,28 @@
+[
+    {
+        "entity": {
+            "block": "strings"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/strings/strings.ru.md"
+    },
+    {
+        "entity": {
+            "block": "strings",
+            "elem": "escape"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/strings/__escape/strings__escape.spec.js"
+    },
+    {
+        "entity": {
+            "block": "strings",
+            "elem": "escape"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.0/common.blocks",
+        "tech": "vanilla.js",
+        "path": "common.blocks/strings/__escape/strings__escape.vanilla.js"
+    }
+]

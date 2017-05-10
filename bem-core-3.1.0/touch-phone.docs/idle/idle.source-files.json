@@ -1,0 +1,36 @@
+[
+    {
+        "entity": {
+            "block": "idle"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.1.0/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/idle/idle.deps.js"
+    },
+    {
+        "entity": {
+            "block": "idle"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.1.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/idle/idle.js"
+    },
+    {
+        "entity": {
+            "block": "idle"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.1.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/idle/idle.ru.md"
+    },
+    {
+        "entity": {
+            "block": "idle",
+            "modName": "start",
+            "modVal": "auto"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.1.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/idle/_start/idle_start_auto.js"
+    }
+]

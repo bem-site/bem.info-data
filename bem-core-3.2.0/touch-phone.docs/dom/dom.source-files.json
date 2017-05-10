@@ -1,0 +1,34 @@
+[
+    {
+        "entity": {
+            "block": "dom"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.2.0/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/dom/dom.deps.js"
+    },
+    {
+        "entity": {
+            "block": "dom"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.2.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/dom/dom.js"
+    },
+    {
+        "entity": {
+            "block": "dom"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.2.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/dom/dom.ru.md"
+    },
+    {
+        "entity": {
+            "block": "dom"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.2.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/dom/dom.spec.js"
+    }
+]

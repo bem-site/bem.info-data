@@ -1,0 +1,33 @@
+<h1 class="article__heading article__heading_1" id="identify-2"><a href="#identify-2" class="article__heading-anchor"></a>identify</h1><p>Блок предоставляет функцию для работы с уникальными идентификаторами, которая позволяет:</p>
+<ul>
+<li>создавать идентификаторы объектов;</li>
+<li>проверять у объектов наличие идентификатора;</li>
+<li>создавать уникальную строку-идентификатор.</li>
+</ul>
+<p>Принимаемые аргументы:</p>
+<ul>
+<li>[<code>obj</code> <code>{Object}</code>] – идентифицируемый объект. </li>
+<li>[<code>onlyGet</code> <code>{Boolean}</code>] – флаг для проверки наличия у объекта идентификатора. Если <code>true</code>, функция будет возвращать строку с идентификатором только если объект был заранее идентифицирован. По умолчанию <code>false</code>.</li>
+</ul>
+<p>Возвращаемое значение: <code>{String}</code>. Строка с идентификатором, присвоенным объекту. При последующих вызовах всегда будет возвращаться один и тот же идентификатор.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'identify'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">identify</span>) </span>{
+    <span class="hljs-keyword">var</span> a = {},
+        b = {},
+        identA = identify(a);
+
+    <span class="hljs-built_in">console</span>.log(identA === identify(a)); <span class="hljs-comment">// true</span>
+    <span class="hljs-built_in">console</span>.log(identA === identify(b)); <span class="hljs-comment">// false</span>
+});
+</code></pre>
+<p>При вызове без аргументов, функция будет каждый раз возвращать строку с уникальным идентификатором.</p>
+<pre><code class="lang-js">modules.require([<span class="hljs-string">'identify'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">identify</span>) </span>{
+    <span class="hljs-keyword">var</span> a = identify(),
+        b = identify();
+
+    <span class="hljs-built_in">console</span>.log(a === b); <span class="hljs-comment">// false</span>
+});
+</code></pre>
+<h3 class="article__heading article__heading_3" id="Публичные-технологии-блока-47"><a href="#Публичные-технологии-блока-47" class="article__heading-anchor"></a>Публичные технологии блока</h3><p>Блок реализован в технологиях:</p>
+<ul>
+<li><code>vanilla.js</code></li>
+</ul>

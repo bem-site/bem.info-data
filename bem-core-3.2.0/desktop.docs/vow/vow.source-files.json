@@ -1,0 +1,18 @@
+[
+    {
+        "entity": {
+            "block": "vow"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.2.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/vow/vow.ru.md"
+    },
+    {
+        "entity": {
+            "block": "vow"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.2.0/common.blocks",
+        "tech": "vanilla.js",
+        "path": "common.blocks/vow/vow.vanilla.js"
+    }
+]

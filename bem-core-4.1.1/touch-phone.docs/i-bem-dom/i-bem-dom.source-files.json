@@ -1,0 +1,203 @@
+[
+    {
+        "entity": {
+            "block": "i-bem-dom"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/i-bem-dom/i-bem-dom.deps.js"
+    },
+    {
+        "entity": {
+            "block": "i-bem-dom"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/i-bem-dom/i-bem-dom.js"
+    },
+    {
+        "entity": {
+            "block": "i-bem-dom"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/i-bem-dom/i-bem-dom.ru.md"
+    },
+    {
+        "entity": {
+            "block": "i-bem-dom"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/i-bem-dom/i-bem-dom.spec.js"
+    },
+    {
+        "entity": {
+            "block": "i-bem-dom"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "tests",
+        "path": "common.blocks/i-bem-dom/i-bem-dom.tests",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "i-bem-dom",
+            "elem": "collection"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/i-bem-dom/__collection/i-bem-dom__collection.deps.js"
+    },
+    {
+        "entity": {
+            "block": "i-bem-dom",
+            "elem": "collection"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/i-bem-dom/__collection/i-bem-dom__collection.js"
+    },
+    {
+        "entity": {
+            "block": "i-bem-dom",
+            "elem": "collection"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/i-bem-dom/__collection/i-bem-dom__collection.spec.js"
+    },
+    {
+        "entity": {
+            "block": "i-bem-dom",
+            "elem": "init"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/i-bem-dom/__init/i-bem-dom__init.deps.js"
+    },
+    {
+        "entity": {
+            "block": "i-bem-dom",
+            "elem": "init"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/i-bem-dom/__init/i-bem-dom__init.js"
+    },
+    {
+        "entity": {
+            "block": "i-bem-dom",
+            "elem": "init"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/i-bem-dom/__init/i-bem-dom__init.spec.js"
+    },
+    {
+        "entity": {
+            "block": "i-bem-dom",
+            "elem": "events"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/i-bem-dom/__events/i-bem-dom__events.deps.js"
+    },
+    {
+        "entity": {
+            "block": "i-bem-dom",
+            "elem": "events"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/i-bem-dom/__events/i-bem-dom__events.js"
+    },
+    {
+        "entity": {
+            "block": "i-bem-dom",
+            "elem": "init",
+            "modName": "auto",
+            "modVal": true
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/i-bem-dom/__init/_auto/i-bem-dom__init_auto.deps.js"
+    },
+    {
+        "entity": {
+            "block": "i-bem-dom",
+            "elem": "init",
+            "modName": "auto",
+            "modVal": true
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/i-bem-dom/__init/_auto/i-bem-dom__init_auto.js"
+    },
+    {
+        "entity": {
+            "block": "i-bem-dom",
+            "elem": "events",
+            "modName": "type",
+            "modVal": "bem"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/i-bem-dom/__events/_type/i-bem-dom__events_type_bem.deps.js"
+    },
+    {
+        "entity": {
+            "block": "i-bem-dom",
+            "elem": "events",
+            "modName": "type",
+            "modVal": "bem"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/i-bem-dom/__events/_type/i-bem-dom__events_type_bem.js"
+    },
+    {
+        "entity": {
+            "block": "i-bem-dom",
+            "elem": "events",
+            "modName": "type",
+            "modVal": "bem"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/i-bem-dom/__events/_type/i-bem-dom__events_type_bem.spec.js"
+    },
+    {
+        "entity": {
+            "block": "i-bem-dom",
+            "elem": "events",
+            "modName": "type",
+            "modVal": "dom"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/i-bem-dom/__events/_type/i-bem-dom__events_type_dom.deps.js"
+    },
+    {
+        "entity": {
+            "block": "i-bem-dom",
+            "elem": "events",
+            "modName": "type",
+            "modVal": "dom"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/i-bem-dom/__events/_type/i-bem-dom__events_type_dom.js"
+    },
+    {
+        "entity": {
+            "block": "i-bem-dom",
+            "elem": "events",
+            "modName": "type",
+            "modVal": "dom"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.1.1/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/i-bem-dom/__events/_type/i-bem-dom__events_type_dom.spec.js"
+    }
+]

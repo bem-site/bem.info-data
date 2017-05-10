@@ -1,0 +1,26 @@
+[
+    {
+        "entity": {
+            "block": "objects"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.2.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/objects/objects.ru.md"
+    },
+    {
+        "entity": {
+            "block": "objects"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.2.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/objects/objects.spec.js"
+    },
+    {
+        "entity": {
+            "block": "objects"
+        },
+        "level": "/Users/vitaly/bem/bem-core-3.2.0/common.blocks",
+        "tech": "vanilla.js",
+        "path": "common.blocks/objects/objects.vanilla.js"
+    }
+]
