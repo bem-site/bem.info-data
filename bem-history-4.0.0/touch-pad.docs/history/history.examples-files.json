@@ -1,0 +1,12 @@
+{
+    "simple": [
+        {
+            "entity": {
+                "block": "page"
+            },
+            "level": "/Users/vitaly/bem/bem-history-4.0.0/touch.blocks/history/history.examples/simple.blocks",
+            "tech": "deps.js",
+            "path": "touch.blocks/history/history.examples/simple.blocks/page/page.deps.js"
+        }
+    ]
+}

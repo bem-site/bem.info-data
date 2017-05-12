@@ -1,0 +1,61 @@
+[
+    {
+        "entity": {
+            "block": "location"
+        },
+        "level": "/Users/vitaly/bem/bem-history-3.1.0/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/location/location.deps.js"
+    },
+    {
+        "entity": {
+            "block": "location"
+        },
+        "level": "/Users/vitaly/bem/bem-history-3.1.0/common.blocks",
+        "tech": "en.md",
+        "path": "common.blocks/location/location.en.md"
+    },
+    {
+        "entity": {
+            "block": "location"
+        },
+        "level": "/Users/vitaly/bem/bem-history-3.1.0/common.blocks",
+        "tech": "examples",
+        "path": "common.blocks/location/location.examples",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "location"
+        },
+        "level": "/Users/vitaly/bem/bem-history-3.1.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/location/location.js"
+    },
+    {
+        "entity": {
+            "block": "location"
+        },
+        "level": "/Users/vitaly/bem/bem-history-3.1.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/location/location.ru.md"
+    },
+    {
+        "entity": {
+            "block": "location"
+        },
+        "level": "/Users/vitaly/bem/bem-history-3.1.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/location/location.spec.js"
+    },
+    {
+        "entity": {
+            "block": "location",
+            "modName": "history-provider",
+            "modVal": "hashchange"
+        },
+        "level": "/Users/vitaly/bem/bem-history-3.1.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/location/_history-provider/location_history-provider_hashchange.spec.js"
+    }
+]

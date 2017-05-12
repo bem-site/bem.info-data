@@ -1,0 +1,1 @@
+exports.blocks = [{"name":"uri","elems":[{"name":"querystring"}]},{"name":"uri","elems":[{"name":"querystring"}]},{"name":"uri","elems":[{"name":"querystring"}]},{"name":"uri","elems":[{"name":"querystring"}]}];

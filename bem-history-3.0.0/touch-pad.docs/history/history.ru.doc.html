@@ -1,0 +1,16 @@
+<h2 class="article__heading article__heading_2" id="history-4"><a href="#history-4" class="article__heading-anchor"></a>history</h2><p>Блок, обеспечивающий взаимодействие с браузерным History API с помощью двух модификаторов:</p>
+<ul>
+<li><code>provider_history-api</code> – если есть встроенная поддержка History API;</li>
+<li><code>provider_hashchange</code> – реализация с помощью фолбэка hashchange.</li>
+</ul>
+<h3 class="article__heading article__heading_3" id="Использование-6"><a href="#Использование-6" class="article__heading-anchor"></a>Использование</h3><pre><code class="lang-js">modules.require([<span class="hljs-string">'history'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">History</span>) </span>{
+
+    <span class="hljs-comment">// Создаем инстанс history</span>
+    <span class="hljs-keyword">var</span> history = <span class="hljs-keyword">new</span> History();
+
+    <span class="hljs-comment">// Добавляем запись или заменяем текущее состояние с помощью методов pushState/replaceState</span>
+    history.changeState(<span class="hljs-string">'push'</span>, { <span class="hljs-attr">title</span>: <span class="hljs-string">'Title'</span>, <span class="hljs-attr">url</span>: <span class="hljs-string">'http://example.org:8080/path'</span> });
+    history.changeState(<span class="hljs-string">'replace'</span>, { <span class="hljs-attr">title</span>: <span class="hljs-string">'Title'</span>, <span class="hljs-attr">url</span>: <span class="hljs-string">'http://example.org:8080/path?test=1'</span> });
+
+});
+</code></pre>
