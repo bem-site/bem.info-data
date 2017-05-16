@@ -1,0 +1,20 @@
+{
+    "simple": [
+        {
+            "entity": {
+                "block": "test"
+            },
+            "level": "/Users/vitaly/bem/bem-history-3.2.0/common.blocks/location/location.examples/simple.blocks",
+            "tech": "deps.js",
+            "path": "common.blocks/location/location.examples/simple.blocks/test/test.deps.js"
+        },
+        {
+            "entity": {
+                "block": "test"
+            },
+            "level": "/Users/vitaly/bem/bem-history-3.2.0/common.blocks/location/location.examples/simple.blocks",
+            "tech": "js",
+            "path": "common.blocks/location/location.examples/simple.blocks/test/test.js"
+        }
+    ]
+}

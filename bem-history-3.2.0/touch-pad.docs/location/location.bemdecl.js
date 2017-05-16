@@ -1,0 +1,1 @@
+exports.blocks = [{"name":"location"},{"name":"location"},{"name":"location"},{"name":"location"},{"name":"location"},{"name":"location","mods":[{"name":"history-provider","vals":[{"name":"hashchange"}]}]}];
