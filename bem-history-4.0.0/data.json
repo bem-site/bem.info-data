@@ -148,22 +148,6 @@
                     ]
                 }
             },
-            "uri": {
-                "bemdecl.js": "touch-pad.docs/uri/uri.bemdecl.js",
-                "data.json": "touch-pad.docs/uri/uri.data.json",
-                "en.doc.html": "touch-pad.docs/uri/uri.en.doc.html",
-                "en.md": "touch-pad.docs/uri/uri.en.md",
-                "examples-files.json": "touch-pad.docs/uri/uri.examples-files.json",
-                "jsdoc.html": "touch-pad.docs/uri/uri.jsdoc.html",
-                "jsdoc.json": "touch-pad.docs/uri/uri.jsdoc.json",
-                "jsdoc.md": "touch-pad.docs/uri/uri.jsdoc.md",
-                "meta.json": "touch-pad.docs/uri/uri.meta.json",
-                "ru.doc.html": "touch-pad.docs/uri/uri.ru.doc.html",
-                "ru.md": "touch-pad.docs/uri/uri.ru.md",
-                "source-files.json": "touch-pad.docs/uri/uri.source-files.json",
-                "uk.doc.html": "touch-pad.docs/uri/uri.uk.doc.html",
-                "uk.md": "touch-pad.docs/uri/uri.uk.md"
-            },
             "location": {
                 "bemdecl.js": "touch-pad.docs/location/location.bemdecl.js",
                 "data.json": "touch-pad.docs/location/location.data.json",
@@ -205,6 +189,22 @@
                         "touch-pad.examples/location/simple/simple.uk.html"
                     ]
                 }
+            },
+            "uri": {
+                "bemdecl.js": "touch-pad.docs/uri/uri.bemdecl.js",
+                "data.json": "touch-pad.docs/uri/uri.data.json",
+                "en.doc.html": "touch-pad.docs/uri/uri.en.doc.html",
+                "en.md": "touch-pad.docs/uri/uri.en.md",
+                "examples-files.json": "touch-pad.docs/uri/uri.examples-files.json",
+                "jsdoc.html": "touch-pad.docs/uri/uri.jsdoc.html",
+                "jsdoc.json": "touch-pad.docs/uri/uri.jsdoc.json",
+                "jsdoc.md": "touch-pad.docs/uri/uri.jsdoc.md",
+                "meta.json": "touch-pad.docs/uri/uri.meta.json",
+                "ru.doc.html": "touch-pad.docs/uri/uri.ru.doc.html",
+                "ru.md": "touch-pad.docs/uri/uri.ru.md",
+                "source-files.json": "touch-pad.docs/uri/uri.source-files.json",
+                "uk.doc.html": "touch-pad.docs/uri/uri.uk.doc.html",
+                "uk.md": "touch-pad.docs/uri/uri.uk.md"
             },
             "uri__querystring": {
                 "examples": {

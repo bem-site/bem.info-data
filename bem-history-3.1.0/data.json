@@ -232,48 +232,6 @@
             }
         },
         "touch-phone": {
-            "location": {
-                "bemdecl.js": "touch-phone.docs/location/location.bemdecl.js",
-                "data.json": "touch-phone.docs/location/location.data.json",
-                "en.doc.html": "touch-phone.docs/location/location.en.doc.html",
-                "en.md": "touch-phone.docs/location/location.en.md",
-                "examples-files.json": "touch-phone.docs/location/location.examples-files.json",
-                "jsdoc.html": "touch-phone.docs/location/location.jsdoc.html",
-                "jsdoc.json": "touch-phone.docs/location/location.jsdoc.json",
-                "jsdoc.md": "touch-phone.docs/location/location.jsdoc.md",
-                "meta.json": "touch-phone.docs/location/location.meta.json",
-                "ru.doc.html": "touch-phone.docs/location/location.ru.doc.html",
-                "ru.md": "touch-phone.docs/location/location.ru.md",
-                "source-files.json": "touch-phone.docs/location/location.source-files.json",
-                "uk.doc.html": "touch-phone.docs/location/location.uk.doc.html",
-                "uk.md": "touch-phone.docs/location/location.uk.md",
-                "examples": {
-                    "simple": [
-                        "touch-phone.examples/location/simple/simple.bemdecl.js",
-                        "touch-phone.examples/location/simple/simple.bemhtml.js",
-                        "touch-phone.examples/location/simple/simple.bemjson.js",
-                        "touch-phone.examples/location/simple/simple.bemjson.js.symlink",
-                        "touch-phone.examples/location/simple/simple.blocks",
-                        "touch-phone.examples/location/simple/simple.borschik.browser.js",
-                        "touch-phone.examples/location/simple/simple.browser.bemhtml.js",
-                        "touch-phone.examples/location/simple/simple.browser.js",
-                        "touch-phone.examples/location/simple/simple.css",
-                        "touch-phone.examples/location/simple/simple.deps.js",
-                        "touch-phone.examples/location/simple/simple.en.html",
-                        "touch-phone.examples/location/simple/simple.html",
-                        "touch-phone.examples/location/simple/simple.ie.css",
-                        "touch-phone.examples/location/simple/simple.js",
-                        "touch-phone.examples/location/simple/simple.js-js.bemdecl.js",
-                        "touch-phone.examples/location/simple/simple.js.bemdecl.js",
-                        "touch-phone.examples/location/simple/simple.js.deps.js",
-                        "touch-phone.examples/location/simple/simple.pre.js",
-                        "touch-phone.examples/location/simple/simple.ru.html",
-                        "touch-phone.examples/location/simple/simple.template.bemdecl.js",
-                        "touch-phone.examples/location/simple/simple.template.deps.js",
-                        "touch-phone.examples/location/simple/simple.uk.html"
-                    ]
-                }
-            },
             "history": {
                 "bemdecl.js": "touch-phone.docs/history/history.bemdecl.js",
                 "data.json": "touch-phone.docs/history/history.data.json",
@@ -313,6 +271,48 @@
                         "touch-phone.examples/history/simple/simple.template.bemdecl.js",
                         "touch-phone.examples/history/simple/simple.template.deps.js",
                         "touch-phone.examples/history/simple/simple.uk.html"
+                    ]
+                }
+            },
+            "location": {
+                "bemdecl.js": "touch-phone.docs/location/location.bemdecl.js",
+                "data.json": "touch-phone.docs/location/location.data.json",
+                "en.doc.html": "touch-phone.docs/location/location.en.doc.html",
+                "en.md": "touch-phone.docs/location/location.en.md",
+                "examples-files.json": "touch-phone.docs/location/location.examples-files.json",
+                "jsdoc.html": "touch-phone.docs/location/location.jsdoc.html",
+                "jsdoc.json": "touch-phone.docs/location/location.jsdoc.json",
+                "jsdoc.md": "touch-phone.docs/location/location.jsdoc.md",
+                "meta.json": "touch-phone.docs/location/location.meta.json",
+                "ru.doc.html": "touch-phone.docs/location/location.ru.doc.html",
+                "ru.md": "touch-phone.docs/location/location.ru.md",
+                "source-files.json": "touch-phone.docs/location/location.source-files.json",
+                "uk.doc.html": "touch-phone.docs/location/location.uk.doc.html",
+                "uk.md": "touch-phone.docs/location/location.uk.md",
+                "examples": {
+                    "simple": [
+                        "touch-phone.examples/location/simple/simple.bemdecl.js",
+                        "touch-phone.examples/location/simple/simple.bemhtml.js",
+                        "touch-phone.examples/location/simple/simple.bemjson.js",
+                        "touch-phone.examples/location/simple/simple.bemjson.js.symlink",
+                        "touch-phone.examples/location/simple/simple.blocks",
+                        "touch-phone.examples/location/simple/simple.borschik.browser.js",
+                        "touch-phone.examples/location/simple/simple.browser.bemhtml.js",
+                        "touch-phone.examples/location/simple/simple.browser.js",
+                        "touch-phone.examples/location/simple/simple.css",
+                        "touch-phone.examples/location/simple/simple.deps.js",
+                        "touch-phone.examples/location/simple/simple.en.html",
+                        "touch-phone.examples/location/simple/simple.html",
+                        "touch-phone.examples/location/simple/simple.ie.css",
+                        "touch-phone.examples/location/simple/simple.js",
+                        "touch-phone.examples/location/simple/simple.js-js.bemdecl.js",
+                        "touch-phone.examples/location/simple/simple.js.bemdecl.js",
+                        "touch-phone.examples/location/simple/simple.js.deps.js",
+                        "touch-phone.examples/location/simple/simple.pre.js",
+                        "touch-phone.examples/location/simple/simple.ru.html",
+                        "touch-phone.examples/location/simple/simple.template.bemdecl.js",
+                        "touch-phone.examples/location/simple/simple.template.deps.js",
+                        "touch-phone.examples/location/simple/simple.uk.html"
                     ]
                 }
             },

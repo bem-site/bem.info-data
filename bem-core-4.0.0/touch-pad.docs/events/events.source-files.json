@@ -34,33 +34,6 @@
     {
         "entity": {
             "block": "events",
-            "elem": "observable"
-        },
-        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
-        "tech": "deps.js",
-        "path": "common.blocks/events/__observable/events__observable.deps.js"
-    },
-    {
-        "entity": {
-            "block": "events",
-            "elem": "observable"
-        },
-        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
-        "tech": "js",
-        "path": "common.blocks/events/__observable/events__observable.js"
-    },
-    {
-        "entity": {
-            "block": "events",
-            "elem": "observable"
-        },
-        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
-        "tech": "spec.js",
-        "path": "common.blocks/events/__observable/events__observable.spec.js"
-    },
-    {
-        "entity": {
-            "block": "events",
             "elem": "channels"
         },
         "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
@@ -84,6 +57,33 @@
         "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
         "tech": "vanilla.js",
         "path": "common.blocks/events/__channels/events__channels.vanilla.js"
+    },
+    {
+        "entity": {
+            "block": "events",
+            "elem": "observable"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/events/__observable/events__observable.deps.js"
+    },
+    {
+        "entity": {
+            "block": "events",
+            "elem": "observable"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/events/__observable/events__observable.js"
+    },
+    {
+        "entity": {
+            "block": "events",
+            "elem": "observable"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/events/__observable/events__observable.spec.js"
     },
     {
         "entity": {

@@ -76,16 +76,6 @@
     {
         "entity": {
             "block": "radio-group",
-            "modName": "type",
-            "modVal": "button"
-        },
-        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
-        "tech": "deps.js",
-        "path": "common.blocks/radio-group/_type/radio-group_type_button.deps.js"
-    },
-    {
-        "entity": {
-            "block": "radio-group",
             "modName": "mode",
             "modVal": "radio-check"
         },
@@ -122,6 +112,16 @@
         "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
         "tech": "spec.js",
         "path": "common.blocks/radio-group/_mode/radio-group_mode_radio-check.spec.js"
+    },
+    {
+        "entity": {
+            "block": "radio-group",
+            "modName": "type",
+            "modVal": "button"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.1.0/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/radio-group/_type/radio-group_type_button.deps.js"
     },
     {
         "entity": {

@@ -156,6 +156,26 @@
     {
         "entity": {
             "block": "select",
+            "modName": "focused",
+            "modVal": true
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "common.blocks/select/_focused/select_focused.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "select",
+            "modName": "focused",
+            "modVal": true
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "bh.js",
+        "path": "common.blocks/select/_focused/select_focused.bh.js"
+    },
+    {
+        "entity": {
+            "block": "select",
             "modName": "mode",
             "modVal": "check"
         },
@@ -302,26 +322,6 @@
         "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
         "tech": "spec.js",
         "path": "common.blocks/select/_mode/select_mode_radio.spec.js"
-    },
-    {
-        "entity": {
-            "block": "select",
-            "modName": "focused",
-            "modVal": true
-        },
-        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
-        "tech": "bemhtml.js",
-        "path": "common.blocks/select/_focused/select_focused.bemhtml.js"
-    },
-    {
-        "entity": {
-            "block": "select",
-            "modName": "focused",
-            "modVal": true
-        },
-        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
-        "tech": "bh.js",
-        "path": "common.blocks/select/_focused/select_focused.bh.js"
     },
     {
         "entity": {

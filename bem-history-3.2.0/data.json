@@ -3,6 +3,21 @@
     "version": "3.2.0",
     "sets": {
         "desktop": {
+            "history": {
+                "bemdecl.js": "desktop.docs/history/history.bemdecl.js",
+                "data.json": "desktop.docs/history/history.data.json",
+                "en.doc.html": "desktop.docs/history/history.en.doc.html",
+                "en.md": "desktop.docs/history/history.en.md",
+                "jsdoc.html": "desktop.docs/history/history.jsdoc.html",
+                "jsdoc.json": "desktop.docs/history/history.jsdoc.json",
+                "jsdoc.md": "desktop.docs/history/history.jsdoc.md",
+                "meta.json": "desktop.docs/history/history.meta.json",
+                "ru.doc.html": "desktop.docs/history/history.ru.doc.html",
+                "ru.md": "desktop.docs/history/history.ru.md",
+                "source-files.json": "desktop.docs/history/history.source-files.json",
+                "uk.doc.html": "desktop.docs/history/history.uk.doc.html",
+                "uk.md": "desktop.docs/history/history.uk.md"
+            },
             "location": {
                 "bemdecl.js": "desktop.docs/location/location.bemdecl.js",
                 "data.json": "desktop.docs/location/location.data.json",
@@ -44,21 +59,6 @@
                         "desktop.examples/location/simple/simple.uk.html"
                     ]
                 }
-            },
-            "history": {
-                "bemdecl.js": "desktop.docs/history/history.bemdecl.js",
-                "data.json": "desktop.docs/history/history.data.json",
-                "en.doc.html": "desktop.docs/history/history.en.doc.html",
-                "en.md": "desktop.docs/history/history.en.md",
-                "jsdoc.html": "desktop.docs/history/history.jsdoc.html",
-                "jsdoc.json": "desktop.docs/history/history.jsdoc.json",
-                "jsdoc.md": "desktop.docs/history/history.jsdoc.md",
-                "meta.json": "desktop.docs/history/history.meta.json",
-                "ru.doc.html": "desktop.docs/history/history.ru.doc.html",
-                "ru.md": "desktop.docs/history/history.ru.md",
-                "source-files.json": "desktop.docs/history/history.source-files.json",
-                "uk.doc.html": "desktop.docs/history/history.uk.doc.html",
-                "uk.md": "desktop.docs/history/history.uk.md"
             },
             "uri": {
                 "bemdecl.js": "desktop.docs/uri/uri.bemdecl.js",

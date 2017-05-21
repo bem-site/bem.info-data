@@ -1,14 +1,4 @@
 {
-    "10-popup": [
-        {
-            "entity": {
-                "block": "test"
-            },
-            "level": "/Users/vitaly/bem/bem-components-6.0.0/common.blocks/popup/popup.examples/10-popup.blocks",
-            "tech": "js",
-            "path": "common.blocks/popup/popup.examples/10-popup.blocks/test/test.js"
-        }
-    ],
     "20-popup": [
         {
             "entity": {
@@ -147,6 +137,16 @@
             "level": "/Users/vitaly/bem/bem-components-6.0.0/common.blocks/popup/popup.examples/20-popup.blocks",
             "tech": "js",
             "path": "common.blocks/popup/popup.examples/20-popup.blocks/popup/_target/popup_target.js"
+        }
+    ],
+    "10-popup": [
+        {
+            "entity": {
+                "block": "test"
+            },
+            "level": "/Users/vitaly/bem/bem-components-6.0.0/common.blocks/popup/popup.examples/10-popup.blocks",
+            "tech": "js",
+            "path": "common.blocks/popup/popup.examples/10-popup.blocks/test/test.js"
         }
     ]
 }

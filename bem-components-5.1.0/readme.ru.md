@@ -39,28 +39,28 @@
 <a name="blocks"></a>
 ## Блоки
 
-* [attach](common.blocks/attach/attach.ru.md)
-* [button](common.blocks/button/button.ru.md)
-* [checkbox](common.blocks/checkbox/checkbox.ru.md)
-* [checkbox-group](common.blocks/checkbox-group/checkbox-group.ru.md)
-* [control](common.blocks/control/control.ru.md)
-* [control-group](common.blocks/control-group/control-group.ru.md)
-* [dropdown](common.blocks/dropdown/dropdown.ru.md)
-* [icon](common.blocks/icon/icon.ru.md)
-* [image](common.blocks/image/image.ru.md)
-* [input](common.blocks/input/input.ru.md)
-* [link](common.blocks/link/link.ru.md)
-* [menu](common.blocks/menu/menu.ru.md)
-* [menu-item](common.blocks/menu-item/menu-item.ru.md)
-* [modal](common.blocks/modal/modal.ru.md)
-* [popup](common.blocks/popup/popup.ru.md)
-* [progressbar](common.blocks/progressbar/progressbar.ru.md)
-* [radio](common.blocks/radio/radio.ru.md)
-* [radio-group](common.blocks/radio-group/radio-group.ru.md)
-* [select](common.blocks/select/select.ru.md)
-* [spin](common.blocks/spin/spin.ru.md)
-* [textarea](common.blocks/textarea/textarea.ru.md)
-* [z-index-group](common.blocks/z-index-group/z-index-group.ru.md)
+* [attach](desktop/attach/)
+* [button](desktop/button/)
+* [checkbox](desktop/checkbox/)
+* [checkbox-group](desktop/checkbox-group/)
+* [control](desktop/control/)
+* [control-group](desktop/control-group/)
+* [dropdown](desktop/dropdown/)
+* [icon](desktop/icon/)
+* [image](desktop/image/)
+* [input](desktop/input/)
+* [link](desktop/link/)
+* [menu](desktop/menu/)
+* [menu-item](desktop/menu-item/)
+* [modal](desktop/modal/)
+* [popup](desktop/popup/)
+* [progressbar](desktop/progressbar/)
+* [radio](desktop/radio/)
+* [radio-group](desktop/radio-group/)
+* [select](desktop/select/)
+* [spin](desktop/spin/)
+* [textarea](desktop/textarea/)
+* [z-index-group](desktop/z-index-group/)
 
 <a name="supported-browsers"></a>
 ## Поддерживаемые браузеры
@@ -285,7 +285,7 @@ modules.require(['i-bem__dom', 'BEMHTML', 'jquery', 'i-bem__dom_init'], function
     });
 
     BEMDOM.append($('.form'), html);    // https://ru.bem.info/libs/bem-core/current/desktop/i-bem/jsdoc/#append-1
-    
+
     // NOTE: необходимо явно вызвать `init();`, если требуется инициализировать блоки, заранее присутствующие в HTML-разметке
 });
 </script>

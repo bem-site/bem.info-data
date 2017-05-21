@@ -50,6 +50,24 @@
     {
         "entity": {
             "block": "i-bem",
+            "elem": "collection"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/i-bem/__collection/i-bem__collection.js"
+    },
+    {
+        "entity": {
+            "block": "i-bem",
+            "elem": "collection"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/i-bem/__collection/i-bem__collection.spec.js"
+    },
+    {
+        "entity": {
+            "block": "i-bem",
             "elem": "internal"
         },
         "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
@@ -73,23 +91,5 @@
         "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
         "tech": "vanilla.js",
         "path": "common.blocks/i-bem/__internal/i-bem__internal.vanilla.js"
-    },
-    {
-        "entity": {
-            "block": "i-bem",
-            "elem": "collection"
-        },
-        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
-        "tech": "js",
-        "path": "common.blocks/i-bem/__collection/i-bem__collection.js"
-    },
-    {
-        "entity": {
-            "block": "i-bem",
-            "elem": "collection"
-        },
-        "level": "/Users/vitaly/bem/bem-core-4.0.0/common.blocks",
-        "tech": "spec.js",
-        "path": "common.blocks/i-bem/__collection/i-bem__collection.spec.js"
     }
 ]

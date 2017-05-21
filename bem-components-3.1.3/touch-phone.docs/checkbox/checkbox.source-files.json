@@ -120,24 +120,6 @@
     {
         "entity": {
             "block": "checkbox",
-            "elem": "text"
-        },
-        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
-        "tech": "bemhtml.js",
-        "path": "common.blocks/checkbox/__text/checkbox__text.bemhtml.js"
-    },
-    {
-        "entity": {
-            "block": "checkbox",
-            "elem": "text"
-        },
-        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
-        "tech": "bh.js",
-        "path": "common.blocks/checkbox/__text/checkbox__text.bh.js"
-    },
-    {
-        "entity": {
-            "block": "checkbox",
             "modName": "type",
             "modVal": "button"
         },
@@ -194,6 +176,24 @@
         "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
         "tech": "spec.js",
         "path": "common.blocks/checkbox/_type/checkbox_type_button.spec.js"
+    },
+    {
+        "entity": {
+            "block": "checkbox",
+            "elem": "text"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "common.blocks/checkbox/__text/checkbox__text.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "checkbox",
+            "elem": "text"
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/common.blocks",
+        "tech": "bh.js",
+        "path": "common.blocks/checkbox/__text/checkbox__text.bh.js"
     },
     {
         "entity": {

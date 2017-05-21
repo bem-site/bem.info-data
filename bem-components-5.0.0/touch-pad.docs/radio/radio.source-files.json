@@ -83,24 +83,6 @@
     {
         "entity": {
             "block": "radio",
-            "elem": "control"
-        },
-        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
-        "tech": "bemhtml.js",
-        "path": "common.blocks/radio/__control/radio__control.bemhtml.js"
-    },
-    {
-        "entity": {
-            "block": "radio",
-            "elem": "control"
-        },
-        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
-        "tech": "bh.js",
-        "path": "common.blocks/radio/__control/radio__control.bh.js"
-    },
-    {
-        "entity": {
-            "block": "radio",
             "elem": "box"
         },
         "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
@@ -115,6 +97,24 @@
         "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "bh.js",
         "path": "common.blocks/radio/__box/radio__box.bh.js"
+    },
+    {
+        "entity": {
+            "block": "radio",
+            "elem": "control"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "common.blocks/radio/__control/radio__control.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "radio",
+            "elem": "control"
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
+        "tech": "bh.js",
+        "path": "common.blocks/radio/__control/radio__control.bh.js"
     },
     {
         "entity": {

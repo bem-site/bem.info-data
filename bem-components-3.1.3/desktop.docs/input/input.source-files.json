@@ -252,6 +252,46 @@
     {
         "entity": {
             "block": "input",
+            "modName": "autofocus",
+            "modVal": true
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/desktop.blocks",
+        "tech": "js",
+        "path": "desktop.blocks/input/_autofocus/input_autofocus.js"
+    },
+    {
+        "entity": {
+            "block": "input",
+            "modName": "autofocus",
+            "modVal": true
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/desktop.blocks",
+        "tech": "spec.js",
+        "path": "desktop.blocks/input/_autofocus/input_autofocus.spec.js"
+    },
+    {
+        "entity": {
+            "block": "input",
+            "modName": "has-clear",
+            "modVal": true
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/desktop.blocks",
+        "tech": "js",
+        "path": "desktop.blocks/input/_has-clear/input_has-clear.js"
+    },
+    {
+        "entity": {
+            "block": "input",
+            "modName": "has-clear",
+            "modVal": true
+        },
+        "level": "/Users/vitaly/bem/bem-components-3.1.3/desktop.blocks",
+        "tech": "spec.js",
+        "path": "desktop.blocks/input/_has-clear/input_has-clear.spec.js"
+    },
+    {
+        "entity": {
+            "block": "input",
             "modName": "theme",
             "modVal": "islands"
         },
@@ -308,45 +348,5 @@
         "level": "/Users/vitaly/bem/bem-components-3.1.3/design/desktop.blocks",
         "tech": "ie.styl",
         "path": "design/desktop.blocks/input/_theme/input_theme_islands.ie.styl"
-    },
-    {
-        "entity": {
-            "block": "input",
-            "modName": "autofocus",
-            "modVal": true
-        },
-        "level": "/Users/vitaly/bem/bem-components-3.1.3/desktop.blocks",
-        "tech": "js",
-        "path": "desktop.blocks/input/_autofocus/input_autofocus.js"
-    },
-    {
-        "entity": {
-            "block": "input",
-            "modName": "autofocus",
-            "modVal": true
-        },
-        "level": "/Users/vitaly/bem/bem-components-3.1.3/desktop.blocks",
-        "tech": "spec.js",
-        "path": "desktop.blocks/input/_autofocus/input_autofocus.spec.js"
-    },
-    {
-        "entity": {
-            "block": "input",
-            "modName": "has-clear",
-            "modVal": true
-        },
-        "level": "/Users/vitaly/bem/bem-components-3.1.3/desktop.blocks",
-        "tech": "js",
-        "path": "desktop.blocks/input/_has-clear/input_has-clear.js"
-    },
-    {
-        "entity": {
-            "block": "input",
-            "modName": "has-clear",
-            "modVal": true
-        },
-        "level": "/Users/vitaly/bem/bem-components-3.1.3/desktop.blocks",
-        "tech": "spec.js",
-        "path": "desktop.blocks/input/_has-clear/input_has-clear.spec.js"
     }
 ]

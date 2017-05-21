@@ -92,30 +92,6 @@
         },
         {
             "entity": {
-                "block": "test"
-            },
-            "level": "/Users/vitaly/bem/bem-components-6.0.0/common.blocks/popup/popup.examples/20-popup.blocks",
-            "tech": "css",
-            "path": "common.blocks/popup/popup.examples/20-popup.blocks/test/test.css"
-        },
-        {
-            "entity": {
-                "block": "test"
-            },
-            "level": "/Users/vitaly/bem/bem-components-6.0.0/common.blocks/popup/popup.examples/20-popup.blocks",
-            "tech": "js",
-            "path": "common.blocks/popup/popup.examples/20-popup.blocks/test/test.js"
-        },
-        {
-            "entity": {
-                "block": "test"
-            },
-            "level": "/Users/vitaly/bem/bem-components-6.0.0/common.blocks/popup/popup.examples/20-popup.blocks",
-            "tech": "post.css",
-            "path": "common.blocks/popup/popup.examples/20-popup.blocks/test/test.post.css"
-        },
-        {
-            "entity": {
                 "block": "summon-test"
             },
             "level": "/Users/vitaly/bem/bem-components-6.0.0/common.blocks/popup/popup.examples/20-popup.blocks",
@@ -137,6 +113,30 @@
             "level": "/Users/vitaly/bem/bem-components-6.0.0/common.blocks/popup/popup.examples/20-popup.blocks",
             "tech": "post.css",
             "path": "common.blocks/popup/popup.examples/20-popup.blocks/summon-test/summon-test.post.css"
+        },
+        {
+            "entity": {
+                "block": "test"
+            },
+            "level": "/Users/vitaly/bem/bem-components-6.0.0/common.blocks/popup/popup.examples/20-popup.blocks",
+            "tech": "css",
+            "path": "common.blocks/popup/popup.examples/20-popup.blocks/test/test.css"
+        },
+        {
+            "entity": {
+                "block": "test"
+            },
+            "level": "/Users/vitaly/bem/bem-components-6.0.0/common.blocks/popup/popup.examples/20-popup.blocks",
+            "tech": "js",
+            "path": "common.blocks/popup/popup.examples/20-popup.blocks/test/test.js"
+        },
+        {
+            "entity": {
+                "block": "test"
+            },
+            "level": "/Users/vitaly/bem/bem-components-6.0.0/common.blocks/popup/popup.examples/20-popup.blocks",
+            "tech": "post.css",
+            "path": "common.blocks/popup/popup.examples/20-popup.blocks/test/test.post.css"
         },
         {
             "entity": {

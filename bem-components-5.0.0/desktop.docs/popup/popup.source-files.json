@@ -101,36 +101,6 @@
     {
         "entity": {
             "block": "popup",
-            "modName": "autoclosable",
-            "modVal": true
-        },
-        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
-        "tech": "deps.js",
-        "path": "common.blocks/popup/_autoclosable/popup_autoclosable.deps.js"
-    },
-    {
-        "entity": {
-            "block": "popup",
-            "modName": "autoclosable",
-            "modVal": true
-        },
-        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
-        "tech": "js",
-        "path": "common.blocks/popup/_autoclosable/popup_autoclosable.js"
-    },
-    {
-        "entity": {
-            "block": "popup",
-            "modName": "autoclosable",
-            "modVal": true
-        },
-        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
-        "tech": "spec.js",
-        "path": "common.blocks/popup/_autoclosable/popup_autoclosable.spec.js"
-    },
-    {
-        "entity": {
-            "block": "popup",
             "modName": "target",
             "modVal": true
         },
@@ -187,6 +157,36 @@
         "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
         "tech": "spec.js",
         "path": "common.blocks/popup/_target/popup_target_position.spec.js"
+    },
+    {
+        "entity": {
+            "block": "popup",
+            "modName": "autoclosable",
+            "modVal": true
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/popup/_autoclosable/popup_autoclosable.deps.js"
+    },
+    {
+        "entity": {
+            "block": "popup",
+            "modName": "autoclosable",
+            "modVal": true
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/popup/_autoclosable/popup_autoclosable.js"
+    },
+    {
+        "entity": {
+            "block": "popup",
+            "modName": "autoclosable",
+            "modVal": true
+        },
+        "level": "/Users/vitaly/bem/bem-components-5.0.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/popup/_autoclosable/popup_autoclosable.spec.js"
     },
     {
         "entity": {

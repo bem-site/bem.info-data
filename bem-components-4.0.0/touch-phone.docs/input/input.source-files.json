@@ -146,6 +146,46 @@
     {
         "entity": {
             "block": "input",
+            "modName": "type",
+            "modVal": "password"
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "common.blocks/input/_type/input_type_password.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "input",
+            "modName": "type",
+            "modVal": "password"
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks",
+        "tech": "bh.js",
+        "path": "common.blocks/input/_type/input_type_password.bh.js"
+    },
+    {
+        "entity": {
+            "block": "input",
+            "modName": "type",
+            "modVal": "search"
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "common.blocks/input/_type/input_type_search.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "input",
+            "modName": "type",
+            "modVal": "search"
+        },
+        "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks",
+        "tech": "bh.js",
+        "path": "common.blocks/input/_type/input_type_search.bh.js"
+    },
+    {
+        "entity": {
+            "block": "input",
             "modName": "has-clear",
             "modVal": true
         },
@@ -192,46 +232,6 @@
         "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks",
         "tech": "spec.js",
         "path": "common.blocks/input/_has-clear/input_has-clear.spec.js"
-    },
-    {
-        "entity": {
-            "block": "input",
-            "modName": "type",
-            "modVal": "password"
-        },
-        "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks",
-        "tech": "bemhtml.js",
-        "path": "common.blocks/input/_type/input_type_password.bemhtml.js"
-    },
-    {
-        "entity": {
-            "block": "input",
-            "modName": "type",
-            "modVal": "password"
-        },
-        "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks",
-        "tech": "bh.js",
-        "path": "common.blocks/input/_type/input_type_password.bh.js"
-    },
-    {
-        "entity": {
-            "block": "input",
-            "modName": "type",
-            "modVal": "search"
-        },
-        "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks",
-        "tech": "bemhtml.js",
-        "path": "common.blocks/input/_type/input_type_search.bemhtml.js"
-    },
-    {
-        "entity": {
-            "block": "input",
-            "modName": "type",
-            "modVal": "search"
-        },
-        "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks",
-        "tech": "bh.js",
-        "path": "common.blocks/input/_type/input_type_search.bh.js"
     },
     {
         "entity": {

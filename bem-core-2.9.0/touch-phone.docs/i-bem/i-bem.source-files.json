@@ -242,28 +242,6 @@
     {
         "entity": {
             "block": "i-bem",
-            "elem": "collection",
-            "modName": "type",
-            "modVal": "dom"
-        },
-        "level": "/Users/vitaly/bem/bem-core-2.9.0/common.blocks",
-        "tech": "deps.js",
-        "path": "common.blocks/i-bem/__collection/_type/i-bem__collection_type_dom.deps.js"
-    },
-    {
-        "entity": {
-            "block": "i-bem",
-            "elem": "collection",
-            "modName": "type",
-            "modVal": "dom"
-        },
-        "level": "/Users/vitaly/bem/bem-core-2.9.0/common.blocks",
-        "tech": "js",
-        "path": "common.blocks/i-bem/__collection/_type/i-bem__collection_type_dom.js"
-    },
-    {
-        "entity": {
-            "block": "i-bem",
             "elem": "dom",
             "modName": "collection",
             "modVal": "yes"
@@ -286,46 +264,24 @@
     {
         "entity": {
             "block": "i-bem",
-            "elem": "dom",
-            "modName": "elem-instances",
-            "modVal": true
+            "elem": "collection",
+            "modName": "type",
+            "modVal": "dom"
         },
         "level": "/Users/vitaly/bem/bem-core-2.9.0/common.blocks",
         "tech": "deps.js",
-        "path": "common.blocks/i-bem/__dom/_elem-instances/i-bem__dom_elem-instances.deps.js"
+        "path": "common.blocks/i-bem/__collection/_type/i-bem__collection_type_dom.deps.js"
     },
     {
         "entity": {
             "block": "i-bem",
-            "elem": "dom",
-            "modName": "elem-instances",
-            "modVal": true
+            "elem": "collection",
+            "modName": "type",
+            "modVal": "dom"
         },
         "level": "/Users/vitaly/bem/bem-core-2.9.0/common.blocks",
         "tech": "js",
-        "path": "common.blocks/i-bem/__dom/_elem-instances/i-bem__dom_elem-instances.js"
-    },
-    {
-        "entity": {
-            "block": "i-bem",
-            "elem": "dom",
-            "modName": "elem-instances",
-            "modVal": true
-        },
-        "level": "/Users/vitaly/bem/bem-core-2.9.0/common.blocks",
-        "tech": "ru.md",
-        "path": "common.blocks/i-bem/__dom/_elem-instances/i-bem__dom_elem-instances.ru.md"
-    },
-    {
-        "entity": {
-            "block": "i-bem",
-            "elem": "dom",
-            "modName": "elem-instances",
-            "modVal": true
-        },
-        "level": "/Users/vitaly/bem/bem-core-2.9.0/common.blocks",
-        "tech": "spec.js",
-        "path": "common.blocks/i-bem/__dom/_elem-instances/i-bem__dom_elem-instances.spec.js"
+        "path": "common.blocks/i-bem/__collection/_type/i-bem__collection_type_dom.js"
     },
     {
         "entity": {
@@ -370,6 +326,50 @@
         "level": "/Users/vitaly/bem/bem-core-2.9.0/common.blocks",
         "tech": "js",
         "path": "common.blocks/i-bem/__dom/_init/i-bem__dom_init_auto.js"
+    },
+    {
+        "entity": {
+            "block": "i-bem",
+            "elem": "dom",
+            "modName": "elem-instances",
+            "modVal": true
+        },
+        "level": "/Users/vitaly/bem/bem-core-2.9.0/common.blocks",
+        "tech": "deps.js",
+        "path": "common.blocks/i-bem/__dom/_elem-instances/i-bem__dom_elem-instances.deps.js"
+    },
+    {
+        "entity": {
+            "block": "i-bem",
+            "elem": "dom",
+            "modName": "elem-instances",
+            "modVal": true
+        },
+        "level": "/Users/vitaly/bem/bem-core-2.9.0/common.blocks",
+        "tech": "js",
+        "path": "common.blocks/i-bem/__dom/_elem-instances/i-bem__dom_elem-instances.js"
+    },
+    {
+        "entity": {
+            "block": "i-bem",
+            "elem": "dom",
+            "modName": "elem-instances",
+            "modVal": true
+        },
+        "level": "/Users/vitaly/bem/bem-core-2.9.0/common.blocks",
+        "tech": "ru.md",
+        "path": "common.blocks/i-bem/__dom/_elem-instances/i-bem__dom_elem-instances.ru.md"
+    },
+    {
+        "entity": {
+            "block": "i-bem",
+            "elem": "dom",
+            "modName": "elem-instances",
+            "modVal": true
+        },
+        "level": "/Users/vitaly/bem/bem-core-2.9.0/common.blocks",
+        "tech": "spec.js",
+        "path": "common.blocks/i-bem/__dom/_elem-instances/i-bem__dom_elem-instances.spec.js"
     },
     {
         "entity": {

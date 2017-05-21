@@ -146,48 +146,6 @@
                     ]
                 }
             },
-            "history": {
-                "bemdecl.js": "touch-pad.docs/history/history.bemdecl.js",
-                "data.json": "touch-pad.docs/history/history.data.json",
-                "en.doc.html": "touch-pad.docs/history/history.en.doc.html",
-                "en.md": "touch-pad.docs/history/history.en.md",
-                "examples-files.json": "touch-pad.docs/history/history.examples-files.json",
-                "jsdoc.html": "touch-pad.docs/history/history.jsdoc.html",
-                "jsdoc.json": "touch-pad.docs/history/history.jsdoc.json",
-                "jsdoc.md": "touch-pad.docs/history/history.jsdoc.md",
-                "meta.json": "touch-pad.docs/history/history.meta.json",
-                "ru.doc.html": "touch-pad.docs/history/history.ru.doc.html",
-                "ru.md": "touch-pad.docs/history/history.ru.md",
-                "source-files.json": "touch-pad.docs/history/history.source-files.json",
-                "uk.doc.html": "touch-pad.docs/history/history.uk.doc.html",
-                "uk.md": "touch-pad.docs/history/history.uk.md",
-                "examples": {
-                    "simple": [
-                        "touch-pad.examples/history/simple/simple.bemdecl.js",
-                        "touch-pad.examples/history/simple/simple.bemhtml.js",
-                        "touch-pad.examples/history/simple/simple.bemjson.js",
-                        "touch-pad.examples/history/simple/simple.bemjson.js.symlink",
-                        "touch-pad.examples/history/simple/simple.blocks",
-                        "touch-pad.examples/history/simple/simple.borschik.browser.js",
-                        "touch-pad.examples/history/simple/simple.browser.bemhtml.js",
-                        "touch-pad.examples/history/simple/simple.browser.js",
-                        "touch-pad.examples/history/simple/simple.css",
-                        "touch-pad.examples/history/simple/simple.deps.js",
-                        "touch-pad.examples/history/simple/simple.en.html",
-                        "touch-pad.examples/history/simple/simple.html",
-                        "touch-pad.examples/history/simple/simple.ie.css",
-                        "touch-pad.examples/history/simple/simple.js",
-                        "touch-pad.examples/history/simple/simple.js-js.bemdecl.js",
-                        "touch-pad.examples/history/simple/simple.js.bemdecl.js",
-                        "touch-pad.examples/history/simple/simple.js.deps.js",
-                        "touch-pad.examples/history/simple/simple.pre.js",
-                        "touch-pad.examples/history/simple/simple.ru.html",
-                        "touch-pad.examples/history/simple/simple.template.bemdecl.js",
-                        "touch-pad.examples/history/simple/simple.template.deps.js",
-                        "touch-pad.examples/history/simple/simple.uk.html"
-                    ]
-                }
-            },
             "uri": {
                 "bemdecl.js": "touch-pad.docs/uri/uri.bemdecl.js",
                 "data.json": "touch-pad.docs/uri/uri.data.json",
@@ -227,6 +185,48 @@
                         "touch-pad.examples/uri/simple/simple.template.bemdecl.js",
                         "touch-pad.examples/uri/simple/simple.template.deps.js",
                         "touch-pad.examples/uri/simple/simple.uk.html"
+                    ]
+                }
+            },
+            "history": {
+                "bemdecl.js": "touch-pad.docs/history/history.bemdecl.js",
+                "data.json": "touch-pad.docs/history/history.data.json",
+                "en.doc.html": "touch-pad.docs/history/history.en.doc.html",
+                "en.md": "touch-pad.docs/history/history.en.md",
+                "examples-files.json": "touch-pad.docs/history/history.examples-files.json",
+                "jsdoc.html": "touch-pad.docs/history/history.jsdoc.html",
+                "jsdoc.json": "touch-pad.docs/history/history.jsdoc.json",
+                "jsdoc.md": "touch-pad.docs/history/history.jsdoc.md",
+                "meta.json": "touch-pad.docs/history/history.meta.json",
+                "ru.doc.html": "touch-pad.docs/history/history.ru.doc.html",
+                "ru.md": "touch-pad.docs/history/history.ru.md",
+                "source-files.json": "touch-pad.docs/history/history.source-files.json",
+                "uk.doc.html": "touch-pad.docs/history/history.uk.doc.html",
+                "uk.md": "touch-pad.docs/history/history.uk.md",
+                "examples": {
+                    "simple": [
+                        "touch-pad.examples/history/simple/simple.bemdecl.js",
+                        "touch-pad.examples/history/simple/simple.bemhtml.js",
+                        "touch-pad.examples/history/simple/simple.bemjson.js",
+                        "touch-pad.examples/history/simple/simple.bemjson.js.symlink",
+                        "touch-pad.examples/history/simple/simple.blocks",
+                        "touch-pad.examples/history/simple/simple.borschik.browser.js",
+                        "touch-pad.examples/history/simple/simple.browser.bemhtml.js",
+                        "touch-pad.examples/history/simple/simple.browser.js",
+                        "touch-pad.examples/history/simple/simple.css",
+                        "touch-pad.examples/history/simple/simple.deps.js",
+                        "touch-pad.examples/history/simple/simple.en.html",
+                        "touch-pad.examples/history/simple/simple.html",
+                        "touch-pad.examples/history/simple/simple.ie.css",
+                        "touch-pad.examples/history/simple/simple.js",
+                        "touch-pad.examples/history/simple/simple.js-js.bemdecl.js",
+                        "touch-pad.examples/history/simple/simple.js.bemdecl.js",
+                        "touch-pad.examples/history/simple/simple.js.deps.js",
+                        "touch-pad.examples/history/simple/simple.pre.js",
+                        "touch-pad.examples/history/simple/simple.ru.html",
+                        "touch-pad.examples/history/simple/simple.template.bemdecl.js",
+                        "touch-pad.examples/history/simple/simple.template.deps.js",
+                        "touch-pad.examples/history/simple/simple.uk.html"
                     ]
                 }
             }

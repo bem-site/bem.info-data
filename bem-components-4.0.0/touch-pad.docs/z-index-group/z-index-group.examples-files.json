@@ -3,22 +3,22 @@
         {
             "entity": {
                 "block": "popup",
-                "modName": "target",
-                "modVal": "position"
-            },
-            "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks/z-index-group/z-index-group.examples/10-z-index-group.blocks",
-            "tech": "js",
-            "path": "common.blocks/z-index-group/z-index-group.examples/10-z-index-group.blocks/popup/_target/popup_target_position.js"
-        },
-        {
-            "entity": {
-                "block": "popup",
                 "modName": "size",
                 "modVal": "bigger"
             },
             "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks/z-index-group/z-index-group.examples/10-z-index-group.blocks",
             "tech": "css",
             "path": "common.blocks/z-index-group/z-index-group.examples/10-z-index-group.blocks/popup/_size/popup_size_bigger.css"
+        },
+        {
+            "entity": {
+                "block": "popup",
+                "modName": "target",
+                "modVal": "position"
+            },
+            "level": "/Users/vitaly/bem/bem-components-4.0.0/common.blocks/z-index-group/z-index-group.examples/10-z-index-group.blocks",
+            "tech": "js",
+            "path": "common.blocks/z-index-group/z-index-group.examples/10-z-index-group.blocks/popup/_target/popup_target_position.js"
         }
     ]
 }
