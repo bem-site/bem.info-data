@@ -99,7 +99,7 @@
 <h2 class="article__heading article__heading_2" id="Описание-блока-28"><a href="#Описание-блока-28" class="article__heading-anchor"></a>Описание блока</h2><p>Блок предоставляет возможность изменять внешний вид меню и управлять поведением вложенных независимых блоков – <a href="../menu__item/menu__item.ru.md">пунктов меню</a>.</p>
 <p>Реализация блока поддерживает клавиатурное управление: если блок <code>menu</code> находится <a href="#focused">в фокусе</a> (установлен модификатор <code>focused</code> в значении <code>true</code>), ввод с клавиатуры одного из названий пунктов меню автоматически переводит фокус на данный пункт. Выбор происходит нажатием на кнопку <code>Пробел</code> или <code>Ввод</code>.</p>
 <h3 class="article__heading article__heading_3" id="Модификаторы-блока-51"><a href="#Модификаторы-блока-51" class="article__heading-anchor"></a>Модификаторы блока</h3><p><a name="mode"></a></p>
-<h4 class="article__heading article__heading_4" id="Модификатор-codemodecode-2"><a href="#Модификатор-codemodecode-2" class="article__heading-anchor"></a>Модификатор <code>mode</code></h4><p>Допустимые значения: <code>&#39;check</code>, <code>&#39;radio&#39;</code>, <code>&#39;radio-check&#39;</code>.</p>
+<h4 class="article__heading article__heading_4" id="Модификатор-mode-2"><a href="#Модификатор-mode-2" class="article__heading-anchor"></a>Модификатор <code>mode</code></h4><p>Допустимые значения: <code>&#39;check</code>, <code>&#39;radio&#39;</code>, <code>&#39;radio-check&#39;</code>.</p>
 <p>Способ использования: <code>BEMJSON</code>.</p>
 <p>В зависимости от выбранного значения модификатора <code>mode</code> доступны следующие типы блока:</p>
 <ul>
@@ -109,20 +109,20 @@
 <li>меню с одиночным необязательным выбором (<a href="#mode-radiocheck">модификатор mode в значении radio-check</a>).</li>
 </ul>
 <p><a name="mode-none"></a></p>
-<h5 class="article__heading article__heading_5" id="Простой-список-модификатор-codemodecode-не-установлен-1"><a href="#Простой-список-модификатор-codemodecode-не-установлен-1" class="article__heading-anchor"></a>Простой список (модификатор <code>mode</code> не установлен)</h5><p>Без указания модификатора <code>mode</code> создается простой список без возможности выбрать пункт.</p>
+<h5 class="article__heading article__heading_5" id="Простой-список-модификатор-mode-не-установлен-1"><a href="#Простой-список-модификатор-mode-не-установлен-1" class="article__heading-anchor"></a>Простой список (модификатор <code>mode</code> не установлен)</h5><p>Без указания модификатора <code>mode</code> создается простой список без возможности выбрать пункт.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/CpkGlwm8hQbPYzU0fFdmk3_Y0AI -->
 <p><a name="mode-check"></a></p>
-<h5 class="article__heading article__heading_5" id="Меню-с-множественным-выбором-модификатор-codemodecode-в-значении-codecheckcode-1"><a href="#Меню-с-множественным-выбором-модификатор-codemodecode-в-значении-codecheckcode-1" class="article__heading-anchor"></a>Меню с множественным выбором (модификатор <code>mode</code> в значении <code>check</code>)</h5><p>Позволяет выбрать произвольное количество пунктов меню.</p>
+<h5 class="article__heading article__heading_5" id="Меню-с-множественным-выбором-модификатор-mode-в-значении-check-1"><a href="#Меню-с-множественным-выбором-модификатор-mode-в-значении-check-1" class="article__heading-anchor"></a>Меню с множественным выбором (модификатор <code>mode</code> в значении <code>check</code>)</h5><p>Позволяет выбрать произвольное количество пунктов меню.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/6JR-HXEd5U5wTmtuWngGJpD0MkA -->
 <p><a name="mode-radio"></a></p>
-<h5 class="article__heading article__heading_5" id="Меню-с-одиночным-обязательным-выбором-модификатор-codemodecode-в-значении-coderadiocode-1"><a href="#Меню-с-одиночным-обязательным-выбором-модификатор-codemodecode-в-значении-coderadiocode-1" class="article__heading-anchor"></a>Меню с одиночным обязательным выбором (модификатор <code>mode</code> в значении <code>radio</code>)</h5><p>Позволяет создать меню, в котором обязательно выбран ровно один пункт.</p>
+<h5 class="article__heading article__heading_5" id="Меню-с-одиночным-обязательным-выбором-модификатор-mode-в-значении-radio-1"><a href="#Меню-с-одиночным-обязательным-выбором-модификатор-mode-в-значении-radio-1" class="article__heading-anchor"></a>Меню с одиночным обязательным выбором (модификатор <code>mode</code> в значении <code>radio</code>)</h5><p>Позволяет создать меню, в котором обязательно выбран ровно один пункт.</p>
 <p>Если пункт не выбран, то по умолчанию выбирается первое значение из списка.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/U1MmGvhMqAwV8JqKiZDMdU2dDHg -->
 <p><a name="mode-radiocheck"></a></p>
-<h5 class="article__heading article__heading_5" id="Меню-с-одиночным-необязательным-выбором-модификатор-codemodecode-в-значении-coderadio-checkcode-1"><a href="#Меню-с-одиночным-необязательным-выбором-модификатор-codemodecode-в-значении-coderadio-checkcode-1" class="article__heading-anchor"></a>Меню с одиночным необязательным выбором (модификатор <code>mode</code> в значении <code>radio-check</code>)</h5><p>Модификатор <code>mode</code> в значении <code>radio-check</code>, так же как и <a href="#mode-radio">модификатор mode в значении radio</a>, позволяет выбрать ровно один пункт меню. Принципиальное отличие в том, что в значении <code>radio-check</code> есть возможность оставить меню без выбранных пунктов.</p>
+<h5 class="article__heading article__heading_5" id="Меню-с-одиночным-необязательным-выбором-модификатор-mode-в-значении-radio-check-1"><a href="#Меню-с-одиночным-необязательным-выбором-модификатор-mode-в-значении-radio-check-1" class="article__heading-anchor"></a>Меню с одиночным необязательным выбором (модификатор <code>mode</code> в значении <code>radio-check</code>)</h5><p>Модификатор <code>mode</code> в значении <code>radio-check</code>, так же как и <a href="#mode-radio">модификатор mode в значении radio</a>, позволяет выбрать ровно один пункт меню. Принципиальное отличие в том, что в значении <code>radio-check</code> есть возможность оставить меню без выбранных пунктов.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/Ga_iJMg-ybOAMiY3yqzMTrKuYYI -->
 <p><a name="disabled"></a></p>
-<h4 class="article__heading article__heading_4" id="Модификатор-codedisabledcode-20"><a href="#Модификатор-codedisabledcode-20" class="article__heading-anchor"></a>Модификатор <code>disabled</code></h4><p>Допустимое значение: <code>true</code>.</p>
+<h4 class="article__heading article__heading_4" id="Модификатор-disabled-20"><a href="#Модификатор-disabled-20" class="article__heading-anchor"></a>Модификатор <code>disabled</code></h4><p>Допустимое значение: <code>true</code>.</p>
 <p>Способы использования: <code>BEMJSON</code>, <code>JS</code>.</p>
 <p>Отвечает за неактивное состояние, при котором блок виден, но недоступен для действий пользователя.</p>
 <p>Если блоку <code>menu</code> устанавливается модификатор <code>disabled</code>, то все вложенные в него блоки <code>menu__item</code> также становятся неактивными.</p>
@@ -130,7 +130,7 @@
 <p>Модификатор <code>disabled</code> в значении <code>true</code> может быть выставлен отдельным пунктам меню:</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/Mzwn5COf3fNioNNGGHPjCfrqYoE -->
 <p><a name="focused"></a></p>
-<h4 class="article__heading article__heading_4" id="Модификатор-codefocusedcode-17"><a href="#Модификатор-codefocusedcode-17" class="article__heading-anchor"></a>Модификатор <code>focused</code></h4><p>Допустимое значение: <code>true</code>.</p>
+<h4 class="article__heading article__heading_4" id="Модификатор-focused-17"><a href="#Модификатор-focused-17" class="article__heading-anchor"></a>Модификатор <code>focused</code></h4><p>Допустимое значение: <code>true</code>.</p>
 <p>Способы использования: <code>BEMJSON</code>, <code>JS</code>.</p>
 <p>Выставляется автоматически при получении блоком фокуса.</p>
 <p>Отвечает за наличие фокуса на блоке.</p>
@@ -154,13 +154,13 @@
 </code></pre>
 <p>Способ установки фокуса на блок определяет выбор модификатора: <code>focused</code> или <code>focused-hard</code>. <a href="../../README.ru.md#Модификатор-focused">Читать подробности</a>.</p>
 <p><a name="theme"></a></p>
-<h4 class="article__heading article__heading_4" id="Модификатор-codethemecode-23"><a href="#Модификатор-codethemecode-23" class="article__heading-anchor"></a>Модификатор <code>theme</code></h4><p>Допустимое значение: <code>&#39;islands&#39;</code>.</p>
+<h4 class="article__heading article__heading_4" id="Модификатор-theme-23"><a href="#Модификатор-theme-23" class="article__heading-anchor"></a>Модификатор <code>theme</code></h4><p>Допустимое значение: <code>&#39;islands&#39;</code>.</p>
 <p>Способ использования: <code>BEMJSON</code>.</p>
 <p>Отвечает за стилевое оформление блока.</p>
 <p>Необходимо использовать с модификатором <a href="#size">size</a>.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/vBo3WnSmzqACd0hrrCoir395ejg -->
 <p><a name="size"></a></p>
-<h4 class="article__heading article__heading_4" id="Модификатор-codesizecode-20"><a href="#Модификатор-codesizecode-20" class="article__heading-anchor"></a>Модификатор <code>size</code></h4><p>Допустимые значения: <code>&#39;s&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>, <code>&#39;xl&#39;</code>.</p>
+<h4 class="article__heading article__heading_4" id="Модификатор-size-20"><a href="#Модификатор-size-20" class="article__heading-anchor"></a>Модификатор <code>size</code></h4><p>Допустимые значения: <code>&#39;s&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>, <code>&#39;xl&#39;</code>.</p>
 <p>Способ использования: <code>BEMJSON</code>.</p>
 <p>Задает размер блоку.</p>
 <p>Необходимо использовать с модификатором <a href="#theme">theme</a> в значении <code>islands</code>.</p>
@@ -173,11 +173,11 @@
 <p><strong>xl</strong></p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/fEwc-HKL5VWOvsVS7BW-AhwNR5Y -->
 <h3 class="article__heading article__heading_3" id="Специализированные-поля-блока-55"><a href="#Специализированные-поля-блока-55" class="article__heading-anchor"></a>Специализированные поля блока</h3><p><a name="content"></a></p>
-<h4 class="article__heading article__heading_4" id="Поле-codecontentcode-5"><a href="#Поле-codecontentcode-5" class="article__heading-anchor"></a>Поле <code>content</code></h4><p>Тип: <code>Array</code>.</p>
+<h4 class="article__heading article__heading_4" id="Поле-content-5"><a href="#Поле-content-5" class="article__heading-anchor"></a>Поле <code>content</code></h4><p>Тип: <code>Array</code>.</p>
 <p>Определяет перечень пунктов меню.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/EiSzMadQWqL9DcxBL640VfuaN14 -->
 <p><a name="val"></a></p>
-<h4 class="article__heading article__heading_4" id="Поле-codevalcode-15"><a href="#Поле-codevalcode-15" class="article__heading-anchor"></a>Поле <code>val</code></h4><p>Тип: <code>String</code>, <code>Number</code>, <code>Array</code>.</p>
+<h4 class="article__heading article__heading_4" id="Поле-val-15"><a href="#Поле-val-15" class="article__heading-anchor"></a>Поле <code>val</code></h4><p>Тип: <code>String</code>, <code>Number</code>, <code>Array</code>.</p>
 <p>Определяет:</p>
 <ul>
 <li>Выбранный пункт меню. В таком случае используется тип поля <code>String</code> или <code>Number</code>.</li>
@@ -188,10 +188,10 @@
 </ul>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/idGtxrFvjAzIAsTkkSwr1n6fILY -->
 <h3 class="article__heading article__heading_3" id="Элементы-блока-3"><a href="#Элементы-блока-3" class="article__heading-anchor"></a>Элементы блока</h3><p><a name="group"></a></p>
-<h4 class="article__heading article__heading_4" id="Элемент-codegroupcode-1"><a href="#Элемент-codegroupcode-1" class="article__heading-anchor"></a>Элемент <code>group</code></h4><p>Служит для визуальной группировки пунктов меню. Не влияет на общую логику выбора пунктов.</p>
+<h4 class="article__heading article__heading_4" id="Элемент-group-1"><a href="#Элемент-group-1" class="article__heading-anchor"></a>Элемент <code>group</code></h4><p>Служит для визуальной группировки пунктов меню. Не влияет на общую логику выбора пунктов.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/EOODFvqHrMOxtqyTF5gn_DpNJDc -->
 <h3 class="article__heading article__heading_3" id="Специализированные-поля-элементов-блока-3"><a href="#Специализированные-поля-элементов-блока-3" class="article__heading-anchor"></a>Специализированные поля элементов блока</h3><p><a name="group-title"></a></p>
-<h4 class="article__heading article__heading_4" id="Специализированное-поле-codetitlecode-элемента-codegroupcode-1"><a href="#Специализированное-поле-codetitlecode-элемента-codegroupcode-1" class="article__heading-anchor"></a>Специализированное поле <code>title</code> элемента <code>group</code></h4><p>Тип: <code>String</code>.</p>
+<h4 class="article__heading article__heading_4" id="Специализированное-поле-title-элемента-group-1"><a href="#Специализированное-поле-title-элемента-group-1" class="article__heading-anchor"></a>Специализированное поле <code>title</code> элемента <code>group</code></h4><p>Тип: <code>String</code>.</p>
 <p>Определяет заголовок группы пунктов.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/8CjTLpRsIwhoAWJYlfLIiezEi-k -->
 
@@ -244,20 +244,20 @@
 </table>
 <h2 class="article__heading article__heading_2" id="Описание-блока-29"><a href="#Описание-блока-29" class="article__heading-anchor"></a>Описание блока</h2><p><code>menu__item</code> предоставляет возможность изменять состояние, содержимое и тип пунктов меню. Используется только в составе блока <code>menu</code>.</p>
 <h3 class="article__heading article__heading_3" id="Модификаторы-блока-53"><a href="#Модификаторы-блока-53" class="article__heading-anchor"></a>Модификаторы блока</h3><p><a name="type"></a></p>
-<h4 class="article__heading article__heading_4" id="Модификатор-codetypecode-11"><a href="#Модификатор-codetypecode-11" class="article__heading-anchor"></a>Модификатор <code>type</code></h4><p>Допустимое значение: <code>&#39;link&#39;</code>.</p>
+<h4 class="article__heading article__heading_4" id="Модификатор-type-11"><a href="#Модификатор-type-11" class="article__heading-anchor"></a>Модификатор <code>type</code></h4><p>Допустимое значение: <code>&#39;link&#39;</code>.</p>
 <p>Способ использования: <code>BEMJSON</code>.</p>
 <p>Используется для создания пунктов меню, реализованных с помощью блока <a href="../link/link.ru.md">link</a>, который помещается в поле <code>content</code> BEMJSON-декларации блока.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/v2j7bVsZoOqaxsoW4yBMSC4S9OQ -->
 <p><a name="disabled"></a></p>
-<h4 class="article__heading article__heading_4" id="Модификатор-codedisabledcode-21"><a href="#Модификатор-codedisabledcode-21" class="article__heading-anchor"></a>Модификатор <code>disabled</code></h4><p>Допустимое значение: <code>true</code>.</p>
+<h4 class="article__heading article__heading_4" id="Модификатор-disabled-21"><a href="#Модификатор-disabled-21" class="article__heading-anchor"></a>Модификатор <code>disabled</code></h4><p>Допустимое значение: <code>true</code>.</p>
 <p>Способы использования: <code>BEMJSON</code>, <code>JS</code>.</p>
 <p>Модификатор отвечает за неактивное состояние, при котором блок виден, но недоступен для действий пользователя.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/3D_EkQc9v0EDI0JGIfgvudbIBbU -->
 <p><a name="hovered"></a></p>
-<h4 class="article__heading article__heading_4" id="Модификатор-codehoveredcode-6"><a href="#Модификатор-codehoveredcode-6" class="article__heading-anchor"></a>Модификатор <code>hovered</code></h4><p>Допустимое значение: <code>true</code>.</p>
+<h4 class="article__heading article__heading_4" id="Модификатор-hovered-6"><a href="#Модификатор-hovered-6" class="article__heading-anchor"></a>Модификатор <code>hovered</code></h4><p>Допустимое значение: <code>true</code>.</p>
 <p>Способ использования: – .</p>
 <p>Выставляется автоматически при наведении курсором на пункт меню.</p>
 <h3 class="article__heading article__heading_3" id="Специализированные-поля-блока-57"><a href="#Специализированные-поля-блока-57" class="article__heading-anchor"></a>Специализированные поля блока</h3><p><a name="val"></a></p>
-<h4 class="article__heading article__heading_4" id="Поле-codevalcode-16"><a href="#Поле-codevalcode-16" class="article__heading-anchor"></a>Поле <code>val</code></h4><p>Тип: <code>Number</code>, <code>String</code>.</p>
+<h4 class="article__heading article__heading_4" id="Поле-val-16"><a href="#Поле-val-16" class="article__heading-anchor"></a>Поле <code>val</code></h4><p>Тип: <code>Number</code>, <code>String</code>.</p>
 <p>Определяет значение пункта меню.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/yow7u2bRLE_JQjIrUika2T4grik -->

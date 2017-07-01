@@ -66,25 +66,25 @@
 </ul>
 <p><a name="fields"></a></p>
 <h3 class="article__heading article__heading_3" id="Свойства-и-методы-объекта-14"><a href="#Свойства-и-методы-объекта-14" class="article__heading-anchor"></a>Свойства и методы объекта</h3><p><a name="fields-parse"></a></p>
-<h4 class="article__heading article__heading_4" id="Метод-codeparsecode"><a href="#Метод-codeparsecode" class="article__heading-anchor"></a>Метод <code>parse</code></h4><p>Формирует объект на основании строки параметров в формате URI. </p>
+<h4 class="article__heading article__heading_4" id="Метод-parse"><a href="#Метод-parse" class="article__heading-anchor"></a>Метод <code>parse</code></h4><p>Формирует объект на основании строки параметров в формате URI. </p>
 <p>Принимаемые аргументы: </p>
 <ul>
 <li><code>str</code> <code>{String}</code> – строка с параметрами в виде пар ключ-значение. Ключ отделяется от значения символом <code>=</code>. Пары разделяются символом <code>&amp;</code>. В процессе обработки, ключи и значения декодируются из формата URI. Обязательный аргумент.</li>
 </ul>
 <p>Возвращаемое значение: <code>{Object}</code>. Объект, сформированный на основании параметров адресной строки.</p>
 <p><a name="fields-stringify"></a></p>
-<h4 class="article__heading article__heading_4" id="Метод-codestringifycode"><a href="#Метод-codestringifycode" class="article__heading-anchor"></a>Метод <code>stringify</code></h4><p>Формирует строку запроса в формате URI на основании объекта. </p>
+<h4 class="article__heading article__heading_4" id="Метод-stringify"><a href="#Метод-stringify" class="article__heading-anchor"></a>Метод <code>stringify</code></h4><p>Формирует строку запроса в формате URI на основании объекта. </p>
 <p>Принимаемые аргументы: </p>
 <p><code>obj</code> <code>{Object}</code> – объект, на основании которого формируется строка. Обязательный аргумент.</p>
 <p>Возвращаемое значение: <code>{String}</code>. Имена свойств в строке отделяются от значений символом <code>=</code>, пары разделяются символом <code>&amp;</code>. </p>
 <p><a name="elems"></a></p>
 <h3 class="article__heading article__heading_3" id="Элементы-блока-11"><a href="#Элементы-блока-11" class="article__heading-anchor"></a>Элементы блока</h3><p><a name="elems-uri"></a></p>
-<h4 class="article__heading article__heading_4" id="Элемент-codeuricode"><a href="#Элемент-codeuricode" class="article__heading-anchor"></a>Элемент <code>uri</code></h4><p>Элемент предоставляет объект, содержащий набор методов для декодирования строки из формата URI. </p>
+<h4 class="article__heading article__heading_4" id="Элемент-uri"><a href="#Элемент-uri" class="article__heading-anchor"></a>Элемент <code>uri</code></h4><p>Элемент предоставляет объект, содержащий набор методов для декодирования строки из формата URI. </p>
 <p><a name="elems-name-fields"></a></p>
 <h3 class="article__heading article__heading_3" id="Свойства-и-методы-объекта-15"><a href="#Свойства-и-методы-объекта-15" class="article__heading-anchor"></a>Свойства и методы объекта</h3><p>Оба метода являются оберткой над соответствующими стандартными методами JavaScript <code>decodeURI</code> и <code>decodeURIComponent</code>. </p>
 <p>В ходе работы методы проверяют соответствие формата переданной строки UTF-8. При несоответствии генерируется ошибка.</p>
 <p><a name="elems-uri-fields-decodeURI"></a></p>
-<h4 class="article__heading article__heading_4" id="Метод-codedecodeuricode"><a href="#Метод-codedecodeuricode" class="article__heading-anchor"></a>Метод <code>decodeURI</code></h4><p>Служит для декодирования URI. Метод идентичен стандартному методу JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURI">decodeURI</a>, но поддерживает кириллическую кодировку <code>CP-1251</code>.</p>
+<h4 class="article__heading article__heading_4" id="Метод-decodeuri"><a href="#Метод-decodeuri" class="article__heading-anchor"></a>Метод <code>decodeURI</code></h4><p>Служит для декодирования URI. Метод идентичен стандартному методу JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURI">decodeURI</a>, но поддерживает кириллическую кодировку <code>CP-1251</code>.</p>
 <p>Принимаемые аргументы: </p>
 <ul>
 <li><code>str</code> <code>{String}</code> – строка с последовательностями экранирования. Обязательный аргумент.</li>
@@ -96,7 +96,7 @@
 })
 </code></pre>
 <p><a name="elems-uri-fields-decodeURIComponent"></a></p>
-<h4 class="article__heading article__heading_4" id="Метод-codedecodeuricomponentcode"><a href="#Метод-codedecodeuricomponentcode" class="article__heading-anchor"></a>Метод <code>decodeURIComponent</code></h4><p>Служит для декодирование компонента URI. Метод идентичен стандартному методу JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent">decodeURIComponent</a>, но поддерживает кириллическую кодировку <code>CP-1251</code>.</p>
+<h4 class="article__heading article__heading_4" id="Метод-decodeuricomponent"><a href="#Метод-decodeuricomponent" class="article__heading-anchor"></a>Метод <code>decodeURIComponent</code></h4><p>Служит для декодирование компонента URI. Метод идентичен стандартному методу JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent">decodeURIComponent</a>, но поддерживает кириллическую кодировку <code>CP-1251</code>.</p>
 <p>Принимаемые аргументы: </p>
 <ul>
 <li><code>str</code> <code>{String}</code> – строка с последовательностями экранирования. Обязательный аргумент.</li>

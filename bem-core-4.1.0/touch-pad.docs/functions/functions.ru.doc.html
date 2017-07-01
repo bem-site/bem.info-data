@@ -47,7 +47,7 @@
 </ul>
 <h2 class="article__heading article__heading_2" id="Подробности-27"><a href="#Подробности-27" class="article__heading-anchor"></a>Подробности</h2><p><a name="fields"></a></p>
 <h3 class="article__heading article__heading_3" id="Свойства-и-методы-объекта-47"><a href="#Свойства-и-методы-объекта-47" class="article__heading-anchor"></a>Свойства и методы объекта</h3><p><a name="fields-isFunction"></a></p>
-<h4 class="article__heading article__heading_4" id="Метод-codeisfunctioncode-2"><a href="#Метод-codeisfunctioncode-2" class="article__heading-anchor"></a>Метод <code>isFunction</code></h4><p>Метод проверяет, является ли переданный аргумент функцией.  </p>
+<h4 class="article__heading article__heading_4" id="Метод-isfunction-2"><a href="#Метод-isfunction-2" class="article__heading-anchor"></a>Метод <code>isFunction</code></h4><p>Метод проверяет, является ли переданный аргумент функцией.  </p>
 <p>Принимаемые аргументы: </p>
 <ul>
 <li><code>obj</code> <code>{*}</code> – проверяемый объект. Обязательный аргумент.</li>
@@ -61,7 +61,7 @@
 });
 </code></pre>
 <p><a name="fields-noop"></a></p>
-<h4 class="article__heading article__heading_4" id="Свойство-codenoopcode-2"><a href="#Свойство-codenoopcode-2" class="article__heading-anchor"></a>Свойство <code>noop</code></h4><p>Пустая функция (<code>function() {}</code>).</p>
+<h4 class="article__heading article__heading_4" id="Свойство-noop-2"><a href="#Свойство-noop-2" class="article__heading-anchor"></a>Свойство <code>noop</code></h4><p>Пустая функция (<code>function() {}</code>).</p>
 <p>Не имеет аргументов и возвращаемого значения.</p>
 <p><code>noop</code> можно использовать в ситуациях, когда для работы требуется функция, но нет смысла добавлять логику. Например в качестве «заглушки» для базовых классов при проектировании в парадигме ООП.</p>
 <pre><code class="lang-js">modules.define(<span class="hljs-string">'base-class'</span>, [<span class="hljs-string">'inherit'</span>, <span class="hljs-string">'functions'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">provide, inherit, functions</span>) </span>{
@@ -80,7 +80,7 @@ provide(inherit({
 <h3 class="article__heading article__heading_3" id="Элементы-блока-35"><a href="#Элементы-блока-35" class="article__heading-anchor"></a>Элементы блока</h3><p>Элементы блока реализуют набор декораторов функций.</p>
 <p>Декораторы добавляют функции логику, не меняя ее оригинальной сигнатуры.</p>
 <p><a name="elems-debounce"></a></p>
-<h4 class="article__heading article__heading_4" id="Элемент-codedebouncecode-2"><a href="#Элемент-codedebouncecode-2" class="article__heading-anchor"></a>Элемент <code>debounce</code></h4><p>Декоратор, откладывающий вызовов функции до истечения задержки. После каждой попытки вызова задержка начинает отсчитываться заново. </p>
+<h4 class="article__heading article__heading_4" id="Элемент-debounce-2"><a href="#Элемент-debounce-2" class="article__heading-anchor"></a>Элемент <code>debounce</code></h4><p>Декоратор, откладывающий вызовов функции до истечения задержки. После каждой попытки вызова задержка начинает отсчитываться заново. </p>
 <p>Принимаемые аргументы:</p>
 <ul>
 <li><code>fn</code> <code>{Function}</code> — оригинальная функция. Обязательный аргумент.</li>
@@ -106,7 +106,7 @@ setInterval(debouncedLog, <span class="hljs-number">50</span>);
 });
 </code></pre>
 <p><a name="elems-throttle"></a></p>
-<h4 class="article__heading article__heading_4" id="Элемент-codethrottlecode-2"><a href="#Элемент-codethrottlecode-2" class="article__heading-anchor"></a>Элемент <code>throttle</code></h4><p>Декоратор позволяет «затормозить» функцию. Она будет выполняться не чаще одного раза в указанный период, сколько бы раз в течение этого периода ни была вызвана. Все промежуточные вызовы игнорируются.</p>
+<h4 class="article__heading article__heading_4" id="Элемент-throttle-2"><a href="#Элемент-throttle-2" class="article__heading-anchor"></a>Элемент <code>throttle</code></h4><p>Декоратор позволяет «затормозить» функцию. Она будет выполняться не чаще одного раза в указанный период, сколько бы раз в течение этого периода ни была вызвана. Все промежуточные вызовы игнорируются.</p>
 <p>Принимаемые аргументы:</p>
 <ul>
 <li><code>fn</code> <code>{Function}</code> — оригинальная функция. Обязательный аргумент.</li>

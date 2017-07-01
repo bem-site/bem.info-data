@@ -109,7 +109,7 @@ A.callMe(); <span class="hljs-comment">// mr.Static</span>
 });
 </code></pre>
 <h5 class="article__heading article__heading_5" id="special-fields-of-the-declared-class-5"><a href="#special-fields-of-the-declared-class-5" class="article__heading-anchor"></a>Special fields of the declared class</h5><p><a name="constructor"></a></p>
-<h6 class="article__heading article__heading_6" id="code__constructorcode-field-2"><a href="#code__constructorcode-field-2" class="article__heading-anchor"></a><code>__constructor</code> field</h6><p>Type: <code>Function</code>.</p>
+<h6 class="article__heading article__heading_6" id="code__constructor-field-2"><a href="#code__constructor-field-2" class="article__heading-anchor"></a><code>__constructor</code> field</h6><p>Type: <code>Function</code>.</p>
 <p>The object with the base class properties can contain the reserved <code>__constructor</code> property, a function that is called automatically when a class instance is created.</p>
 <p>Example:</p>
 <pre><code class="lang-js">modules.require([<span class="hljs-string">'inherit'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">inherit</span>) </span>{
@@ -191,7 +191,7 @@ instanceOfC.getAll(); <span class="hljs-comment">// returns 'AB'</span>
 });
 </code></pre>
 <h5 class="article__heading article__heading_5" id="special-fields-of-the-declared-class-instance-5"><a href="#special-fields-of-the-declared-class-instance-5" class="article__heading-anchor"></a>Special fields of the declared class instance</h5><p><a name="self"></a></p>
-<h6 class="article__heading article__heading_6" id="code__selfcode-field-2"><a href="#code__selfcode-field-2" class="article__heading-anchor"></a><code>__self</code> field</h6><p>Type: <code>*</code>.</p>
+<h6 class="article__heading article__heading_6" id="code__self-field-2"><a href="#code__self-field-2" class="article__heading-anchor"></a><code>__self</code> field</h6><p>Type: <code>*</code>.</p>
 <p>Allows you to access the class and its instance.</p>
 <p>Example:</p>
 <pre><code class="lang-js">modules.require([<span class="hljs-string">'inherit'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">inherit</span>) </span>{
@@ -214,7 +214,7 @@ aInst.getStaticProperty(); <span class="hljs-comment">//staticA</span>
 });
 </code></pre>
 <p><a name="base"></a></p>
-<h6 class="article__heading article__heading_6" id="code__basecode-5"><a href="#code__basecode-5" class="article__heading-anchor"></a><code>__base</code></h6><p>Type: <code>Function</code>.</p>
+<h6 class="article__heading article__heading_6" id="code__base-5"><a href="#code__base-5" class="article__heading-anchor"></a><code>__base</code></h6><p>Type: <code>Function</code>.</p>
 <p>Allows you to call base class methods inside the derived class (super call). When used in a static method, it will call the static method of the same name in the base class.</p>
 <p>Example:</p>
 <pre><code class="lang-js">modules.require([<span class="hljs-string">'inherit'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">inherit</span>) </span>{

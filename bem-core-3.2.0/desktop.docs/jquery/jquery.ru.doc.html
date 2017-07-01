@@ -114,10 +114,10 @@
 <li><code>js</code></li>
 </ul>
 
-<h1 class="article__heading article__heading_1" id="Элемент-codeconfigcode-блока-codejquerycode"><a href="#Элемент-codeconfigcode-блока-codejquerycode" class="article__heading-anchor"></a>Элемент <code>config</code> блока <code>jquery</code></h1><p>Элемент предоставляет объект с настройками подключаемой библиотеки jQuery. Настройки хранятся как свойства объекта.</p>
+<h1 class="article__heading article__heading_1" id="Элемент-config-блока-jquery"><a href="#Элемент-config-блока-jquery" class="article__heading-anchor"></a>Элемент <code>config</code> блока <code>jquery</code></h1><p>Элемент предоставляет объект с настройками подключаемой библиотеки jQuery. Настройки хранятся как свойства объекта.</p>
 <p><a name="fields"></a></p>
 <h2 class="article__heading article__heading_2" id="Свойства-и-методы-объекта-8"><a href="#Свойства-и-методы-объекта-8" class="article__heading-anchor"></a>Свойства и методы объекта</h2><p><a name="fields-url"></a></p>
-<h3 class="article__heading article__heading_3" id="Свойство-codeurlcode"><a href="#Свойство-codeurlcode" class="article__heading-anchor"></a>Свойство <code>url</code></h3><p>Тип: <code>{String}</code>.</p>
+<h3 class="article__heading article__heading_3" id="Свойство-url"><a href="#Свойство-url" class="article__heading-anchor"></a>Свойство <code>url</code></h3><p>Тип: <code>{String}</code>.</p>
 <p>Содержит строку с URL для загрузки jQuery.
 В проекте значение свойства может быть переопределено. Тогда при подключении блока будет использовано новое значение, если библиотека jQuery не была подключена предварительно.</p>
 <pre><code class="lang-js">modules.define(<span class="hljs-string">'jquery__config'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">provide</span>) </span>{
@@ -126,10 +126,10 @@ provide({ <span class="hljs-attr">url</span>: <span class="hljs-string">'//foo.b
 });
 </code></pre>
 
-<h1 class="article__heading article__heading_1" id="Элемент-codeeventcode-блока-codejquerycode"><a href="#Элемент-codeeventcode-блока-codejquerycode" class="article__heading-anchor"></a>Элемент <code>event</code> блока <code>jquery</code></h1><p>Элемент реализует поддержку дополнительных типов событий jQuery. Дополнительные типы подключаются с помощью соответствующих значений модификатора <code>type</code>.</p>
+<h1 class="article__heading article__heading_1" id="Элемент-event-блока-jquery"><a href="#Элемент-event-блока-jquery" class="article__heading-anchor"></a>Элемент <code>event</code> блока <code>jquery</code></h1><p>Элемент реализует поддержку дополнительных типов событий jQuery. Дополнительные типы подключаются с помощью соответствующих значений модификатора <code>type</code>.</p>
 <p><a name="modifiers"></a></p>
 <h2 class="article__heading article__heading_2" id="Модификаторы-элемента"><a href="#Модификаторы-элемента" class="article__heading-anchor"></a>Модификаторы элемента</h2><p><a name="modifiers-name"></a></p>
-<h3 class="article__heading article__heading_3" id="Модификатор-codetypecode"><a href="#Модификатор-codetypecode" class="article__heading-anchor"></a>Модификатор <code>type</code></h3><p>Предоставляет набор полифилов, реализующих уровень абстракции над jQuery-событиями устройств ввода. Это позволяет создавать общую логику для различных платформ (десктопы, телефоны и т.д.) и дополнять ее методами, специфическими для конкретного вида устройств.</p>
+<h3 class="article__heading article__heading_3" id="Модификатор-type"><a href="#Модификатор-type" class="article__heading-anchor"></a>Модификатор <code>type</code></h3><p>Предоставляет набор полифилов, реализующих уровень абстракции над jQuery-событиями устройств ввода. Это позволяет создавать общую логику для различных платформ (десктопы, телефоны и т.д.) и дополнять ее методами, специфическими для конкретного вида устройств.</p>
 <p>Каждый полифил добавляет набор <strong>pointer-событий</strong>, для создания аппаратно-независимой логики.</p>
 <p>Все pointer-события являются пользовательскими событиями jQuery. Подписка на pointer-события осуществляется стандартным образом:</p>
 <pre><code class="lang-js">modules.define(
@@ -159,56 +159,56 @@ provide(BEMDOM.decl({ <span class="hljs-attr">block</span> : <span class="hljs-k
 </code></pre>
 <p>В зависимости от значения модификатора, будут подключены разные полифилы.</p>
 <p><a name="modifiers-type-pointer"></a></p>
-<h4 class="article__heading article__heading_4" id="Модификатор-codetypecode-в-значении-codepointercode"><a href="#Модификатор-codetypecode-в-значении-codepointercode" class="article__heading-anchor"></a>Модификатор <code>type</code> в значении <code>pointer</code></h4><p>Модификатор для подключения всех типов pointer-событий. Не вводит дополнительной логики.</p>
+<h4 class="article__heading article__heading_4" id="Модификатор-type-в-значении-pointer"><a href="#Модификатор-type-в-значении-pointer" class="article__heading-anchor"></a>Модификатор <code>type</code> в значении <code>pointer</code></h4><p>Модификатор для подключения всех типов pointer-событий. Не вводит дополнительной логики.</p>
 <p><a name="modifiers-type-pointerclick"></a></p>
-<h4 class="article__heading article__heading_4" id="Модификатор-codetypecode-в-значении-codepointerclickcode"><a href="#Модификатор-codetypecode-в-значении-codepointerclickcode" class="article__heading-anchor"></a>Модификатор <code>type</code> в значении <code>pointerclick</code></h4><p>Подключает полифил, реализующий событие <code>pointerclick</code>.</p>
+<h4 class="article__heading article__heading_4" id="Модификатор-type-в-значении-pointerclick"><a href="#Модификатор-type-в-значении-pointerclick" class="article__heading-anchor"></a>Модификатор <code>type</code> в значении <code>pointerclick</code></h4><p>Подключает полифил, реализующий событие <code>pointerclick</code>.</p>
 <p><a name="events-pointerclick"></a></p>
-<h5 class="article__heading article__heading_5" id="Событие-codepointerclickcode"><a href="#Событие-codepointerclickcode" class="article__heading-anchor"></a>Событие <code>pointerclick</code></h5><p>Генерируется по нажатию левой клавиши мыши или в момент контакта с рабочей поверхностью устройства. Использование <code>pointerclick</code> позволяет избавиться от задержки события <code>click</code> на тач-устройствах.</p>
+<h5 class="article__heading article__heading_5" id="Событие-pointerclick"><a href="#Событие-pointerclick" class="article__heading-anchor"></a>Событие <code>pointerclick</code></h5><p>Генерируется по нажатию левой клавиши мыши или в момент контакта с рабочей поверхностью устройства. Использование <code>pointerclick</code> позволяет избавиться от задержки события <code>click</code> на тач-устройствах.</p>
 <p><a name="modifiers-type-pointernative"></a></p>
-<h4 class="article__heading article__heading_4" id="Модификатор-codetypecode-в-значении-codepointernativecode"><a href="#Модификатор-codetypecode-в-значении-codepointernativecode" class="article__heading-anchor"></a>Модификатор <code>type</code> в значении <code>pointernative</code></h4><p>Подключает полифил, реализующий базовую функциональность модели <a href="http://www.w3.org/TR/pointerevents/">W3C Pointer Events</a>.</p>
+<h4 class="article__heading article__heading_4" id="Модификатор-type-в-значении-pointernative"><a href="#Модификатор-type-в-значении-pointernative" class="article__heading-anchor"></a>Модификатор <code>type</code> в значении <code>pointernative</code></h4><p>Подключает полифил, реализующий базовую функциональность модели <a href="http://www.w3.org/TR/pointerevents/">W3C Pointer Events</a>.</p>
 <p>С модификатором доступен следующий набор событий:</p>
 <p><a name="events-pointerover"></a></p>
-<h5 class="article__heading article__heading_5" id="Событие-codepointerovercode"><a href="#Событие-codepointerovercode" class="article__heading-anchor"></a>Событие <code>pointerover</code></h5><p>Генерируется в момент:</p>
+<h5 class="article__heading article__heading_5" id="Событие-pointerover"><a href="#Событие-pointerover" class="article__heading-anchor"></a>Событие <code>pointerover</code></h5><p>Генерируется в момент:</p>
 <ul>
 <li>Когда указатель находится над элементом.</li>
 <li>Перед событием <code>pointerdown</code>, для устройств, не поддерживающих <code>hover</code>.</li>
 </ul>
 <p><a name="events-pointerenter"></a></p>
-<h5 class="article__heading article__heading_5" id="Событие-codepointerentercode"><a href="#Событие-codepointerentercode" class="article__heading-anchor"></a>Событие <code>pointerenter</code></h5><p>Генерируется:</p>
+<h5 class="article__heading article__heading_5" id="Событие-pointerenter"><a href="#Событие-pointerenter" class="article__heading-anchor"></a>Событие <code>pointerenter</code></h5><p>Генерируется:</p>
 <ul>
 <li>При входе указателя в <em>активную зону</em> элемента. Когда указатель находится над элементом или одним из его потомков.</li>
 <li>По событию <code>pointerdown</code> для устройств, не поддерживающих <code>hover</code>.</li>
 </ul>
 <p>Событие аналогично <code>pointerover</code>, но не всплывает.</p>
 <p><a name="events-pointerdown"></a></p>
-<h5 class="article__heading article__heading_5" id="Событие-codepointerdowncode"><a href="#Событие-codepointerdowncode" class="article__heading-anchor"></a>Событие <code>pointerdown</code></h5><p>Генерируется в момент, когда устройство ввода входит в состояние <em>активного нажатия</em>:</p>
+<h5 class="article__heading article__heading_5" id="Событие-pointerdown"><a href="#Событие-pointerdown" class="article__heading-anchor"></a>Событие <code>pointerdown</code></h5><p>Генерируется в момент, когда устройство ввода входит в состояние <em>активного нажатия</em>:</p>
 <ul>
 <li>Для мыши – когда хотя бы одна клавиша нажата.</li>
 <li>Для перьевых и тач- устройств – состояние контакта с рабочей поверхностью устройства.</li>
 </ul>
 <p><a name="events-pointermove"></a></p>
-<h5 class="article__heading article__heading_5" id="Событие-codepointermovecode"><a href="#Событие-codepointermovecode" class="article__heading-anchor"></a>Событие <code>pointermove</code></h5><p>Генерируется при изменении координат указателя.</p>
+<h5 class="article__heading article__heading_5" id="Событие-pointermove"><a href="#Событие-pointermove" class="article__heading-anchor"></a>Событие <code>pointermove</code></h5><p>Генерируется при изменении координат указателя.</p>
 <p><a name="events-eventname"></a></p>
-<h5 class="article__heading article__heading_5" id="Событие-codepointerupcode"><a href="#Событие-codepointerupcode" class="article__heading-anchor"></a>Событие <code>pointerup</code></h5><p>Генерируется по выходу из состояния <em>активного нажатия</em>:</p>
+<h5 class="article__heading article__heading_5" id="Событие-pointerup"><a href="#Событие-pointerup" class="article__heading-anchor"></a>Событие <code>pointerup</code></h5><p>Генерируется по выходу из состояния <em>активного нажатия</em>:</p>
 <ul>
 <li>Для мыши это соответствует переходу от состояния, когда была нажата хотя бы одна клавиша, к состоянию без нажатых клавиш.</li>
 <li>Для перьевых и тач- устройств – моменту разрыва контакта с рабочей поверхностью устройства.</li>
 </ul>
 <p><a name="events-pointerout"></a></p>
-<h5 class="article__heading article__heading_5" id="Событие-codepointeroutcode"><a href="#Событие-codepointeroutcode" class="article__heading-anchor"></a>Событие <code>pointerout</code></h5><p>Генерируется при выходе указателя из <em>активной зоны</em> элемента:</p>
+<h5 class="article__heading article__heading_5" id="Событие-pointerout"><a href="#Событие-pointerout" class="article__heading-anchor"></a>Событие <code>pointerout</code></h5><p>Генерируется при выходе указателя из <em>активной зоны</em> элемента:</p>
 <ul>
 <li>Когда указатель покидает зону над элементом или одним из его потомков.</li>
 <li>После событий <code>pointerup</code> и <code>pointercancel</code> для устройств, не поддерживающих <code>hover</code>. Например, когда стилус (палец) покидает рабочую зону устройства.</li>
 </ul>
 <p><a name="events-pointerleave"></a></p>
-<h5 class="article__heading article__heading_5" id="Событие-codepointerleavecode"><a href="#Событие-codepointerleavecode" class="article__heading-anchor"></a>Событие <code>pointerleave</code></h5><p>Генерируется при выходе указателя из <em>активной зоны</em> элемента:</p>
+<h5 class="article__heading article__heading_5" id="Событие-pointerleave"><a href="#Событие-pointerleave" class="article__heading-anchor"></a>Событие <code>pointerleave</code></h5><p>Генерируется при выходе указателя из <em>активной зоны</em> элемента:</p>
 <ul>
 <li>Когда указатель покидает зону над элементом или одним из его потомков.</li>
 <li>После событий <code>pointerup</code> и <code>pointercancel</code> для устройств, не поддерживающих <code>hover</code>.</li>
 </ul>
 <p>Событие аналогично <code>pointerout</code>, но не всплывает.</p>
 <p><a name="events-eventname"></a></p>
-<h5 class="article__heading article__heading_5" id="Событие-codepointercancelcode"><a href="#Событие-codepointercancelcode" class="article__heading-anchor"></a>Событие <code>pointercancel</code></h5><p>Генерируется в случаях, когда:</p>
+<h5 class="article__heading article__heading_5" id="Событие-pointercancel"><a href="#Событие-pointercancel" class="article__heading-anchor"></a>Событие <code>pointercancel</code></h5><p>Генерируется в случаях, когда:</p>
 <ul>
 <li>Не предполагается дальнейшее возникновение pointer-событий (например, в следствие изменения аппаратных настроек).</li>
 <li>После генерации события <code>pointerdown</code>, если указатель был использован для масштабирования страницы.</li>
@@ -216,8 +216,8 @@ provide(BEMDOM.decl({ <span class="hljs-attr">block</span> : <span class="hljs-k
 <p>Например, событие генерируется при изменении ориентации устройства пока оно находится в состояние <em>активного нажатия</em>. Или при превышении лимита на количество одновременных нажатий, поддерживаемых устройством.</p>
 <p>После генерации события <code>pointercancel</code> последовательно генерируются события <code>pointerout</code> и <code>pointerleave</code>.</p>
 <p><a name="modifiers-type-pointernative"></a></p>
-<h4 class="article__heading article__heading_4" id="Модификатор-codetypecode-в-значении-codepointerpressrealeasecode"><a href="#Модификатор-codetypecode-в-значении-codepointerpressrealeasecode" class="article__heading-anchor"></a>Модификатор <code>type</code> в значении <code>pointerpressrealease</code></h4><p>Подключает полифил, реализующий события <code>pointerpress</code> и <code>pointerrelease</code>. Полифил использует события Pointer Events.</p>
+<h4 class="article__heading article__heading_4" id="Модификатор-type-в-значении-pointerpressrealease"><a href="#Модификатор-type-в-значении-pointerpressrealease" class="article__heading-anchor"></a>Модификатор <code>type</code> в значении <code>pointerpressrealease</code></h4><p>Подключает полифил, реализующий события <code>pointerpress</code> и <code>pointerrelease</code>. Полифил использует события Pointer Events.</p>
 <p><a name="events-eventname"></a></p>
-<h5 class="article__heading article__heading_5" id="Событие-codepointerpresscode"><a href="#Событие-codepointerpresscode" class="article__heading-anchor"></a>Событие <code>pointerpress</code></h5><p>Генерируется по событию <code>pointerdown</code>.</p>
+<h5 class="article__heading article__heading_5" id="Событие-pointerpress"><a href="#Событие-pointerpress" class="article__heading-anchor"></a>Событие <code>pointerpress</code></h5><p>Генерируется по событию <code>pointerdown</code>.</p>
 <p><a name="events-eventname"></a></p>
-<h5 class="article__heading article__heading_5" id="Событие-codepointerreleasecode"><a href="#Событие-codepointerreleasecode" class="article__heading-anchor"></a>Событие <code>pointerrelease</code></h5><p>Генерируется по событиям <code>pointerup</code> и <code>pointercancel</code>.</p>
+<h5 class="article__heading article__heading_5" id="Событие-pointerrelease"><a href="#Событие-pointerrelease" class="article__heading-anchor"></a>Событие <code>pointerrelease</code></h5><p>Генерируется по событиям <code>pointerup</code> и <code>pointercancel</code>.</p>

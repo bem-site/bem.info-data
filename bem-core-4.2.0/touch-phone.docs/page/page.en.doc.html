@@ -115,57 +115,57 @@
 <h2 class="article__heading article__heading_2" id="description-22"><a href="#description-22" class="article__heading-anchor"></a>Description</h2><p>This block is responsible for creating top-level HTML elements, connecting CSS, JS, and <code>&lt;meta&gt;</code> elements to a page, and defining the title. The BEMJSON declaration for the block and its elements have special fields reserved for this purpose.</p>
 <p><a name="declfields"></a></p>
 <h3 class="article__heading article__heading_3" id="special-fields-of-the-block-3"><a href="#special-fields-of-the-block-3" class="article__heading-anchor"></a>Special fields of the block</h3><p><a name="declfields-doctype"></a></p>
-<h4 class="article__heading article__heading_4" id="codedoctypecode-field-1"><a href="#codedoctypecode-field-1" class="article__heading-anchor"></a><code>doctype</code> field</h4><p>Type: <code>String</code>.</p>
+<h4 class="article__heading article__heading_4" id="codedoctype-field-1"><a href="#codedoctype-field-1" class="article__heading-anchor"></a><code>doctype</code> field</h4><p>Type: <code>String</code>.</p>
 <p>Use this field to explicitly set the DTD (Document Type Definition) for the current document. If omitted, <code>&lt;!DOCTYPE html&gt;</code> is used by default.</p>
 <p><a name="declfields-title"></a></p>
-<h4 class="article__heading article__heading_4" id="codetitlecode-field-1"><a href="#codetitlecode-field-1" class="article__heading-anchor"></a><code>title</code> field</h4><p>Type: <code>String</code>.</p>
+<h4 class="article__heading article__heading_4" id="codetitle-field-1"><a href="#codetitle-field-1" class="article__heading-anchor"></a><code>title</code> field</h4><p>Type: <code>String</code>.</p>
 <p>Title of the page. It becomes the <code>&lt;title&gt;</code> HTML element.</p>
 <!-- bem-example: tmp/data/bem-core-4.2.0/touch-phone.examples/page/1XbHawxtflVM-qdPJwcvW-qayC4 -->
 <p><a name="declfields-favicon"></a></p>
-<h4 class="article__heading article__heading_4" id="codefaviconcode-field-1"><a href="#codefaviconcode-field-1" class="article__heading-anchor"></a><code>favicon</code> field</h4><p>Type: <code>String</code>.</p>
+<h4 class="article__heading article__heading_4" id="codefavicon-field-1"><a href="#codefavicon-field-1" class="article__heading-anchor"></a><code>favicon</code> field</h4><p>Type: <code>String</code>.</p>
 <p>Use this field to specify the URL of the favicon for the page:</p>
 <!-- bem-example: tmp/data/bem-core-4.2.0/touch-phone.examples/page/X-TO8Z7nDRiM8DF4H6051sfaxTw -->
 <p><a name="declfields-head"></a></p>
-<h4 class="article__heading article__heading_4" id="codeheadcode-field-1"><a href="#codeheadcode-field-1" class="article__heading-anchor"></a><code>head</code> field</h4><p>Type: <code>BEMJSON</code>.</p>
+<h4 class="article__heading article__heading_4" id="codehead-field-1"><a href="#codehead-field-1" class="article__heading-anchor"></a><code>head</code> field</h4><p>Type: <code>BEMJSON</code>.</p>
 <p>Use this field to add content to the <code>&lt;head&gt;</code> <code>HTML</code> element that is defined in the block template:</p>
 <!-- bem-example: tmp/data/bem-core-4.2.0/touch-phone.examples/page/C5JlpbYiEJJi1-CF_BiQsfyVBfE -->
 <p><a name="declfields-styles"></a></p>
-<h4 class="article__heading article__heading_4" id="codestylescode-field-1"><a href="#codestylescode-field-1" class="article__heading-anchor"></a><code>styles</code> field</h4><p>Type: <code>BEMJSON</code>.</p>
+<h4 class="article__heading article__heading_4" id="codestyles-field-1"><a href="#codestyles-field-1" class="article__heading-anchor"></a><code>styles</code> field</h4><p>Type: <code>BEMJSON</code>.</p>
 <p>Use this field to connect <code>CSS</code>:</p>
 <!-- bem-example: tmp/data/bem-core-4.2.0/touch-phone.examples/page/HYH3vutSDd2joR1oc9kPHCb6K-w -->
 <p><a name="declfields-scripts"></a></p>
-<h4 class="article__heading article__heading_4" id="codescriptscode-field-1"><a href="#codescriptscode-field-1" class="article__heading-anchor"></a><code>scripts</code> field</h4><p>Type: <code>BEMJSON</code>.</p>
+<h4 class="article__heading article__heading_4" id="codescripts-field-1"><a href="#codescripts-field-1" class="article__heading-anchor"></a><code>scripts</code> field</h4><p>Type: <code>BEMJSON</code>.</p>
 <p>Embeds JS in the body of the page, at the end of the <code>&lt;body&gt;</code> HTML element:</p>
 <!-- bem-example: tmp/data/bem-core-4.2.0/touch-phone.examples/page/A_vbuJFTtKNZSs2LP0r6Oc8Kwsw -->
 <p><a name="declfields-content"></a></p>
-<h4 class="article__heading article__heading_4" id="codecontentcode-field-1"><a href="#codecontentcode-field-1" class="article__heading-anchor"></a><code>content</code> field</h4><p>Type: <code>BEMJSON</code>.</p>
+<h4 class="article__heading article__heading_4" id="codecontent-field-1"><a href="#codecontent-field-1" class="article__heading-anchor"></a><code>content</code> field</h4><p>Type: <code>BEMJSON</code>.</p>
 <p>Use this field to set the page content.</p>
 <!-- bem-example: tmp/data/bem-core-4.2.0/touch-phone.examples/page/XFUP7dDCxja7SQdMGjfwW5UDO2M -->
 <p><a name="elems"></a></p>
 <h3 class="article__heading article__heading_3" id="elements-of-the-block-21"><a href="#elements-of-the-block-21" class="article__heading-anchor"></a>Elements of the block</h3><p><a name="elems-css"></a></p>
-<h4 class="article__heading article__heading_4" id="codecsscode-element-1"><a href="#codecsscode-element-1" class="article__heading-anchor"></a><code>css</code> element</h4><p>Connects CSS using a URL or a string. Depending on whether the <code>url</code> field is specified in the element declaration, an HTML element is created with the tag:</p>
+<h4 class="article__heading article__heading_4" id="codecss-element-1"><a href="#codecss-element-1" class="article__heading-anchor"></a><code>css</code> element</h4><p>Connects CSS using a URL or a string. Depending on whether the <code>url</code> field is specified in the element declaration, an HTML element is created with the tag:</p>
 <ul>
 <li><code>&lt;link&gt;</code> and the <code>stylesheet</code> property, if <code>url</code> is specified.</li>
 <li><code>&lt;style&gt;</code>, if <code>url</code> is omitted. In this case, it is assumed that the element content is passed using the <code>content</code> property in the element&#39;s BEMJSON declaration.</li>
 </ul>
 <p><a name="elems-css-declfields-content"></a></p>
-<h5 class="article__heading article__heading_5" id="specialized-codecontentcode-field-2"><a href="#specialized-codecontentcode-field-2" class="article__heading-anchor"></a>Specialized <code>content</code> field</h5><p>Type: <code>String</code>.</p>
+<h5 class="article__heading article__heading_5" id="specialized-content-field-2"><a href="#specialized-content-field-2" class="article__heading-anchor"></a>Specialized <code>content</code> field</h5><p>Type: <code>String</code>.</p>
 <p>Use this field for explicitly passing the content of the <code>&lt;style&gt;</code> HTML element:</p>
 <!-- bem-example: tmp/data/bem-core-4.2.0/touch-phone.examples/page/PeIoncFtgjqSTzb7R7VpvEI_Av0 -->
 <p><a name="elems-css-declfields-url"></a></p>
-<h5 class="article__heading article__heading_5" id="specialized-codeurlcode-field-2"><a href="#specialized-codeurlcode-field-2" class="article__heading-anchor"></a>Specialized <code>url</code> field</h5><p>Type: <code>String</code>.</p>
+<h5 class="article__heading article__heading_5" id="specialized-url-field-2"><a href="#specialized-url-field-2" class="article__heading-anchor"></a>Specialized <code>url</code> field</h5><p>Type: <code>String</code>.</p>
 <p>Sets the URL for downloading CSS. The value of the <code>url</code> field in the BEMJSON declaration is passed to the <code>href</code> property in the created HTML element.</p>
 <p><a name="elems-js"></a></p>
-<h4 class="article__heading article__heading_4" id="codejscode-element-1"><a href="#codejscode-element-1" class="article__heading-anchor"></a><code>js</code> element</h4><p>Connects JS using a URL or a string. Creates the <code>&lt;script&gt;</code> HTML element.</p>
+<h4 class="article__heading article__heading_4" id="codejs-element-1"><a href="#codejs-element-1" class="article__heading-anchor"></a><code>js</code> element</h4><p>Connects JS using a URL or a string. Creates the <code>&lt;script&gt;</code> HTML element.</p>
 <p><a name="elems-js-declfields-content"></a></p>
-<h5 class="article__heading article__heading_5" id="specialized-codecontentcode-field-3"><a href="#specialized-codecontentcode-field-3" class="article__heading-anchor"></a>Specialized <code>content</code> field</h5><p>Type: <code>String</code>.</p>
+<h5 class="article__heading article__heading_5" id="specialized-content-field-3"><a href="#specialized-content-field-3" class="article__heading-anchor"></a>Specialized <code>content</code> field</h5><p>Type: <code>String</code>.</p>
 <p>Use this field for explicitly passing the content of the <code>&lt;script&gt;</code> HTML element:</p>
 <!-- bem-example: tmp/data/bem-core-4.2.0/touch-phone.examples/page/gyO3dP0eqhvRshKuh46fxynk9hQ -->
 <p><a name="elems-js-declfields-url"></a></p>
-<h5 class="article__heading article__heading_5" id="specialized-codeurlcode-field-3"><a href="#specialized-codeurlcode-field-3" class="article__heading-anchor"></a>Specialized <code>url</code> field</h5><p>Type: <code>String</code>.</p>
+<h5 class="article__heading article__heading_5" id="specialized-url-field-3"><a href="#specialized-url-field-3" class="article__heading-anchor"></a>Specialized <code>url</code> field</h5><p>Type: <code>String</code>.</p>
 <p>Sets the URL for downloading a script. The value of the <code>url</code> field in the BEMJSON declaration is passed to the <code>src</code> property in the created HTML element.</p>
 <!-- bem-example: tmp/data/bem-core-4.2.0/touch-phone.examples/page/wRN9Y9I9KBSKKEWD1yt-9EuU5Lc -->
 <p><a name="elems-meta"></a></p>
-<h4 class="article__heading article__heading_4" id="codemetacode-element-1"><a href="#codemetacode-element-1" class="article__heading-anchor"></a><code>meta</code> element</h4><p>Creates <code>&lt;meta&gt;</code> HTML elements and defines user metadata for them. Metadata is passed as keys and values of attribute hashes, the <code>attrs</code> properties in the BEMJSON declaration of the element:</p>
+<h4 class="article__heading article__heading_4" id="codemeta-element-1"><a href="#codemeta-element-1" class="article__heading-anchor"></a><code>meta</code> element</h4><p>Creates <code>&lt;meta&gt;</code> HTML elements and defines user metadata for them. Metadata is passed as keys and values of attribute hashes, the <code>attrs</code> properties in the BEMJSON declaration of the element:</p>
 <!-- bem-example: tmp/data/bem-core-4.2.0/touch-phone.examples/page/3t2C9iIsNub9op3nF8YfQF30IuQ -->
 <p>For more information, see the documentation for <code>&lt;meta&gt;</code> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta">at MDN</a>.</p>

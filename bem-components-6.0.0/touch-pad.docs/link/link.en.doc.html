@@ -80,7 +80,7 @@
 </table>
 <h2 class="article__heading article__heading_2" id="block-description-45"><a href="#block-description-45" class="article__heading-anchor"></a>Block description</h2><p>Use the <code>link</code> block control the size, state, and appearance of the links.</p>
 <h3 class="article__heading article__heading_3" id="modifiers-of-the-block-83"><a href="#modifiers-of-the-block-83" class="article__heading-anchor"></a>Modifiers of the block</h3><p><a name="pseudo"></a></p>
-<h4 class="article__heading article__heading_4" id="codepseudocode-modifier-2"><a href="#codepseudocode-modifier-2" class="article__heading-anchor"></a><code>pseudo</code> modifier</h4><p>Acceptable value: <code>true</code>.</p>
+<h4 class="article__heading article__heading_4" id="codepseudo-modifier-2"><a href="#codepseudo-modifier-2" class="article__heading-anchor"></a><code>pseudo</code> modifier</h4><p>Acceptable value: <code>true</code>.</p>
 <p>Use case: <code>BEMJSON</code>.</p>
 <p>Use to create the link that does not lead to a new webpage.</p>
 <pre><code class="lang-javascript">{
@@ -90,12 +90,12 @@
 }
 </code></pre>
 <p><a name="disabled"></a></p>
-<h4 class="article__heading article__heading_4" id="codedisabledcode-modifier-31"><a href="#codedisabledcode-modifier-31" class="article__heading-anchor"></a><code>disabled</code> modifier</h4><p>Acceptable value: <code>true</code>.</p>
+<h4 class="article__heading article__heading_4" id="codedisabled-modifier-31"><a href="#codedisabled-modifier-31" class="article__heading-anchor"></a><code>disabled</code> modifier</h4><p>Acceptable value: <code>true</code>.</p>
 <p>Use case: <code>BEMJSON</code>, <code>JS</code>.</p>
 <p>The modifier makes the block inactive. The disabled block is visible but not available for user actions.</p>
 <!-- bem-example: tmp/data/bem-components-6.0.0/touch-pad.examples/link/oLIDtS_dhHZYFcptXqdzTzD0v0E -->
 <p><a name="focused"></a></p>
-<h4 class="article__heading article__heading_4" id="codefocusedcode-modifier-26"><a href="#codefocusedcode-modifier-26" class="article__heading-anchor"></a><code>focused</code> modifier</h4><p>Acceptable value: <code>true</code>.</p>
+<h4 class="article__heading article__heading_4" id="codefocused-modifier-26"><a href="#codefocused-modifier-26" class="article__heading-anchor"></a><code>focused</code> modifier</h4><p>Acceptable value: <code>true</code>.</p>
 <p>Use case: <code>BEMJSON</code>, <code>JS</code>.</p>
 <p>The modifier puts the focus on the block.</p>
 <pre><code class="lang-javascript">{
@@ -106,13 +106,13 @@
 }
 </code></pre>
 <p><a name="theme"></a></p>
-<h4 class="article__heading article__heading_4" id="codethemecode-modifier-37"><a href="#codethemecode-modifier-37" class="article__heading-anchor"></a><code>theme</code> modifier</h4><p>Acceptable value: <code>&#39;islands&#39;</code>.</p>
+<h4 class="article__heading article__heading_4" id="codetheme-modifier-37"><a href="#codetheme-modifier-37" class="article__heading-anchor"></a><code>theme</code> modifier</h4><p>Acceptable value: <code>&#39;islands&#39;</code>.</p>
 <p>Use case: <code>BEMJSON</code>.</p>
 <p>The modifier gives the block a custom design.</p>
 <p>The <code>islands</code> theme requires the <a href="#size">size</a> modifier.</p>
 <!-- bem-example: tmp/data/bem-components-6.0.0/touch-pad.examples/link/La0iB39G9WbEoHPZTqgEA0dOpsA -->
 <p><a name="size"></a></p>
-<h4 class="article__heading article__heading_4" id="codesizecode-modifier-31"><a href="#codesizecode-modifier-31" class="article__heading-anchor"></a><code>size</code> modifier</h4><p>Acceptable values for the <code>islands</code> theme: <code>&#39;s&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>, <code>&#39;xl&#39;</code>.</p>
+<h4 class="article__heading article__heading_4" id="codesize-modifier-31"><a href="#codesize-modifier-31" class="article__heading-anchor"></a><code>size</code> modifier</h4><p>Acceptable values for the <code>islands</code> theme: <code>&#39;s&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>, <code>&#39;xl&#39;</code>.</p>
 <p>Use case: <code>BEMJSON</code>.</p>
 <p>Use the <code>size</code> modifier only for blocks with the <code>islands</code> <a href="#theme">theme</a>.</p>
 <p>Sets the size value for all types of links.</p>
@@ -125,32 +125,32 @@
 <p><strong>xl</strong></p>
 <!-- bem-example: tmp/data/bem-components-6.0.0/touch-pad.examples/link/wipY5WLhnwfSk_y56R7cj1lno4Y -->
 <p><a name="view"></a></p>
-<h4 class="article__heading article__heading_4" id="codeviewcode-modifier-5"><a href="#codeviewcode-modifier-5" class="article__heading-anchor"></a><code>view</code> modifier</h4><p>Acceptable values: <code>&#39;minor&#39;</code>, <code>&#39;external&#39;</code>, <code>&#39;ghost&#39;</code>, <code>&#39;text&#39;</code>, <code>&#39;strong&#39;</code>.</p>
+<h4 class="article__heading article__heading_4" id="codeview-modifier-5"><a href="#codeview-modifier-5" class="article__heading-anchor"></a><code>view</code> modifier</h4><p>Acceptable values: <code>&#39;minor&#39;</code>, <code>&#39;external&#39;</code>, <code>&#39;ghost&#39;</code>, <code>&#39;text&#39;</code>, <code>&#39;strong&#39;</code>.</p>
 <p>Use case: <code>BEMJSON</code>.</p>
-<h5 class="article__heading article__heading_5" id="secondary-link-codeviewcode-modifier-with-codeminorcode-value-2"><a href="#secondary-link-codeviewcode-modifier-with-codeminorcode-value-2" class="article__heading-anchor"></a>Secondary link (<code>view</code> modifier with <code>minor</code> value)</h5><p>The modifier visually highlights secondary links on a page.</p>
+<h5 class="article__heading article__heading_5" id="secondary-link-view-modifier-with-minor-value-2"><a href="#secondary-link-view-modifier-with-minor-value-2" class="article__heading-anchor"></a>Secondary link (<code>view</code> modifier with <code>minor</code> value)</h5><p>The modifier visually highlights secondary links on a page.</p>
 <!-- bem-example: tmp/data/bem-components-6.0.0/touch-pad.examples/link/AjpO5BHOjKkTGc4kr2GSYb9MXhw -->
-<h5 class="article__heading article__heading_5" id="external-link-codeviewcode-modifier-with-codeexternalcode-value-2"><a href="#external-link-codeviewcode-modifier-with-codeexternalcode-value-2" class="article__heading-anchor"></a>External link (<code>view</code> modifier with <code>external</code> value)</h5><p>The modifier visually highlights external links on a page.</p>
+<h5 class="article__heading article__heading_5" id="external-link-view-modifier-with-external-value-2"><a href="#external-link-view-modifier-with-external-value-2" class="article__heading-anchor"></a>External link (<code>view</code> modifier with <code>external</code> value)</h5><p>The modifier visually highlights external links on a page.</p>
 <!-- bem-example: tmp/data/bem-components-6.0.0/touch-pad.examples/link/71U60hcshkNq6N7r3bazIU7-j_Q -->
-<h5 class="article__heading article__heading_5" id="ghost-link-codeviewcode-modifier-with-codeghostcode-value-2"><a href="#ghost-link-codeviewcode-modifier-with-codeghostcode-value-2" class="article__heading-anchor"></a>Ghost link (<code>view</code> modifier with <code>ghost</code> value)</h5><p>The modifier changes the way the link looks. Use it if you don&#39;t want the link to stand out on the page:</p>
+<h5 class="article__heading article__heading_5" id="ghost-link-view-modifier-with-ghost-value-2"><a href="#ghost-link-view-modifier-with-ghost-value-2" class="article__heading-anchor"></a>Ghost link (<code>view</code> modifier with <code>ghost</code> value)</h5><p>The modifier changes the way the link looks. Use it if you don&#39;t want the link to stand out on the page:</p>
 <!-- bem-example: tmp/data/bem-components-6.0.0/touch-pad.examples/link/IMofxFUXUMBf0_taUsHStcQwHWQ -->
-<h5 class="article__heading article__heading_5" id="link-to-match-text-codeviewcode-modifier-with-codetextcode-value-2"><a href="#link-to-match-text-codeviewcode-modifier-with-codetextcode-value-2" class="article__heading-anchor"></a>Link to match text (<code>view</code> modifier with <code>text</code> value)</h5><p>Use this modifier to create a link that matches the text color.</p>
+<h5 class="article__heading article__heading_5" id="link-to-match-text-view-modifier-with-text-value-2"><a href="#link-to-match-text-view-modifier-with-text-value-2" class="article__heading-anchor"></a>Link to match text (<code>view</code> modifier with <code>text</code> value)</h5><p>Use this modifier to create a link that matches the text color.</p>
 <!-- bem-example: tmp/data/bem-components-6.0.0/touch-pad.examples/link/9jKaKJu2Ft69DBlkb_6JwJ8i1PU -->
-<h5 class="article__heading article__heading_5" id="bold-link-codeviewcode-modifier-with-codestrongcode-value-2"><a href="#bold-link-codeviewcode-modifier-with-codestrongcode-value-2" class="article__heading-anchor"></a>Bold link (<code>view</code> modifier with <code>strong</code> value)</h5><p>The modifier visually highlights important links on a page.</p>
+<h5 class="article__heading article__heading_5" id="bold-link-view-modifier-with-strong-value-2"><a href="#bold-link-view-modifier-with-strong-value-2" class="article__heading-anchor"></a>Bold link (<code>view</code> modifier with <code>strong</code> value)</h5><p>The modifier visually highlights important links on a page.</p>
 <!-- bem-example: tmp/data/bem-components-6.0.0/touch-pad.examples/link/A2se8PWfFP7uLF1-DfqU271KVng -->
 <h3 class="article__heading article__heading_3" id="custom-fields-of-the-block-87"><a href="#custom-fields-of-the-block-87" class="article__heading-anchor"></a>Custom fields of the block</h3><p><a name="url"></a></p>
-<h4 class="article__heading article__heading_4" id="codeurlcode-field-11"><a href="#codeurlcode-field-11" class="article__heading-anchor"></a><code>url</code> field</h4><p>Type: <code>String</code>.</p>
+<h4 class="article__heading article__heading_4" id="codeurl-field-11"><a href="#codeurl-field-11" class="article__heading-anchor"></a><code>url</code> field</h4><p>Type: <code>String</code>.</p>
 <p>Specifies the link address that will be opened by clicking the link.</p>
 <!-- bem-example: tmp/data/bem-components-6.0.0/touch-pad.examples/link/La0iB39G9WbEoHPZTqgEA0dOpsA -->
 <p><a name="title"></a></p>
-<h4 class="article__heading article__heading_4" id="codetitlecode-title-5"><a href="#codetitlecode-title-5" class="article__heading-anchor"></a><code>title</code> title</h4><p>Type: <code>String</code>.</p>
+<h4 class="article__heading article__heading_4" id="codetitle-title-5"><a href="#codetitle-title-5" class="article__heading-anchor"></a><code>title</code> title</h4><p>Type: <code>String</code>.</p>
 <p>Specifies the tooltip content. The tooltip appearance depends on the browser and your operating system settings. You cannot change it applying HTML or different styles.</p>
 <!-- bem-example: tmp/data/bem-components-6.0.0/touch-pad.examples/link/jUu3ZUo_MqtoT3uWnEfMGvFsjvI -->
 <p><a name="target"></a></p>
-<h4 class="article__heading article__heading_4" id="codetargetcode-field-2"><a href="#codetargetcode-field-2" class="article__heading-anchor"></a><code>target</code> field</h4><p>Type: <code>String</code>.</p>
+<h4 class="article__heading article__heading_4" id="codetarget-field-2"><a href="#codetarget-field-2" class="article__heading-anchor"></a><code>target</code> field</h4><p>Type: <code>String</code>.</p>
 <p>Specifies the link behavior.</p>
 <p>The field supports all HTML attribute values of the <code>target</code>: <code>_blank</code>, <code>_self</code> (default), <code>_parent</code>, <code>_top</code>.</p>
 <!-- bem-example: tmp/data/bem-components-6.0.0/touch-pad.examples/link/ZoYtlMvnwHQ-caKdGVJRQIJqzSs -->
 <p><a name="tabIndex"></a></p>
-<h4 class="article__heading article__heading_4" id="codetabindexcode-field-14"><a href="#codetabindexcode-field-14" class="article__heading-anchor"></a><code>tabIndex</code> field</h4><p>Type: <code>Number</code>.</p>
+<h4 class="article__heading article__heading_4" id="codetabindex-field-14"><a href="#codetabindex-field-14" class="article__heading-anchor"></a><code>tabIndex</code> field</h4><p>Type: <code>Number</code>.</p>
 <p>Specifies the tab order when pressing <code>Tab</code> to navigate between controls on a page.</p>
 <!-- bem-example: tmp/data/bem-components-6.0.0/touch-pad.examples/link/uzI2s-E0ZmT7x3hkVhFnd9kprJY -->

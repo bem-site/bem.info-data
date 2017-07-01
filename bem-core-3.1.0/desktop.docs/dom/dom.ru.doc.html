@@ -41,7 +41,7 @@
 </ul>
 <h2 class="article__heading article__heading_2" id="Описание-1"><a href="#Описание-1" class="article__heading-anchor"></a>Описание</h2><p><a name="fields"></a></p>
 <h3 class="article__heading article__heading_3" id="Свойства-и-методы-объекта-3"><a href="#Свойства-и-методы-объекта-3" class="article__heading-anchor"></a>Свойства и методы объекта</h3><p><a name="fields-contains"></a></p>
-<h4 class="article__heading article__heading_4" id="Метод-codecontainscode"><a href="#Метод-codecontainscode" class="article__heading-anchor"></a>Метод <code>contains</code></h4><p>Метод позволяет проверить содержит ли некоторый DOM-элемент <code>ctx</code> элемент <code>domElem</code>.</p>
+<h4 class="article__heading article__heading_4" id="Метод-contains"><a href="#Метод-contains" class="article__heading-anchor"></a>Метод <code>contains</code></h4><p>Метод позволяет проверить содержит ли некоторый DOM-элемент <code>ctx</code> элемент <code>domElem</code>.</p>
 <p>Принимаемые аргументы: </p>
 <ul>
 <li><code>ctx</code> <code>{jQuery}</code> – DOM-элемент внутри которого производится поиск. Обязательный аргумент.</li>
@@ -61,7 +61,7 @@ dom.contains($(<span class="hljs-string">'.block1'</span>), $(<span class="hljs-
 });
 </code></pre>
 <p><a name="fields-getFocused"></a></p>
-<h4 class="article__heading article__heading_4" id="Метод-codegetfocusedcode"><a href="#Метод-codegetfocusedcode" class="article__heading-anchor"></a>Метод <code>getFocused</code></h4><p>Метод служит для получения ссылки на DOM-элемент, находящийся в фокусе. </p>
+<h4 class="article__heading article__heading_4" id="Метод-getfocused"><a href="#Метод-getfocused" class="article__heading-anchor"></a>Метод <code>getFocused</code></h4><p>Метод служит для получения ссылки на DOM-элемент, находящийся в фокусе. </p>
 <p>Не принимает аргументов.</p>
 <p>Возвращаемое значение: <code>{jQuery}</code> – объект в фокусе.</p>
 <p>Например:</p>
@@ -72,7 +72,7 @@ dom.getFocused(); <span class="hljs-comment">// ссылка на элемент
 });
 </code></pre>
 <p><a name="fields-containsFocus"></a></p>
-<h4 class="article__heading article__heading_4" id="Метод-codecontainsfocuscode"><a href="#Метод-codecontainsfocuscode" class="article__heading-anchor"></a>Метод <code>containsFocus</code></h4><p>Метод проверяет находится ли в фокусе переданный аргументом DOM-элемент или один из его потомков.</p>
+<h4 class="article__heading article__heading_4" id="Метод-containsfocus"><a href="#Метод-containsfocus" class="article__heading-anchor"></a>Метод <code>containsFocus</code></h4><p>Метод проверяет находится ли в фокусе переданный аргументом DOM-элемент или один из его потомков.</p>
 <p>Принимаемые аргументы: </p>
 <ul>
 <li><code>domElem</code> <code>{jQuery}</code> – проверяемый DOM-элемент. Обязательный аргумент.</li>
@@ -92,7 +92,7 @@ dom.containsFocus($(<span class="hljs-string">'.block1'</span>));  <span class="
 });
 </code></pre>
 <p><a name="fields-isFocusable"></a></p>
-<h4 class="article__heading article__heading_4" id="Метод-codeisfocusablecode"><a href="#Метод-codeisfocusablecode" class="article__heading-anchor"></a>Метод <code>isFocusable</code></h4><p>Метод проверят может ли браузер пользователя установить фокус на переданный аргументом DOM-элемент.   </p>
+<h4 class="article__heading article__heading_4" id="Метод-isfocusable"><a href="#Метод-isfocusable" class="article__heading-anchor"></a>Метод <code>isFocusable</code></h4><p>Метод проверят может ли браузер пользователя установить фокус на переданный аргументом DOM-элемент.   </p>
 <p>Принимаемые аргументы: </p>
 <ul>
 <li><code>domElem</code> <code>{jQuery}</code> – проверяемый DOM-элемент. Обязательный аргумент. Если в jQuery-цепочке несколько DOM-элементов, то проверяется первый из них.</li>
@@ -119,7 +119,7 @@ dom.isFocusable($(<span class="hljs-string">'.menu__item'</span>)); <span class=
 });
 </code></pre>
 <p><a name="fields-isEditable"></a></p>
-<h4 class="article__heading article__heading_4" id="Метод-codeiseditablecode"><a href="#Метод-codeiseditablecode" class="article__heading-anchor"></a>Метод <code>isEditable</code></h4><p>Метод проверят возможен ли в переданном аргументом DOM-элементе ввод текста. Другими словами, с помощью метода можно проверить является ли элемент полем ввода, текстовой областью и т.п.</p>
+<h4 class="article__heading article__heading_4" id="Метод-iseditable"><a href="#Метод-iseditable" class="article__heading-anchor"></a>Метод <code>isEditable</code></h4><p>Метод проверят возможен ли в переданном аргументом DOM-элементе ввод текста. Другими словами, с помощью метода можно проверить является ли элемент полем ввода, текстовой областью и т.п.</p>
 <p>Принимаемые аргументы: </p>
 <ul>
 <li><code>domElem</code> <code>{jQuery}</code> – проверяемый DOM-элемент. Обязательный аргумент. Если в jQuery-цепочке несколько DOM-элементов, то проверяется первый из них.</li>

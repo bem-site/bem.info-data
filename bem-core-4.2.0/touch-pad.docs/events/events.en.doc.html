@@ -143,7 +143,7 @@
 <li><code>vanilla.js</code></li>
 </ul>
 <h2 class="article__heading article__heading_2" id="description-28"><a href="#description-28" class="article__heading-anchor"></a>Description</h2><p><a name="class-Event"></a></p>
-<h3 class="article__heading article__heading_3" id="codeeventcode-class-2"><a href="#codeeventcode-class-2" class="article__heading-anchor"></a><code>Event</code> class</h3><p>You can use this class to instantiate an event object by indicating its type and source. To do this, use the <code>Event</code> constructor function.</p>
+<h3 class="article__heading article__heading_3" id="codeevent-class-2"><a href="#codeevent-class-2" class="article__heading-anchor"></a><code>Event</code> class</h3><p>You can use this class to instantiate an event object by indicating its type and source. To do this, use the <code>Event</code> constructor function.</p>
 <p><strong>Accepted arguments:</strong></p>
 <ul>
 <li><code>type {String}</code> – Type of event. Required argument.</li>
@@ -152,7 +152,7 @@
 <p><strong>Return value:</strong> <code>Event</code>. The event object.</p>
 <p><a name="fields-Event"></a></p>
 <h4 class="article__heading article__heading_4" id="properties-and-methods-of-the-class-object-7"><a href="#properties-and-methods-of-the-class-object-7" class="article__heading-anchor"></a>Properties and methods of the class object</h4><p><a name="fields-type"></a></p>
-<h5 class="article__heading article__heading_5" id="codetypecode-property-2"><a href="#codetypecode-property-2" class="article__heading-anchor"></a><code>type</code> property</h5><p>Type: <code>String</code>.</p>
+<h5 class="article__heading article__heading_5" id="codetype-property-2"><a href="#codetype-property-2" class="article__heading-anchor"></a><code>type</code> property</h5><p>Type: <code>String</code>.</p>
 <p>Type of event.</p>
 <pre><code class="lang-js">modules.require([<span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">events</span>) </span>{
 
@@ -162,10 +162,10 @@
 });
 </code></pre>
 <p><a name="fields-type"></a></p>
-<h5 class="article__heading article__heading_5" id="codetargetcode-property-2"><a href="#codetargetcode-property-2" class="article__heading-anchor"></a><code>target</code> property</h5><p>Type: <code>Object</code>.</p>
+<h5 class="article__heading article__heading_5" id="codetarget-property-2"><a href="#codetarget-property-2" class="article__heading-anchor"></a><code>target</code> property</h5><p>Type: <code>Object</code>.</p>
 <p>The object where the event occurred.</p>
 <p><a name="fields-result"></a></p>
-<h5 class="article__heading article__heading_5" id="coderesultcode-property-2"><a href="#coderesultcode-property-2" class="article__heading-anchor"></a><code>result</code> property</h5><p>Type: <code>*</code>.</p>
+<h5 class="article__heading article__heading_5" id="coderesult-property-2"><a href="#coderesult-property-2" class="article__heading-anchor"></a><code>result</code> property</h5><p>Type: <code>*</code>.</p>
 <p>Contains the data returned by the event&#39;s last handler function.</p>
 <pre><code class="lang-js">modules.require([<span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">events</span>) </span>{
 
@@ -179,7 +179,7 @@
 });
 </code></pre>
 <p><a name="fields-data"></a></p>
-<h5 class="article__heading article__heading_5" id="codedatacode-property-2"><a href="#codedatacode-property-2" class="article__heading-anchor"></a><code>data</code> property</h5><p>Type: <code>*</code>.</p>
+<h5 class="article__heading article__heading_5" id="codedata-property-2"><a href="#codedata-property-2" class="article__heading-anchor"></a><code>data</code> property</h5><p>Type: <code>*</code>.</p>
 <p>Contains the data passed to the event&#39;s handler function as an argument.</p>
 <pre><code class="lang-js">modules.require([<span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">events</span>) </span>{
 
@@ -190,23 +190,23 @@
 });
 </code></pre>
 <p><a name="fields-preventDefault"></a></p>
-<h5 class="article__heading article__heading_5" id="codepreventdefaultcode-method-2"><a href="#codepreventdefaultcode-method-2" class="article__heading-anchor"></a><code>preventDefault</code> method</h5><p>Allows you to prevent execution of the default action for the event.</p>
+<h5 class="article__heading article__heading_5" id="codepreventdefault-method-2"><a href="#codepreventdefault-method-2" class="article__heading-anchor"></a><code>preventDefault</code> method</h5><p>Allows you to prevent execution of the default action for the event.</p>
 <p>Doesn&#39;t accept arguments.</p>
 <p>No return value.</p>
 <p><a name="fields-isDefaultPrevented"></a></p>
-<h5 class="article__heading article__heading_5" id="codeisdefaultpreventedcode-method-2"><a href="#codeisdefaultpreventedcode-method-2" class="article__heading-anchor"></a><code>isDefaultPrevented</code> method</h5><p>Allows you to check whether the default action for the event was prevented from being executed.</p>
+<h5 class="article__heading article__heading_5" id="codeisdefaultprevented-method-2"><a href="#codeisdefaultprevented-method-2" class="article__heading-anchor"></a><code>isDefaultPrevented</code> method</h5><p>Allows you to check whether the default action for the event was prevented from being executed.</p>
 <p>Doesn&#39;t accept arguments.</p>
 <p><strong>Return value:</strong> <code>Boolean</code>. If the default action for the event was prevented from being executed, it is <code>true</code>.</p>
 <p><a name="fields-stopPropagation"></a></p>
-<h5 class="article__heading article__heading_5" id="codestoppropagationcode-method-2"><a href="#codestoppropagationcode-method-2" class="article__heading-anchor"></a><code>stopPropagation</code> method</h5><p>Allows you to stop event propagation.</p>
+<h5 class="article__heading article__heading_5" id="codestoppropagation-method-2"><a href="#codestoppropagation-method-2" class="article__heading-anchor"></a><code>stopPropagation</code> method</h5><p>Allows you to stop event propagation.</p>
 <p>Doesn&#39;t accept arguments.</p>
 <p>No return value.</p>
 <p><a name="fields-isPropagationStopped"></a></p>
-<h5 class="article__heading article__heading_5" id="codeispropagationstoppedcode-method-2"><a href="#codeispropagationstoppedcode-method-2" class="article__heading-anchor"></a><code>isPropagationStopped</code> method</h5><p>Allows you to check whether event propagation was stopped.</p>
+<h5 class="article__heading article__heading_5" id="codeispropagationstopped-method-2"><a href="#codeispropagationstopped-method-2" class="article__heading-anchor"></a><code>isPropagationStopped</code> method</h5><p>Allows you to check whether event propagation was stopped.</p>
 <p>Doesn&#39;t accept arguments.</p>
 <p><strong>Return value:</strong> <code>Boolean</code>. If event propagation was stopped, it is <code>true</code>.</p>
 <p><a name="class-Emitter"></a></p>
-<h3 class="article__heading article__heading_3" id="codeemittercode-class-2"><a href="#codeemittercode-class-2" class="article__heading-anchor"></a><code>Emitter</code> class</h3><p>This class instantiates objects that you can use for generating events and subscribing to them.</p>
+<h3 class="article__heading article__heading_3" id="codeemitter-class-2"><a href="#codeemitter-class-2" class="article__heading-anchor"></a><code>Emitter</code> class</h3><p>This class instantiates objects that you can use for generating events and subscribing to them.</p>
 <pre><code class="lang-js">modules.require([<span class="hljs-string">'events'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">events</span>) </span>{
 
     <span class="hljs-keyword">var</span> myEmitter = <span class="hljs-keyword">new</span> events.Emitter();
@@ -215,7 +215,7 @@
 </code></pre>
 <p><a name="fields-Event"></a></p>
 <h4 class="article__heading article__heading_4" id="properties-and-methods-of-the-class-object-8"><a href="#properties-and-methods-of-the-class-object-8" class="article__heading-anchor"></a>Properties and methods of the class object</h4><p><a name="fields-on"></a></p>
-<h5 class="article__heading article__heading_5" id="codeoncode-method-2"><a href="#codeoncode-method-2" class="article__heading-anchor"></a><code>on</code> method</h5><p>Subscribes to a specific type of event.</p>
+<h5 class="article__heading article__heading_5" id="codeon-method-2"><a href="#codeon-method-2" class="article__heading-anchor"></a><code>on</code> method</h5><p>Subscribes to a specific type of event.</p>
 <p><strong>Accepted arguments:</strong></p>
 <ul>
 <li><code>type {String}</code> – The type of event being subscribed to. Required argument.</li>
@@ -264,7 +264,7 @@
 </code></pre>
 <p>The same is true for the <code>once</code> and <code>un</code> methods.</p>
 <p><a name="fields-once"></a></p>
-<h5 class="article__heading article__heading_5" id="codeoncecode-method-2"><a href="#codeoncecode-method-2" class="article__heading-anchor"></a><code>once</code> method</h5><p>Identical to the <code>on</code> method, but it only executes once. After the first event, the subscription is removed.</p>
+<h5 class="article__heading article__heading_5" id="codeonce-method-2"><a href="#codeonce-method-2" class="article__heading-anchor"></a><code>once</code> method</h5><p>Identical to the <code>on</code> method, but it only executes once. After the first event, the subscription is removed.</p>
 <p><strong>Accepted arguments:</strong></p>
 <ul>
 <li><code>type {String}</code> – The type of event being subscribed to. Required argument.</li>
@@ -284,7 +284,7 @@
 });
 </code></pre>
 <p><a name="fields-un"></a></p>
-<h5 class="article__heading article__heading_5" id="codeuncode-method-2"><a href="#codeuncode-method-2" class="article__heading-anchor"></a><code>un</code> method</h5><p>Removes a previously set subscription to a specific type of event.</p>
+<h5 class="article__heading article__heading_5" id="codeun-method-2"><a href="#codeun-method-2" class="article__heading-anchor"></a><code>un</code> method</h5><p>Removes a previously set subscription to a specific type of event.</p>
 <p><strong>Accepted arguments:</strong></p>
 <ul>
 <li><code>type {String}</code> – The type of event being unsubscribed from. Required argument.</li>
@@ -305,7 +305,7 @@
 });
 </code></pre>
 <p><a name="fields-emit"></a></p>
-<h5 class="article__heading article__heading_5" id="codeemitcode-method-2"><a href="#codeemitcode-method-2" class="article__heading-anchor"></a><code>emit</code> method</h5><p>Generates an event.</p>
+<h5 class="article__heading article__heading_5" id="codeemit-method-2"><a href="#codeemit-method-2" class="article__heading-anchor"></a><code>emit</code> method</h5><p>Generates an event.</p>
 <p>This method calls all the handler functions set for the event.</p>
 <p><strong>Accepted arguments:</strong></p>
 <ul>
@@ -324,7 +324,7 @@
 <h4 class="article__heading article__heading_4" id="static-methods-of-the-class-2"><a href="#static-methods-of-the-class-2" class="article__heading-anchor"></a>Static methods of the class</h4><p>The set of static methods and their signatures is exactly the same as for the methods of the object being instantiated by the class.</p>
 
 <p><a name="elems-channels"></a></p>
-<h1 class="article__heading article__heading_1" id="codechannelscode-element-in-the-codeeventscode-block-2"><a href="#codechannelscode-element-in-the-codeeventscode-block-2" class="article__heading-anchor"></a><code>channels</code> element in the <code>events</code> block</h1><p>Use the <code>channels</code> element in the <code>events</code> block for working with named event channels. Named channels allow you to work with events using the observer pattern (also known as the publish-subscribe pattern).</p>
+<h1 class="article__heading article__heading_1" id="codechannels-element-in-the-events-block-2"><a href="#codechannels-element-in-the-events-block-2" class="article__heading-anchor"></a><code>channels</code> element in the <code>events</code> block</h1><p>Use the <code>channels</code> element in the <code>events</code> block for working with named event channels. Named channels allow you to work with events using the observer pattern (also known as the publish-subscribe pattern).</p>
 <p>This element implements a function to:</p>
 <ul>
 <li>Get a reference to a named channel by its <code>id</code>.</li>

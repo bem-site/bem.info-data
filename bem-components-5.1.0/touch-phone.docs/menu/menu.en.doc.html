@@ -99,7 +99,7 @@
 <h2 class="article__heading article__heading_2" id="block-description-28"><a href="#block-description-28" class="article__heading-anchor"></a>Block description</h2><p>Use the <code>menu</code> block to control the state, behavior and appearance of the menu and its nested components – the <a href="../menu__item/menu__item.en.md">item</a> elements.</p>
 <p>The block supports key-pad control. If <code>menu</code> block is in <a href="#focused">focus</a> (<code>focused</code> modifier with <code>true</code> value), type a menu item name on your keyboard to switch to the menu item. Use <code>Space bar</code> or <code>Enter</code> buttons to select the menu item.</p>
 <h3 class="article__heading article__heading_3" id="modifiers-of-the-block-51"><a href="#modifiers-of-the-block-51" class="article__heading-anchor"></a>Modifiers of the block</h3><p><a name="mode"></a></p>
-<h4 class="article__heading article__heading_4" id="codemodecode-modifier-2"><a href="#codemodecode-modifier-2" class="article__heading-anchor"></a><code>mode</code> modifier</h4><p>Acceptable values: <code>&#39;check</code>, <code>&#39;radio&#39;</code>, <code>&#39;radio-check&#39;</code>.</p>
+<h4 class="article__heading article__heading_4" id="codemode-modifier-2"><a href="#codemode-modifier-2" class="article__heading-anchor"></a><code>mode</code> modifier</h4><p>Acceptable values: <code>&#39;check</code>, <code>&#39;radio&#39;</code>, <code>&#39;radio-check&#39;</code>.</p>
 <p>Use case: <code>BEMJSON</code>.</p>
 <p>The <code>mode</code> modifier changes the type of the <code>menu</code> block depending on the selected value:</p>
 <ul>
@@ -109,20 +109,20 @@
 <li>optional single-choice list (<a href="#mode-radiocheck">mode modifier with radio-check value</a>).</li>
 </ul>
 <p><a name="mode-none"></a></p>
-<h5 class="article__heading article__heading_5" id="basic-list-codemodecode-modifier-is-not-specified-1"><a href="#basic-list-codemodecode-modifier-is-not-specified-1" class="article__heading-anchor"></a>Basic list (<code>mode</code> modifier is not specified)</h5><p>If the <code>mode</code> modifier is not set to the block, the basic list without the possibility to select the menu item is created.</p>
+<h5 class="article__heading article__heading_5" id="basic-list-mode-modifier-is-not-specified-1"><a href="#basic-list-mode-modifier-is-not-specified-1" class="article__heading-anchor"></a>Basic list (<code>mode</code> modifier is not specified)</h5><p>If the <code>mode</code> modifier is not set to the block, the basic list without the possibility to select the menu item is created.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/6xWdrflGUnmQkO5oezmxSGklnZI -->
 <p><a name="mode-check"></a></p>
-<h5 class="article__heading article__heading_5" id="multiple-choice-list-codemodecode-modifier-with-codecheckcode-value-2"><a href="#multiple-choice-list-codemodecode-modifier-with-codecheckcode-value-2" class="article__heading-anchor"></a>Multiple-choice list (<code>mode</code> modifier with <code>check</code> value)</h5><p>Use this modifier to create the menu with the possibility to select any number of menu items.</p>
+<h5 class="article__heading article__heading_5" id="multiple-choice-list-mode-modifier-with-check-value-2"><a href="#multiple-choice-list-mode-modifier-with-check-value-2" class="article__heading-anchor"></a>Multiple-choice list (<code>mode</code> modifier with <code>check</code> value)</h5><p>Use this modifier to create the menu with the possibility to select any number of menu items.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/JT-Q8Zz3TzaAqUuIlDljCPOCFgM -->
 <p><a name="mode-radio"></a></p>
-<h5 class="article__heading article__heading_5" id="mandatory-single-choice-list-codemodecode-modifier-with-coderadiocode-value-2"><a href="#mandatory-single-choice-list-codemodecode-modifier-with-coderadiocode-value-2" class="article__heading-anchor"></a>Mandatory single-choice list (<code>mode</code> modifier with <code>radio</code> value)</h5><p>Use this modifier to create the menu that has one mandatory selected item.</p>
+<h5 class="article__heading article__heading_5" id="mandatory-single-choice-list-mode-modifier-with-radio-value-2"><a href="#mandatory-single-choice-list-mode-modifier-with-radio-value-2" class="article__heading-anchor"></a>Mandatory single-choice list (<code>mode</code> modifier with <code>radio</code> value)</h5><p>Use this modifier to create the menu that has one mandatory selected item.</p>
 <p>If any item is not selected in BEMJSON declaration, the first menu item is selected by default.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/cMEwJbOeJFyM4mFESo1hvZtCWE8 -->
 <p><a name="mode-radiocheck"></a></p>
-<h5 class="article__heading article__heading_5" id="optional-single-choice-list-codemodecode-modifier-with-coderadio-checkcode-value-2"><a href="#optional-single-choice-list-codemodecode-modifier-with-coderadio-checkcode-value-2" class="article__heading-anchor"></a>Optional single-choice list (<code>mode</code> modifier with <code>radio-check</code> value)</h5><p>Use this modifier to create the menu that has one mandatory selected item like in the <code>mandatory single-choice list</code>. The fundamental difference between these two menu types is that the <code>menu</code> block with the <code>mode</code> modifier with the <code>radio-check</code> value has the opportunity to leave the menu without the selected items.</p>
+<h5 class="article__heading article__heading_5" id="optional-single-choice-list-mode-modifier-with-radio-check-value-2"><a href="#optional-single-choice-list-mode-modifier-with-radio-check-value-2" class="article__heading-anchor"></a>Optional single-choice list (<code>mode</code> modifier with <code>radio-check</code> value)</h5><p>Use this modifier to create the menu that has one mandatory selected item like in the <code>mandatory single-choice list</code>. The fundamental difference between these two menu types is that the <code>menu</code> block with the <code>mode</code> modifier with the <code>radio-check</code> value has the opportunity to leave the menu without the selected items.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/iXYmerFetO5TuFHL-tbT96pk2Ag -->
 <p><a name="disabled"></a></p>
-<h4 class="article__heading article__heading_4" id="codedisabledcode-modifier-20"><a href="#codedisabledcode-modifier-20" class="article__heading-anchor"></a><code>disabled</code> modifier</h4><p>Acceptable value: <code>true</code>.</p>
+<h4 class="article__heading article__heading_4" id="codedisabled-modifier-20"><a href="#codedisabled-modifier-20" class="article__heading-anchor"></a><code>disabled</code> modifier</h4><p>Acceptable value: <code>true</code>.</p>
 <p>Use cases: <code>BEMJSON</code>, <code>JS</code>.</p>
 <p>The modifier makes the block inactive. The disabled block is visible but not available for user actions.</p>
 <p>If <code>menu</code> block is disabled, all nested <code>menu__item</code> blocks are also disabled:</p>
@@ -130,7 +130,7 @@
 <p>The <code>disabled</code> modifier with the <code>true</code> value could be set to a separate menu items:</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/zUvLJCTFgLrrJsrV59kagOF1e4I -->
 <p><a name="focused"></a></p>
-<h4 class="article__heading article__heading_4" id="codefocusedcode-modifier-17"><a href="#codefocusedcode-modifier-17" class="article__heading-anchor"></a><code>focused</code> modifier</h4><p>Acceptable value: <code>true</code>.</p>
+<h4 class="article__heading article__heading_4" id="codefocused-modifier-17"><a href="#codefocused-modifier-17" class="article__heading-anchor"></a><code>focused</code> modifier</h4><p>Acceptable value: <code>true</code>.</p>
 <p>Use cases: <code>BEMJSON</code>, <code>JS</code>.</p>
 <p>The modifier puts the focus on the block.</p>
 <pre><code class="lang-javascript">{
@@ -152,13 +152,13 @@
 }
 </code></pre>
 <p><a name="theme"></a></p>
-<h4 class="article__heading article__heading_4" id="codethemecode-modifier-23"><a href="#codethemecode-modifier-23" class="article__heading-anchor"></a><code>theme</code> modifier</h4><p>Acceptable value: <code>&#39;islands&#39;</code>.</p>
+<h4 class="article__heading article__heading_4" id="codetheme-modifier-23"><a href="#codetheme-modifier-23" class="article__heading-anchor"></a><code>theme</code> modifier</h4><p>Acceptable value: <code>&#39;islands&#39;</code>.</p>
 <p>Use case: <code>BEMJSON</code>.</p>
 <p>The modifier gives the block a custom design.</p>
 <p>The <code>islands</code> theme requires the <a href="#size">size</a> modifier.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/l1N34GfVV_gd6dDmVN4KE5n-hMI -->
 <p><a name="size"></a></p>
-<h4 class="article__heading article__heading_4" id="codesizecode-modifier-20"><a href="#codesizecode-modifier-20" class="article__heading-anchor"></a><code>size</code> modifier</h4><p>Acceptable values for the <code>islands</code> theme: <code>&#39;s&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>, <code>&#39;xl&#39;</code>.</p>
+<h4 class="article__heading article__heading_4" id="codesize-modifier-20"><a href="#codesize-modifier-20" class="article__heading-anchor"></a><code>size</code> modifier</h4><p>Acceptable values for the <code>islands</code> theme: <code>&#39;s&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>, <code>&#39;xl&#39;</code>.</p>
 <p>Use case: <code>BEMJSON</code>.</p>
 <p>Use the <code>size</code> modifier only for blocks with the <code>islands</code> <a href="#themes">theme</a>.</p>
 <p>Sets the size value for all types of menus.</p>
@@ -171,11 +171,11 @@
 <p><strong>xl</strong></p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/Ui1kbX8bqxV1UlZe6p_lTZVlb14 -->
 <h3 class="article__heading article__heading_3" id="custom-fields-of-the-block-55"><a href="#custom-fields-of-the-block-55" class="article__heading-anchor"></a>Custom fields of the block</h3><p><a name="content"></a></p>
-<h4 class="article__heading article__heading_4" id="codecontentcode-field-5"><a href="#codecontentcode-field-5" class="article__heading-anchor"></a><code>content</code> field</h4><p>Type: <code>Array</code>.</p>
+<h4 class="article__heading article__heading_4" id="codecontent-field-5"><a href="#codecontent-field-5" class="article__heading-anchor"></a><code>content</code> field</h4><p>Type: <code>Array</code>.</p>
 <p>Specifies the list of the menu items.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/ZnrLa_lMAmApvbV09wKNw_DiOm8 -->
 <p><a name="val"></a></p>
-<h4 class="article__heading article__heading_4" id="codevalcode-field-15"><a href="#codevalcode-field-15" class="article__heading-anchor"></a><code>val</code> field</h4><p>Type: <code>String</code>, <code>Number</code>, <code>Array</code>.</p>
+<h4 class="article__heading article__heading_4" id="codeval-field-15"><a href="#codeval-field-15" class="article__heading-anchor"></a><code>val</code> field</h4><p>Type: <code>String</code>, <code>Number</code>, <code>Array</code>.</p>
 <p>Specifies:</p>
 <ul>
 <li>The selected value from the menu. In this case the field type is <code>String</code> or <code>Number</code>.</li>
@@ -186,10 +186,10 @@
 </ul>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/FFPi6ezCx7c83s4-9hZ1W17fisk -->
 <h3 class="article__heading article__heading_3" id="elements-of-the-block-3"><a href="#elements-of-the-block-3" class="article__heading-anchor"></a>Elements of the block</h3><p><a name="group"></a></p>
-<h4 class="article__heading article__heading_4" id="codegroupcode-element-1"><a href="#codegroupcode-element-1" class="article__heading-anchor"></a><code>group</code> element</h4><p>A visual grouping of the menu items that does not affect the general logic of items selection.</p>
+<h4 class="article__heading article__heading_4" id="codegroup-element-1"><a href="#codegroup-element-1" class="article__heading-anchor"></a><code>group</code> element</h4><p>A visual grouping of the menu items that does not affect the general logic of items selection.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/qqj3ld8X0-XyvJzHunwR6H_9r3k -->
 <h3 class="article__heading article__heading_3" id="custom-fields-of-the-block-elements-3"><a href="#custom-fields-of-the-block-elements-3" class="article__heading-anchor"></a>Custom fields of the block elements</h3><p><a name="group-title"></a></p>
-<h4 class="article__heading article__heading_4" id="codetitlecode-field-of-codegroupcode-element-1"><a href="#codetitlecode-field-of-codegroupcode-element-1" class="article__heading-anchor"></a><code>title</code> field of <code>group</code> element</h4><p>Type: <code>String</code>.</p>
+<h4 class="article__heading article__heading_4" id="codetitle-field-of-group-element-1"><a href="#codetitle-field-of-group-element-1" class="article__heading-anchor"></a><code>title</code> field of <code>group</code> element</h4><p>Type: <code>String</code>.</p>
 <p>Specifies the title for a group of menu items.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/RCmpnfx_a2moh0OlUPtCNkT4yG0 -->
 
@@ -241,20 +241,20 @@
 </table>
 <h2 class="article__heading article__heading_2" id="block-description-29"><a href="#block-description-29" class="article__heading-anchor"></a>Block description</h2><p>Use the <code>menu__item</code> to control the size, state and appearance of the menu items. Use this block as a part of the <a href="../menu/menu.en.md">menu</a> block.</p>
 <h3 class="article__heading article__heading_3" id="modifiers-of-the-block-53"><a href="#modifiers-of-the-block-53" class="article__heading-anchor"></a>Modifiers of the block</h3><p><a name="type"></a></p>
-<h4 class="article__heading article__heading_4" id="codetypecode-modifier-11"><a href="#codetypecode-modifier-11" class="article__heading-anchor"></a><code>type</code> modifier</h4><p>Acceptable value: <code>&#39;link&#39;</code>.</p>
+<h4 class="article__heading article__heading_4" id="codetype-modifier-11"><a href="#codetype-modifier-11" class="article__heading-anchor"></a><code>type</code> modifier</h4><p>Acceptable value: <code>&#39;link&#39;</code>.</p>
 <p>Use case: <code>BEMJSON</code>.</p>
 <p>Use this modifier to create the menu items implemented by the <a href="../link/link.en.md">link</a> block that must be declared in the <code>content</code> field in BEMJSON.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/V5ZhNBiB1q11bSw5xtLRiPdK2WA -->
 <p><a name="disabled"></a></p>
-<h4 class="article__heading article__heading_4" id="codedisabledcode-modifier-21"><a href="#codedisabledcode-modifier-21" class="article__heading-anchor"></a><code>disabled</code> modifier</h4><p>Acceptable value: <code>true</code>.</p>
+<h4 class="article__heading article__heading_4" id="codedisabled-modifier-21"><a href="#codedisabled-modifier-21" class="article__heading-anchor"></a><code>disabled</code> modifier</h4><p>Acceptable value: <code>true</code>.</p>
 <p>Use cases: <code>BEMJSON</code>, <code>JS</code>.</p>
 <p>The modifier makes the block inactive. The disabled block is visible but not available for user actions.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/F3RcBpcEi_oCZmO3dkYWJzsWjpM -->
 <p><a name="hovered"></a></p>
-<h4 class="article__heading article__heading_4" id="codehoveredcode-modifier-6"><a href="#codehoveredcode-modifier-6" class="article__heading-anchor"></a><code>hovered</code> modifier</h4><p>Acceptable value: <code>true</code>.</p>
+<h4 class="article__heading article__heading_4" id="codehovered-modifier-6"><a href="#codehovered-modifier-6" class="article__heading-anchor"></a><code>hovered</code> modifier</h4><p>Acceptable value: <code>true</code>.</p>
 <p>Use case: – .</p>
 <p>The modifier is added to the block automatically at the moment when you mouse it over.</p>
 <h3 class="article__heading article__heading_3" id="custom-fields-of-the-block-57"><a href="#custom-fields-of-the-block-57" class="article__heading-anchor"></a>Custom fields of the block</h3><p><a name="val"></a></p>
-<h4 class="article__heading article__heading_4" id="codevalcode-field-16"><a href="#codevalcode-field-16" class="article__heading-anchor"></a><code>val</code> field</h4><p>Type: <code>Number</code>, <code>String</code>.</p>
+<h4 class="article__heading article__heading_4" id="codeval-field-16"><a href="#codeval-field-16" class="article__heading-anchor"></a><code>val</code> field</h4><p>Type: <code>Number</code>, <code>String</code>.</p>
 <p>Specifies the value of the menu item.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/touch-phone.examples/menu/yow7u2bRLE_JQjIrUika2T4grik -->

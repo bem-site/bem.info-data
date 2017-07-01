@@ -73,21 +73,21 @@
 </table>
 <h2 class="article__heading article__heading_2" id="block-description-12"><a href="#block-description-12" class="article__heading-anchor"></a>Block description</h2><p>Use the <code>popup</code> block to control the state, behavior and appearance of the popups that are always displayed above all other elements on a page.</p>
 <h3 class="article__heading article__heading_3" id="modifiers-of-the-block-21"><a href="#modifiers-of-the-block-21" class="article__heading-anchor"></a>Modifiers of the block</h3><p><a name="target"></a></p>
-<h4 class="article__heading article__heading_4" id="codetargetcode-modifier"><a href="#codetargetcode-modifier" class="article__heading-anchor"></a><code>target</code> modifier</h4><p>Acceptable values: <code>&#39;anchor&#39;</code>, <code>&#39;position&#39;</code>.</p>
+<h4 class="article__heading article__heading_4" id="codetarget-modifier"><a href="#codetarget-modifier" class="article__heading-anchor"></a><code>target</code> modifier</h4><p>Acceptable values: <code>&#39;anchor&#39;</code>, <code>&#39;position&#39;</code>.</p>
 <p>Use case: <code>BEMJSON</code>.</p>
 <p>Use to set the target point of the popup.</p>
 <p><a name="target-anchor"></a></p>
-<h5 class="article__heading article__heading_5" id="anchor-codetargetcode-modifier-with-codeanchorcode-value"><a href="#anchor-codetargetcode-modifier-with-codeanchorcode-value" class="article__heading-anchor"></a>Anchor (<code>target</code> modifier with <code>anchor</code> value)</h5><p>Use to set a block or an elements as the target point of the popup.</p>
+<h5 class="article__heading article__heading_5" id="anchor-target-modifier-with-anchor-value"><a href="#anchor-target-modifier-with-anchor-value" class="article__heading-anchor"></a>Anchor (<code>target</code> modifier with <code>anchor</code> value)</h5><p>Use to set a block or an elements as the target point of the popup.</p>
 <p>The <code>popup</code> block supports a nested structure of multiple simultaneous popups. It means that it is possible to open a child popup within a parent one. When the parent popup closes, it hides all its childs popups.</p>
 <p>Use the <a href="https://bem.info/libs/bem-components/v2/desktop/popup/jsdoc/">setAnchor</a> method for correct work of the block.</p>
-<h5 class="article__heading article__heading_5" id="position-coordinates-codetargetcode-modifier-with-codepositioncode-value"><a href="#position-coordinates-codetargetcode-modifier-with-codepositioncode-value" class="article__heading-anchor"></a>Position coordinates (<code>target</code> modifier with <code>position</code> value)</h5><p>The modifier allows to set the position coordinates as the target point of the popup.</p>
+<h5 class="article__heading article__heading_5" id="position-coordinates-target-modifier-with-position-value"><a href="#position-coordinates-target-modifier-with-position-value" class="article__heading-anchor"></a>Position coordinates (<code>target</code> modifier with <code>position</code> value)</h5><p>The modifier allows to set the position coordinates as the target point of the popup.</p>
 <p>Use the <a href="https://bem.info/libs/bem-components/v2/desktop/popup/jsdoc/">setPosition</a> method for correct work of the block.</p>
 <p><a name="visible"></a></p>
-<h4 class="article__heading article__heading_4" id="codevisiblecode-modifier-1"><a href="#codevisiblecode-modifier-1" class="article__heading-anchor"></a><code>visible</code> modifier</h4><p>Acceptable value: <code>true</code>.</p>
+<h4 class="article__heading article__heading_4" id="codevisible-modifier-1"><a href="#codevisible-modifier-1" class="article__heading-anchor"></a><code>visible</code> modifier</h4><p>Acceptable value: <code>true</code>.</p>
 <p>Use cases: <code>JS</code>.</p>
 <p>The modifier is set automatically when the popup is displayed.</p>
 <p><a name="autoclosable"></a></p>
-<h4 class="article__heading article__heading_4" id="codeautoclosablecode-modifier-1"><a href="#codeautoclosablecode-modifier-1" class="article__heading-anchor"></a><code>autoclosable</code> modifier</h4><p>Acceptable value: <code>true</code>.</p>
+<h4 class="article__heading article__heading_4" id="codeautoclosable-modifier-1"><a href="#codeautoclosable-modifier-1" class="article__heading-anchor"></a><code>autoclosable</code> modifier</h4><p>Acceptable value: <code>true</code>.</p>
 <p>Use case: <code>BEMJSON</code>.</p>
 <p>The modifier with the <code>true</code> value allows to hide the popup automatically by clicking outside the popup area or pressing <code>Escape</code> button.</p>
 <pre><code class="lang-javascript">{
@@ -97,7 +97,7 @@
 }
 </code></pre>
 <p><a name="theme"></a></p>
-<h4 class="article__heading article__heading_4" id="codethemecode-modifier-9"><a href="#codethemecode-modifier-9" class="article__heading-anchor"></a><code>theme</code> modifier</h4><p>Acceptable value: <code>&#39;islands&#39;</code>.</p>
+<h4 class="article__heading article__heading_4" id="codetheme-modifier-9"><a href="#codetheme-modifier-9" class="article__heading-anchor"></a><code>theme</code> modifier</h4><p>Acceptable value: <code>&#39;islands&#39;</code>.</p>
 <p>Use case: <code>BEMJSON</code>.</p>
 <p>The modifier gives the block a custom design.</p>
 <pre><code class="lang-javascript">{
@@ -107,7 +107,7 @@
 }
 </code></pre>
 <h3 class="article__heading article__heading_3" id="custom-fields-of-the-block-25"><a href="#custom-fields-of-the-block-25" class="article__heading-anchor"></a>Custom fields of the block</h3><p><a name="directions"></a></p>
-<h4 class="article__heading article__heading_4" id="codedirectionscode-field"><a href="#codedirectionscode-field" class="article__heading-anchor"></a><code>directions</code> field</h4><p>Type: <code>Array</code>.</p>
+<h4 class="article__heading article__heading_4" id="codedirections-field"><a href="#codedirections-field" class="article__heading-anchor"></a><code>directions</code> field</h4><p>Type: <code>Array</code>.</p>
 <p>Specifies the popup position (in the priority order) depending on the target point.
 Use only for popups with the <a href="#popuptarget">target</a> modifier.</p>
 <p><a name="directions-type"></a>
@@ -145,7 +145,7 @@ The popup position is set automatically based on the acceptable directions list 
 }
 </code></pre>
 <p><a name="mainOffset"></a></p>
-<h4 class="article__heading article__heading_4" id="codemainoffsetcode-field"><a href="#codemainoffsetcode-field" class="article__heading-anchor"></a><code>mainOffset</code> field</h4><p>Type: <code>Number</code>.</p>
+<h4 class="article__heading article__heading_4" id="codemainoffset-field"><a href="#codemainoffset-field" class="article__heading-anchor"></a><code>mainOffset</code> field</h4><p>Type: <code>Number</code>.</p>
 <p>Specifies the popup offset (in pixels) along the main direction.</p>
 <p>Use only for popups with the <a href="#popuptarget">target</a> modifier.</p>
 <pre><code class="lang-javascript">{
@@ -157,7 +157,7 @@ The popup position is set automatically based on the acceptable directions list 
 }
 </code></pre>
 <p><a name="secondaryOffset"></a></p>
-<h4 class="article__heading article__heading_4" id="codesecondaryoffsetcode-field"><a href="#codesecondaryoffsetcode-field" class="article__heading-anchor"></a><code>secondaryOffset</code> field</h4><p>Type: <code>Number</code>.</p>
+<h4 class="article__heading article__heading_4" id="codesecondaryoffset-field"><a href="#codesecondaryoffset-field" class="article__heading-anchor"></a><code>secondaryOffset</code> field</h4><p>Type: <code>Number</code>.</p>
 <p>Specifies the popup offset (in pixels) along the secondary direction.</p>
 <p>Use only for popups with the <a href="#popuptarget">target</a> modifier.</p>
 <pre><code class="lang-javascript">{
@@ -169,7 +169,7 @@ The popup position is set automatically based on the acceptable directions list 
 }
 </code></pre>
 <p><a name="viewportOffset"></a></p>
-<h4 class="article__heading article__heading_4" id="codeviewportoffsetcode-field"><a href="#codeviewportoffsetcode-field" class="article__heading-anchor"></a><code>viewportOffset</code> field</h4><p>Type: <code>Number</code>.</p>
+<h4 class="article__heading article__heading_4" id="codeviewportoffset-field"><a href="#codeviewportoffset-field" class="article__heading-anchor"></a><code>viewportOffset</code> field</h4><p>Type: <code>Number</code>.</p>
 <p>Specifies the minimum popup offset (in pixels) from a viewport border.</p>
 <p>Use only for popups with the <a href="#popuptarget">target</a> modifier.</p>
 <pre><code class="lang-javascript">{
@@ -181,5 +181,5 @@ The popup position is set automatically based on the acceptable directions list 
 }
 </code></pre>
 <p><a name="zIndexGroupLevel"></a></p>
-<h4 class="article__heading article__heading_4" id="codezindexgrouplevelcode-field-1"><a href="#codezindexgrouplevelcode-field-1" class="article__heading-anchor"></a><code>zIndexGroupLevel</code> field</h4><p>Type: <code>Number</code>.</p>
+<h4 class="article__heading article__heading_4" id="codezindexgrouplevel-field-1"><a href="#codezindexgrouplevel-field-1" class="article__heading-anchor"></a><code>zIndexGroupLevel</code> field</h4><p>Type: <code>Number</code>.</p>
 <p>Specifies the level of the popup layer based on the <a href="../z-index-group/z-index-group.en.md">z-index-group</a> block.</p>

@@ -115,58 +115,58 @@
 <h2 class="article__heading article__heading_2" id="Описание-9"><a href="#Описание-9" class="article__heading-anchor"></a>Описание</h2><p>Блок отвечает за создание HTML-элементов верхнего уровня, подключение к странице CSS, JS, элементов <code>&lt;meta&gt;</code> и указание заголовка. Для этого в BEMJSON-декларации блока и элементов блока зарезервированы специальные поля.</p>
 <p><a name="declfields"></a></p>
 <h3 class="article__heading article__heading_3" id="Специальные-поля-блока-1"><a href="#Специальные-поля-блока-1" class="article__heading-anchor"></a>Специальные поля блока</h3><p><a name="declfields-doctype"></a></p>
-<h4 class="article__heading article__heading_4" id="Поле--codedoctypecode"><a href="#Поле--codedoctypecode" class="article__heading-anchor"></a>Поле  <code>doctype</code></h4><p>Тип: <code>String</code>.</p>
+<h4 class="article__heading article__heading_4" id="Поле--doctype"><a href="#Поле--doctype" class="article__heading-anchor"></a>Поле  <code>doctype</code></h4><p>Тип: <code>String</code>.</p>
 <p>Позволяет явно указать строку с DTD (Document Type Definition) текущего документа. Если свойство не задано, по умолчанию будет использоваться <code>&lt;!DOCTYPE html&gt;</code>.</p>
 <p><a name="declfields-title"></a></p>
-<h4 class="article__heading article__heading_4" id="Поле-codetitlecode"><a href="#Поле-codetitlecode" class="article__heading-anchor"></a>Поле <code>title</code></h4><p>Тип: <code>String</code>.</p>
+<h4 class="article__heading article__heading_4" id="Поле-title"><a href="#Поле-title" class="article__heading-anchor"></a>Поле <code>title</code></h4><p>Тип: <code>String</code>.</p>
 <p>Название страницы. Становится HTML-элементом <code>&lt;title&gt;</code>.</p>
 <!-- bem-example: tmp/data/bem-core-4.2.0/desktop.examples/page/U40PAwJiHSBAgHwijPiETNDTfYY -->
 <p><a name="declfields-favicon"></a></p>
-<h4 class="article__heading article__heading_4" id="Поле-codefaviconcode"><a href="#Поле-codefaviconcode" class="article__heading-anchor"></a>Поле <code>favicon</code></h4><p>Тип: <code>String</code>.</p>
+<h4 class="article__heading article__heading_4" id="Поле-favicon"><a href="#Поле-favicon" class="article__heading-anchor"></a>Поле <code>favicon</code></h4><p>Тип: <code>String</code>.</p>
 <p>Позволяет указать URL значка страницы (фавиконки):</p>
 <!-- bem-example: tmp/data/bem-core-4.2.0/desktop.examples/page/MdcXw9yQHwaeQPbphyrdE29F5FE -->
 <p><a name="declfields-head"></a></p>
-<h4 class="article__heading article__heading_4" id="Поле-codeheadcode"><a href="#Поле-codeheadcode" class="article__heading-anchor"></a>Поле <code>head</code></h4><p>Тип: <code>BEMJSON</code>.</p>
+<h4 class="article__heading article__heading_4" id="Поле-head"><a href="#Поле-head" class="article__heading-anchor"></a>Поле <code>head</code></h4><p>Тип: <code>BEMJSON</code>.</p>
 <p>Позволяет дополнить содержимое <code>HTML</code>-элемента <code>&lt;head&gt;</code>, определенное в шаблоне блока:</p>
 <!-- bem-example: tmp/data/bem-core-4.2.0/desktop.examples/page/3p5ppLvjBs6fHHE9AnHPdSxE9hg -->
 <p><a name="declfields-styles"></a></p>
-<h4 class="article__heading article__heading_4" id="Поле-codestylescode"><a href="#Поле-codestylescode" class="article__heading-anchor"></a>Поле <code>styles</code></h4><p>Тип: <code>BEMJSON</code>.</p>
+<h4 class="article__heading article__heading_4" id="Поле-styles"><a href="#Поле-styles" class="article__heading-anchor"></a>Поле <code>styles</code></h4><p>Тип: <code>BEMJSON</code>.</p>
 <p>Позволяет подключить <code>CSS</code>:</p>
 <!-- bem-example: tmp/data/bem-core-4.2.0/desktop.examples/page/BcR5zdV2Io_3yIiKGh8yZKGnpz4 -->
 <p><a name="declfields-scripts"></a></p>
-<h4 class="article__heading article__heading_4" id="Поле-codescriptscode"><a href="#Поле-codescriptscode" class="article__heading-anchor"></a>Поле <code>scripts</code></h4><p>Тип: <code>BEMJSON</code>.</p>
+<h4 class="article__heading article__heading_4" id="Поле-scripts"><a href="#Поле-scripts" class="article__heading-anchor"></a>Поле <code>scripts</code></h4><p>Тип: <code>BEMJSON</code>.</p>
 <p>Позволяет подключать JS в тело страницы в конец HTML-элемента <code>&lt;body&gt;</code>:</p>
 <!-- bem-example: tmp/data/bem-core-4.2.0/desktop.examples/page/onbjiINhOUAymt5AVWApN8v8Qk4 -->
 <p><a name="declfields-content"></a></p>
-<h4 class="article__heading article__heading_4" id="Поле-codecontentcode"><a href="#Поле-codecontentcode" class="article__heading-anchor"></a>Поле <code>content</code></h4><p>Тип: <code>BEMJSON</code>.</p>
+<h4 class="article__heading article__heading_4" id="Поле-content"><a href="#Поле-content" class="article__heading-anchor"></a>Поле <code>content</code></h4><p>Тип: <code>BEMJSON</code>.</p>
 <p>Позволяет указать содержимое страницы.</p>
 <!-- bem-example: tmp/data/bem-core-4.2.0/desktop.examples/page/g-mMHP49XUvBH7iqBiERD-MAExg -->
 <p><a name="elems"></a></p>
 <h3 class="article__heading article__heading_3" id="Элементы-блока-7"><a href="#Элементы-блока-7" class="article__heading-anchor"></a>Элементы блока</h3><p><a name="elems-css"></a></p>
-<h4 class="article__heading article__heading_4" id="Элемент-codecsscode"><a href="#Элемент-codecsscode" class="article__heading-anchor"></a>Элемент <code>css</code></h4><p>Служит для подключения CSS по ссылке или в виде строки. В зависимости от того, указано ли в декларации элемента поле <code>url</code>, создается HTML-элемент с тегом:</p>
+<h4 class="article__heading article__heading_4" id="Элемент-css"><a href="#Элемент-css" class="article__heading-anchor"></a>Элемент <code>css</code></h4><p>Служит для подключения CSS по ссылке или в виде строки. В зависимости от того, указано ли в декларации элемента поле <code>url</code>, создается HTML-элемент с тегом:</p>
 <ul>
 <li><code>&lt;link&gt;</code> и свойством <code>stylesheet</code>, если <code>url</code> есть.</li>
 <li><code>&lt;style&gt;</code>, если поле <code>url</code> неуказано. В этом случае предполагается, что содержимое элемента передается с помощью свойства <code>content</code> BEMJSON-декларации элемента.</li>
 </ul>
 <p><a name="elems-css-declfields-content"></a></p>
-<h5 class="article__heading article__heading_5" id="Специализированное-поле-codecontentcode"><a href="#Специализированное-поле-codecontentcode" class="article__heading-anchor"></a>Специализированное поле <code>content</code></h5><p>Тип: <code>String</code>.</p>
+<h5 class="article__heading article__heading_5" id="Специализированное-поле-content"><a href="#Специализированное-поле-content" class="article__heading-anchor"></a>Специализированное поле <code>content</code></h5><p>Тип: <code>String</code>.</p>
 <p>Служит для явной передачи содержимого HTML-элементу <code>&lt;style&gt;</code>:</p>
 <!-- bem-example: tmp/data/bem-core-4.2.0/desktop.examples/page/MaHZFIVvvkOL-IiPjTIGXKdgUMc -->
 <p><a name="elems-css-declfields-url"></a></p>
-<h5 class="article__heading article__heading_5" id="Специализированное-поле-codeurlcode"><a href="#Специализированное-поле-codeurlcode" class="article__heading-anchor"></a>Специализированное поле <code>url</code></h5><p>Тип: <code>String</code>.</p>
+<h5 class="article__heading article__heading_5" id="Специализированное-поле-url"><a href="#Специализированное-поле-url" class="article__heading-anchor"></a>Специализированное поле <code>url</code></h5><p>Тип: <code>String</code>.</p>
 <p>Позволяет задать URL для загрузки таблицы CSS. Значение поля <code>url</code> BEMJSON-декларации передается свойству <code>href</code> создаваемого HTML-элемента.</p>
 <p><a name="elems-js"></a></p>
-<h4 class="article__heading article__heading_4" id="Элемент-codejscode"><a href="#Элемент-codejscode" class="article__heading-anchor"></a>Элемент <code>js</code></h4><p>Служит для подключения JS по ссылке или в виде строки. Создает HTML-элемент <code>&lt;script&gt;</code>.</p>
+<h4 class="article__heading article__heading_4" id="Элемент-js"><a href="#Элемент-js" class="article__heading-anchor"></a>Элемент <code>js</code></h4><p>Служит для подключения JS по ссылке или в виде строки. Создает HTML-элемент <code>&lt;script&gt;</code>.</p>
 <p><a name="elems-js-declfields-content"></a></p>
-<h5 class="article__heading article__heading_5" id="Специализированное-поле-codecontentcode-1"><a href="#Специализированное-поле-codecontentcode-1" class="article__heading-anchor"></a>Специализированное поле <code>content</code></h5><p>Тип: <code>String</code>.</p>
+<h5 class="article__heading article__heading_5" id="Специализированное-поле-content-1"><a href="#Специализированное-поле-content-1" class="article__heading-anchor"></a>Специализированное поле <code>content</code></h5><p>Тип: <code>String</code>.</p>
 <p>Служит для явной передачи содержимого HTML-элементу <code>&lt;script&gt;</code>:</p>
 <!-- bem-example: tmp/data/bem-core-4.2.0/desktop.examples/page/J0MDxi7ZGPpT-lUlCDKcVgCD1kg -->
 <p><a name="elems-js-declfields-url"></a></p>
-<h5 class="article__heading article__heading_5" id="Специализированное-поле-codeurlcode-1"><a href="#Специализированное-поле-codeurlcode-1" class="article__heading-anchor"></a>Специализированное поле <code>url</code></h5><p>Тип: <code>String</code>.</p>
+<h5 class="article__heading article__heading_5" id="Специализированное-поле-url-1"><a href="#Специализированное-поле-url-1" class="article__heading-anchor"></a>Специализированное поле <code>url</code></h5><p>Тип: <code>String</code>.</p>
 <p>Позволяет задать URL для загрузки скрипта. Значение поля <code>url</code> BEMJSON-декларации передается свойству <code>src</code> создаваемого HTML-элемента.</p>
 <!-- bem-example: tmp/data/bem-core-4.2.0/desktop.examples/page/RbClqmYQ3KX2yoKT2mrBLsNbJ_s -->
 <p><a name="elems-meta"></a></p>
-<h4 class="article__heading article__heading_4" id="Элемент-codemetacode"><a href="#Элемент-codemetacode" class="article__heading-anchor"></a>Элемент <code>meta</code></h4><p>Служит для создания HTML-элементов <code>&lt;meta&gt;</code> и указания для них пользовательских метаданных. Метаданные передаются как ключи и значения хеша атрибутов – свойства <code>attrs</code> BEMJSON-декларации элемента:</p>
+<h4 class="article__heading article__heading_4" id="Элемент-meta"><a href="#Элемент-meta" class="article__heading-anchor"></a>Элемент <code>meta</code></h4><p>Служит для создания HTML-элементов <code>&lt;meta&gt;</code> и указания для них пользовательских метаданных. Метаданные передаются как ключи и значения хеша атрибутов – свойства <code>attrs</code> BEMJSON-декларации элемента:</p>
 <!-- bem-example: tmp/data/bem-core-4.2.0/desktop.examples/page/6peqsy4UcOmPVE-TwJUvIxUfSNc -->
 <p>Подробнее смотрите в документации к <code>&lt;meta&gt;</code> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta">на MDN</a>.</p>
 
@@ -247,7 +247,7 @@
 <h2 class="article__heading article__heading_2" id="Подробности"><a href="#Подробности" class="article__heading-anchor"></a>Подробности</h2><p>Создает HTML-элемент <code>&lt;meta&gt;</code> с атрибутом <code>http-equiv</code> <code>X-UA-Compatible</code>, определяющий совместимость с юзер-агентами. По умолчанию, значением атрибута <code>content</code> элемента является <code>IE=edge</code> (совместим с последними версиями Internet Explorer).</p>
 <p><a name="declfields"></a></p>
 <h3 class="article__heading article__heading_3" id="Специализированные-поля-блока-1"><a href="#Специализированные-поля-блока-1" class="article__heading-anchor"></a>Специализированные поля блока</h3><p><a name="declfields-x-ua-compatible"></a></p>
-<h4 class="article__heading article__heading_4" id="Поле-codex-ua-compatiblecode"><a href="#Поле-codex-ua-compatiblecode" class="article__heading-anchor"></a>Поле <code>x-ua-compatible</code></h4><p>Тип: <code>{String}</code>|<code>{Boolean}</code>.</p>
+<h4 class="article__heading article__heading_4" id="Поле-x-ua-compatible"><a href="#Поле-x-ua-compatible" class="article__heading-anchor"></a>Поле <code>x-ua-compatible</code></h4><p>Тип: <code>{String}</code>|<code>{Boolean}</code>.</p>
 <p>Управляет поведением создаваемого блоком HTML-элемента <code>&lt;meta&gt;</code> с атрибутом <code>http-equiv</code> <code>X-UA-Compatible</code>:</p>
 <ul>
 <li>со значением <code>false</code> HTML-элемент <code>&lt;meta&gt;</code> не будет создаваться.</li>
@@ -259,8 +259,8 @@
 <!-- bem-example: tmp/data/bem-core-4.2.0/desktop.examples/page/_Du8erfR4Gigw63usivnC2BC-Zs -->
 <p><a name="elems"></a></p>
 <h3 class="article__heading article__heading_3" id="Элементы-блока-9"><a href="#Элементы-блока-9" class="article__heading-anchor"></a>Элементы блока</h3><p><a name="elems-css"></a></p>
-<h4 class="article__heading article__heading_4" id="Элемент-codecsscode-1"><a href="#Элемент-codecsscode-1" class="article__heading-anchor"></a>Элемент <code>css</code></h4><p><a name="elems-css-declfields-ie"></a></p>
-<h5 class="article__heading article__heading_5" id="Специализированное-поле-codeiecode"><a href="#Специализированное-поле-codeiecode" class="article__heading-anchor"></a>Специализированное поле <code>ie</code></h5><p>Тип: <code>{String}</code>|<code>{Boolean}</code>.</p>
+<h4 class="article__heading article__heading_4" id="Элемент-css-1"><a href="#Элемент-css-1" class="article__heading-anchor"></a>Элемент <code>css</code></h4><p><a name="elems-css-declfields-ie"></a></p>
+<h5 class="article__heading article__heading_5" id="Специализированное-поле-ie"><a href="#Специализированное-поле-ie" class="article__heading-anchor"></a>Специализированное поле <code>ie</code></h5><p>Тип: <code>{String}</code>|<code>{Boolean}</code>.</p>
 <p>Используется для указания применимости стилей к Internet Explorer версий 6-9 и подключения специальных стилей Internet Explorer. </p>
 <p>Допустимы следующие значения:</p>
 <ul>
@@ -270,10 +270,10 @@
 </ul>
 <!-- bem-example: tmp/data/bem-core-4.2.0/desktop.examples/page/VyQEJtHuwz1FX4GKd6q1Vrf85r0 -->
 <p><a name="elems-conditional-comment"></a></p>
-<h4 class="article__heading article__heading_4" id="Элемент-codeconditional-commentcode"><a href="#Элемент-codeconditional-commentcode" class="article__heading-anchor"></a>Элемент <code>conditional-comment</code></h4><p>Позволяет обернуть содержимое поля <code>content</code>, определенное в BEMJSON-декларации элемента, в условные комментарии. Условие, при котором содержимое поля будет доступно, определяется специализированным полем <code>condition</code>.</p>
+<h4 class="article__heading article__heading_4" id="Элемент-conditional-comment"><a href="#Элемент-conditional-comment" class="article__heading-anchor"></a>Элемент <code>conditional-comment</code></h4><p>Позволяет обернуть содержимое поля <code>content</code>, определенное в BEMJSON-декларации элемента, в условные комментарии. Условие, при котором содержимое поля будет доступно, определяется специализированным полем <code>condition</code>.</p>
 <!-- bem-example: tmp/data/bem-core-4.2.0/desktop.examples/page/NDffWuTwuV4aVmfWk_CX4ZVb0o8 -->
 <p><a name="elems-conditional-comment-declfields-condition"></a></p>
-<h5 class="article__heading article__heading_5" id="Специализированное-поле-codeconditioncode"><a href="#Специализированное-поле-codeconditioncode" class="article__heading-anchor"></a>Специализированное поле <code>condition</code></h5><p>Тип: <code>{String}</code>.</p>
+<h5 class="article__heading article__heading_5" id="Специализированное-поле-condition"><a href="#Специализированное-поле-condition" class="article__heading-anchor"></a>Специализированное поле <code>condition</code></h5><p>Тип: <code>{String}</code>.</p>
 <p>Условие, при выполнении которого содержимое поля <code>content</code> декларации элемента, будет доступно. Например, определенная версия Internet Explorer.</p>
 <p>Значение поля составляется из:</p>
 <ul>
@@ -283,11 +283,11 @@
 </ul>
 <!-- bem-example: tmp/data/bem-core-4.2.0/desktop.examples/page/eyUuFBVSYhzbS3R8qvDkBF9ADx0 -->
 <p><a name="elems-conditional-comment-declfields-msieOnly"></a></p>
-<h5 class="article__heading article__heading_5" id="Специализированное-поле-codemsieonlycode"><a href="#Специализированное-поле-codemsieonlycode" class="article__heading-anchor"></a>Специализированное поле <code>msieOnly</code></h5><p>Тип: <code>{Boolean}</code>.</p>
+<h5 class="article__heading article__heading_5" id="Специализированное-поле-msieonly"><a href="#Специализированное-поле-msieonly" class="article__heading-anchor"></a>Специализированное поле <code>msieOnly</code></h5><p>Тип: <code>{Boolean}</code>.</p>
 <p>Указывает на то, предназначен ли данный условный комментарий для использования исключительно в Internet Explorer. Со значением <code>true</code> поле можно не указывать.</p>
 <!-- bem-example: tmp/data/bem-core-4.2.0/desktop.examples/page/v41Pvo2n8kS4QZRqWFryyDdHyYo -->
 
-<h1 class="article__heading article__heading_1" id="Элемент-codeconditional-commentscode-блока-codepagecode"><a href="#Элемент-codeconditional-commentscode-блока-codepagecode" class="article__heading-anchor"></a>Элемент <code>conditional-comments</code> блока <code>page</code></h1><pre><code class="lang-javascript">({
+<h1 class="article__heading article__heading_1" id="Элемент-conditional-comments-блока-page"><a href="#Элемент-conditional-comments-блока-page" class="article__heading-anchor"></a>Элемент <code>conditional-comments</code> блока <code>page</code></h1><pre><code class="lang-javascript">({
     <span class="hljs-attr">block</span> : <span class="hljs-string">'page'</span>,
     <span class="hljs-attr">title</span> : <span class="hljs-string">'page__conditional-comments'</span>,
     <span class="hljs-attr">head</span> : [

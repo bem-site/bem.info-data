@@ -80,7 +80,7 @@
 </table>
 <h2 class="article__heading article__heading_2" id="Описание-блока-8"><a href="#Описание-блока-8" class="article__heading-anchor"></a>Описание блока</h2><p>Блок <code>link</code> предоставляет возможность изменять состояние ссылок, их поведение и внешний вид.</p>
 <h3 class="article__heading article__heading_3" id="Модификаторы-блока-13"><a href="#Модификаторы-блока-13" class="article__heading-anchor"></a>Модификаторы блока</h3><p><a name="pseudo"></a></p>
-<h4 class="article__heading article__heading_4" id="Модификатор-codepseudocode"><a href="#Модификатор-codepseudocode" class="article__heading-anchor"></a>Модификатор <code>pseudo</code></h4><p>Допустимое значение: <code>true</code>.</p>
+<h4 class="article__heading article__heading_4" id="Модификатор-pseudo"><a href="#Модификатор-pseudo" class="article__heading-anchor"></a>Модификатор <code>pseudo</code></h4><p>Допустимое значение: <code>true</code>.</p>
 <p>Способ использования: <code>BEMJSON</code>.</p>
 <p>Отличается от обычной ссылки тем, что при клике по ссылке переход на новую страницу не осуществляется.</p>
 <pre><code class="lang-javascript">{
@@ -90,12 +90,12 @@
 }
 </code></pre>
 <p><a name="disabled"></a></p>
-<h4 class="article__heading article__heading_4" id="Модификатор-codedisabledcode-6"><a href="#Модификатор-codedisabledcode-6" class="article__heading-anchor"></a>Модификатор <code>disabled</code></h4><p>Допустимое значение: <code>true</code>.</p>
+<h4 class="article__heading article__heading_4" id="Модификатор-disabled-6"><a href="#Модификатор-disabled-6" class="article__heading-anchor"></a>Модификатор <code>disabled</code></h4><p>Допустимое значение: <code>true</code>.</p>
 <p>Способы использования: <code>BEMJSON</code>, <code>JS</code>.</p>
 <p>Отвечает за неактивное состояние, при котором блок виден, но недоступен для действий пользователя.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/desktop.examples/link/oLIDtS_dhHZYFcptXqdzTzD0v0E -->
 <p><a name="focused"></a></p>
-<h4 class="article__heading article__heading_4" id="Модификатор-codefocusedcode-5"><a href="#Модификатор-codefocusedcode-5" class="article__heading-anchor"></a>Модификатор <code>focused</code></h4><p>Допустимое значение: <code>true</code></p>
+<h4 class="article__heading article__heading_4" id="Модификатор-focused-5"><a href="#Модификатор-focused-5" class="article__heading-anchor"></a>Модификатор <code>focused</code></h4><p>Допустимое значение: <code>true</code></p>
 <p>Способы использования: <code>BEMJSON</code>, <code>JS</code>.</p>
 <p>Выставляется автоматически при получении блока фокуса.</p>
 <p>Отвечает за наличие фокуса на блоке.</p>
@@ -108,12 +108,12 @@
 </code></pre>
 <p>Способ установки фокуса на блок определяет выбор модификатора: <code>focused</code> или <code>focused-hard</code>. <a href="../../README.ru.md#Модификатор-focused">Читать подробности</a>.</p>
 <p><a name="theme"></a></p>
-<h4 class="article__heading article__heading_4" id="Модификатор-codethemecode-6"><a href="#Модификатор-codethemecode-6" class="article__heading-anchor"></a>Модификатор <code>theme</code></h4><p>Допустимое значение: <code>islands</code>.</p>
+<h4 class="article__heading article__heading_4" id="Модификатор-theme-6"><a href="#Модификатор-theme-6" class="article__heading-anchor"></a>Модификатор <code>theme</code></h4><p>Допустимое значение: <code>islands</code>.</p>
 <p>Способ использования: <code>BEMJSON</code>.</p>
 <p>Отвечает за стилевое оформление блока.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/desktop.examples/link/La0iB39G9WbEoHPZTqgEA0dOpsA -->
 <p><a name="size"></a></p>
-<h4 class="article__heading article__heading_4" id="Модификатор-codesizecode-6"><a href="#Модификатор-codesizecode-6" class="article__heading-anchor"></a>Модификатор <code>size</code></h4><p>Допустимые значения для темы <code>islands</code>: <code>&#39;s&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>, <code>&#39;xl&#39;</code>.</p>
+<h4 class="article__heading article__heading_4" id="Модификатор-size-6"><a href="#Модификатор-size-6" class="article__heading-anchor"></a>Модификатор <code>size</code></h4><p>Допустимые значения для темы <code>islands</code>: <code>&#39;s&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>, <code>&#39;xl&#39;</code>.</p>
 <p>Способ использования: <code>BEMJSON</code>.</p>
 <p>Необходимо использовать с модификатором <a href="#theme">theme</a> в значении <code>islands</code>.</p>
 <p><strong>s</strong></p>
@@ -125,31 +125,31 @@
 <p><strong>xl</strong></p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/desktop.examples/link/wipY5WLhnwfSk_y56R7cj1lno4Y -->
 <p><a name="view"></a></p>
-<h4 class="article__heading article__heading_4" id="Модификатор-codeviewcode-1"><a href="#Модификатор-codeviewcode-1" class="article__heading-anchor"></a>Модификатор <code>view</code></h4><p>Допустимые значения: <code>&#39;minor&#39;</code>, <code>&#39;external&#39;</code>, <code>&#39;ghost&#39;</code>, <code>&#39;text&#39;</code>, <code>&#39;strong&#39;</code>.</p>
+<h4 class="article__heading article__heading_4" id="Модификатор-view-1"><a href="#Модификатор-view-1" class="article__heading-anchor"></a>Модификатор <code>view</code></h4><p>Допустимые значения: <code>&#39;minor&#39;</code>, <code>&#39;external&#39;</code>, <code>&#39;ghost&#39;</code>, <code>&#39;text&#39;</code>, <code>&#39;strong&#39;</code>.</p>
 <p>Способ использования: <code>BEMJSON</code>.</p>
-<h5 class="article__heading article__heading_5" id="Второстепенная-ссылка-модификатор-codeviewcode-в-значении-codeminorcode"><a href="#Второстепенная-ссылка-модификатор-codeviewcode-в-значении-codeminorcode" class="article__heading-anchor"></a>Второстепенная ссылка (модификатор <code>view</code> в значении <code>minor</code>)</h5><p>Используется для визуального выделения второстепенных ссылок на странице.</p>
+<h5 class="article__heading article__heading_5" id="Второстепенная-ссылка-модификатор-view-в-значении-minor"><a href="#Второстепенная-ссылка-модификатор-view-в-значении-minor" class="article__heading-anchor"></a>Второстепенная ссылка (модификатор <code>view</code> в значении <code>minor</code>)</h5><p>Используется для визуального выделения второстепенных ссылок на странице.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/desktop.examples/link/AjpO5BHOjKkTGc4kr2GSYb9MXhw -->
-<h5 class="article__heading article__heading_5" id="Внешняя-ссылка-модификатор-codeviewcode-в-значении-codeexternalcode"><a href="#Внешняя-ссылка-модификатор-codeviewcode-в-значении-codeexternalcode" class="article__heading-anchor"></a>Внешняя ссылка (модификатор <code>view</code> в значении <code>external</code>)</h5><p>Используется для визуального выделения ссылок, которые ведут на внешние ресурсы.</p>
+<h5 class="article__heading article__heading_5" id="Внешняя-ссылка-модификатор-view-в-значении-external"><a href="#Внешняя-ссылка-модификатор-view-в-значении-external" class="article__heading-anchor"></a>Внешняя ссылка (модификатор <code>view</code> в значении <code>external</code>)</h5><p>Используется для визуального выделения ссылок, которые ведут на внешние ресурсы.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/desktop.examples/link/71U60hcshkNq6N7r3bazIU7-j_Q -->
-<h5 class="article__heading article__heading_5" id="Малозаметная-ссылка-модификатор-codeviewcode-в-значении-codeghostcode"><a href="#Малозаметная-ссылка-модификатор-codeviewcode-в-значении-codeghostcode" class="article__heading-anchor"></a>Малозаметная ссылка (модификатор <code>view</code> в значении <code>ghost</code>)</h5><p>Используется при необходимости сделать ссылку менее заметной на странице.</p>
+<h5 class="article__heading article__heading_5" id="Малозаметная-ссылка-модификатор-view-в-значении-ghost"><a href="#Малозаметная-ссылка-модификатор-view-в-значении-ghost" class="article__heading-anchor"></a>Малозаметная ссылка (модификатор <code>view</code> в значении <code>ghost</code>)</h5><p>Используется при необходимости сделать ссылку менее заметной на странице.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/desktop.examples/link/IMofxFUXUMBf0_taUsHStcQwHWQ -->
-<h5 class="article__heading article__heading_5" id="Ссылка-под-цвет-текста-модификатор-codeviewcode-в-значении-codetextcode"><a href="#Ссылка-под-цвет-текста-модификатор-codeviewcode-в-значении-codetextcode" class="article__heading-anchor"></a>Ссылка под цвет текста (модификатор <code>view</code> в значении <code>text</code>)</h5><p>Используется при необходимости сделать ссылку под цвет текста.</p>
+<h5 class="article__heading article__heading_5" id="Ссылка-под-цвет-текста-модификатор-view-в-значении-text"><a href="#Ссылка-под-цвет-текста-модификатор-view-в-значении-text" class="article__heading-anchor"></a>Ссылка под цвет текста (модификатор <code>view</code> в значении <code>text</code>)</h5><p>Используется при необходимости сделать ссылку под цвет текста.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/desktop.examples/link/9jKaKJu2Ft69DBlkb_6JwJ8i1PU -->
-<h5 class="article__heading article__heading_5" id="Жирная-ссылка-модификатор-codeviewcode-в-значении-codestrongcode"><a href="#Жирная-ссылка-модификатор-codeviewcode-в-значении-codestrongcode" class="article__heading-anchor"></a>Жирная ссылка (модификатор <code>view</code> в значении <code>strong</code>)</h5><p>Используется для визуального выделения важных ссылок на странице.</p>
+<h5 class="article__heading article__heading_5" id="Жирная-ссылка-модификатор-view-в-значении-strong"><a href="#Жирная-ссылка-модификатор-view-в-значении-strong" class="article__heading-anchor"></a>Жирная ссылка (модификатор <code>view</code> в значении <code>strong</code>)</h5><p>Используется для визуального выделения важных ссылок на странице.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/desktop.examples/link/A2se8PWfFP7uLF1-DfqU271KVng -->
 <h3 class="article__heading article__heading_3" id="Специализированные-поля-блока-17"><a href="#Специализированные-поля-блока-17" class="article__heading-anchor"></a>Специализированные поля блока</h3><p><a name="url"></a></p>
-<h4 class="article__heading article__heading_4" id="Поле-codeurlcode-3"><a href="#Поле-codeurlcode-3" class="article__heading-anchor"></a>Поле <code>url</code></h4><p>Тип: <code>String</code>.</p>
+<h4 class="article__heading article__heading_4" id="Поле-url-3"><a href="#Поле-url-3" class="article__heading-anchor"></a>Поле <code>url</code></h4><p>Тип: <code>String</code>.</p>
 <p>Определяет адрес, по которому осуществляется переход при нажатии на ссылку.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/desktop.examples/link/La0iB39G9WbEoHPZTqgEA0dOpsA -->
 <p><a name="title"></a></p>
-<h4 class="article__heading article__heading_4" id="Поле-codetitlecode-3"><a href="#Поле-codetitlecode-3" class="article__heading-anchor"></a>Поле <code>title</code></h4><p>Тип: <code>String</code>.</p>
+<h4 class="article__heading article__heading_4" id="Поле-title-3"><a href="#Поле-title-3" class="article__heading-anchor"></a>Поле <code>title</code></h4><p>Тип: <code>String</code>.</p>
 <p>Определяет содержание всплывающей подсказки. Вид такой подсказки зависит от браузера, настроек операционной системы и не может быть изменен с помощью HTML-кода или стилей.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/desktop.examples/link/3XDci9Dy1ZMOMObQJjjWu3W-JTs -->
 <p><a name="target"></a></p>
-<h4 class="article__heading article__heading_4" id="Поле-codetargetcode"><a href="#Поле-codetargetcode" class="article__heading-anchor"></a>Поле <code>target</code></h4><p>Тип: <code>String</code>.</p>
+<h4 class="article__heading article__heading_4" id="Поле-target"><a href="#Поле-target" class="article__heading-anchor"></a>Поле <code>target</code></h4><p>Тип: <code>String</code>.</p>
 <p>Определяет поведение ссылки. Принимает все допустимые значения HTML-атрибута <code>target</code>: <code>_blank</code>, <code>_self</code> (используется по умолчанию), <code>_parent</code>, <code>_top</code>.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/desktop.examples/link/ZoYtlMvnwHQ-caKdGVJRQIJqzSs -->
 <p><a name="tabIndex"></a></p>
-<h4 class="article__heading article__heading_4" id="Поле-codetabindexcode-3"><a href="#Поле-codetabindexcode-3" class="article__heading-anchor"></a>Поле <code>tabIndex</code></h4><p>Тип: <code>Number</code>.</p>
+<h4 class="article__heading article__heading_4" id="Поле-tabindex-3"><a href="#Поле-tabindex-3" class="article__heading-anchor"></a>Поле <code>tabIndex</code></h4><p>Тип: <code>Number</code>.</p>
 <p>Определяет последовательность перехода между контролами при нажатии на <code>Tab</code>.</p>
 <!-- bem-example: tmp/data/bem-components-5.1.0/desktop.examples/link/uzI2s-E0ZmT7x3hkVhFnd9kprJY -->

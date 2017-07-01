@@ -47,7 +47,7 @@
 </ul>
 <h2 class="article__heading article__heading_2" id="Описание-33"><a href="#Описание-33" class="article__heading-anchor"></a>Описание</h2><p><a name="modifiers"></a></p>
 <h3 class="article__heading article__heading_3" id="Модификаторы-блока-15"><a href="#Модификаторы-блока-15" class="article__heading-anchor"></a>Модификаторы блока</h3><p><a name="modifiers-type"></a></p>
-<h4 class="article__heading article__heading_4" id="Модификатор-codetypecode-5"><a href="#Модификатор-codetypecode-5" class="article__heading-anchor"></a>Модификатор <code>type</code></h4><p>Предоставляет набор функций для загрузки и подключение различных типов данных.</p>
+<h4 class="article__heading article__heading_4" id="Модификатор-type-5"><a href="#Модификатор-type-5" class="article__heading-anchor"></a>Модификатор <code>type</code></h4><p>Предоставляет набор функций для загрузки и подключение различных типов данных.</p>
 <p>Допустимые значения: <code>&#39;js&#39;</code>, <code>&#39;bundle&#39;</code>.</p>
 <p>Способ использования: <code>JS</code>.</p>
 <p>В зависимости от значения модификатора <code>type</code> блок <code>loader</code> позволяет получить по URL и подключить:</p>
@@ -56,7 +56,7 @@
 <li><code>bundle</code> – пакет, собранный из CSS и JS-файлов – «бандл».</li>
 </ul>
 <p><a name="modifiers-type-js"></a></p>
-<h5 class="article__heading article__heading_5" id="Модификатор-codetypecode-в-значении-codejscode-2"><a href="#Модификатор-codetypecode-в-значении-codejscode-2" class="article__heading-anchor"></a>Модификатор <code>type</code> в значении <code>js</code></h5><p>Предоставляет функцию, позволяющую загрузить и подключить фрагмент JS-кода.</p>
+<h5 class="article__heading article__heading_5" id="Модификатор-type-в-значении-js-2"><a href="#Модификатор-type-в-значении-js-2" class="article__heading-anchor"></a>Модификатор <code>type</code> в значении <code>js</code></h5><p>Предоставляет функцию, позволяющую загрузить и подключить фрагмент JS-кода.</p>
 <p><strong>Принимаемые аргументы:</strong></p>
 <ul>
 <li><code>url {String}</code> – URL загружаемого фрагмента JS-кода. Обязательный аргумент.</li>
@@ -75,7 +75,7 @@
 </code></pre>
 <p>Расширенный пример смотрите в блоке <a href="https://github.com/bem/bem-core/blob/v2/common.blocks/jquery/jquery.js">common.blocks/jquery</a> библиотеки <code>bem-core</code>.</p>
 <p><a name="modifiers-type-bundle"></a></p>
-<h5 class="article__heading article__heading_5" id="Модификатор-codetypecode-в-значении-codebundlecode-2"><a href="#Модификатор-codetypecode-в-значении-codebundlecode-2" class="article__heading-anchor"></a>Модификатор <code>type</code> в значении <code>bundle</code></h5><p>Предоставляет функцию, позволяющую загрузить и подключить пакет, собранный из CSS и JS-файлов – «бандл».</p>
+<h5 class="article__heading article__heading_5" id="Модификатор-type-в-значении-bundle-2"><a href="#Модификатор-type-в-значении-bundle-2" class="article__heading-anchor"></a>Модификатор <code>type</code> в значении <code>bundle</code></h5><p>Предоставляет функцию, позволяющую загрузить и подключить пакет, собранный из CSS и JS-файлов – «бандл».</p>
 <p><strong>Принимаемые аргументы:</strong></p>
 <ul>
 <li><code>id {String}</code> – идентификатор бандла. Обязательный аргумент.</li>
@@ -85,7 +85,7 @@
 </ul>
 <p>Не имеет возвращаемого значения.</p>
 <p>Спецификации технологии <code>bundle</code> находятся в процессе разработки. Для получения детальной информации пишите на <a href="https://ru.bem.info/forum/">форум</a>.</p>
-<h6 class="article__heading article__heading_6" id="Статический-метод-code_loadedcode-2"><a href="#Статический-метод-code_loadedcode-2" class="article__heading-anchor"></a>Статический метод <code>_loaded</code></h6><p>Функция, подключаемая с модификатором <code>type_bundle</code>, обладает статическим методом – <code>_loaded</code>. Он используется как вспомогательный после успешной загрузки бандла.</p>
+<h6 class="article__heading article__heading_6" id="Статический-метод-_loaded-2"><a href="#Статический-метод-_loaded-2" class="article__heading-anchor"></a>Статический метод <code>_loaded</code></h6><p>Функция, подключаемая с модификатором <code>type_bundle</code>, обладает статическим методом – <code>_loaded</code>. Он используется как вспомогательный после успешной загрузки бандла.</p>
 <p><strong>Принимаемые аргументы:</strong></p>
 <ul>
 <li><code>id {String}</code> – идентификатор бандла. Обязательный аргумент.</li>

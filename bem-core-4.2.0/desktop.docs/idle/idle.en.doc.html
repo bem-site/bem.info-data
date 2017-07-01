@@ -85,12 +85,12 @@ idle
 </code></pre>
 <p><a name="events"></a></p>
 <h3 class="article__heading article__heading_3" id="object-events-1"><a href="#object-events-1" class="article__heading-anchor"></a>Object events</h3><p><a name="events-idle"></a></p>
-<h4 class="article__heading article__heading_4" id="codeidlecode-event"><a href="#codeidlecode-event" class="article__heading-anchor"></a><code>idle</code> event</h4><p>Generated when user activity ends.</p>
+<h4 class="article__heading article__heading_4" id="codeidle-event"><a href="#codeidle-event" class="article__heading-anchor"></a><code>idle</code> event</h4><p>Generated when user activity ends.</p>
 <p><a name="events-wakeup"></a></p>
-<h4 class="article__heading article__heading_4" id="codewakeupcode-event"><a href="#codewakeupcode-event" class="article__heading-anchor"></a><code>wakeup</code> event</h4><p>Generated when user activity resumes.</p>
+<h4 class="article__heading article__heading_4" id="codewakeup-event"><a href="#codewakeup-event" class="article__heading-anchor"></a><code>wakeup</code> event</h4><p>Generated when user activity resumes.</p>
 <p><a name="fields"></a></p>
 <h3 class="article__heading article__heading_3" id="properties-and-methods-of-the-object-3"><a href="#properties-and-methods-of-the-object-3" class="article__heading-anchor"></a>Properties and methods of the object</h3><p><a name="fields-start"></a></p>
-<h4 class="article__heading article__heading_4" id="codestartcode-method"><a href="#codestartcode-method" class="article__heading-anchor"></a><code>start</code> method</h4><p>Starts tracking user activity.</p>
+<h4 class="article__heading article__heading_4" id="codestart-method"><a href="#codestart-method" class="article__heading-anchor"></a><code>start</code> method</h4><p>Starts tracking user activity.</p>
 <p>Doesn&#39;t accept arguments.</p>
 <p>No return value.</p>
 <pre><code class="lang-js">modules.require([<span class="hljs-string">'idle'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">idle</span>) </span>{
@@ -100,7 +100,7 @@ idle.start()
 });
 </code></pre>
 <p><a name="fields-stop"></a></p>
-<h4 class="article__heading article__heading_4" id="codestopcode-method"><a href="#codestopcode-method" class="article__heading-anchor"></a><code>stop</code> method</h4><p>Stops user activity tracking.</p>
+<h4 class="article__heading article__heading_4" id="codestop-method"><a href="#codestop-method" class="article__heading-anchor"></a><code>stop</code> method</h4><p>Stops user activity tracking.</p>
 <p>Doesn&#39;t accept arguments.</p>
 <p>No return value.</p>
 <pre><code class="lang-js">modules.require([<span class="hljs-string">'idle'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">idle</span>) </span>{
@@ -111,7 +111,7 @@ idle.stop() <span class="hljs-comment">// stop tracking activity</span>
 });
 </code></pre>
 <p><a name="fields-isIdle"></a></p>
-<h4 class="article__heading article__heading_4" id="codeisidlecode-method"><a href="#codeisidlecode-method" class="article__heading-anchor"></a><code>isIdle</code> method</h4><p>Checks whether there is any user activity.</p>
+<h4 class="article__heading article__heading_4" id="codeisidle-method"><a href="#codeisidle-method" class="article__heading-anchor"></a><code>isIdle</code> method</h4><p>Checks whether there is any user activity.</p>
 <p>Doesn&#39;t accept arguments.</p>
 <p><strong>Return value:</strong> <code>Boolean</code>. If there isn&#39;t any activity, <code>true</code>.</p>
 <pre><code class="lang-js">modules.require([<span class="hljs-string">'idle'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">idle</span>) </span>{
@@ -122,6 +122,6 @@ idle.isIdle() <span class="hljs-comment">// true or false, depending on the curr
 </code></pre>
 <p><a name="modifiers"></a></p>
 <h3 class="article__heading article__heading_3" id="block-modifiers-1"><a href="#block-modifiers-1" class="article__heading-anchor"></a>Block modifiers</h3><p><a name="modifiers-start"></a></p>
-<h4 class="article__heading article__heading_4" id="codestartcode-modifier"><a href="#codestartcode-modifier" class="article__heading-anchor"></a><code>start</code> modifier</h4><p>Acceptable values: <code>&#39;auto&#39;</code>.</p>
+<h4 class="article__heading article__heading_4" id="codestart-modifier"><a href="#codestart-modifier" class="article__heading-anchor"></a><code>start</code> modifier</h4><p>Acceptable values: <code>&#39;auto&#39;</code>.</p>
 <p>Usage: enabled in the <code>deps.js</code> dependencies file.</p>
 <p>Automatically starts tracking user activity.</p>

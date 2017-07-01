@@ -109,7 +109,7 @@ A.callMe(); <span class="hljs-comment">// mr.Static</span>
 });
 </code></pre>
 <h5 class="article__heading article__heading_5" id="Специальные-поля-объявляемого-класса-5"><a href="#Специальные-поля-объявляемого-класса-5" class="article__heading-anchor"></a>Специальные поля объявляемого класса</h5><p><a name="constructor"></a></p>
-<h6 class="article__heading article__heading_6" id="Поле-code__constructorcode-2"><a href="#Поле-code__constructorcode-2" class="article__heading-anchor"></a>Поле <code>__constructor</code></h6><p>Тип: <code>Function</code>.</p>
+<h6 class="article__heading article__heading_6" id="Поле-__constructor-2"><a href="#Поле-__constructor-2" class="article__heading-anchor"></a>Поле <code>__constructor</code></h6><p>Тип: <code>Function</code>.</p>
 <p>Объект собственных свойств базового класса может содержать зарезервированное свойство <code>__constructor</code> – функцию, которая будет автоматически вызвана при создании экземпляра класса.</p>
 <p>Пример:</p>
 <pre><code class="lang-js">modules.require([<span class="hljs-string">'inherit'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">inherit</span>) </span>{
@@ -191,7 +191,7 @@ instanceOfC.getAll(); <span class="hljs-comment">// возвращает 'AB'</s
 });
 </code></pre>
 <h5 class="article__heading article__heading_5" id="Специальные-поля-экземпляра-объявляемого-класса-5"><a href="#Специальные-поля-экземпляра-объявляемого-класса-5" class="article__heading-anchor"></a>Специальные поля экземпляра объявляемого класса</h5><p><a name="self"></a></p>
-<h6 class="article__heading article__heading_6" id="Поле-code__selfcode-2"><a href="#Поле-code__selfcode-2" class="article__heading-anchor"></a>Поле <code>__self</code></h6><p>Тип: <code>*</code>.</p>
+<h6 class="article__heading article__heading_6" id="Поле-__self-2"><a href="#Поле-__self-2" class="article__heading-anchor"></a>Поле <code>__self</code></h6><p>Тип: <code>*</code>.</p>
 <p>Позволяет получить доступ к классу из его экземпляра.</p>
 <p>Пример:</p>
 <pre><code class="lang-js">modules.require([<span class="hljs-string">'inherit'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">inherit</span>) </span>{
@@ -214,7 +214,7 @@ aInst.getStaticProperty(); <span class="hljs-comment">//staticA</span>
 });
 </code></pre>
 <p><a name="base"></a></p>
-<h6 class="article__heading article__heading_6" id="code__basecode-4"><a href="#code__basecode-4" class="article__heading-anchor"></a><code>__base</code></h6><p>Тип: <code>Function</code>.</p>
+<h6 class="article__heading article__heading_6" id="code__base-4"><a href="#code__base-4" class="article__heading-anchor"></a><code>__base</code></h6><p>Тип: <code>Function</code>.</p>
 <p>Позволяет внутри производного класса вызывать одноименные методы базового (supercall). При использовании в статическом методе, будет вызван одноименный статический метод базового класса.</p>
 <p>Пример:</p>
 <pre><code class="lang-js">modules.require([<span class="hljs-string">'inherit'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">inherit</span>) </span>{
