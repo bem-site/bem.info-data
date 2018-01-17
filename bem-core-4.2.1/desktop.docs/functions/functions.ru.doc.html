@@ -1,0 +1,145 @@
+<h1 id="functions"><a href="#functions" class="anchor"></a>functions</h1>
+<p>Блок предоставляет объект, содержащий набор методов для работы с функциями JavaScript.</p>
+<h2 id="Обзор-3"><a href="#Обзор-3" class="anchor"></a>Обзор</h2>
+<h3 id="Свойства-и-методы-объекта-4"><a href="#Свойства-и-методы-объекта-4" class="anchor"></a>Свойства и методы объекта</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Имя</th>
+<th>Тип или возвращаемое значение</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#fields-isFunction">isFunction</a>(<code>obj {*}</code>)</td>
+<td><code>Boolean</code></td>
+<td>Проверяет, является ли переданный аргумент функцией.</td>
+</tr>
+<tr>
+<td><a href="#fields-noop">noop</a></td>
+<td><code>Function</code></td>
+<td>Пустая функция.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="Элементы-блока-1"><a href="#Элементы-блока-1" class="anchor"></a>Элементы блока</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Элемент</th>
+<th>Способы использования</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-debounce">debounce</a></td>
+<td><code>JS</code></td>
+<td>Декоратор функции. Объединяет несколько вызовов функции, производимых в заданном временном интервале, в один.</td>
+</tr>
+<tr>
+<td><a href="#elems-throttle">throttle</a></td>
+<td><code>JS</code></td>
+<td>Декоратор функции. Ограничивает частоту выполнения функции до одного раза в указанный период.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="Публичные-технологии-блока-4"><a href="#Публичные-технологии-блока-4" class="anchor"></a>Публичные технологии блока</h3>
+<p>Блок реализован в технологиях:</p>
+<ul>
+<li><code>vanilla.js</code></li>
+</ul>
+<h2 id="Описание-3"><a href="#Описание-3" class="anchor"></a>Описание</h2>
+<p><a name="fields"></a></p>
+<h3 id="Свойства-и-методы-объекта-5"><a href="#Свойства-и-методы-объекта-5" class="anchor"></a>Свойства и методы объекта</h3>
+<p><a name="fields-isFunction"></a></p>
+<h4 id="Метод-isfunction"><a href="#Метод-isfunction" class="anchor"></a>Метод <code>isFunction</code></h4>
+<p>Метод проверяет, является ли переданный аргумент функцией.  </p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>obj {*}</code> – проверяемый объект. Обязательный аргумент.</li>
+</ul>
+<p><strong>Возвращаемое значение:</strong> <code>Boolean</code>. В случае, если аргумент является функцией – <code>true</code>.</p>
+<pre><code class="lang-js">modules.require(&#39;functions&#39;, function(func) {
+    var a = function(){},
+        b = {};
+    console.log(func.isFunction(a)); // true
+    console.log(func.isFunction(b)); // false
+});
+</code></pre>
+<p><a name="fields-noop"></a></p>
+<h4 id="Свойство-noop"><a href="#Свойство-noop" class="anchor"></a>Свойство <code>noop</code></h4>
+<p>Пустая функция (<code>function() {}</code>).</p>
+<p>Не имеет аргументов и возвращаемого значения.</p>
+<p><code>noop</code> можно использовать в ситуациях, когда для работы требуется функция, но нет смысла добавлять логику. Например в качестве «заглушки» для базовых классов при проектировании в парадигме ООП.</p>
+<p>Пример:</p>
+<pre><code class="lang-js">modules.define(&#39;base-class&#39;, [&#39;inherit&#39;, &#39;functions&#39;], function(provide, inherit, functions) {
+
+provide(inherit({
+    getData : function() {
+        this._sendRequest();
+    },
+
+    _sendRequest : functions.noop
+
+}));
+
+});
+</code></pre>
+<p><a name="elems"></a></p>
+<h3 id="Элементы-блока-2"><a href="#Элементы-блока-2" class="anchor"></a>Элементы блока</h3>
+<p>Элементы блока реализуют набор декораторов функций.</p>
+<p>Декораторы добавляют функции логику, не меняя ее оригинальной сигнатуры.</p>
+<p><a name="elems-debounce"></a></p>
+<h4 id="Элемент-debounce"><a href="#Элемент-debounce" class="anchor"></a>Элемент <code>debounce</code></h4>
+<p>Декоратор, откладывающий вызовов функции до истечения задержки. После каждой попытки вызова задержка начинает отсчитываться заново.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>fn {Function}</code> — оригинальная функция. Обязательный аргумент.</li>
+<li><code>timeout {Number}</code> — время задержки в миллисекундах. Обязательный аргумент.</li>
+<li>[<code>invokeAsap {Boolean}</code>] — режим работы <code>debounce</code>. По умолчанию используется первый режим (соответствует значению <code>false</code>).</li>
+<li>[<code>context {Object}</code>] — контекст для выполнения оригинальной функции.</li>
+</ul>
+<p>В зависимости от значения аргумента <code>invokeAsap</code> <code>debounce</code> может работать в двух режимах:</p>
+<ol>
+<li>Вызов оригинальной функции производится по истечению задержки после последней попытки вызова.</li>
+<li>Первый вызов оригинальной функции производится сразу же при вызове декорированной функции. Дальнейшее поведение аналогично режиму 1.</li>
+</ol>
+<p><strong>Возвращаемое значение:</strong> <code>Function</code>. Декорированная функция.</p>
+<p>Пример:</p>
+<pre><code class="lang-js">modules.require(&#39;functions__debounce&#39;, function(provide, debounce) {
+
+    function log() {
+        console.log(&#39;hello!&#39;);
+    }
+
+    var debouncedLog = debounce(log, 300);
+    setInterval(debouncedLog, 50);
+
+});
+</code></pre>
+<p><a name="elems-throttle"></a></p>
+<h4 id="Элемент-throttle"><a href="#Элемент-throttle" class="anchor"></a>Элемент <code>throttle</code></h4>
+<p>Декоратор позволяет «затормозить» функцию. Она будет выполняться не чаще одного раза в указанный период, сколько бы раз в течение этого периода ни была вызвана. Все промежуточные вызовы игнорируются.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>fn {Function}</code> — оригинальная функция. Обязательный аргумент.</li>
+<li><code>period {Number}</code> — интервал между вызовами в миллисекундах. Обязательный аргумент.</li>
+<li>[<code>context {Object}</code>] — контекст для выполнения оригинальной функции.</li>
+</ul>
+<p><strong>Возвращаемое значение:</strong> <code>Function</code>. Декорированная функция.</p>
+<p>Метод удобно использовать, например, для установки ресурсоемких обработчиков для часто генерируемых событий – <code>resize</code>, <code>pointermove</code> и т.п.</p>
+<p>Пример:</p>
+<pre><code class="lang-js">modules.require(&#39;functions__throttle&#39;, function(provide, throttle) {
+
+    function log() {
+        console.log(&#39;hello!&#39;);
+    }
+
+    var throttledLog = throttle(log, 300);
+    setInterval(throttledLog, 50);
+
+});
+</code></pre>
+<p>В результате, функция будет выполняться не чаще чем раз в 300 миллисекунд.</p>

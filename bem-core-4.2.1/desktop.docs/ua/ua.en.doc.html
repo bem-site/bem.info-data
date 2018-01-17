@@ -1,0 +1,38 @@
+<h1 id="ua-2"><a href="#ua-2" class="anchor"></a>ua</h1>
+<p>Use this block to collect data about the user&#39;s browser.</p>
+<h2 id="overview-13"><a href="#overview-13" class="anchor"></a>Overview</h2>
+<h3 id="elements-of-the-block-10"><a href="#elements-of-the-block-10" class="anchor"></a>Elements of the block</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Usage</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-svg">svg</a></td>
+<td><code>deps</code></td>
+<td>Checks whether the browser supports SVG format.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="public-block-technologies-16"><a href="#public-block-technologies-16" class="anchor"></a>Public block technologies</h3>
+<p>The block is implemented in:</p>
+<ul>
+<li><code>bh.js</code></li>
+<li><code>bemhtml</code></li>
+</ul>
+<h2 id="description-12"><a href="#description-12" class="anchor"></a>Description</h2>
+<p>The block enables an inline script that adds <code>CSS</code> classes to the <code>&lt;html&gt;</code> tag to specify whether JavaScript is enabled – <code>ua_js_no</code> or <code>ua_js_yes</code>.</p>
+<p>It doesn&#39;t have a visual representation on the page.</p>
+<p>Used inside the <a href="https://github.com/bem/bem-core/blob/v2/common.blocks/page/page.en.md">page</a> block. You normally don&#39;t need to connect it to the page yourself.</p>
+<p><a name="elems"></a></p>
+<h3 id="elements-of-the-block-11"><a href="#elements-of-the-block-11" class="anchor"></a>Elements of the block</h3>
+<p><a name="elems-svg"></a></p>
+<h4 id="svg-element"><a href="#svg-element" class="anchor"></a><code>svg</code> element</h4>
+<p>This element enables an inline script that adds <code>CSS</code> classes to the <code>&lt;html&gt;</code> tag to specify whether SVG is supported – <code>ua_svg_no</code> or <code>ua_svg_yes</code>.</p>
+<p>It doesn&#39;t have a visual representation on the page.</p>
+<p>To use it, add the element to the <code>deps.js</code> dependencies file for the block that needs information about SVG support:</p>
+<!-- bem-example: tmp/data/bem-core-4.2.1/desktop.examples/ua/9d6RqDW969c-01-kFvK8PLS6AXo -->

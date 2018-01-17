@@ -1,0 +1,96 @@
+<h1 id="objects-1"><a href="#objects-1" class="anchor"></a>objects</h1>
+<p>This block provides an object with a set of methods for working with JavaScript objects.</p>
+<h2 id="overview-9"><a href="#overview-9" class="anchor"></a>Overview</h2>
+<h3 id="properties-and-methods-of-the-object-5"><a href="#properties-and-methods-of-the-object-5" class="anchor"></a>Properties and methods of the object</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Return type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#fields-extend">extend</a>(<br><code>target {Object}</code>, <br><code>source {Object}</code>)</td>
+<td><code>Object</code></td>
+<td>Extends an object with the properties of another object.</td>
+</tr>
+<tr>
+<td><a href="#fields-isEmpty">isEmpty</a>(<code>obj {Object}</code>)</td>
+<td><code>Boolean</code></td>
+<td>Determines whether the passed object is empty.</td>
+</tr>
+<tr>
+<td><a href="#fields-each">each</a>(<br><code>obj {Object}</code>, <br><code>fn {Function}</code>, <br><code>[ctx {Object}]</code>)</td>
+<td>-</td>
+<td>Iteratively traverses its own object properties.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="public-block-technologies-12"><a href="#public-block-technologies-12" class="anchor"></a>Public block technologies</h3>
+<p>The block is implemented in:</p>
+<ul>
+<li><code>vanilla.js</code></li>
+</ul>
+<h2 id="description-8"><a href="#description-8" class="anchor"></a>Description</h2>
+<p><a name="fields"></a></p>
+<h3 id="properties-and-methods-of-the-object-6"><a href="#properties-and-methods-of-the-object-6" class="anchor"></a>Properties and methods of the object</h3>
+<p><a name="fields-extend"></a></p>
+<h4 id="extend-method"><a href="#extend-method" class="anchor"></a><code>extend</code> method</h4>
+<p>Extends an object with the properties of another object. It only copies its own properties that weren&#39;t taken from the prototype chain.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>target {Object}</code> – Target object. Required argument.</li>
+<li><code>source {Object}</code> – The object whose properties are added to the target object. Multiple objects can be passed. The properties of each of them will be added to the target object. Required argument.</li>
+</ul>
+<p><strong>Return value:</strong> <code>Event</code>. The target object with the added properties.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require([&#39;objects&#39;], function(objects) {
+
+var obj1 = { a : 1, b : 2 },
+    obj2 = { b : 3, c : 4 };
+
+console.log(objects.extend(obj1, obj2)); // { a : 1, b : 3, c : 4 }
+});
+</code></pre>
+<p><a name="fields-isEmpty"></a></p>
+<h4 id="isempty-method"><a href="#isempty-method" class="anchor"></a><code>isEmpty</code> method</h4>
+<p>Determines whether the passed object is empty. In other words, whether the object has its own properties.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>obj {Object}</code> – The object to check. Required argument.</li>
+</ul>
+<p><strong>Return value:</strong> <code>Boolean</code>. If the object doesn&#39;t have its own properties, <code>true</code>.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require([&#39;objects&#39;], function(objects) {
+
+var obj1 = {},
+    obj2 = { foo : &#39;bar&#39; };
+
+console.log(objects.isEmpty(obj1)); // true
+console.log(objects.isEmpty(obj2)); // false
+});
+</code></pre>
+<p><a name="fields-each"></a></p>
+<h4 id="each-method"><a href="#each-method" class="anchor"></a><code>each</code> method</h4>
+<p>Used for iterating through an object&#39;s properties. The handler function is invoked for each of the object&#39;s own properties.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>obj {Object}</code> – The object whose properties are being traversed. Required argument.</li>
+<li><code>fn {Function}</code> – The handler function to call for each property. Required argument.</li>
+<li>[<code>ctx {Object}</code>] – The handler context.</li>
+</ul>
+<p>No return value.</p>
+<p>The handler function receives arguments with the value and key of the object property that it was invoked for.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require([&#39;objects&#39;], function(objects) {
+    objects.each(
+        { a : 1, b : 2 },
+        function(val, key) {
+            console.log(key, val);
+        });
+    // a 1
+    // b 2
+});
+</code></pre>

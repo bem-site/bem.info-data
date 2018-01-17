@@ -1,0 +1,30 @@
+<h1 id="i18n-1"><a href="#i18n-1" class="anchor"></a>i18n</h1>
+<p>This block provides a function for project internationalization.
+It can be used in a browser and in a node.js environment.</p>
+<h2 id="signature"><a href="#signature" class="anchor"></a>Signature</h2>
+<pre><code class="lang-js">/**
+ * @exports
+ * @param {String} keyset
+ * @param {String} key
+ * @param {Object} [params]
+ * @returns {String}
+ */
+i18n(keyset, key, params);
+</code></pre>
+<p>For example:</p>
+<pre><code class="lang-js">i18n(&#39;keyset1&#39;, &#39;key2&#39;, { a : &#39;1&#39; });
+</code></pre>
+<p>Use the <code>decl</code> method to add translations:</p>
+<pre><code class="lang-js">i18n.decl({
+    keyset1 : {
+        key1 : &#39;keyset1 key1 string&#39;,
+        key2 : function(params) {
+            return &#39;keyset1 key2 function &#39; + JSON.stringify(params);
+        },
+        key3 : function(params) {
+            return &#39;keyset1 key3 &#39; + this(&#39;keyset1&#39;, &#39;key2&#39;, params);
+        }
+    }
+});
+</code></pre>
+<p>For information about building an internationalized project, see  <a href="https://ru.bem.info/tools/bem/enb-bem-i18n/readme/">enb-bem-i18n</a>.</p>

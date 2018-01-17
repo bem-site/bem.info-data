@@ -1,0 +1,143 @@
+<h1 id="idle-1"><a href="#idle-1" class="anchor"></a>idle</h1>
+<p>This block provides an object with a set of methods for generating an event when user activity ends (i.e. the user switches to another window or doesn&#39;t finish actions).</p>
+<h2 id="overview-4"><a href="#overview-4" class="anchor"></a>Overview</h2>
+<h3 id="object-events"><a href="#object-events" class="anchor"></a>Object events</h3>
+<p>The following events are available:</p>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#events-idle">idle</a></td>
+<td>The browser is idle.</td>
+</tr>
+<tr>
+<td><a href="#events-wakeup">wakeup</a></td>
+<td>The user has resumed activity.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="properties-and-methods-of-the-object-2"><a href="#properties-and-methods-of-the-object-2" class="anchor"></a>Properties and methods of the object</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Returned value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#fields-start">start</a>()</td>
+<td>-</td>
+<td>Starts tracking user activity.</td>
+</tr>
+<tr>
+<td><a href="#fields-stop">stop</a>()</td>
+<td>-</td>
+<td>Stops tracking user activity.</td>
+</tr>
+<tr>
+<td><a href="#fields-isIdle">isIdle</a>()</td>
+<td><code>Boolean</code></td>
+<td>Checks the current state.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="block-modifiers"><a href="#block-modifiers" class="anchor"></a>Block modifiers</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Modifier</th>
+<th>Acceptable values</th>
+<th>Usage</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#modifiers-start">start</a></td>
+<td><code>auto</code></td>
+<td><code>JS</code></td>
+<td>Automatically starts tracking user activity.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="public-block-technologies-6"><a href="#public-block-technologies-6" class="anchor"></a>Public block technologies</h3>
+<p>The block is implemented in:</p>
+<ul>
+<li><code>js</code></li>
+</ul>
+<h2 id="description-4"><a href="#description-4" class="anchor"></a>Description</h2>
+<p>Subscribing to the block&#39;s event allows you to suspend operations, such as displaying animation, when there isn&#39;t any user activity.</p>
+<p>The block is a descendant of the <code>Emitter</code> class in the <code>events</code> block, which allows it to call these methods.</p>
+<pre><code class="lang-js">modules.require([&#39;idle&#39;], function(idle) {
+
+idle
+    .on({
+        idle : function() {
+            // idle event handler
+        },
+        wakeup : function() {
+            // wakeup event handler
+        }
+    })
+    .start(); // start event generation
+
+});
+</code></pre>
+<p><a name="events"></a></p>
+<h3 id="object-events-1"><a href="#object-events-1" class="anchor"></a>Object events</h3>
+<p><a name="events-idle"></a></p>
+<h4 id="idle-event"><a href="#idle-event" class="anchor"></a><code>idle</code> event</h4>
+<p>Generated when user activity ends.</p>
+<p><a name="events-wakeup"></a></p>
+<h4 id="wakeup-event"><a href="#wakeup-event" class="anchor"></a><code>wakeup</code> event</h4>
+<p>Generated when user activity resumes.</p>
+<p><a name="fields"></a></p>
+<h3 id="properties-and-methods-of-the-object-3"><a href="#properties-and-methods-of-the-object-3" class="anchor"></a>Properties and methods of the object</h3>
+<p><a name="fields-start"></a></p>
+<h4 id="start-method"><a href="#start-method" class="anchor"></a><code>start</code> method</h4>
+<p>Starts tracking user activity.</p>
+<p>Doesn&#39;t accept arguments.</p>
+<p>No return value.</p>
+<pre><code class="lang-js">modules.require([&#39;idle&#39;], function(idle) {
+
+idle.start()
+
+});
+</code></pre>
+<p><a name="fields-stop"></a></p>
+<h4 id="stop-method"><a href="#stop-method" class="anchor"></a><code>stop</code> method</h4>
+<p>Stops user activity tracking.</p>
+<p>Doesn&#39;t accept arguments.</p>
+<p>No return value.</p>
+<pre><code class="lang-js">modules.require([&#39;idle&#39;], function(idle) {
+
+idle.start() // start tracking activity
+idle.stop() // stop tracking activity
+
+});
+</code></pre>
+<p><a name="fields-isIdle"></a></p>
+<h4 id="isidle-method"><a href="#isidle-method" class="anchor"></a><code>isIdle</code> method</h4>
+<p>Checks whether there is any user activity.</p>
+<p>Doesn&#39;t accept arguments.</p>
+<p><strong>Return value:</strong> <code>Boolean</code>. If there isn&#39;t any activity, <code>true</code>.</p>
+<pre><code class="lang-js">modules.require([&#39;idle&#39;], function(idle) {
+
+idle.isIdle() // true or false, depending on the current state
+
+});
+</code></pre>
+<p><a name="modifiers"></a></p>
+<h3 id="block-modifiers-1"><a href="#block-modifiers-1" class="anchor"></a>Block modifiers</h3>
+<p><a name="modifiers-start"></a></p>
+<h4 id="start-modifier"><a href="#start-modifier" class="anchor"></a><code>start</code> modifier</h4>
+<p>Acceptable values: <code>&#39;auto&#39;</code>.</p>
+<p>Usage: enabled in the <code>deps.js</code> dependencies file.</p>
+<p>Automatically starts tracking user activity.</p>

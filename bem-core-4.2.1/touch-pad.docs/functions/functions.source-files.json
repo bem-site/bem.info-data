@@ -1,0 +1,70 @@
+[
+    {
+        "entity": {
+            "block": "functions"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "en.md",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/functions/functions.en.md"
+    },
+    {
+        "entity": {
+            "block": "functions"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "ru.md",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/functions/functions.ru.md"
+    },
+    {
+        "entity": {
+            "block": "functions"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "spec.js",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/functions/functions.spec.js"
+    },
+    {
+        "entity": {
+            "block": "functions"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "vanilla.js",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/functions/functions.vanilla.js"
+    },
+    {
+        "entity": {
+            "block": "functions",
+            "elem": "debounce"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "spec.js",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/functions/__debounce/functions__debounce.spec.js"
+    },
+    {
+        "entity": {
+            "block": "functions",
+            "elem": "debounce"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "vanilla.js",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/functions/__debounce/functions__debounce.vanilla.js"
+    },
+    {
+        "entity": {
+            "block": "functions",
+            "elem": "throttle"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "spec.js",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/functions/__throttle/functions__throttle.spec.js"
+    },
+    {
+        "entity": {
+            "block": "functions",
+            "elem": "throttle"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "vanilla.js",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/functions/__throttle/functions__throttle.vanilla.js"
+    }
+]

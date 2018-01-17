@@ -1,0 +1,116 @@
+<h1 id="cookie-2"><a href="#cookie-2" class="anchor"></a>cookie</h1>
+<p>Блок предоставляет объект, содержащий набор методов для работы с cookie браузера (JS-свойство <code>document.cookie</code>).</p>
+<h2 id="Обзор-17"><a href="#Обзор-17" class="anchor"></a>Обзор</h2>
+<h3 id="Свойства-и-методы-объекта-21"><a href="#Свойства-и-методы-объекта-21" class="anchor"></a>Свойства и методы объекта</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Имя</th>
+<th>Тип возвращаемого значения</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#fields-get">get</a>(<code>name</code>)</td>
+<td><code>String</code> &#124; <code>null</code></td>
+<td>Служит для получения значения, хранящегося в cookie браузера.</td>
+</tr>
+<tr>
+<td><a href="#fields-set">set</a>(<code>name</code>, <code>val</code>, <code>[options]</code>)</td>
+<td><code>String</code></td>
+<td>Cлужит для записи cookie с заданным именем.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="Публичные-технологии-блока-22"><a href="#Публичные-технологии-блока-22" class="anchor"></a>Публичные технологии блока</h3>
+<p>Блок реализован в технологиях:</p>
+<ul>
+<li><code>js</code></li>
+</ul>
+<h2 id="Описание-13"><a href="#Описание-13" class="anchor"></a>Описание</h2>
+<p><a name="fields"></a></p>
+<h3 id="Свойства-и-методы-объекта-22"><a href="#Свойства-и-методы-объекта-22" class="anchor"></a>Свойства и методы объекта</h3>
+<p><a name="fields-get"></a></p>
+<h4 id="Метод-get-1"><a href="#Метод-get-1" class="anchor"></a>Метод <code>get</code></h4>
+<p>Метод служит для получения значения, хранящегося в cookie, для имени переданного аргументом.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Аргумент</th>
+<th>Тип</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code>&#42;</td>
+<td><code>String</code></td>
+<td>Имя cookie.</td>
+</tr>
+</tbody>
+</table>
+</div><p>&#42; Обязательный аргумент.</p>
+<p><strong>Возвращает:</strong></p>
+<ul>
+<li><code>String</code> — если cookie с заданным именем было установлено. Значение автоматически декодируется с помощью <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent">decodeURIComponent</a>.</li>
+<li><code>null</code> — если cookie с заданным именем отсутствует.</li>
+</ul>
+<p>Пример:</p>
+<pre><code class="lang-js">modules.require(&#39;cookie&#39;, function(cookie) {
+
+    cookie.set(&#39;mycookie&#39;, &#39;foobar&#39;);
+    console.log(cookie.get(&#39;mycookie&#39;)); // &#39;foobar&#39;
+    console.log(cookie.get(&#39;foo&#39;)); // null
+
+});
+</code></pre>
+<p><a name="fields-set"></a></p>
+<h4 id="Метод-set-1"><a href="#Метод-set-1" class="anchor"></a>Метод <code>set</code></h4>
+<p>Метод служит для записи cookie с заданным именем. Помимо имени и значения, методу можно передать хеш с дополнительными параметрами cookie.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Аргумент</th>
+<th>Тип</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code>&#42;</td>
+<td><code>String</code></td>
+<td>Имя cookie.</td>
+</tr>
+<tr>
+<td><code>val</code>&#42;</td>
+<td><code>String</code> &#124; <code>null</code></td>
+<td>Значение cookie. При установке в качестве значения <code>null</code> cookie удаляется.</td>
+</tr>
+<tr>
+<td>[<code>options</code>]</td>
+<td><code>Object</code></td>
+<td>Опции. </br></br> Свойства объекта: </br></br> &#8226; <code>expires</code> (<code>Number</code>) – срок жизни cookie в сутках. При отрицательном значении cookie будет удалено. Альтернативно, можно передать в качестве значения сформированный объект даты (<code>new Date()</code>). </br> &#8226; <code>path</code> (<code>String</code>) – путь от корня домена внутри которого будет доступно cookie. </br> &#8226; <code>domain</code> (<code>String</code>) – домен. По умолчанию текущий домен. </br> &#8226; <code>secure</code> (<code>Boolean</code>) – флаг, указывающий на необходимость использования с cookie шифрованного соединения SSL. По умолчанию <code>false</code>.</td>
+</tr>
+</tbody>
+</table>
+</div><p>&#42; Обязательный аргумент.</p>
+<p><strong>Возвращает:</strong> объект <code>this</code>.</p>
+<p>Пример:</p>
+<pre><code class="lang-js">modules.require(&#39;cookie&#39;, function(cookie) {
+
+    cookie.set(&#39;mycookie&#39;, &#39;foobar&#39;, {
+        expires : 1, // срок жизни одни сутки
+        path : &#39;/&#39;, // доступно для всех страниц
+        secure : true // передавать cookie только по SSL
+    });
+
+    console.log(cookie.get(&#39;mycookie&#39;)); // &#39;foobar&#39;
+
+    cookie.set(&#39;mycookie&#39;, null); // удаляем cookie
+    console.log(cookie.get(&#39;mycookie&#39;)); // null
+
+});
+</code></pre>

@@ -1,0 +1,43 @@
+<h1 id="next-tick-4"><a href="#next-tick-4" class="anchor"></a>next-tick</h1>
+<p>Блок предоставляет функцию, производящую асинхронный вызов callback-функции, переданной аргументом, в следующем витке событийного цикла.</p>
+<p><code>next-tick</code> – полифил, реализующий:</p>
+<ul>
+<li>симуляцию событийного цикла для старых версий браузеров;</li>
+<li>унифицированный интерфейс для работы с различными браузерами и NodeJS.</li>
+</ul>
+<p>Функция подходит для случаев, когда нужно, чтобы callback был выполнен после того, как другие функции в рамках событийного цикла отработали. Например, чтобы убедиться что доступны данные, динамически вычислявшиеся в текущем цикле.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>fn {Function}</code> – функция, которую нужно вызвать в следующем событийном цикле. Обязательный аргумент.</li>
+</ul>
+<p>Не имеет возвращаемого значения.</p>
+<p>Пример:</p>
+<pre><code class="lang-js">modules.require([&#39;next-tick&#39;, &#39;events&#39;], function(nextTick, events) {
+
+var event = new events.Event();
+
+nextTick(function() { event.emit(&#39;click&#39;) }); 
+
+// ··· 
+
+event.on(&#39;click&#39;, function(e) { console.log(e.type) })
+});
+</code></pre>
+<h2 id="Порядок-вызова-callback-2"><a href="#Порядок-вызова-callback-2" class="anchor"></a>Порядок вызова callback</h2>
+<p>В рамках событийного цикла работы блок формирует очередь, добавляя каждую следующую callback функцию в ее конец. Порядок вызова callback сохраняется.</p>
+<p>Пример:</p>
+<pre><code class="lang-js">modules.require([&#39;next-tick&#39;], function(nextTick) {
+
+var order = [];
+
+nextTick(function() { order.push(1); });
+nextTick(function() { order.push(2); });
+nextTick(function() { order.push(3); });
+nextTick(function() { console.log(order); }); // should be [1, 2, 3]
+});
+</code></pre>
+<h2 id="Публичные-технологии-блока-53"><a href="#Публичные-технологии-блока-53" class="anchor"></a>Публичные технологии блока</h2>
+<p>Блок реализован в технологиях:</p>
+<ul>
+<li><code>vanilla.js</code></li>
+</ul>

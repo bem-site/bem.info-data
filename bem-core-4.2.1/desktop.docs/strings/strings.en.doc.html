@@ -1,0 +1,93 @@
+<h1 id="strings-1"><a href="#strings-1" class="anchor"></a>strings</h1>
+<p>This block provides helpers for manipulating string data.</p>
+<h2 id="overview-11"><a href="#overview-11" class="anchor"></a>Overview</h2>
+<h3 id="elements-of-the-block-8"><a href="#elements-of-the-block-8" class="anchor"></a>Elements of the block</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Usage</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-escape">escape</a></td>
+<td><code>JS</code></td>
+<td>A set of methods for escaping XML and HTML control characters.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="properties-and-methods-of-the-block-elements-2"><a href="#properties-and-methods-of-the-block-elements-2" class="anchor"></a>Properties and methods of the block elements</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Name</th>
+<th>Type or return value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-escape">escape</a></td>
+<td><a href="#elems-escape-fields-xml">xml</a>(<code>str {String}</code>)</td>
+<td><code>String</code></td>
+<td>Use for escaping XML control characters.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#elems-escape-fields-html">html</a>(<code>str {String}</code>)</td>
+<td><code>String</code></td>
+<td>Use for escaping HTML control characters.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#elems-escape-fields-attr">attr</a>(<code>str {String}</code>)</td>
+<td><code>String</code></td>
+<td>Use for escaping control characters in HTML and XML attributes.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="public-block-technologies-14"><a href="#public-block-technologies-14" class="anchor"></a>Public block technologies</h3>
+<p>The block is implemented in:</p>
+<ul>
+<li><code>vanilla.js</code></li>
+</ul>
+<h2 id="description-10"><a href="#description-10" class="anchor"></a>Description</h2>
+<p><a name="elems"></a></p>
+<h3 id="elements-of-the-block-9"><a href="#elements-of-the-block-9" class="anchor"></a>Elements of the block</h3>
+<p><a name="elems-escape"></a></p>
+<h4 id="escape-element"><a href="#escape-element" class="anchor"></a><code>escape</code> element</h4>
+<p>This element provides an object with a set of methods for escaping XML and HTML control characters.</p>
+<p><a name="elems-name-fields"></a></p>
+<h3 id="properties-and-methods-of-the-object-7"><a href="#properties-and-methods-of-the-object-7" class="anchor"></a>Properties and methods of the object</h3>
+<p><a name="elems-escape-fields-xml"></a></p>
+<h4 id="xml-method"><a href="#xml-method" class="anchor"></a><code>xml</code> method</h4>
+<p>Use for escaping XML control characters. Processes the symbols <code>&amp;</code>, <code>&lt;</code>, <code>&gt;</code>.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>str {String}</code> – String to process. Required argument.</li>
+</ul>
+<p><strong>Return value:</strong> <code>String</code>. The string with escaped control characters.</p>
+<p><a name="elems-escape-fields-html"></a></p>
+<h4 id="html-method"><a href="#html-method" class="anchor"></a><code>html</code> method</h4>
+<p>Use for escaping HTML control characters. It is a synonym of the <code>xml</code> method.</p>
+<p><a name="elems-escape-fields-attr"></a></p>
+<h4 id="attr-method"><a href="#attr-method" class="anchor"></a><code>attr</code> method</h4>
+<p>Use for escaping control characters in HTML and XML attributes. Processes the control characters <code>&quot;</code>, <code>\</code>, <code>&#39;</code>, <code>&amp;</code>, <code>&lt;</code>, <code>&gt;</code>.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>str {String}</code> – String to process. Required argument.</li>
+</ul>
+<p><strong>Return value:</strong> <code>String</code>. The string with escaped control characters.</p>
+<p>For example, in the <a href="https://github.com/bem/bem-components/blob/v2/common.blocks/select/select.js#L237"><code>common.blocks/select</code></a> block in the <code>bem-components</code> library, <code>strings__escape</code> is used for escaping control characters in the <code>value</code> property of an HTML element:</p>
+<pre><code class="lang-js">_createControlHTML : function(name, val) {
+    // Using string concatenation to not depend on template engines
+    return &#39;&lt;input &#39; +
+        &#39;type=&quot;hidden&quot; &#39; +
+        &#39;name=&quot;&#39; + name + &#39;&quot; &#39; +
+        &#39;class=&quot;&#39; + this.buildClass(&#39;control&#39;) + &#39;&quot; &#39; +
+        &#39;value=&quot;&#39; + escape.attr(typeof val === &#39;object&#39;? JSON.stringify(val) : val) + &#39;&quot;/&gt;&#39;;
+}
+</code></pre>

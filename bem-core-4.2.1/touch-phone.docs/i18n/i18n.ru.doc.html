@@ -1,0 +1,30 @@
+<h1 id="i18n-2"><a href="#i18n-2" class="anchor"></a>i18n</h1>
+<p>Блок предоставляет функцию для интернационализации проекта.
+Может быть использован в браузере и в node.js-окружении.</p>
+<h2 id="Сигнатура-1"><a href="#Сигнатура-1" class="anchor"></a>Сигнатура</h2>
+<pre><code class="lang-js">/**
+ * @exports
+ * @param {String} keyset
+ * @param {String} key
+ * @param {Object} [params]
+ * @returns {String}
+ */
+i18n(keyset, key, params);
+</code></pre>
+<p>Например:</p>
+<pre><code class="lang-js">i18n(&#39;keyset1&#39;, &#39;key2&#39;, { a : &#39;1&#39; });
+</code></pre>
+<p>Для добавления переводов используется метод <code>decl</code>:</p>
+<pre><code class="lang-js">i18n.decl({
+    keyset1 : {
+        key1 : &#39;keyset1 key1 string&#39;,
+        key2 : function(params) {
+            return &#39;keyset1 key2 function &#39; + JSON.stringify(params);
+        },
+        key3 : function(params) {
+            return &#39;keyset1 key3 &#39; + this(&#39;keyset1&#39;, &#39;key2&#39;, params);
+        }
+    }
+});
+</code></pre>
+<p>Документацию на сборку проекта с интернационализацией см. в пакете для сборки <a href="https://ru.bem.info/tools/bem/enb-bem-i18n/readme/">enb-bem-i18n</a>.</p>

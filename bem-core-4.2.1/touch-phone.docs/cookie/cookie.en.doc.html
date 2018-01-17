@@ -1,0 +1,116 @@
+<h1 id="cookie-3"><a href="#cookie-3" class="anchor"></a>cookie</h1>
+<p>This block provides an object with a set of methods for working with browser cookies (the JS <code>document.cookie</code> property).</p>
+<h2 id="overview-15"><a href="#overview-15" class="anchor"></a>Overview</h2>
+<h3 id="object-properties-and-methods-4"><a href="#object-properties-and-methods-4" class="anchor"></a>Object properties and methods</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Return type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#fields-get">get</a>(<code>name</code>)</td>
+<td><code>String</code> &#124; <code>null</code></td>
+<td>Gets the value stored in a browser cookie.</td>
+</tr>
+<tr>
+<td><a href="#fields-set">set</a>(<code>name</code>, <code>val</code>, <code>[options]</code>)</td>
+<td><code>String</code></td>
+<td>Sets the cookie with the specified name.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="public-block-technologies-20"><a href="#public-block-technologies-20" class="anchor"></a>Public block technologies</h3>
+<p>The block is implemented in:</p>
+<ul>
+<li><code>js</code></li>
+</ul>
+<h2 id="description-13"><a href="#description-13" class="anchor"></a>Description</h2>
+<p><a name="fields"></a></p>
+<h3 id="object-properties-and-methods-5"><a href="#object-properties-and-methods-5" class="anchor"></a>Object properties and methods</h3>
+<p><a name="fields-get"></a></p>
+<h4 id="get-method-1"><a href="#get-method-1" class="anchor"></a><code>get</code> method</h4>
+<p>Use this method to get the value stored in a cookie for the name passed in the argument.</p>
+<p><strong>Accepted arguments:</strong></p>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code>&#42;</td>
+<td><code>String</code></td>
+<td>The name of the cookie.</td>
+</tr>
+</tbody>
+</table>
+</div><p>&#42; Required argument.</p>
+<p><strong>Returns:</strong></p>
+<ul>
+<li><code>String</code> — If a cookie with the specified name was set. The value is automatically decoded using <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent">decodeURIComponent</a>.</li>
+<li><code>null</code> — If a cookie with the specified name doesn&#39;t exist.</li>
+</ul>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require(&#39;cookie&#39;, function(cookie) {
+
+    cookie.set(&#39;mycookie&#39;, &#39;foobar&#39;);
+    console.log(cookie.get(&#39;mycookie&#39;)); // &#39;foobar&#39;
+    console.log(cookie.get(&#39;foo&#39;)); // null
+
+});
+</code></pre>
+<p><a name="fields-set"></a></p>
+<h4 id="set-method-1"><a href="#set-method-1" class="anchor"></a><code>set</code> method</h4>
+<p>Use this method to set the cookie with the specified name. In addition to the name and value, you can pass the method a hash with additional cookie parameters.</p>
+<p><strong>Accepted arguments:</strong></p>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code>&#42;</td>
+<td><code>String</code></td>
+<td>The name of the cookie.</td>
+</tr>
+<tr>
+<td><code>val</code>&#42;</td>
+<td><code>String</code> &#124; <code>null</code></td>
+<td>The value of the cookie. If the value is set to <code>null</code>, the cookie is deleted.</td>
+</tr>
+<tr>
+<td>[<code>options</code>]</td>
+<td><code>Object</code></td>
+<td>Options. </br></br> Object properties</br></br> &#8226; <code>expires</code> (<code>Number</code>) – The cookie&#39;s time to live, in days. If the value is negative, the cookie is deleted. Alternatively, you can pass a generated date object (<code>new Date()</code>) for the value. </br> &#8226; <code>path</code> (<code>String</code>) – The path from the domain root where the cookie will be available. </br> &#8226; <code>domain</code> (<code>String</code>) – The domain. By default, this is the current domain. </br> &#8226; <code>secure</code> (<code>Boolean</code>) – Flag indicating that an encrypted SSL connection must be used with the cookie. By default, it is <code>false</code>.</td>
+</tr>
+</tbody>
+</table>
+</div><p>&#42; Required argument.</p>
+<p><strong>Returns:</strong> the <code>this</code> object.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require(&#39;cookie&#39;, function(cookie) {
+
+    cookie.set(&#39;mycookie&#39;, &#39;foobar&#39;, {
+        expires : 1, // lifetime is one day
+        path : &#39;/&#39;, // available for all pages secure
+        secure : true // only send the cookie over SSL
+    });
+
+    console.log(cookie.get(&#39;mycookie&#39;)); // &#39;foobar&#39;
+
+    cookie.set(&#39;mycookie&#39;, null); // deleting the cookie
+    console.log(cookie.get(&#39;mycookie&#39;)); // null
+
+});
+</code></pre>

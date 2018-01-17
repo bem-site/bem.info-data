@@ -1,0 +1,137 @@
+<h1 id="ua"><a href="#ua" class="anchor"></a>ua</h1>
+<p>Блок служит для сбора данных о браузере пользователя.</p>
+<h2 id="Обзор-14"><a href="#Обзор-14" class="anchor"></a>Обзор</h2>
+<h3 id="Элементы-блока-12"><a href="#Элементы-блока-12" class="anchor"></a>Элементы блока</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Элемент</th>
+<th>Способы использования</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-svg">svg</a></td>
+<td><code>deps</code></td>
+<td>Проверяет, поддерживает ли браузер формат SVG.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="Публичные-технологии-блока-17"><a href="#Публичные-технологии-блока-17" class="anchor"></a>Публичные технологии блока</h3>
+<p>Блок реализован в технологиях:</p>
+<ul>
+<li><code>bh.js</code></li>
+<li><code>bemhtml</code></li>
+</ul>
+<h2 id="Описание-12"><a href="#Описание-12" class="anchor"></a>Описание</h2>
+<p>Блок подключает инлайновый скрипт, добавляющий тегу <code>&lt;html&gt;</code> <code>CSS</code>-классы, указывающие, включен ли JavaScript – <code>ua_js_no</code>/<code>ua_js_yes</code>.</p>
+<p>Не имеет визуального представления на странице.</p>
+<p>Используется внутри блока <a href="https://github.com/bem/bem-core/blob/v2/common.blocks/page/page.ru.md">page</a> и самостоятельно подключать его к странице обычно не требуется.</p>
+<p><a name="elems"></a></p>
+<h3 id="Элементы-блока-13"><a href="#Элементы-блока-13" class="anchor"></a>Элементы блока</h3>
+<p><a name="elems-svg"></a></p>
+<h4 id="Элемент-svg"><a href="#Элемент-svg" class="anchor"></a>Элемент <code>svg</code></h4>
+<p>Элемент подключает инлайновый скрипт, добавляющий тегу <code>&lt;html&gt;</code> <code>CSS</code>-классы, указывающие, поддерживается ли SVG – <code>ua_svg_no</code>/<code>ua_svg_yes</code>.</p>
+<p>Не имеет визуального представления на странице.</p>
+<p>Для использования включите элемент в файл зависимостей <code>deps.js</code> блока, которому требуются данные о поддержке SVG:</p>
+<!-- bem-example: tmp/data/bem-core-4.2.1/desktop.examples/ua/9d6RqDW969c-01-kFvK8PLS6AXo -->
+
+<h1 id="ua-1"><a href="#ua-1" class="anchor"></a>ua</h1>
+<p>На уровне <code>desktop</code>, блок предоставляет объект, содержащий набор свойств, указывающих особенности браузера.</p>
+<h2 id="Обзор-15"><a href="#Обзор-15" class="anchor"></a>Обзор</h2>
+<h3 id="Свойства-и-методы-объекта-15"><a href="#Свойства-и-методы-объекта-15" class="anchor"></a>Свойства и методы объекта</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Имя</th>
+<th>Тип</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#fields-chrome">chrome</a></td>
+<td><code>{Boolean}</code></td>
+<td>Тип браузера: Google Chrome.</td>
+</tr>
+<tr>
+<td><a href="#fields-opera">opera</a></td>
+<td><code>{Boolean}</code></td>
+<td>Тип браузера: Opera.</td>
+</tr>
+<tr>
+<td><a href="#fields-msie">msie</a></td>
+<td><code>{Boolean}</code></td>
+<td>Тип браузера: Microsoft Internet Explorer.</td>
+</tr>
+<tr>
+<td><a href="#fields-mozilla">mozilla</a></td>
+<td><code>{Boolean}</code></td>
+<td>Тип браузера: Mozilla Firefox.</td>
+</tr>
+<tr>
+<td><a href="#fields-safari">safari</a></td>
+<td><code>{Boolean}</code></td>
+<td>Тип браузера: Safari.</td>
+</tr>
+<tr>
+<td><a href="#fields-webkit">webkit</a></td>
+<td><code>{Boolean}</code></td>
+<td>Браузер построен на движке WebKit.</td>
+</tr>
+<tr>
+<td><a href="#fields-version">version</a></td>
+<td><code>{String}</code></td>
+<td>Версия браузера.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="Публичные-технологии-блока-18"><a href="#Публичные-технологии-блока-18" class="anchor"></a>Публичные технологии блока</h3>
+<p>Блок реализован в технологиях:</p>
+<ul>
+<li><code>js</code></li>
+</ul>
+<h2 id="Подробности-1"><a href="#Подробности-1" class="anchor"></a>Подробности</h2>
+<p>Блок позволяет определить:</p>
+<ul>
+<li>Тип браузера.</li>
+<li>Совместимость с WebKit.</li>
+<li>Версию браузера.</li>
+</ul>
+<pre><code class="lang-js">modules.require(&#39;ua&#39;, function(ua) {
+
+console.dir(ua);
+
+});
+</code></pre>
+<p><a name="fields"></a></p>
+<h3 id="Свойства-и-методы-объекта-16"><a href="#Свойства-и-методы-объекта-16" class="anchor"></a>Свойства и методы объекта</h3>
+<p><a name="fields-chrome"></a></p>
+<h4 id="Свойство-chrome"><a href="#Свойство-chrome" class="anchor"></a>Свойство <code>chrome</code></h4>
+<p>Тип: <code>{Boolean}</code>.</p>
+<p>Тип браузера. <code>true</code>, если Google Chrome.</p>
+<p><a name="fields-opera"></a></p>
+<h4 id="Свойство-opera"><a href="#Свойство-opera" class="anchor"></a>Свойство <code>opera</code></h4>
+<p>Тип: <code>{Boolean}</code>.</p>
+<p>Тип браузера. <code>true</code>, если Opera.</p>
+<p><a name="fields-msie"></a></p>
+<h4 id="Свойство-msie"><a href="#Свойство-msie" class="anchor"></a>Свойство <code>msie</code></h4>
+<p>Тип: <code>{Boolean}</code>.</p>
+<p>Тип браузера. <code>true</code>, если Microsoft Internet Explorer.</p>
+<p><a name="fields-mozilla"></a></p>
+<h4 id="Свойство-mozilla"><a href="#Свойство-mozilla" class="anchor"></a>Свойство <code>mozilla</code></h4>
+<p>Тип: <code>{Boolean}</code>.</p>
+<p>Тип браузера. <code>true</code>, если Mozilla Firefox.</p>
+<p><a name="fields-safari"></a></p>
+<h4 id="Свойство-safari"><a href="#Свойство-safari" class="anchor"></a>Свойство <code>safari</code></h4>
+<p>Тип: <code>{Boolean}</code>.</p>
+<p>Тип браузера. <code>true</code>, если Safari.</p>
+<p><a name="fields-webkit"></a></p>
+<h4 id="Свойство-webkit"><a href="#Свойство-webkit" class="anchor"></a>Свойство <code>webkit</code></h4>
+<p>Тип: <code>{Boolean}</code>.</p>
+<p><code>true</code>, если браузер построен на движке WebKit.</p>
+<p><a name="fields-version"></a></p>
+<h4 id="Свойство-version"><a href="#Свойство-version" class="anchor"></a>Свойство <code>version</code></h4>
+<p>Тип: <code>{String}</code>.</p>
+<p>Значение – строка с версией браузера вида <code>&#39;600.2.5&#39;</code> (для Safari). Если определить версию браузера не удается, в качестве значения устанавливается <code>&#39;0&#39;</code>.</p>

@@ -1,0 +1,104 @@
+<h1 id="loader-5"><a href="#loader-5" class="anchor"></a>loader</h1>
+<p>Use the <code>loader</code> block for downloading and connecting scripts by URLs.</p>
+<h2 id="overview-37"><a href="#overview-37" class="anchor"></a>Overview</h2>
+<h3 id="block-modifiers-14"><a href="#block-modifiers-14" class="anchor"></a>Block modifiers</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Modifier</th>
+<th>Acceptable values</th>
+<th>Usage</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#modifiers-type">type</a></td>
+<td><code>&#39;js&#39;</code>, <code>&#39;bundle&#39;</code></td>
+<td><code>JS</code></td>
+<td>Uses a URL to get and connect JS code or a bundle.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="functions-enabled-by-block-elements-2"><a href="#functions-enabled-by-block-elements-2" class="anchor"></a>Functions enabled by block elements</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Modifier</th>
+<th>Function</th>
+<th>Returned value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#modifiers-type-js">js</a></td>
+<td>loader(</br><code>id {String}</code>,</br> <code>url {String}</code>,</br> <code>[success {Function}]</code>,</br> <code>[error {Function}]</code>)</td>
+<td>-</td>
+<td>Downloads and connects a fragment of JavaScript code.</td>
+</tr>
+<tr>
+<td><a href="#modifiers-type-bundle">bundle</a></td>
+<td>loader(</br><code>url {String}</code>,</br> <code>success {Function}</code>,</br> <code>[error {Function}]</code>)</td>
+<td>-</td>
+<td>Downloads and connects a bundle of CSS and JS files.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="public-block-technologies-47"><a href="#public-block-technologies-47" class="anchor"></a>Public block technologies</h3>
+<p>The block is implemented in:</p>
+<ul>
+<li><code>js</code></li>
+</ul>
+<h2 id="description-33"><a href="#description-33" class="anchor"></a>Description</h2>
+<p><a name="modifiers"></a></p>
+<h3 id="block-modifiers-15"><a href="#block-modifiers-15" class="anchor"></a>Block modifiers</h3>
+<p><a name="modifiers-type"></a></p>
+<h4 id="type-modifier-4"><a href="#type-modifier-4" class="anchor"></a><code>type</code> modifier</h4>
+<p>Provides a set of functions to download and connect different data types.</p>
+<p>Acceptable values: <code>&#39;js&#39;</code>, <code>&#39;bundle&#39;</code>.</p>
+<p>Usage: <code>JS</code>.</p>
+<p>Depending on the value of the <code>type</code> modifier, the <code>loader</code> block lets you download from a URL and connect:</p>
+<ul>
+<li><code>js</code> – A JavaScript fragment.</li>
+<li><code>bundle</code> – A bundle of CSS and JS files.</li>
+</ul>
+<p><a name="modifiers-type-js"></a></p>
+<h5 id="type-modifier-with-the-js-value-2"><a href="#type-modifier-with-the-js-value-2" class="anchor"></a><code>type</code> modifier with the <code>js</code> value</h5>
+<p>Provides a function to download and connect a JavaScript fragment.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>url {String}</code> – URL of the JavaScript fragment to download. Required argument.</li>
+<li>[<code>success {Function}</code>] – The callback function to run when the code is loaded successfully.</li>
+<li>[<code>error {Function}</code>] – The callback function to run when the code couldn&#39;t load because of an error.</li>
+</ul>
+<p>No return value.</p>
+<p>For example, <code>loader_type_js</code> can be used for downloading and enabling jQuery:</p>
+<pre><code class="lang-js">modules.define(&#39;jquery&#39;, [&#39;loader_type_js&#39;], function(provide, loader) {
+
+    loader(
+        &#39;https://yastatic.net/jquery/2.2.0/jquery.min.js&#39;,
+        function() { provide(jQuery) });
+
+});
+</code></pre>
+<p>For a more advanced example, see the <a href="https://github.com/bem/bem-core/blob/v2/common.blocks/jquery/jquery.js">common.blocks/jquery</a> block in the <code>bem-core</code> library.</p>
+<p><a name="modifiers-type-bundle"></a></p>
+<h5 id="type-modifier-with-the-bundle-value-2"><a href="#type-modifier-with-the-bundle-value-2" class="anchor"></a><code>type</code> modifier with the <code>bundle</code> value</h5>
+<p>Provides a function to download and connect a bundle of CSS and JS files.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>id {String}</code> – Bundle ID. Required argument.</li>
+<li><code>url {String}</code> – The path to the bundle file in URL format. Required argument.</li>
+<li><code>onSuccess {Function}</code> – The callback to run when the bundle is loaded successfully. Required argument.</li>
+<li>[<code>onError {Function}</code>] – The callback to run when the bundle didn&#39;t load.</li>
+</ul>
+<p>No return value.</p>
+<p>The specification for the <code>bundle</code> technology is currently under development. For more details, write your questions in the <a href="https://ru.bem.info/forum/">forum</a>.</p>
+<h6 id="_loaded-static-method-2"><a href="#_loaded-static-method-2" class="anchor"></a><code>_loaded</code> static method</h6>
+<p>The function connected with the <code>type_bundle</code> modifier has the <code>_loaded</code> static method. It is used as a helper method after successfully loading the bundle.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>id {String}</code> – Bundle ID. Required argument.</li>
+</ul>
+<p>No return value.</p>

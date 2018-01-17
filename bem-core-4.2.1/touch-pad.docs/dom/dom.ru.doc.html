@@ -1,0 +1,148 @@
+<h1 id="dom-4"><a href="#dom-4" class="anchor"></a>dom</h1>
+<p>Блок предоставляет объект, содержащий набор методов для работы с DOM-деревом.</p>
+<h2 id="Обзор-35"><a href="#Обзор-35" class="anchor"></a>Обзор</h2>
+<h3 id="Свойства-и-методы-объекта-44"><a href="#Свойства-и-методы-объекта-44" class="anchor"></a>Свойства и методы объекта</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Имя</th>
+<th>Тип возвращаемого значения</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#fields-contains">contains</a>(<br><code>ctx {jQuery}</code>,<br><code>domElem {jQuery}</code>)</td>
+<td><code>Boolean</code></td>
+<td>Проверяет, содержит ли один DOM-элемент другой.</td>
+</tr>
+<tr>
+<td><a href="#fields-getFocused">getFocused</a>(<br><code>domElem {jQuery}</code>)</td>
+<td><code>jQuery</code></td>
+<td>Служит для получения ссылки на DOM-элемент в фокусе.</td>
+</tr>
+<tr>
+<td><a href="#fields-containsFocus">containsFocus</a>(<br><code>domElem {jQuery}</code>)</td>
+<td><code>Boolean</code></td>
+<td>Проверят, содержит ли DOM-элемент или его потомки фокус.</td>
+</tr>
+<tr>
+<td><a href="#fields-isFocusable">isFocusable</a>(<br><code>domElem {jQuery}</code>)</td>
+<td><code>Boolean</code></td>
+<td>Проверят, может ли DOM-элемент находиться в фокусе.</td>
+</tr>
+<tr>
+<td><a href="#fields-isEditable">isEditable</a>(<br><code>domElem {jQuery}</code>)</td>
+<td><code>Boolean</code></td>
+<td>Проверят, возможен ли в DOM-элементе ввод текста.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="Публичные-технологии-блока-44"><a href="#Публичные-технологии-блока-44" class="anchor"></a>Публичные технологии блока</h3>
+<p>Блок реализован в технологиях:</p>
+<ul>
+<li><code>js</code></li>
+</ul>
+<h2 id="Описание-27"><a href="#Описание-27" class="anchor"></a>Описание</h2>
+<p><a name="fields"></a></p>
+<h3 id="Свойства-и-методы-объекта-45"><a href="#Свойства-и-методы-объекта-45" class="anchor"></a>Свойства и методы объекта</h3>
+<p><a name="fields-contains"></a></p>
+<h4 id="Метод-contains-2"><a href="#Метод-contains-2" class="anchor"></a>Метод <code>contains</code></h4>
+<p>Метод позволяет проверить содержит ли некоторый DOM-элемент <code>ctx</code> элемент <code>domElem</code>.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>ctx {jQuery}</code> – DOM-элемент внутри которого производится поиск. Обязательный аргумент.</li>
+<li><code>domElem {jQuery}</code> – искомый DOM-элемент. Обязательный аргумент.</li>
+</ul>
+<p><strong>Возвращаемое значение:</strong> <code>Boolean</code>. Если искомый элемент найден – <code>true</code>.</p>
+<p>Пример:</p>
+<pre><code class="lang-js">modules.require([&#39;dom&#39;, &#39;jquery&#39;], function(dom, $) {
+
+/*
+&lt;div class=&quot;block1&quot;&gt;
+  &lt;div class=&quot;block2&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+*/
+
+dom.contains($(&#39;.block1&#39;), $(&#39;.block2&#39;));  // true
+
+});
+</code></pre>
+<p><a name="fields-getFocused"></a></p>
+<h4 id="Метод-getfocused-2"><a href="#Метод-getfocused-2" class="anchor"></a>Метод <code>getFocused</code></h4>
+<p>Метод служит для получения ссылки на DOM-элемент, находящийся в фокусе.</p>
+<p>Не принимает аргументов.</p>
+<p><strong>Возвращаемое значение:</strong> <code>jQuery</code> – объект в фокусе.</p>
+<p>Пример:</p>
+<pre><code class="lang-js">modules.require([&#39;dom&#39;], function(dom) {
+
+dom.getFocused(); // ссылка на элемент в фокусе
+
+});
+</code></pre>
+<p><a name="fields-containsFocus"></a></p>
+<h4 id="Метод-containsfocus-2"><a href="#Метод-containsfocus-2" class="anchor"></a>Метод <code>containsFocus</code></h4>
+<p>Метод проверяет находится ли в фокусе переданный аргументом DOM-элемент или один из его потомков.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>domElem {jQuery}</code> – проверяемый DOM-элемент. Обязательный аргумент.</li>
+</ul>
+<p><strong>Возвращаемое значение:</strong> <code>Boolean</code>. Если искомый элемент в фокусе – <code>true</code>.</p>
+<p>Пример:</p>
+<pre><code class="lang-js">modules.require([&#39;dom&#39;, &#39;jquery&#39;], function(dom, $) {
+
+/*
+&lt;div class=&quot;block1&quot;&gt;
+  &lt;input class=&quot;block1__control&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+*/
+
+$(&#39;.block1__control&#39;).focus();
+dom.containsFocus($(&#39;.block1&#39;));  // true
+
+});
+</code></pre>
+<p><a name="fields-isFocusable"></a></p>
+<h4 id="Метод-isfocusable-2"><a href="#Метод-isfocusable-2" class="anchor"></a>Метод <code>isFocusable</code></h4>
+<p>Метод проверят может ли браузер пользователя установить фокус на переданный аргументом DOM-элемент.   </p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>domElem {jQuery}</code> – проверяемый DOM-элемент. Обязательный аргумент. Если в jQuery-цепочке несколько DOM-элементов, то проверяется первый из них.</li>
+</ul>
+<p><strong>Возвращаемое значение:</strong> <code>Boolean</code>. Если фокус может быть установлен – <code>true</code>.</p>
+<p>Пример:</p>
+<pre><code class="lang-js">modules.require([&#39;dom&#39;, &#39;jquery&#39;], function(dom, $) {
+
+/*
+&lt;div class=&quot;menu&quot;&gt;
+  &lt;a class=&quot;menu__item&quot; href=&quot;/&quot;&gt;Link 1&lt;/a&gt;
+&lt;/div&gt;
+*/
+
+dom.isFocusable($(&#39;.menu__item&#39;)); // true
+
+/*
+&lt;div class=&quot;menu&quot;&gt;
+  &lt;span class=&quot;menu__item menu__item_current&quot;&gt;Link 1&lt;/span&gt;
+&lt;/div&gt;
+*/
+
+dom.isFocusable($(&#39;.menu__item&#39;)); // false
+
+});
+</code></pre>
+<p><a name="fields-isEditable"></a></p>
+<h4 id="Метод-iseditable-2"><a href="#Метод-iseditable-2" class="anchor"></a>Метод <code>isEditable</code></h4>
+<p>Метод проверят возможен ли в переданном аргументом DOM-элементе ввод текста. Другими словами, с помощью метода можно проверить является ли элемент полем ввода, текстовой областью и т.п.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>domElem {jQuery}</code> – проверяемый DOM-элемент. Обязательный аргумент. Если в jQuery-цепочке несколько DOM-элементов, то проверяется первый из них.</li>
+</ul>
+<p><strong>Возвращаемое значение:</strong> <code>Boolean</code>. Если ввод текста в элементе возможен – <code>true</code>.</p>
+<p>Пример:</p>
+<pre><code class="lang-js">modules.require([&#39;dom&#39;, &#39;jquery&#39;], function(dom, $) {
+
+dom.isEditable($(&#39;input, textarea&#39;)); // true
+
+});
+</code></pre>

@@ -1,0 +1,37 @@
+<h1 id="identify-1"><a href="#identify-1" class="anchor"></a>identify</h1>
+<p>This block provides a function for working with unique identifiers. It allows you to:</p>
+<ul>
+<li>Create object identifiers.</li>
+<li>Check whether objects have an identifier.</li>
+<li>Create a unique identifier string.</li>
+</ul>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li>[<code>obj {Object}</code>] – The object to identify.</li>
+<li>[<code>onlyGet {Boolean}</code>] – Flag for checking whether the object has an identifier. If <code>true</code>, the function returns a string with the identifier if the object was previously assigned an identifier. By default, <code>false</code>.</li>
+</ul>
+<p><strong>Return value:</strong> <code>String</code>. A string with the identifier assigned to the object. Subsequent calls will always return the same identifier.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require([&#39;identify&#39;], function(identify) {
+    var a = {},
+        b = {},
+        identA = identify(a);
+
+    console.log(identA === identify(a)); //true
+    console.log(identA === identify(b)); //false
+});
+</code></pre>
+<p>When called without arguments, the function returns a string with a unique identifier every time.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require([&#39;identify&#39;], function(identify) {
+    var a = identify(),
+        b = identify();
+
+    console.log(a === b); //false
+});
+</code></pre>
+<h2 id="public-block-technologies-5"><a href="#public-block-technologies-5" class="anchor"></a>Public block technologies</h2>
+<p>The block is implemented in:</p>
+<ul>
+<li><code>vanilla.js</code></li>
+</ul>

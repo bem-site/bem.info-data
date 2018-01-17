@@ -1,0 +1,52 @@
+[
+    {
+        "entity": {
+            "block": "tick"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "deps.js",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/tick/tick.deps.js"
+    },
+    {
+        "entity": {
+            "block": "tick"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "en.md",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/tick/tick.en.md"
+    },
+    {
+        "entity": {
+            "block": "tick"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "ru.md",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/tick/tick.ru.md"
+    },
+    {
+        "entity": {
+            "block": "tick"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "spec.js",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/tick/tick.spec.js"
+    },
+    {
+        "entity": {
+            "block": "tick"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "vanilla.js",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/tick/tick.vanilla.js"
+    },
+    {
+        "entity": {
+            "block": "tick",
+            "modName": "start",
+            "modVal": "auto"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "vanilla.js",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/tick/_start/tick_start_auto.vanilla.js"
+    }
+]

@@ -1,0 +1,100 @@
+<h1 id="tick-1"><a href="#tick-1" class="anchor"></a>tick</h1>
+<p>This block provides an object for working with a regularly generated <code>tick</code> event (to implement the polling pattern).</p>
+<h2 id="overview-12"><a href="#overview-12" class="anchor"></a>Overview</h2>
+<h3 id="object-events-2"><a href="#object-events-2" class="anchor"></a>Object events</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#events-tick">tick</a></td>
+<td>A regularly generated event.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="properties-and-methods-of-the-object-8"><a href="#properties-and-methods-of-the-object-8" class="anchor"></a>Properties and methods of the object</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Return type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#fields-start">start</a>()</td>
+<td>-</td>
+<td>Starts generating <code>tick</code> events if the process hasn&#39;t started yet.</td>
+</tr>
+<tr>
+<td><a href="#fields-stop">stop</a>()</td>
+<td>-</td>
+<td>Stops generating <code>tick</code> events if the process hasn&#39;t stopped yet.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="block-modifiers-4"><a href="#block-modifiers-4" class="anchor"></a>Block modifiers</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Modifier</th>
+<th>Acceptable values</th>
+<th>Usage</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#modifiers-start">start</a></td>
+<td><code>&#39;auto&#39;</code></td>
+<td><code>JS</code></td>
+<td>Automatically starts generating events</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="public-block-technologies-15"><a href="#public-block-technologies-15" class="anchor"></a>Public block technologies</h3>
+<p>The block is implemented in:</p>
+<ul>
+<li><code>vanilla.js</code></li>
+</ul>
+<h2 id="description-11"><a href="#description-11" class="anchor"></a>Description</h2>
+<p><a name="events"></a></p>
+<h3 id="object-events-3"><a href="#object-events-3" class="anchor"></a>Object events</h3>
+<p><a name="events-tick"></a></p>
+<h4 id="tick-event"><a href="#tick-event" class="anchor"></a><code>tick</code> event</h4>
+<p>Subscribe to the event to use it to implement the polling pattern.</p>
+<p>An event is generated every 50 milliseconds.</p>
+<p><a name="fields"></a></p>
+<h3 id="properties-and-methods-of-the-object-9"><a href="#properties-and-methods-of-the-object-9" class="anchor"></a>Properties and methods of the object</h3>
+<p>The block is a descendant of the <code>Emitter</code> class in the <code>events</code> block, which allows it to call these classes.</p>
+<pre><code class="lang-js">modules.require(&#39;tick&#39;, function(tick) {
+
+var update = function() { /* ... */ };
+
+tick
+    .on(&#39;tick&#39;, update) // subscribing to the tick event
+    .start(); // starting generation of tick events
+});
+</code></pre>
+<p><a name="fields-start"></a></p>
+<h4 id="start-method-1"><a href="#start-method-1" class="anchor"></a><code>start</code> method</h4>
+<p>Starts generating <a href="#fields-tick">tick</a> events if the process hasn&#39;t started yet. A <code>tick</code> is generated with an interval of 50 milliseconds after invoking the method.</p>
+<p>Doesn&#39;t accept arguments.</p>
+<p>No return value.</p>
+<p><a name="fields-stop"></a></p>
+<h4 id="stop-method-1"><a href="#stop-method-1" class="anchor"></a><code>stop</code> method</h4>
+<p>Stops generating <a href="#fields-tick">tick</a> events.</p>
+<p>Doesn&#39;t accept arguments.</p>
+<p>No return value.</p>
+<p><a name="modifiers"></a></p>
+<h3 id="block-modifiers-5"><a href="#block-modifiers-5" class="anchor"></a>Block modifiers</h3>
+<p><a name="modifiers-start"></a></p>
+<h4 id="start-modifier-1"><a href="#start-modifier-1" class="anchor"></a><code>start</code> modifier</h4>
+<p>Acceptable values: <code>&#39;auto&#39;</code>.</p>
+<p>Usage: <code>JS</code>.</p>
+<p>Use the block with the <code>start</code> modifier set to <code>auto</code> in order to automatically start generating <a href="#fields-tick">tick</a> events. The event starts being generated at the time of block initialization.</p>

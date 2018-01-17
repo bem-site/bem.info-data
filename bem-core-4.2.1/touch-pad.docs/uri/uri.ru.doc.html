@@ -1,0 +1,127 @@
+<h1 id="uri-4"><a href="#uri-4" class="anchor"></a>uri</h1>
+<p>Блок предоставляет объект, содержащий набор методов для декодирования строки из формата URI.</p>
+<h2 id="Обзор-50"><a href="#Обзор-50" class="anchor"></a>Обзор</h2>
+<h3 id="Свойства-и-методы-объекта-59"><a href="#Свойства-и-методы-объекта-59" class="anchor"></a>Свойства и методы объекта</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Имя</th>
+<th>Тип возвращаемого значения</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#fields-decodeURI">decodeURI</a>(<code>str {String}</code>)</td>
+<td><code>String</code></td>
+<td>Служит для декодирования URI.</td>
+</tr>
+<tr>
+<td><a href="#fields-decodeURIComponent">decodeURIComponent</a>(<code>str {String}</code>)</td>
+<td><code>String</code></td>
+<td>Служит для декодирования URI компонента.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="Элементы-блока-48"><a href="#Элементы-блока-48" class="anchor"></a>Элементы блока</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Элемент</th>
+<th>Способы использования</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-querystring">querystring</a></td>
+<td><code>JS</code></td>
+<td>Элемент предоставляет объект, содержащий набор методов для работы со строкой запроса формата URI. предназначен для декодирования строки из формата URI.</td>
+</tr>
+</tbody>
+</table>
+</div><h4 id="Свойства-и-методы-объекта-60"><a href="#Свойства-и-методы-объекта-60" class="anchor"></a>Свойства и методы объекта</h4>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Элемент</th>
+<th>Имя</th>
+<th>Возвращаемое значение</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-querystring">querystring</a></td>
+<td><a href="#elems-querystring-fields-parse">parse</a>(<code>str {String}</code>)</td>
+<td><code>Object</code></td>
+<td>Формирует объект на основании параметров запроса адресной строки.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#elems-querystring-fields-stringify">stringify</a>(<code>obj {Object}</code>)</td>
+<td><code>String</code></td>
+<td>Формирует строку запроса на основании свойств объекта.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="Публичные-технологии-блока-61"><a href="#Публичные-технологии-блока-61" class="anchor"></a>Публичные технологии блока</h3>
+<p>Блок реализован в технологиях:</p>
+<ul>
+<li><code>vanilla.js</code></li>
+</ul>
+<p><a name="fields"></a></p>
+<h3 id="Свойства-и-методы-объекта-61"><a href="#Свойства-и-методы-объекта-61" class="anchor"></a>Свойства и методы объекта</h3>
+<p>Оба метода являются оберткой над соответствующими стандартными методами JavaScript <code>decodeURI</code> и <code>decodeURIComponent</code>.</p>
+<p>В ходе работы методы проверяют соответствие формата переданной строки UTF-8. При несоответствии генерируется ошибка.</p>
+<p><a name="fields-decodeURI"></a></p>
+<h4 id="Метод-decodeuri-2"><a href="#Метод-decodeuri-2" class="anchor"></a>Метод <code>decodeURI</code></h4>
+<p>Служит для декодирования URI. Метод идентичен стандартному методу JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURI">decodeURI</a>, но поддерживает кириллическую кодировку <code>CP-1251</code>.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>str {String}</code> – строка с последовательностями экранирования. Обязательный аргумент.</li>
+</ul>
+<p><strong>Возвращаемое значение:</strong> <code>String</code>. В случае если последовательности экранирования в строке не найдены метод возвращают ее без изменений.</p>
+<p>Пример:</p>
+<pre><code class="lang-js">modules.require(&#39;uri&#39;, function(uri){
+    uri.decodeURI(&quot;https://developer.mozilla.org/ru/docs/JavaScript_%D1%88%D0%B5%D0%BB%D0%BB%D1%8B&quot;);
+    // &quot;https://developer.mozilla.org/ru/docs/JavaScript_шеллы&quot;
+})
+</code></pre>
+<p><a name="fields-decodeURIComponent"></a></p>
+<h4 id="Метод-decodeuricomponent-2"><a href="#Метод-decodeuricomponent-2" class="anchor"></a>Метод <code>decodeURIComponent</code></h4>
+<p>Служит для декодирование компонента URI. Метод идентичен стандартному методу JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent">decodeURIComponent</a>, но поддерживает кириллическую кодировку <code>CP-1251</code>.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>str {String}</code> – строка с последовательностями экранирования. Обязательный аргумент.</li>
+</ul>
+<p><strong>Возвращаемое значение:</strong> <code>String</code>. В случае если последовательности экранирования в строке не найдены метод возвращают ее без изменений.</p>
+<p>Пример:</p>
+<pre><code class="lang-js">modules.require(&#39;uri&#39;, function(uri){
+    uri.decodeURIComponent(&quot;JavaScript_%D1%88%D0%B5%D0%BB%D0%BB%D1%8B&quot;);
+    // &quot;JavaScript_шеллы&quot;
+})
+</code></pre>
+<p><a name="elems"></a></p>
+<h3 id="Элементы-блока-49"><a href="#Элементы-блока-49" class="anchor"></a>Элементы блока</h3>
+<p><a name="elems-querystring"></a></p>
+<h4 id="Элемент-querystring-2"><a href="#Элемент-querystring-2" class="anchor"></a>Элемент <code>querystring</code></h4>
+<p>Элемент предоставляет объект, содержащий набор методов для работы со строкой запроса формата URI.</p>
+<p><a name="elems-name-fields"></a></p>
+<h3 id="Свойства-и-методы-объекта-62"><a href="#Свойства-и-методы-объекта-62" class="anchor"></a>Свойства и методы объекта</h3>
+<p><a name="elems-querystring-fields-parse"></a></p>
+<h4 id="Метод-parse-2"><a href="#Метод-parse-2" class="anchor"></a>Метод <code>parse</code></h4>
+<p>Формирует объект на основании строки параметров в формате URI.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>str {String}</code> – строка с параметрами в виде пар ключ-значение. Ключ отделяется от значения символом <code>=</code>. Пары разделяются символом <code>&amp;</code>. В процессе обработки, ключи и значения декодируются из формата URI. Обязательный аргумент.</li>
+</ul>
+<p><strong>Возвращаемое значение:</strong> <code>Object</code>. Объект, сформированный на основании параметров адресной строки.</p>
+<p><a name="elems-querystring-fields-stringify"></a></p>
+<h4 id="Метод-stringify-2"><a href="#Метод-stringify-2" class="anchor"></a>Метод <code>stringify</code></h4>
+<p>Формирует строку запроса в формате URI на основании объекта.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>obj {Object}</code> – объект, на основании которого формируется строка. Обязательный аргумент.</li>
+</ul>
+<p><strong>Возвращаемое значение:</strong> <code>String</code>. Имена свойств в строке отделяются от значений символом <code>=</code>, пары разделяются символом <code>&amp;</code>.</p>

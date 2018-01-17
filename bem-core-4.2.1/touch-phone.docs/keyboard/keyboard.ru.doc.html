@@ -1,0 +1,166 @@
+<h1 id="keyboard-2"><a href="#keyboard-2" class="anchor"></a>keyboard</h1>
+<p>Блок предназначен для работы с клавиатурным вводом.</p>
+<h2 id="Обзор-24"><a href="#Обзор-24" class="anchor"></a>Обзор</h2>
+<h3 id="Элементы-блока-20"><a href="#Элементы-блока-20" class="anchor"></a>Элементы блока</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Элемент</th>
+<th>Способы использования</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-codes">codes</a></td>
+<td><code>JS</code></td>
+<td>Предоставляет объект, содержащий набор констант – имен часто используемых клавиатурных кодов.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="Свойства-и-методы-элементов-блока-4"><a href="#Свойства-и-методы-элементов-блока-4" class="anchor"></a>Свойства и методы элементов блока</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Элемент</th>
+<th>Имя</th>
+<th>Тип</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-codes">codes</a></td>
+<td>BACKSPACE</td>
+<td><code>String</code></td>
+</tr>
+<tr>
+<td></td>
+<td>TAB</td>
+<td><code>String</code></td>
+</tr>
+<tr>
+<td></td>
+<td>ENTER</td>
+<td><code>String</code></td>
+</tr>
+<tr>
+<td></td>
+<td>CAPS_LOCK</td>
+<td><code>String</code></td>
+</tr>
+<tr>
+<td></td>
+<td>ESC</td>
+<td><code>String</code></td>
+</tr>
+<tr>
+<td></td>
+<td>SPACE</td>
+<td><code>String</code></td>
+</tr>
+<tr>
+<td></td>
+<td>PAGE_UP</td>
+<td><code>String</code></td>
+</tr>
+<tr>
+<td></td>
+<td>PAGE_DOWN</td>
+<td><code>String</code></td>
+</tr>
+<tr>
+<td></td>
+<td>END</td>
+<td><code>String</code></td>
+</tr>
+<tr>
+<td></td>
+<td>HOME</td>
+<td><code>String</code></td>
+</tr>
+<tr>
+<td></td>
+<td>LEFT</td>
+<td><code>String</code></td>
+</tr>
+<tr>
+<td></td>
+<td>UP</td>
+<td><code>String</code></td>
+</tr>
+<tr>
+<td></td>
+<td>RIGHT</td>
+<td><code>String</code></td>
+</tr>
+<tr>
+<td></td>
+<td>DOWN</td>
+<td><code>String</code></td>
+</tr>
+<tr>
+<td></td>
+<td>INSERT</td>
+<td><code>String</code></td>
+</tr>
+<tr>
+<td></td>
+<td>DELETE</td>
+<td><code>String</code></td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="Публичные-технологии-блока-30"><a href="#Публичные-технологии-блока-30" class="anchor"></a>Публичные технологии блока</h3>
+<p>Блок реализован в технологиях:</p>
+<ul>
+<li><code>js</code></li>
+</ul>
+<h2 id="Описание-19"><a href="#Описание-19" class="anchor"></a>Описание</h2>
+<p><a name="elems"></a></p>
+<h3 id="Элементы-блока-21"><a href="#Элементы-блока-21" class="anchor"></a>Элементы блока</h3>
+<p><a name="elems-codes"></a></p>
+<h4 id="Элемент-codes-1"><a href="#Элемент-codes-1" class="anchor"></a>Элемент <code>codes</code></h4>
+<p>Предоставляет объект, содержащий набор констант – имен часто используемых клавиатурных кодов.</p>
+<p><a name="elems-codes-fields"></a></p>
+<h5 id="Свойства-и-методы-объекта-30"><a href="#Свойства-и-методы-объекта-30" class="anchor"></a>Свойства и методы объекта</h5>
+<p>Тип: <code>String</code>.</p>
+<p>Значениями имен (свойств объекта) являются коды клавиш. Использование осмысленных имен вместо кодов клавиш делает код понятнее.</p>
+<p>Например, метод <code>_onKeyDown</code> использует имена клавиш <code>UP</code> и <code>DOWN</code> при проверке поля <code>keyCode</code> объекта события:</p>
+<pre><code class="lang-js">modules.define(&#39;input&#39;, [&#39;i-bem-dom&#39;, &#39;keyboard__codes&#39;], function(provide, bemDom, keyCodes) {
+
+provide(bemDom.declBlock(this.name, /** @lends input.prototype */{
+    onSetMod : {
+        js : {
+            inited : function() {
+                this._domEvents().on(&#39;keydown&#39;, this._onKeyDown);
+            }
+        }
+    },
+
+    _onKeyDown : function(e) {
+        if((e.keyCode === keyCodes.UP || e.keyCode === keyCodes.DOWN) &amp;&amp; !e.shiftKey) {
+            // ...
+        }
+    }
+}));
+});
+</code></pre>
+<p>Доступен следующий набор свойств:</p>
+<ul>
+<li><code>BACKSPACE</code></li>
+<li><code>TAB</code></li>
+<li><code>ENTER</code></li>
+<li><code>CAPS_LOCK</code></li>
+<li><code>ESC</code></li>
+<li><code>SPACE</code></li>
+<li><code>PAGE_UP</code></li>
+<li><code>PAGE_DOWN</code></li>
+<li><code>END</code></li>
+<li><code>HOME</code></li>
+<li><code>LEFT</code></li>
+<li><code>UP</code></li>
+<li><code>RIGHT</code></li>
+<li><code>DOWN</code></li>
+<li><code>INSERT</code></li>
+<li><code>DELETE</code></li>
+</ul>

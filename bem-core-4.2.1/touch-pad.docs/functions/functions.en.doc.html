@@ -1,0 +1,145 @@
+<h1 id="functions-5"><a href="#functions-5" class="anchor"></a>functions</h1>
+<p>This block provides an object with a set of methods for working with JavaScript functions.</p>
+<h2 id="overview-33"><a href="#overview-33" class="anchor"></a>Overview</h2>
+<h3 id="properties-and-methods-of-the-object-28"><a href="#properties-and-methods-of-the-object-28" class="anchor"></a>Properties and methods of the object</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type or return value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#fields-isFunction">isFunction</a>(<code>obj {*}</code>)</td>
+<td><code>Boolean</code></td>
+<td>Checks whether a passed argument is a function.</td>
+</tr>
+<tr>
+<td><a href="#fields-noop">noop</a></td>
+<td><code>Function</code></td>
+<td>Empty function.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="elements-of-the-block-29"><a href="#elements-of-the-block-29" class="anchor"></a>Elements of the block</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Usage</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-debounce">debounce</a></td>
+<td><code>JS</code></td>
+<td>Function decorator that combines multiple function calls within a specified time period into one call.</td>
+</tr>
+<tr>
+<td><a href="#elems-throttle">throttle</a></td>
+<td><code>JS</code></td>
+<td>Function decorator that limits the frequency of function execution to once per specified period.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="public-block-technologies-42"><a href="#public-block-technologies-42" class="anchor"></a>Public block technologies</h3>
+<p>The block is implemented in:</p>
+<ul>
+<li><code>vanilla.js</code></li>
+</ul>
+<h2 id="description-29"><a href="#description-29" class="anchor"></a>Description</h2>
+<p><a name="fields"></a></p>
+<h3 id="properties-and-methods-of-the-object-29"><a href="#properties-and-methods-of-the-object-29" class="anchor"></a>Properties and methods of the object</h3>
+<p><a name="fields-isFunction"></a></p>
+<h4 id="isfunction-method-2"><a href="#isfunction-method-2" class="anchor"></a><code>isFunction</code> method</h4>
+<p>Checks whether a passed argument is a function.  </p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>obj {*}</code> – The object being checked. Required argument.</li>
+</ul>
+<p><strong>Return value:</strong> <code>Boolean</code>. If the argument is a function, then <code>true</code>.</p>
+<pre><code class="lang-js">modules.require(&#39;functions&#39;, function(func) {
+    var a = function(){},
+        b = {};
+    console.log(func.isFunction(a)); //true
+    console.log(func.isFunction(b)); //false
+});
+</code></pre>
+<p><a name="fields-noop"></a></p>
+<h4 id="noop-property-2"><a href="#noop-property-2" class="anchor"></a><code>noop</code> property</h4>
+<p>Empty function (<code>function() {}</code>).</p>
+<p>No arguments or return value.</p>
+<p>You can use <code>noop</code> when you need a function but there isn&#39;t a reason to add the logic. For example, you can use it as a placeholder for base classes at the design stage when using OOP.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.define(&#39;base-class&#39;, [&#39;inherit&#39;, &#39;functions&#39;], function(provide, inherit, functions) {
+
+provide(inherit({
+    getData : function() {
+        this._sendRequest();
+    },
+
+    _sendRequest : functions.noop
+
+}));
+
+});
+</code></pre>
+<p><a name="elems"></a></p>
+<h3 id="elements-of-the-block-30"><a href="#elements-of-the-block-30" class="anchor"></a>Elements of the block</h3>
+<p>The block elements implement a set of function decorators.</p>
+<p>The decorators add logic to the function without changing its original signature.</p>
+<p><a name="elems-debounce"></a></p>
+<h4 id="debounce-element-2"><a href="#debounce-element-2" class="anchor"></a><code>debounce</code> element</h4>
+<p>A decorator that postpones function calls for the specified delay time. After each attempt to make a call, the delay starts over again.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>fn {Function}</code> — Original function. Required argument.</li>
+<li><code>timeout {Number}</code> — Time of delay, in milliseconds. Required argument.</li>
+<li>[<code>invokeAsap {Boolean}</code>] — The <code>debounce</code> mode. By default, the first mode is used (corresponding to the <code>false</code> value).</li>
+<li>[<code>context {Object}</code>] — The context for executing the original function.</li>
+</ul>
+<p>There are two <code>debounce</code> modes, depending on the value of <code>invokeAsap</code>:</p>
+<ol>
+<li>The original function is called when the delay expires after the last call attempt.</li>
+<li>The original function is first called as soon as the decorated function is called. After this, the behavior is the same as in the first mode.</li>
+</ol>
+<p><strong>Return value:</strong> <code>Function</code>. The decorated function.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require(&#39;functions__debounce&#39;, function(provide, debounce) {
+
+    function log() {
+        console.log(&#39;hello!&#39;);
+    }
+
+    var debouncedLog = debounce(log, 300);
+    setInterval(debouncedLog, 50);
+
+});
+</code></pre>
+<p><a name="elems-throttle"></a></p>
+<h4 id="throttle-element-2"><a href="#throttle-element-2" class="anchor"></a><code>throttle</code> element</h4>
+<p>This decorator allows you to &quot;slow down&quot; the function. It won&#39;t be executed more than once during the specified period, no matter how many times it is called during this time. All calls in the meantime are ignored.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>fn {Function}</code> — Original function. Required argument.</li>
+<li><code>period {Number}</code> — The interval between calls, in milliseconds. Required argument.</li>
+<li>[<code>context {Object}</code>] — The context for executing the original function.</li>
+</ul>
+<p><strong>Return value:</strong> <code>Function</code>. The decorated function.</p>
+<p>This method is convenient for setting resource-intensive handlers for frequently generated events, such as <code>resize</code>, <code>pointermove</code>, and so on.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require(&#39;functions__throttle&#39;, function(provide, throttle) {
+
+    function log() {
+        console.log(&#39;hello!&#39;);
+    }
+
+    var throttledLog = throttle(log, 300);
+    setInterval(throttledLog, 50);
+
+});
+</code></pre>
+<p>As a result, the function is executed no more than once every 300 milliseconds.</p>

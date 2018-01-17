@@ -1,0 +1,96 @@
+<h1 id="objects-4"><a href="#objects-4" class="anchor"></a>objects</h1>
+<p>Блок предоставляет объект, содержащий набор методов для работы с объектами JavaScript.</p>
+<h2 id="Обзор-43"><a href="#Обзор-43" class="anchor"></a>Обзор</h2>
+<h3 id="Свойства-и-методы-объекта-52"><a href="#Свойства-и-методы-объекта-52" class="anchor"></a>Свойства и методы объекта</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Имя</th>
+<th>Тип возвращаемого значения</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#fields-extend">extend</a>(<br><code>target {Object}</code>, <br><code>source {Object}</code>)</td>
+<td><code>Object</code></td>
+<td>Расширяет объект свойствами другого объекта.</td>
+</tr>
+<tr>
+<td><a href="#fields-isEmpty">isEmpty</a>(<code>obj {Object}</code>)</td>
+<td><code>Boolean</code></td>
+<td>Позволяет выяснить пуст ли переданный объект.</td>
+</tr>
+<tr>
+<td><a href="#fields-each">each</a>(<br><code>obj {Object}</code>, <br><code>fn {Function}</code>, <br><code>[ctx {Object}]</code>)</td>
+<td>-</td>
+<td>Итеративно обходит собственные свойства объекта.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="Публичные-технологии-блока-54"><a href="#Публичные-технологии-блока-54" class="anchor"></a>Публичные технологии блока</h3>
+<p>Блок реализован в технологиях:</p>
+<ul>
+<li><code>vanilla.js</code></li>
+</ul>
+<h2 id="Описание-34"><a href="#Описание-34" class="anchor"></a>Описание</h2>
+<p><a name="fields"></a></p>
+<h3 id="Свойства-и-методы-объекта-53"><a href="#Свойства-и-методы-объекта-53" class="anchor"></a>Свойства и методы объекта</h3>
+<p><a name="fields-extend"></a></p>
+<h4 id="Метод-extend-2"><a href="#Метод-extend-2" class="anchor"></a>Метод <code>extend</code></h4>
+<p>Расширяет объект свойствами другого объекта. Копируются только собственные свойства, не полученные по цепочке прототипов.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>target {Object}</code> – целевой объект. Обязательный аргумент.</li>
+<li><code>source {Object}</code> – объект, свойства которого добавляются к целевому. Может быть передано несколько объектов. Свойства каждого из них будут добавлены к целевому. Обязательный аргумент.</li>
+</ul>
+<p><strong>Возвращаемое значение:</strong> <code>Object</code>. Целевой объект с добавленными свойствами.</p>
+<p>Пример:</p>
+<pre><code class="lang-js">modules.require([&#39;objects&#39;], function(objects) {
+
+var obj1 = { a : 1, b : 2 },
+    obj2 = { b : 3, c : 4 };
+
+console.log(objects.extend(obj1, obj2)); // { a : 1, b : 3, c : 4 }
+});
+</code></pre>
+<p><a name="fields-isEmpty"></a></p>
+<h4 id="Метод-isempty-2"><a href="#Метод-isempty-2" class="anchor"></a>Метод <code>isEmpty</code></h4>
+<p>Позволяет выяснить пуст ли переданный объект. Другими словами, имеет ли объект собственные свойства.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>obj {Object}</code> – объект для проверки. Обязательный аргумент.</li>
+</ul>
+<p><strong>Возвращаемое значение:</strong> <code>Boolean</code>. В случае, если объект не имеет собственных свойств – <code>true</code>.</p>
+<p>Пример:</p>
+<pre><code class="lang-js">modules.require([&#39;objects&#39;], function(objects) {
+
+var obj1 = {},
+    obj2 = { foo : &#39;bar&#39; };
+
+console.log(objects.isEmpty(obj1)); // true
+console.log(objects.isEmpty(obj2)); // false
+});
+</code></pre>
+<p><a name="fields-each"></a></p>
+<h4 id="Метод-each-2"><a href="#Метод-each-2" class="anchor"></a>Метод <code>each</code></h4>
+<p>Служит для итерации по собственным свойствам объекта. Для каждого собственного свойства вызывается функция-обработчик.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>obj {Object}</code> – объект, обход свойств которого производится. Обязательный аргумент.</li>
+<li><code>fn {Function}</code> – функция-обработчик, вызываемая для каждого свойства. Обязательный аргумент.</li>
+<li>[<code>ctx {Object}</code>] – контекст обработчика.</li>
+</ul>
+<p>Не имеет возвращаемого значения.</p>
+<p>Функция-обработчик получает в качестве аргументов значение и ключ свойства объекта, для которого была вызвана.</p>
+<p>Пример:</p>
+<pre><code class="lang-js">modules.require([&#39;objects&#39;], function(objects) {
+    objects.each(
+        { a : 1, b : 2 },
+        function(val, key) {
+            console.log(key, val);
+        });
+    // a 1
+    // b 2
+});
+</code></pre>

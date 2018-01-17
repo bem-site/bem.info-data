@@ -1,0 +1,43 @@
+<h1 id="next-tick-1"><a href="#next-tick-1" class="anchor"></a>next-tick</h1>
+<p>This block provides a function that performs an asynchronous call of the callback function passed as an argument in the next tick of the event loop.</p>
+<p><code>next-tick</code> – A polyfill that implements:</p>
+<ul>
+<li>A simulated event loop for outdated browser versions.</li>
+<li>A unified interface for working with various browsers and NodeJS.</li>
+</ul>
+<p>This function works in cases when you need the callback to be invoked after the other functions in the event loop have finished. For example, you need to be sure that data will be available that is dynamically calculated in the current loop.</p>
+<p><strong>Accepted arguments:</strong></p>
+<ul>
+<li><code>fn {Function}</code> – The function to invoke in the next event loop. Required argument.</li>
+</ul>
+<p>No return value.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require([&#39;next-tick&#39;, &#39;events&#39;], function(nextTick, events) {
+
+var event = new events.Event();
+
+nextTick(function() { event.emit(&#39;click&#39;) }); 
+
+// ··· 
+
+event.on(&#39;click&#39;, function(e) { console.log(e.type) })
+});
+</code></pre>
+<h2 id="order-of-callbacks"><a href="#order-of-callbacks" class="anchor"></a>Order of callbacks</h2>
+<p>The block forms a queue within the event cycle, adding each subsequent callback function to the end of the queue. The callbacks are invoked in order.</p>
+<p>Example:</p>
+<pre><code class="lang-js">modules.require([&#39;next-tick&#39;], function(nextTick) {
+
+var order = [];
+
+nextTick(function() { order.push(1); });
+nextTick(function() { order.push(2); });
+nextTick(function() { order.push(3); });
+nextTick(function() { console.log(order); }); // should be [1, 2, 3]
+});
+</code></pre>
+<h2 id="public-block-technologies-11"><a href="#public-block-technologies-11" class="anchor"></a>Public block technologies</h2>
+<p>The block is implemented in:</p>
+<ul>
+<li><code>vanilla.js</code></li>
+</ul>

@@ -1,0 +1,43 @@
+[
+    {
+        <span class="hljs-attr">block</span>: <span class="hljs-string">'header'</span>,
+        <span class="hljs-attr">attrs</span>: {
+            <span class="hljs-attr">style</span>: <span class="hljs-string">'border : 2px solid blue;'</span>
+        },
+        <span class="hljs-attr">content</span>: <span class="hljs-string">'Top element'</span>
+    },
+    {
+        <span class="hljs-attr">block</span>: <span class="hljs-string">'some-container'</span>,
+        <span class="hljs-attr">mix</span>: [
+            {
+                <span class="hljs-attr">block</span>: <span class="hljs-string">'clearfix'</span>
+            }
+        ],
+        <span class="hljs-attr">attrs</span>: {
+            <span class="hljs-attr">style</span>: <span class="hljs-string">'border : 2px dotted yellow;'</span>
+        },
+        <span class="hljs-attr">content</span>: [
+            {
+                <span class="hljs-attr">block</span>: <span class="hljs-string">'float'</span>,
+                <span class="hljs-attr">attrs</span>: {
+                    <span class="hljs-attr">style</span>: <span class="hljs-string">'float : left; border : 1px solid green;'</span>
+                },
+                <span class="hljs-attr">content</span>: <span class="hljs-string">'Floating item 1'</span>
+            },
+            {
+                <span class="hljs-attr">block</span>: <span class="hljs-string">'float'</span>,
+                <span class="hljs-attr">attrs</span>: {
+                    <span class="hljs-attr">style</span>: <span class="hljs-string">'float : left; border : 1px solid green;'</span>
+                },
+                <span class="hljs-attr">content</span>: <span class="hljs-string">'Floating item 2'</span>
+            }
+        ]
+    },
+    {
+        <span class="hljs-attr">block</span>: <span class="hljs-string">'footer'</span>,
+        <span class="hljs-attr">attrs</span>: {
+            <span class="hljs-attr">style</span>: <span class="hljs-string">'border : 2px solid red'</span>
+        },
+        <span class="hljs-attr">content</span>: <span class="hljs-string">'Footer'</span>
+    }
+]

@@ -1,0 +1,93 @@
+<h1 id="strings"><a href="#strings" class="anchor"></a>strings</h1>
+<p>Блок предоставляет хелперы для манипуляций с данными строчного типа.</p>
+<h2 id="Обзор-12"><a href="#Обзор-12" class="anchor"></a>Обзор</h2>
+<h3 id="Элементы-блока-10"><a href="#Элементы-блока-10" class="anchor"></a>Элементы блока</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Элемент</th>
+<th>Способы использования</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-escape">escape</a></td>
+<td><code>JS</code></td>
+<td>Набор методов для экранирования (эскейпинга) управляющих символов XML и HTML.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="Свойства-и-методы-элементов-блока-2"><a href="#Свойства-и-методы-элементов-блока-2" class="anchor"></a>Свойства и методы элементов блока</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Элемент</th>
+<th>Имя</th>
+<th>Тип или возвращаемое значение</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-escape">escape</a></td>
+<td><a href="#elems-escape-fields-xml">xml</a>(<code>str {String}</code>)</td>
+<td><code>String</code></td>
+<td>Служит для экранирования управляющих символов XML.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#elems-escape-fields-html">html</a>(<code>str {String}</code>)</td>
+<td><code>String</code></td>
+<td>Служит для экранирования управляющих символов HTML.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#elems-escape-fields-attr">attr</a>(<code>str {String}</code>)</td>
+<td><code>String</code></td>
+<td>Служит для экранирования управляющих символов в HTML и XML атрибутах.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="Публичные-технологии-блока-15"><a href="#Публичные-технологии-блока-15" class="anchor"></a>Публичные технологии блока</h3>
+<p>Блок реализован в технологиях:</p>
+<ul>
+<li><code>vanilla.js</code></li>
+</ul>
+<h2 id="Описание-10"><a href="#Описание-10" class="anchor"></a>Описание</h2>
+<p><a name="elems"></a></p>
+<h3 id="Элементы-блока-11"><a href="#Элементы-блока-11" class="anchor"></a>Элементы блока</h3>
+<p><a name="elems-escape"></a></p>
+<h4 id="Элемент-escape"><a href="#Элемент-escape" class="anchor"></a>Элемент <code>escape</code></h4>
+<p>Элемент предоставляет объект, содержащий набор методов для экранирования (эскейпинга) управляющих символов XML и HTML.</p>
+<p><a name="elems-name-fields"></a></p>
+<h3 id="Свойства-и-методы-объекта-12"><a href="#Свойства-и-методы-объекта-12" class="anchor"></a>Свойства и методы объекта</h3>
+<p><a name="elems-escape-fields-xml"></a></p>
+<h4 id="Метод-xml"><a href="#Метод-xml" class="anchor"></a>Метод <code>xml</code></h4>
+<p>Служит для экранирования управляющих символов XML. Обрабатываются символы <code>&amp;</code>, <code>&lt;</code>, <code>&gt;</code>.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>str {String}</code> – строка для обработки. Обязательный аргумент.</li>
+</ul>
+<p><strong>Возвращаемое значение:</strong> <code>String</code>. Строка с экранированными управляющими символами.</p>
+<p><a name="elems-escape-fields-html"></a></p>
+<h4 id="Метод-html"><a href="#Метод-html" class="anchor"></a>Метод <code>html</code></h4>
+<p>Служит для экранирования управляющих символов HTML. Является синонимом метода <code>xml</code>.</p>
+<p><a name="elems-escape-fields-attr"></a></p>
+<h4 id="Метод-attr"><a href="#Метод-attr" class="anchor"></a>Метод <code>attr</code></h4>
+<p>Служит для экранирования управляющих символов в HTML и XML атрибутах. Обрабатываются управляющие символы <code>&quot;</code>, <code>\</code>, <code>&#39;</code>, <code>&amp;</code>, <code>&lt;</code>, <code>&gt;</code>.</p>
+<p><strong>Принимаемые аргументы:</strong></p>
+<ul>
+<li><code>str {String}</code> – строка для обработки. Обязательный аргумент.</li>
+</ul>
+<p><strong>Возвращаемое значение:</strong> <code>String</code>. Строка с экранированными управляющими символами.</p>
+<p>Например, в блоке <a href="https://github.com/bem/bem-components/blob/v2/common.blocks/select/select.js#L237"><code>common.blocks/select</code></a> библиотеки <code>bem-components</code>, <code>strings__escape</code> используется для экранирования управляющих символов в свойстве <code>value</code> HTML-элемента:</p>
+<pre><code class="lang-js">_createControlHTML : function(name, val) {
+    // Using string concatenation to not depend on template engines
+    return &#39;&lt;input &#39; +
+        &#39;type=&quot;hidden&quot; &#39; +
+        &#39;name=&quot;&#39; + name + &#39;&quot; &#39; +
+        &#39;class=&quot;&#39; + this.buildClass(&#39;control&#39;) + &#39;&quot; &#39; +
+        &#39;value=&quot;&#39; + escape.attr(typeof val === &#39;object&#39;? JSON.stringify(val) : val) + &#39;&quot;/&gt;&#39;;
+}
+</code></pre>

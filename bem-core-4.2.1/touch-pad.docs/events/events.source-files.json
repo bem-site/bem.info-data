@@ -1,0 +1,138 @@
+[
+    {
+        "entity": {
+            "block": "events"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "deps.js",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/events/events.deps.js"
+    },
+    {
+        "entity": {
+            "block": "events"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "en.md",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/events/events.en.md"
+    },
+    {
+        "entity": {
+            "block": "events"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "ru.md",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/events/events.ru.md"
+    },
+    {
+        "entity": {
+            "block": "events"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "spec.js",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/events/events.spec.js"
+    },
+    {
+        "entity": {
+            "block": "events"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "vanilla.js",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/events/events.vanilla.js"
+    },
+    {
+        "entity": {
+            "block": "events",
+            "elem": "channels"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "deps.js",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/events/__channels/events__channels.deps.js"
+    },
+    {
+        "entity": {
+            "block": "events",
+            "elem": "channels"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "en.md",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/events/__channels/events__channels.en.md"
+    },
+    {
+        "entity": {
+            "block": "events",
+            "elem": "channels"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "ru.md",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/events/__channels/events__channels.ru.md"
+    },
+    {
+        "entity": {
+            "block": "events",
+            "elem": "channels"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "vanilla.js",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/events/__channels/events__channels.vanilla.js"
+    },
+    {
+        "entity": {
+            "block": "events",
+            "elem": "observable"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "deps.js",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/events/__observable/events__observable.deps.js"
+    },
+    {
+        "entity": {
+            "block": "events",
+            "elem": "observable"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "js",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/events/__observable/events__observable.js"
+    },
+    {
+        "entity": {
+            "block": "events",
+            "elem": "observable"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "spec.js",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/events/__observable/events__observable.spec.js"
+    },
+    {
+        "entity": {
+            "block": "events",
+            "elem": "observable",
+            "modName": "type",
+            "modVal": "bem-dom"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "deps.js",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/events/__observable/_type/events__observable_type_bem-dom.deps.js"
+    },
+    {
+        "entity": {
+            "block": "events",
+            "elem": "observable",
+            "modName": "type",
+            "modVal": "bem-dom"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "js",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/events/__observable/_type/events__observable_type_bem-dom.js"
+    },
+    {
+        "entity": {
+            "block": "events",
+            "elem": "observable",
+            "modName": "type",
+            "modVal": "bem-dom"
+        },
+        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "tech": "spec.js",
+        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/events/__observable/_type/events__observable_type_bem-dom.spec.js"
+    }
+]

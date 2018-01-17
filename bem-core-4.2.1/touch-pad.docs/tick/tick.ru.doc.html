@@ -1,0 +1,100 @@
+<h1 id="tick-4"><a href="#tick-4" class="anchor"></a>tick</h1>
+<p>Блок предоставляет объект для работы с регулярно генерируемым событием <code>tick</code> (для реализации паттерна polling).</p>
+<h2 id="Обзор-47"><a href="#Обзор-47" class="anchor"></a>Обзор</h2>
+<h3 id="События-объекта-10"><a href="#События-объекта-10" class="anchor"></a>События объекта</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Имя</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#events-tick">tick</a></td>
+<td>Регулярно генерируемое событие.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="Свойства-и-методы-объекта-55"><a href="#Свойства-и-методы-объекта-55" class="anchor"></a>Свойства и методы объекта</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Имя</th>
+<th>Тп возвращаемого значения</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#fields-start">start</a>()</td>
+<td>-</td>
+<td>Запускает генерацию события <code>tick</code>, если она еще не запущена.</td>
+</tr>
+<tr>
+<td><a href="#fields-stop">stop</a>()</td>
+<td>-</td>
+<td>Останавливает генерацию события <code>tick</code>, если она еще не остановлена.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="Модификаторы-блока-16"><a href="#Модификаторы-блока-16" class="anchor"></a>Модификаторы блока</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Модификатор</th>
+<th>Допустимые значения</th>
+<th>Способы использования</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#modifiers-start">start</a></td>
+<td><code>&#39;auto&#39;</code></td>
+<td><code>JS</code></td>
+<td>Автоматический запуск генерации события</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="Публичные-технологии-блока-58"><a href="#Публичные-технологии-блока-58" class="anchor"></a>Публичные технологии блока</h3>
+<p>Блок реализован в технологиях:</p>
+<ul>
+<li><code>vanilla.js</code></li>
+</ul>
+<h2 id="Описание-37"><a href="#Описание-37" class="anchor"></a>Описание</h2>
+<p><a name="events"></a></p>
+<h3 id="События-объекта-11"><a href="#События-объекта-11" class="anchor"></a>События объекта</h3>
+<p><a name="events-tick"></a></p>
+<h4 id="Событие-tick-2"><a href="#Событие-tick-2" class="anchor"></a>Событие <code>tick</code></h4>
+<p>Подписавшись на событие, можно использовать его для реализации паттерна polling.</p>
+<p>Событие генерируется с интервалом в 50 миллисекунд.</p>
+<p><a name="fields"></a></p>
+<h3 id="Свойства-и-методы-объекта-56"><a href="#Свойства-и-методы-объекта-56" class="anchor"></a>Свойства и методы объекта</h3>
+<p>Блок наследуется от клсаса <code>Emitter</code> блока <code>events</code>, что позволяет вызывать методы класса.</p>
+<pre><code class="lang-js">modules.require(&#39;tick&#39;, function(tick) {
+
+var update = function() { /* ... */ };
+
+tick
+    .on(&#39;tick&#39;, update) // подписываемся на событие tick
+    .start(); // запускаем генерацию события tick
+});
+</code></pre>
+<p><a name="fields-start"></a></p>
+<h4 id="Метод-start-5"><a href="#Метод-start-5" class="anchor"></a>Метод <code>start</code></h4>
+<p>Запускает генерацию события <a href="#fields-tick">tick</a>, если они еще не запущены. Событие <code>tick</code> генерируется через интервал в 50 миллисекунд после вызова метода.</p>
+<p>Не принимает аргументов.</p>
+<p>Не имеет возвращаемого значения.</p>
+<p><a name="fields-stop"></a></p>
+<h4 id="Метод-stop-5"><a href="#Метод-stop-5" class="anchor"></a>Метод <code>stop</code></h4>
+<p>Останавливает генерацию события <a href="#fields-tick">tick</a>.</p>
+<p>Не принимает аргументов.</p>
+<p>Не имеет возвращаемого значения.</p>
+<p><a name="modifiers"></a></p>
+<h3 id="Модификаторы-блока-17"><a href="#Модификаторы-блока-17" class="anchor"></a>Модификаторы блока</h3>
+<p><a name="modifiers-start"></a></p>
+<h4 id="Модификатор-start-5"><a href="#Модификатор-start-5" class="anchor"></a>Модификатор <code>start</code></h4>
+<p>Допустимые значения: <code>&#39;auto&#39;</code>.</p>
+<p>Способ использования: <code>JS</code>.</p>
+<p>Блок с модификатором <code>start</code> в значении <code>auto</code> используется для автоматического запуска генерации события <a href="#fields-tick">tick</a>. Событие начинает генерироваться в момент инициализации блока.</p>

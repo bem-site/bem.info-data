@@ -1,0 +1,194 @@
+<h1 id="page-3"><a href="#page-3" class="anchor"></a>page</h1>
+<p>This block provides templates that create a set of top-level HTML elements for a page: <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code>.</p>
+<h2 id="overview-25"><a href="#overview-25" class="anchor"></a>Overview</h2>
+<h3 id="special-fields-of-the-block-2"><a href="#special-fields-of-the-block-2" class="anchor"></a>Special fields of the block</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#declfields-doctype">doctype</a></td>
+<td><code>String</code></td>
+<td>Use this field to redefine the DTD string for the current document.</td>
+</tr>
+<tr>
+<td><a href="#declfields-title">title</a></td>
+<td><code>String</code></td>
+<td>Use this field to specify the content of <code>&lt;title&gt;</code>.</td>
+</tr>
+<tr>
+<td><a href="#declfields-favicon">favicon</a></td>
+<td><code>String</code></td>
+<td>Use this field to specify the URL of the favicon for the page.</td>
+</tr>
+<tr>
+<td><a href="#declfields-head">head</a></td>
+<td><code>BEMJSON</code></td>
+<td>Use this field to add content to <code>&lt;head&gt;</code>.</td>
+</tr>
+<tr>
+<td><a href="#declfields-styles">styles</a></td>
+<td><code>BEMJSON</code></td>
+<td>Use this field to connect CSS style sheets to the document.</td>
+</tr>
+<tr>
+<td><a href="#declfields-scripts">scripts</a></td>
+<td><code>BEMJSON</code></td>
+<td>Use this field to embed scripts in the body of the document.</td>
+</tr>
+<tr>
+<td><a href="#declfields-content">content</a></td>
+<td><code>BEMJSON</code></td>
+<td>Use this field to set the page content.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="elements-of-the-block-20"><a href="#elements-of-the-block-20" class="anchor"></a>Elements of the block</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Usage</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-css">css</a></td>
+<td><code>BEMJSON</code></td>
+<td>Connects CSS using a URL or a string.</td>
+</tr>
+<tr>
+<td><a href="#elems-js">js</a></td>
+<td><code>BEMJSON</code></td>
+<td>Connects JS using a URL or a string.</td>
+</tr>
+<tr>
+<td><a href="#elems-meta">meta</a></td>
+<td><code>BEMJSON</code></td>
+<td>Creates <code>&lt;meta&gt;</code> HTML elements.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="special-fields-of-block-elements-1"><a href="#special-fields-of-block-elements-1" class="anchor"></a>Special fields of block elements</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#elems-css">css</a></td>
+<td><a href="#elems-css-declfields-url">url</a></td>
+<td><code>String</code></td>
+<td>Sets the URL for downloading styles.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#elems-css-declfields-content">content</a></td>
+<td><code>String</code></td>
+<td>Sets styles in string format.</td>
+</tr>
+<tr>
+<td><a href="#elems-js">js</a></td>
+<td><a href="#elems-css-declfields-url">url</a></td>
+<td><code>String</code></td>
+<td>Sets the URL for downloading a script.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#elems-css-declfields-content">content</a></td>
+<td><code>String</code></td>
+<td>Sets scripts in string format</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="public-block-technologies-32"><a href="#public-block-technologies-32" class="anchor"></a>Public block technologies</h3>
+<p>The block is implemented in:</p>
+<ul>
+<li><code>bh.js</code></li>
+<li><code>bemhtml</code></li>
+</ul>
+<h2 id="description-22"><a href="#description-22" class="anchor"></a>Description</h2>
+<p>This block is responsible for creating top-level HTML elements, connecting CSS, JS, and <code>&lt;meta&gt;</code> elements to a page, and defining the title. The BEMJSON declaration for the block and its elements have special fields reserved for this purpose.</p>
+<p><a name="declfields"></a></p>
+<h3 id="special-fields-of-the-block-3"><a href="#special-fields-of-the-block-3" class="anchor"></a>Special fields of the block</h3>
+<p><a name="declfields-doctype"></a></p>
+<h4 id="doctype-field-1"><a href="#doctype-field-1" class="anchor"></a><code>doctype</code> field</h4>
+<p>Type: <code>String</code>.</p>
+<p>Use this field to explicitly set the DTD (Document Type Definition) for the current document. If omitted, <code>&lt;!DOCTYPE html&gt;</code> is used by default.</p>
+<p><a name="declfields-title"></a></p>
+<h4 id="title-field-1"><a href="#title-field-1" class="anchor"></a><code>title</code> field</h4>
+<p>Type: <code>String</code>.</p>
+<p>Title of the page. It becomes the <code>&lt;title&gt;</code> HTML element.</p>
+<!-- bem-example: tmp/data/bem-core-4.2.1/touch-phone.examples/page/1XbHawxtflVM-qdPJwcvW-qayC4 -->
+<p><a name="declfields-favicon"></a></p>
+<h4 id="favicon-field-1"><a href="#favicon-field-1" class="anchor"></a><code>favicon</code> field</h4>
+<p>Type: <code>String</code>.</p>
+<p>Use this field to specify the URL of the favicon for the page:</p>
+<!-- bem-example: tmp/data/bem-core-4.2.1/touch-phone.examples/page/X-TO8Z7nDRiM8DF4H6051sfaxTw -->
+<p><a name="declfields-head"></a></p>
+<h4 id="head-field-1"><a href="#head-field-1" class="anchor"></a><code>head</code> field</h4>
+<p>Type: <code>BEMJSON</code>.</p>
+<p>Use this field to add content to the <code>&lt;head&gt;</code> <code>HTML</code> element that is defined in the block template:</p>
+<!-- bem-example: tmp/data/bem-core-4.2.1/touch-phone.examples/page/C5JlpbYiEJJi1-CF_BiQsfyVBfE -->
+<p><a name="declfields-styles"></a></p>
+<h4 id="styles-field-1"><a href="#styles-field-1" class="anchor"></a><code>styles</code> field</h4>
+<p>Type: <code>BEMJSON</code>.</p>
+<p>Use this field to connect <code>CSS</code>:</p>
+<!-- bem-example: tmp/data/bem-core-4.2.1/touch-phone.examples/page/HYH3vutSDd2joR1oc9kPHCb6K-w -->
+<p><a name="declfields-scripts"></a></p>
+<h4 id="scripts-field-1"><a href="#scripts-field-1" class="anchor"></a><code>scripts</code> field</h4>
+<p>Type: <code>BEMJSON</code>.</p>
+<p>Embeds JS in the body of the page, at the end of the <code>&lt;body&gt;</code> HTML element:</p>
+<!-- bem-example: tmp/data/bem-core-4.2.1/touch-phone.examples/page/A_vbuJFTtKNZSs2LP0r6Oc8Kwsw -->
+<p><a name="declfields-content"></a></p>
+<h4 id="content-field-1"><a href="#content-field-1" class="anchor"></a><code>content</code> field</h4>
+<p>Type: <code>BEMJSON</code>.</p>
+<p>Use this field to set the page content.</p>
+<!-- bem-example: tmp/data/bem-core-4.2.1/touch-phone.examples/page/XFUP7dDCxja7SQdMGjfwW5UDO2M -->
+<p><a name="elems"></a></p>
+<h3 id="elements-of-the-block-21"><a href="#elements-of-the-block-21" class="anchor"></a>Elements of the block</h3>
+<p><a name="elems-css"></a></p>
+<h4 id="css-element-1"><a href="#css-element-1" class="anchor"></a><code>css</code> element</h4>
+<p>Connects CSS using a URL or a string. Depending on whether the <code>url</code> field is specified in the element declaration, an HTML element is created with the tag:</p>
+<ul>
+<li><code>&lt;link&gt;</code> and the <code>stylesheet</code> property, if <code>url</code> is specified.</li>
+<li><code>&lt;style&gt;</code>, if <code>url</code> is omitted. In this case, it is assumed that the element content is passed using the <code>content</code> property in the element&#39;s BEMJSON declaration.</li>
+</ul>
+<p><a name="elems-css-declfields-content"></a></p>
+<h5 id="specialized-content-field-2"><a href="#specialized-content-field-2" class="anchor"></a>Specialized <code>content</code> field</h5>
+<p>Type: <code>String</code>.</p>
+<p>Use this field for explicitly passing the content of the <code>&lt;style&gt;</code> HTML element:</p>
+<!-- bem-example: tmp/data/bem-core-4.2.1/touch-phone.examples/page/PeIoncFtgjqSTzb7R7VpvEI_Av0 -->
+<p><a name="elems-css-declfields-url"></a></p>
+<h5 id="specialized-url-field-2"><a href="#specialized-url-field-2" class="anchor"></a>Specialized <code>url</code> field</h5>
+<p>Type: <code>String</code>.</p>
+<p>Sets the URL for downloading CSS. The value of the <code>url</code> field in the BEMJSON declaration is passed to the <code>href</code> property in the created HTML element.</p>
+<p><a name="elems-js"></a></p>
+<h4 id="js-element-1"><a href="#js-element-1" class="anchor"></a><code>js</code> element</h4>
+<p>Connects JS using a URL or a string. Creates the <code>&lt;script&gt;</code> HTML element.</p>
+<p><a name="elems-js-declfields-content"></a></p>
+<h5 id="specialized-content-field-3"><a href="#specialized-content-field-3" class="anchor"></a>Specialized <code>content</code> field</h5>
+<p>Type: <code>String</code>.</p>
+<p>Use this field for explicitly passing the content of the <code>&lt;script&gt;</code> HTML element:</p>
+<!-- bem-example: tmp/data/bem-core-4.2.1/touch-phone.examples/page/gyO3dP0eqhvRshKuh46fxynk9hQ -->
+<p><a name="elems-js-declfields-url"></a></p>
+<h5 id="specialized-url-field-3"><a href="#specialized-url-field-3" class="anchor"></a>Specialized <code>url</code> field</h5>
+<p>Type: <code>String</code>.</p>
+<p>Sets the URL for downloading a script. The value of the <code>url</code> field in the BEMJSON declaration is passed to the <code>src</code> property in the created HTML element.</p>
+<!-- bem-example: tmp/data/bem-core-4.2.1/touch-phone.examples/page/wRN9Y9I9KBSKKEWD1yt-9EuU5Lc -->
+<p><a name="elems-meta"></a></p>
+<h4 id="meta-element-1"><a href="#meta-element-1" class="anchor"></a><code>meta</code> element</h4>
+<p>Creates <code>&lt;meta&gt;</code> HTML elements and defines user metadata for them. Metadata is passed as keys and values of attribute hashes, the <code>attrs</code> properties in the BEMJSON declaration of the element:</p>
+<!-- bem-example: tmp/data/bem-core-4.2.1/touch-phone.examples/page/4fuUSAPd1pnoU76FCeeED0ohlTU -->
+<p>For more information, see the documentation for <code>&lt;meta&gt;</code> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta">at MDN</a>.</p>
