@@ -1,0 +1,148 @@
+<h1 id="attach-4"><a href="#attach-4" class="anchor"></a>attach</h1>
+<p>Используется для выбора файла, предназначенного для отправки на сервер.</p>
+<h2 id="Обзор-блока-41"><a href="#Обзор-блока-41" class="anchor"></a>Обзор блока</h2>
+<h3 id="Модификаторы-блока-70"><a href="#Модификаторы-блока-70" class="anchor"></a>Модификаторы блока</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Модификатор</th>
+<th>Допустимые значения</th>
+<th>Способы использования</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#disabled">disabled</a></td>
+<td><code>true</code></td>
+<td><code>BEMJSON</code>, <code>JS</code></td>
+<td>Неактивное состояние.</td>
+</tr>
+<tr>
+<td><a href="#focused">focused</a></td>
+<td><code>true</code></td>
+<td><code>BEMJSON</code>, <code>JS</code></td>
+<td>Фокус на блоке.</td>
+</tr>
+<tr>
+<td><a href="#themes">theme</a></td>
+<td><code>&#39;islands&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>Стилевое оформление.</td>
+</tr>
+<tr>
+<td><a href="#size">size</a></td>
+<td><code>&#39;s&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>, <code>&#39;xl&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>Размер блока.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="Специализированные-поля-блока-72"><a href="#Специализированные-поля-блока-72" class="anchor"></a>Специализированные поля блока</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>Тип</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#name">name</a></td>
+<td><code>String</code></td>
+<td>Уникальное имя блока.</td>
+</tr>
+<tr>
+<td><a href="#button">button</a></td>
+<td><code>String</code>, <code>BEMJSON</code></td>
+<td>Содержимое кнопки для выбора файла.</td>
+</tr>
+<tr>
+<td><a href="#nofiletext">noFileText</a></td>
+<td><code>String</code></td>
+<td>Текст сообщения, когда файл не выбран.</td>
+</tr>
+</tbody>
+</table>
+</div><h2 id="Описание-блока-37"><a href="#Описание-блока-37" class="anchor"></a>Описание блока</h2>
+<p>По умолчанию блок <code>attach</code> визуально представлен:</p>
+<ul>
+<li>кнопкой (<a href="../button/button.ru.md">button</a>), вызывающей системное окно загрузки файла;</li>
+<li>текстовым сообщением.</li>
+</ul>
+<p>После выбора файла отображаются:</p>
+<ul>
+<li>имя файла (элемент <code>text</code>);</li>
+<li>крестик для отмены выбора (элемент <code>clear</code>).</li>
+</ul>
+<p>Реализация блока не позволяет:</p>
+<ul>
+<li>прикреплять несколько файлов;</li>
+<li>перетаскивать элементы (drag-and-drop).</li>
+</ul>
+<h3 id="Модификаторы-блока-71"><a href="#Модификаторы-блока-71" class="anchor"></a>Модификаторы блока</h3>
+<p><a name="disabled"></a></p>
+<h4 id="Модификатор-disabled-26"><a href="#Модификатор-disabled-26" class="anchor"></a>Модификатор <code>disabled</code></h4>
+<p>Допустимое значение: <code>true</code>.</p>
+<p>Способы использования: <code>BEMJSON</code>, <code>JS</code>.</p>
+<p>Отвечает за неактивное состояние, при котором блок виден, но недоступен для действий пользователя.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/attach/541Cvw9VoBBBlHtzOezXAsTxEB8 -->
+<p><a name="focused"></a></p>
+<h4 id="Модификатор-focused-22"><a href="#Модификатор-focused-22" class="anchor"></a>Модификатор <code>focused</code></h4>
+<p>Допустимое значение: <code>true</code>.</p>
+<p>Способы использования: <code>BEMJSON</code>, <code>JS</code>.</p>
+<p>Отвечает за наличие фокуса на блоке.</p>
+<p>Выставляется автоматически при получении блока фокуса.</p>
+<pre><code class="lang-javascript">{
+    block : &#39;attach&#39;,
+    mods : { theme : &#39;islands&#39;, size : &#39;m&#39;, focused : true },
+    button : &#39;Выберите файл&#39;,
+    noFileText : &#39;Файл не выбран&#39;
+}
+</code></pre>
+<p>Способ установки фокуса на блок определяет выбор модификатора: <code>focused</code> или <code>focused-hard</code>. <a href="../../README.ru.md#Модификатор-focused">Читать подробности</a>.</p>
+<p><a name="themes"></a></p>
+<h4 id="Модификатор-theme-32"><a href="#Модификатор-theme-32" class="anchor"></a>Модификатор <code>theme</code></h4>
+<p>Допустимое значение: <code>&#39;islands&#39;</code>.</p>
+<p>Способ использования: <code>BEMJSON</code>.</p>
+<p>Отвечает за стилевое оформление блока.</p>
+<p>Необходимо использовать с модификатором <a href="#size">size</a>.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/attach/yOG-dZNqjoB7DDubI_fuIc1xdnc -->
+<p><a name="size"></a></p>
+<h4 id="Модификатор-size-26"><a href="#Модификатор-size-26" class="anchor"></a>Модификатор <code>size</code></h4>
+<p>Допустимое значение: <code>&#39;s&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>, <code>&#39;xl&#39;</code>.</p>
+<p>Способ использования: <code>BEMJSON</code>.</p>
+<p>Задает размер блоку.</p>
+<p>Необходимо использовать с модификатором <a href="#themes">theme</a>.</p>
+<p><strong>s</strong></p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/attach/mVlmMpeVFfFE-SOOhigdW66NHtQ -->
+<p><strong>m</strong></p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/attach/yOG-dZNqjoB7DDubI_fuIc1xdnc -->
+<p><strong>l</strong></p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/attach/b0owVgeDNgmqck6sjQJB1yvEmY -->
+<p><strong>xl</strong></p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/attach/q81YUcisaWzIllq-kMm-Lt1Bi_g -->
+<h3 id="Специализированные-поля-блока-73"><a href="#Специализированные-поля-блока-73" class="anchor"></a>Специализированные поля блока</h3>
+<p><a name="name"></a></p>
+<h4 id="Поле-name-18"><a href="#Поле-name-18" class="anchor"></a>Поле <code>name</code></h4>
+<p>Тип: <code>String</code>.</p>
+<p>Определяет уникальное имя блока.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/attach/n3Y4d5E565eSoKlSV0sZHAqc5p8 -->
+<p><a name="button"></a></p>
+<h4 id="Поле-button-2"><a href="#Поле-button-2" class="anchor"></a>Поле <code>button</code></h4>
+<p>Тип: <code>String</code>, <code>BEMJSON</code>.</p>
+<p>Определяет содержимое кнопки для выбора файла:</p>
+<ul>
+<li>задает текст кнопки (<code>String</code>)</li>
+</ul>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/attach/ORPJy90vVyZnMs-ONOAhXn1NHX4 -->
+<ul>
+<li>задает внешний вид и тип кнопки (<code>BEMJSON</code>)</li>
+</ul>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/attach/dYFJfkwh4c5QpH98z3_Yyr75184 -->
+<p><a name="nofiletext"></a></p>
+<h4 id="Поле-nofiletext-2"><a href="#Поле-nofiletext-2" class="anchor"></a>Поле <code>noFileText</code></h4>
+<p>Тип: <code>String</code>.</p>
+<p>Определяет текст сообщения, когда файл не выбран.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/attach/yOG-dZNqjoB7DDubI_fuIc1xdnc -->

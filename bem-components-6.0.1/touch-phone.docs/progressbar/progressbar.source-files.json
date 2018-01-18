@@ -1,0 +1,146 @@
+[
+    {
+        "entity": {
+            "block": "progressbar"
+        },
+        "level": "/Users/vitaly/bem/bem-components-6.0.1/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "/Users/vitaly/bem/bem-components-6.0.1/common.blocks/progressbar/progressbar.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "progressbar"
+        },
+        "level": "/Users/vitaly/bem/bem-components-6.0.1/common.blocks",
+        "tech": "bh.js",
+        "path": "/Users/vitaly/bem/bem-components-6.0.1/common.blocks/progressbar/progressbar.bh.js"
+    },
+    {
+        "entity": {
+            "block": "progressbar"
+        },
+        "level": "/Users/vitaly/bem/bem-components-6.0.1/common.blocks",
+        "tech": "deps.js",
+        "path": "/Users/vitaly/bem/bem-components-6.0.1/common.blocks/progressbar/progressbar.deps.js"
+    },
+    {
+        "entity": {
+            "block": "progressbar"
+        },
+        "level": "/Users/vitaly/bem/bem-components-6.0.1/common.blocks",
+        "tech": "en.md",
+        "path": "/Users/vitaly/bem/bem-components-6.0.1/common.blocks/progressbar/progressbar.en.md"
+    },
+    {
+        "entity": {
+            "block": "progressbar"
+        },
+        "level": "/Users/vitaly/bem/bem-components-6.0.1/common.blocks",
+        "tech": "js",
+        "path": "/Users/vitaly/bem/bem-components-6.0.1/common.blocks/progressbar/progressbar.js"
+    },
+    {
+        "entity": {
+            "block": "progressbar"
+        },
+        "level": "/Users/vitaly/bem/bem-components-6.0.1/common.blocks",
+        "tech": "ru.md",
+        "path": "/Users/vitaly/bem/bem-components-6.0.1/common.blocks/progressbar/progressbar.ru.md"
+    },
+    {
+        "entity": {
+            "block": "progressbar"
+        },
+        "level": "/Users/vitaly/bem/bem-components-6.0.1/common.blocks",
+        "tech": "spec.js",
+        "path": "/Users/vitaly/bem/bem-components-6.0.1/common.blocks/progressbar/progressbar.spec.js"
+    },
+    {
+        "entity": {
+            "block": "progressbar"
+        },
+        "level": "/Users/vitaly/bem/bem-components-6.0.1/common.blocks",
+        "tech": "tests",
+        "path": "/Users/vitaly/bem/bem-components-6.0.1/common.blocks/progressbar/progressbar.tests",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "progressbar"
+        },
+        "level": "/Users/vitaly/bem/bem-components-6.0.1/common.blocks",
+        "tech": "tmpl-specs",
+        "path": "/Users/vitaly/bem/bem-components-6.0.1/common.blocks/progressbar/progressbar.tmpl-specs",
+        "isDir": true
+    },
+    {
+        "entity": {
+            "block": "progressbar",
+            "modName": "theme",
+            "modVal": "islands"
+        },
+        "level": "/Users/vitaly/bem/bem-components-6.0.1/design/common.blocks",
+        "tech": "css",
+        "path": "/Users/vitaly/bem/bem-components-6.0.1/design/common.blocks/progressbar/_theme/progressbar_theme_islands.css"
+    },
+    {
+        "entity": {
+            "block": "progressbar",
+            "modName": "theme",
+            "modVal": "islands"
+        },
+        "level": "/Users/vitaly/bem/bem-components-6.0.1/design/common.blocks",
+        "tech": "post.css",
+        "path": "/Users/vitaly/bem/bem-components-6.0.1/design/common.blocks/progressbar/_theme/progressbar_theme_islands.post.css"
+    },
+    {
+        "entity": {
+            "block": "progressbar",
+            "modName": "theme",
+            "modVal": "simple"
+        },
+        "level": "/Users/vitaly/bem/bem-components-6.0.1/design/common.blocks",
+        "tech": "bemhtml.js",
+        "path": "/Users/vitaly/bem/bem-components-6.0.1/design/common.blocks/progressbar/_theme/progressbar_theme_simple.bemhtml.js"
+    },
+    {
+        "entity": {
+            "block": "progressbar",
+            "modName": "theme",
+            "modVal": "simple"
+        },
+        "level": "/Users/vitaly/bem/bem-components-6.0.1/design/common.blocks",
+        "tech": "bh.js",
+        "path": "/Users/vitaly/bem/bem-components-6.0.1/design/common.blocks/progressbar/_theme/progressbar_theme_simple.bh.js"
+    },
+    {
+        "entity": {
+            "block": "progressbar",
+            "modName": "theme",
+            "modVal": "simple"
+        },
+        "level": "/Users/vitaly/bem/bem-components-6.0.1/design/common.blocks",
+        "tech": "css",
+        "path": "/Users/vitaly/bem/bem-components-6.0.1/design/common.blocks/progressbar/_theme/progressbar_theme_simple.css"
+    },
+    {
+        "entity": {
+            "block": "progressbar",
+            "modName": "theme",
+            "modVal": "simple"
+        },
+        "level": "/Users/vitaly/bem/bem-components-6.0.1/design/common.blocks",
+        "tech": "js",
+        "path": "/Users/vitaly/bem/bem-components-6.0.1/design/common.blocks/progressbar/_theme/progressbar_theme_simple.js"
+    },
+    {
+        "entity": {
+            "block": "progressbar",
+            "modName": "theme",
+            "modVal": "simple"
+        },
+        "level": "/Users/vitaly/bem/bem-components-6.0.1/design/common.blocks",
+        "tech": "post.css",
+        "path": "/Users/vitaly/bem/bem-components-6.0.1/design/common.blocks/progressbar/_theme/progressbar_theme_simple.post.css"
+    }
+]

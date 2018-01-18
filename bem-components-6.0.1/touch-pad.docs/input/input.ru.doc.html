@@ -1,0 +1,212 @@
+<h1 id="input-4"><a href="#input-4" class="anchor"></a>input</h1>
+<p>Используется для создания различных типов текстовых полей.</p>
+<h2 id="Обзор-блока-49"><a href="#Обзор-блока-49" class="anchor"></a>Обзор блока</h2>
+<h3 id="Модификаторы-блока-82"><a href="#Модификаторы-блока-82" class="anchor"></a>Модификаторы блока</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Модификатор</th>
+<th>Допустимые значения</th>
+<th>Способы использования</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#type">type</a></td>
+<td><code>&#39;password&#39;</code>, <code>&#39;search&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>Тип текстового поля.</td>
+</tr>
+<tr>
+<td><a href="#width">width</a></td>
+<td><code>&#39;available&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>Максимально допустимая ширина текстового поля.</td>
+</tr>
+<tr>
+<td><a href="#has-clear">has-clear</a></td>
+<td><code>true</code></td>
+<td><code>BEMJSON</code></td>
+<td>Крестик для очистки поля ввода.</td>
+</tr>
+<tr>
+<td><a href="#disabled">disabled</a></td>
+<td><code>true</code></td>
+<td><code>BEMJSON</code>, <code>JS</code></td>
+<td>Неактивное состояние.</td>
+</tr>
+<tr>
+<td><a href="#focused">focused</a></td>
+<td><code>true</code></td>
+<td><code>BEMJSON</code>, <code>JS</code></td>
+<td>Фокус на блоке.</td>
+</tr>
+<tr>
+<td><a href="#theme">theme</a></td>
+<td><code>&#39;islands&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>Стилевое оформление.</td>
+</tr>
+<tr>
+<td><a href="#size">size</a></td>
+<td><code>&#39;s&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>, <code>&#39;xl&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>Размер текстового поля. Используется только с модификатором <a href="#theme">theme в значении islands</a>.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="Специализированные-поля-блока-86"><a href="#Специализированные-поля-блока-86" class="anchor"></a>Специализированные поля блока</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>Тип</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#name">name</a></td>
+<td><code>String</code></td>
+<td>Уникальное имя блока.</td>
+</tr>
+<tr>
+<td><a href="#val">val</a></td>
+<td><code>String</code>, <code>Number</code></td>
+<td>Содержимое поля ввода, указанное по умолчанию.</td>
+</tr>
+<tr>
+<td><a href="#placeholder">placeholder</a></td>
+<td><code>String</code></td>
+<td>Подсказка в текстовом поле.</td>
+</tr>
+<tr>
+<td><a href="#maxLength">maxLength</a></td>
+<td><code>String</code></td>
+<td>Максимальное количество вводимых символов.</td>
+</tr>
+<tr>
+<td><a href="#autocomplete">autocomplete</a></td>
+<td><code>Boolean</code></td>
+<td>Браузерное автозаполнение в текстовом поле.</td>
+</tr>
+<tr>
+<td><a href="#id">id</a></td>
+<td><code>String</code></td>
+<td>Уникальный идентификатор текстового поля.</td>
+</tr>
+<tr>
+<td><a href="#tab">tabIndex</a></td>
+<td><code>Number</code></td>
+<td>Последовательность перехода между контролами при нажатии на <code>Tab</code>.</td>
+</tr>
+</tbody>
+</table>
+</div><h2 id="Описание-блока-45"><a href="#Описание-блока-45" class="anchor"></a>Описание блока</h2>
+<p>Блок <code>input</code> служит для создания различных типов текстовых полей.</p>
+<h3 id="Модификаторы-блока-83"><a href="#Модификаторы-блока-83" class="anchor"></a>Модификаторы блока</h3>
+<p><a name="type"></a></p>
+<h4 id="Модификатор-type-17"><a href="#Модификатор-type-17" class="anchor"></a>Модификатор <code>type</code></h4>
+<p>Допустимые значения: <code>&#39;password&#39;</code>, <code>&#39;search&#39;</code>.</p>
+<p>Способ использования: <code>BEMJSON</code>.</p>
+<p>Модификатор <code>type</code> используется для изменения типа текстового поля.</p>
+<p><a name="input"></a>
+По умолчанию (если модификатор <code>type</code> не установлен) блок <code>input</code> является обычным полем ввода.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/input/YPd7cTDYiXm-FaLPIehC4O-32yk -->
+<h5 id="Поле-для-ввода-пароля-модификатор-type-в-значении-password-2"><a href="#Поле-для-ввода-пароля-модификатор-type-в-значении-password-2" class="anchor"></a>Поле для ввода пароля (модификатор <code>type</code> в значении <code>password</code>)</h5>
+<p>Используется для создания поля для ввода пароля. Отличается от обычного тем, что все вводимые символы отображаются звездочками, точками или другими знаками в зависимости от используемого браузера.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/input/8yMBjBPq9fpzXcD-9GBns-puc6Q -->
+<h5 id="Поле-для-поиска-модификатор-type-в-значении-search-2"><a href="#Поле-для-поиска-модификатор-type-в-значении-search-2" class="anchor"></a>Поле для поиска (модификатор <code>type</code> в значении <code>search</code>)</h5>
+<p>Используется для создания поискового поля.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/input/SkME5SY01cF6OAI60Gf9qpayUWg -->
+<p><a name="width"></a></p>
+<h4 id="Модификатор-width-6"><a href="#Модификатор-width-6" class="anchor"></a>Модификатор <code>width</code></h4>
+<p>Допустимое значение: <code>&#39;available&#39;</code>.</p>
+<p>Способы использования: <code>BEMJSON</code>.</p>
+<p>Позволяет растягивать текстовое поле на максимально допустимую ширину.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/input/2WM7egtSJEL1TG7T3U_TcpUYbOo -->
+<p><a name="has-clear"></a></p>
+<h4 id="Модификатор-has-clear-2"><a href="#Модификатор-has-clear-2" class="anchor"></a>Модификатор <code>has-clear</code></h4>
+<p>Допустимое значение: <code>true</code>.</p>
+<p>Способы использования: <code>BEMJSON</code>.</p>
+<p>Добавляет крестик для очистки содержимого в текстовое поле.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/input/VzE1PxAey-_ueUBJ0kRNg2fA1c4 -->
+<p><a name="disabled"></a></p>
+<h4 id="Модификатор-disabled-31"><a href="#Модификатор-disabled-31" class="anchor"></a>Модификатор <code>disabled</code></h4>
+<p>Допустимое значение: <code>true</code>.</p>
+<p>Способы использования: <code>BEMJSON</code>, <code>JS</code>.</p>
+<p>Отвечает за неактивное состояние, при котором блок виден, но недоступен для действий пользователя.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/input/u_P9GQJA_0G7oU8Je883FMejBrU -->
+<p><a name="focused"></a></p>
+<h4 id="Модификатор-focused-27"><a href="#Модификатор-focused-27" class="anchor"></a>Модификатор <code>focused</code></h4>
+<p>Допустимое значение: <code>true</code>.</p>
+<p>Способы использования: <code>BEMJSON</code>, <code>JS</code>.</p>
+<p>Выставляется автоматически при получении блоком фокуса.</p>
+<p>Отвечает за наличие фокуса на блоке.</p>
+<pre><code class="lang-javascript">{
+    block : &#39;input&#39;,
+    mods : { theme : &#39;islands&#39;, size : &#39;m&#39;, focused : true },
+    placeholder : &#39;Введите имя&#39;
+}
+</code></pre>
+<p>Способ установки фокуса на блок определяет выбор модификатора: <code>focused</code> или <code>focused-hard</code>. <a href="../../README.ru.md#Модификатор-focused">Читать подробности</a>.</p>
+<p><a name="theme"></a></p>
+<h4 id="Модификатор-theme-37"><a href="#Модификатор-theme-37" class="anchor"></a>Модификатор <code>theme</code></h4>
+<p>Допустимое значение: <code>&#39;islands&#39;</code>.</p>
+<p>Способ использования: <code>BEMJSON</code>.</p>
+<p>Отвечает за стилевое оформление блока.</p>
+<p>Необходимо использовать с модификатором <a href="#size">size</a>.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/input/4U8vS8JzodoKpT70Mi4A8a2DWPI -->
+<p><a name="size"></a></p>
+<h4 id="Модификатор-size-31"><a href="#Модификатор-size-31" class="anchor"></a>Модификатор <code>size</code></h4>
+<p>Допустимые значения для темы <code>islands</code>: <code>&#39;s&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>, <code>&#39;xl&#39;</code>.</p>
+<p>Способ использования: <code>BEMJSON</code>.</p>
+<p>Необходимо использовать с модификатором <a href="#theme">theme</a> в значении <code>islands</code>.</p>
+<p>Задает размер всем типам текстовых полей.</p>
+<p><strong>s</strong></p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/input/_9xl3FNJtfGLDzxT4z_NCq4kxlI -->
+<p><strong>m</strong></p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/input/WUpwYiAb-GqWvfL4BSCnPqDCq8 -->
+<p><strong>l</strong></p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/input/c12Ygbj5fDotYAOiNLOFP5nkxCY -->
+<p><strong>xl</strong></p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/input/sbzrkMNl3HWWVB_tRxFIrkHN5cg -->
+<h3 id="Специализированные-поля-блока-87"><a href="#Специализированные-поля-блока-87" class="anchor"></a>Специализированные поля блока</h3>
+<p><a name="name"></a></p>
+<h4 id="Поле-name-22"><a href="#Поле-name-22" class="anchor"></a>Поле <code>name</code></h4>
+<p>Тип: <code>String</code>.</p>
+<p>Определяет уникальное имя блока.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/input/2_2H_pgnYBxV_IcPqb-6F-4Z3AU -->
+<p><a name="val"></a></p>
+<h4 id="Поле-val-25"><a href="#Поле-val-25" class="anchor"></a>Поле <code>val</code></h4>
+<p>Тип данных: <code>String</code>.</p>
+<p>Определяет содержимое поля ввода.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/input/GzHum0emSfOuc2NSEzRQ3W1Ej4M -->
+<p><a name="placeholder"></a></p>
+<h4 id="Поле-placeholder-4"><a href="#Поле-placeholder-4" class="anchor"></a>Поле <code>placeholder</code></h4>
+<p>Тип данных: <code>String</code>.</p>
+<p>Определяет текст подсказки в текстовом поле.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/input/YPd7cTDYiXm-FaLPIehC4O-32yk -->
+<p><a name="maxLength"></a></p>
+<h4 id="Поле-maxlength-2"><a href="#Поле-maxlength-2" class="anchor"></a>Поле <code>maxLength</code></h4>
+<p>Тип данных: <code>Number</code>.</p>
+<p>Определяет максимальное количество вводимых символов.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/input/4i1Y2AUcWBtHQUO0c5XsqrVfSlE -->
+<p><a name="autocomplete"></a></p>
+<h4 id="Поле-autocomplete-2"><a href="#Поле-autocomplete-2" class="anchor"></a>Поле <code>autocomplete</code></h4>
+<p>Тип данных: <code>Boolean</code>.</p>
+<p>Отвечает за включение / выключение автозаполнения текстового поля в браузере.</p>
+<p>Если поле <code>autocomplete</code> не задано, автозаполнение включено.</p>
+<p>Для отключения автозаполнения используйте значение <code>false</code>:</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/input/ursTE_wKwSI6JiWXyYWcqQRH_KE -->
+<p><a name="id"></a></p>
+<h4 id="Поле-id-9"><a href="#Поле-id-9" class="anchor"></a>Поле <code>id</code></h4>
+<p>Тип данных: <code>String</code>.</p>
+<p>Определяет уникальный идентификатор текстового поля.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/input/p2zpn0tjjWjFyTLd2IbXAGwD22o -->
+<p><a name="tab"></a></p>
+<h4 id="Поле-tabindex-15"><a href="#Поле-tabindex-15" class="anchor"></a>Поле <code>tabIndex</code></h4>
+<p>Тип данных: <code>Number</code>.</p>
+<p>Определяет последовательность перехода между контролами при нажатии на <code>Tab</code>.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/input/w0XPhRgqnOizCrDAqatSg93BJuE -->

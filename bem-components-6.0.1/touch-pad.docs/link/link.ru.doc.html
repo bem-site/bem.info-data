@@ -1,0 +1,177 @@
+<h1 id="link-4"><a href="#link-4" class="anchor"></a>link</h1>
+<p>Используется для создания различных типов ссылок.</p>
+<h2 id="Обзор-блока-47"><a href="#Обзор-блока-47" class="anchor"></a>Обзор блока</h2>
+<h3 id="Модификаторы-блока-80"><a href="#Модификаторы-блока-80" class="anchor"></a>Модификаторы блока</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Модификатор</th>
+<th>Допустимые значения</th>
+<th>Способы использования</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#pseudo">pseudo</a></td>
+<td><code>true</code></td>
+<td><code>BEMJSON</code></td>
+<td>Псевдоссылка.</td>
+</tr>
+<tr>
+<td><a href="#disabled">disabled</a></td>
+<td><code>true</code></td>
+<td><code>BEMJSON</code>, <code>JS</code></td>
+<td>Неактивное состояние.</td>
+</tr>
+<tr>
+<td><a href="#focused">focused</a></td>
+<td><code>true</code></td>
+<td><code>BEMJSON</code>, <code>JS</code></td>
+<td>Фокус на блоке.</td>
+</tr>
+<tr>
+<td><a href="#theme">theme</a></td>
+<td><code>islands</code></td>
+<td><code>BEMJSON</code></td>
+<td>Стилевое оформление.</td>
+</tr>
+<tr>
+<td><a href="#size">size</a></td>
+<td><code>&#39;s&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>, <code>&#39;xl&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>Размер блока. Используется только с модификатором <a href="#theme">theme в значении islands</a>.</td>
+</tr>
+<tr>
+<td><a href="#view">view</a></td>
+<td><code>&#39;minor&#39;</code>, <code>&#39;external&#39;</code>, <code>&#39;ghost&#39;</code>, <code>&#39;text&#39;</code>, <code>&#39;strong&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>Тип визуального выделения ссылки.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="Специализированные-поля-блока-82"><a href="#Специализированные-поля-блока-82" class="anchor"></a>Специализированные поля блока</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>Тип</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#url">url</a></td>
+<td><code>String</code></td>
+<td>Адрес ссылки.</td>
+</tr>
+<tr>
+<td><a href="#title">title</a></td>
+<td><code>String</code></td>
+<td>Текст всплывающей подсказки.</td>
+</tr>
+<tr>
+<td><a href="#target">target</a></td>
+<td><code>String</code></td>
+<td>Поведение ссылки.</td>
+</tr>
+<tr>
+<td><a href="#tabIndex">tabIndex</a></td>
+<td><code>Number</code></td>
+<td>Последовательность перехода между контролами при нажатии на <code>Tab</code>.</td>
+</tr>
+</tbody>
+</table>
+</div><h2 id="Описание-блока-43"><a href="#Описание-блока-43" class="anchor"></a>Описание блока</h2>
+<p>Блок <code>link</code> предоставляет возможность изменять состояние ссылок, их поведение и внешний вид.</p>
+<h3 id="Модификаторы-блока-81"><a href="#Модификаторы-блока-81" class="anchor"></a>Модификаторы блока</h3>
+<p><a name="pseudo"></a></p>
+<h4 id="Модификатор-pseudo-2"><a href="#Модификатор-pseudo-2" class="anchor"></a>Модификатор <code>pseudo</code></h4>
+<p>Допустимое значение: <code>true</code>.</p>
+<p>Способ использования: <code>BEMJSON</code>.</p>
+<p>Отличается от обычной ссылки тем, что при клике по ссылке переход на новую страницу не осуществляется.</p>
+<pre><code class="lang-javascript">{
+    block : &#39;link&#39;,
+    mods : { theme : &#39;islands&#39;, size : &#39;m&#39;, pseudo : true },
+    content : &#39;Показать ответ&#39;
+}
+</code></pre>
+<p><a name="disabled"></a></p>
+<h4 id="Модификатор-disabled-30"><a href="#Модификатор-disabled-30" class="anchor"></a>Модификатор <code>disabled</code></h4>
+<p>Допустимое значение: <code>true</code>.</p>
+<p>Способы использования: <code>BEMJSON</code>, <code>JS</code>.</p>
+<p>Отвечает за неактивное состояние, при котором блок виден, но недоступен для действий пользователя.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/link/oLIDtS_dhHZYFcptXqdzTzD0v0E -->
+<p><a name="focused"></a></p>
+<h4 id="Модификатор-focused-26"><a href="#Модификатор-focused-26" class="anchor"></a>Модификатор <code>focused</code></h4>
+<p>Допустимое значение: <code>true</code></p>
+<p>Способы использования: <code>BEMJSON</code>, <code>JS</code>.</p>
+<p>Выставляется автоматически при получении блока фокуса.</p>
+<p>Отвечает за наличие фокуса на блоке.</p>
+<pre><code class="lang-javascript">{
+    block : &#39;link&#39;,
+    mods : { theme : &#39;islands&#39;, size : &#39;m&#39; , focused : true },
+    url : &#39;https://bem.info/&#39;,
+    content : &#39;bem.info&#39;
+}
+</code></pre>
+<p>Способ установки фокуса на блок определяет выбор модификатора: <code>focused</code> или <code>focused-hard</code>. <a href="../../README.ru.md#Модификатор-focused">Читать подробности</a>.</p>
+<p><a name="theme"></a></p>
+<h4 id="Модификатор-theme-36"><a href="#Модификатор-theme-36" class="anchor"></a>Модификатор <code>theme</code></h4>
+<p>Допустимое значение: <code>islands</code>.</p>
+<p>Способ использования: <code>BEMJSON</code>.</p>
+<p>Отвечает за стилевое оформление блока.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/link/La0iB39G9WbEoHPZTqgEA0dOpsA -->
+<p><a name="size"></a></p>
+<h4 id="Модификатор-size-30"><a href="#Модификатор-size-30" class="anchor"></a>Модификатор <code>size</code></h4>
+<p>Допустимые значения для темы <code>islands</code>: <code>&#39;s&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>, <code>&#39;xl&#39;</code>.</p>
+<p>Способ использования: <code>BEMJSON</code>.</p>
+<p>Необходимо использовать с модификатором <a href="#theme">theme</a> в значении <code>islands</code>.</p>
+<p><strong>s</strong></p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/link/2_t2pRz3r4WGSiih5lsiNUTfz2o -->
+<p><strong>m</strong></p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/link/ILqVUOIp-iHwpm9I_FjTML6ap4 -->
+<p><strong>l</strong></p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/link/v2YOMGbwD7W4qQiqru2uwtfGYaA -->
+<p><strong>xl</strong></p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/link/wipY5WLhnwfSk_y56R7cj1lno4Y -->
+<p><a name="view"></a></p>
+<h4 id="Модификатор-view-5"><a href="#Модификатор-view-5" class="anchor"></a>Модификатор <code>view</code></h4>
+<p>Допустимые значения: <code>&#39;minor&#39;</code>, <code>&#39;external&#39;</code>, <code>&#39;ghost&#39;</code>, <code>&#39;text&#39;</code>, <code>&#39;strong&#39;</code>.</p>
+<p>Способ использования: <code>BEMJSON</code>.</p>
+<h5 id="Второстепенная-ссылка-модификатор-view-в-значении-minor-2"><a href="#Второстепенная-ссылка-модификатор-view-в-значении-minor-2" class="anchor"></a>Второстепенная ссылка (модификатор <code>view</code> в значении <code>minor</code>)</h5>
+<p>Используется для визуального выделения второстепенных ссылок на странице.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/link/AjpO5BHOjKkTGc4kr2GSYb9MXhw -->
+<h5 id="Внешняя-ссылка-модификатор-view-в-значении-external-2"><a href="#Внешняя-ссылка-модификатор-view-в-значении-external-2" class="anchor"></a>Внешняя ссылка (модификатор <code>view</code> в значении <code>external</code>)</h5>
+<p>Используется для визуального выделения ссылок, которые ведут на внешние ресурсы.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/link/71U60hcshkNq6N7r3bazIU7-j_Q -->
+<h5 id="Малозаметная-ссылка-модификатор-view-в-значении-ghost-2"><a href="#Малозаметная-ссылка-модификатор-view-в-значении-ghost-2" class="anchor"></a>Малозаметная ссылка (модификатор <code>view</code> в значении <code>ghost</code>)</h5>
+<p>Используется при необходимости сделать ссылку менее заметной на странице.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/link/IMofxFUXUMBf0_taUsHStcQwHWQ -->
+<h5 id="Ссылка-под-цвет-текста-модификатор-view-в-значении-text-2"><a href="#Ссылка-под-цвет-текста-модификатор-view-в-значении-text-2" class="anchor"></a>Ссылка под цвет текста (модификатор <code>view</code> в значении <code>text</code>)</h5>
+<p>Используется при необходимости сделать ссылку под цвет текста.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/link/9jKaKJu2Ft69DBlkb_6JwJ8i1PU -->
+<h5 id="Жирная-ссылка-модификатор-view-в-значении-strong-2"><a href="#Жирная-ссылка-модификатор-view-в-значении-strong-2" class="anchor"></a>Жирная ссылка (модификатор <code>view</code> в значении <code>strong</code>)</h5>
+<p>Используется для визуального выделения важных ссылок на странице.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/link/A2se8PWfFP7uLF1-DfqU271KVng -->
+<h3 id="Специализированные-поля-блока-83"><a href="#Специализированные-поля-блока-83" class="anchor"></a>Специализированные поля блока</h3>
+<p><a name="url"></a></p>
+<h4 id="Поле-url-10"><a href="#Поле-url-10" class="anchor"></a>Поле <code>url</code></h4>
+<p>Тип: <code>String</code>.</p>
+<p>Определяет адрес, по которому осуществляется переход при нажатии на ссылку.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/link/La0iB39G9WbEoHPZTqgEA0dOpsA -->
+<p><a name="title"></a></p>
+<h4 id="Поле-title-13"><a href="#Поле-title-13" class="anchor"></a>Поле <code>title</code></h4>
+<p>Тип: <code>String</code>.</p>
+<p>Определяет содержание всплывающей подсказки. Вид такой подсказки зависит от браузера, настроек операционной системы и не может быть изменен с помощью HTML-кода или стилей.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/link/cunD1AWHsCAqkkMvejCeK2dXwEQ -->
+<p><a name="target"></a></p>
+<h4 id="Поле-target-2"><a href="#Поле-target-2" class="anchor"></a>Поле <code>target</code></h4>
+<p>Тип: <code>String</code>.</p>
+<p>Определяет поведение ссылки. Принимает все допустимые значения HTML-атрибута <code>target</code>: <code>_blank</code>, <code>_self</code> (используется по умолчанию), <code>_parent</code>, <code>_top</code>.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/link/ZoYtlMvnwHQ-caKdGVJRQIJqzSs -->
+<p><a name="tabIndex"></a></p>
+<h4 id="Поле-tabindex-14"><a href="#Поле-tabindex-14" class="anchor"></a>Поле <code>tabIndex</code></h4>
+<p>Тип: <code>Number</code>.</p>
+<p>Определяет последовательность перехода между контролами при нажатии на <code>Tab</code>.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-pad.examples/link/uzI2s-E0ZmT7x3hkVhFnd9kprJY -->

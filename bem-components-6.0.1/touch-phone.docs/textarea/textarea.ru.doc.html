@@ -1,0 +1,162 @@
+<h1 id="textarea-2"><a href="#textarea-2" class="anchor"></a>textarea</h1>
+<p>Используется для создания текстовой области.</p>
+<h2 id="Обзор-блока-40"><a href="#Обзор-блока-40" class="anchor"></a>Обзор блока</h2>
+<h3 id="Модификаторы-блока-68"><a href="#Модификаторы-блока-68" class="anchor"></a>Модификаторы блока</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Модификатор</th>
+<th>Допустимые значения</th>
+<th>Способы использования</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#width">width</a></td>
+<td><code>&#39;available&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>Максимально допустимая ширина текстовой области.</td>
+</tr>
+<tr>
+<td><a href="#disabled">disabled</a></td>
+<td><code>true</code></td>
+<td><code>BEMJSON</code>, <code>JS</code></td>
+<td>Неактивное состояние.</td>
+</tr>
+<tr>
+<td><a href="#focused">focused</a></td>
+<td><code>true</code></td>
+<td><code>BEMJSON</code>, <code>JS</code></td>
+<td>Фокус на блоке.</td>
+</tr>
+<tr>
+<td><a href="#theme">theme</a></td>
+<td><code>&#39;islands&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>Стилевое оформление.</td>
+</tr>
+<tr>
+<td><a href="#size">size</a></td>
+<td><code>&#39;s&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>, <code>&#39;xl&#39;</code></td>
+<td><code>BEMJSON</code></td>
+<td>Размер текстовой области. Используется только для текстовых областей с модификатором <a href="#theme">theme в значении islands</a>.</td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="Специализированные-поля-блока-70"><a href="#Специализированные-поля-блока-70" class="anchor"></a>Специализированные поля блока</h3>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>Тип</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#name">name</a></td>
+<td><code>String</code></td>
+<td>Имя текстовой области.</td>
+</tr>
+<tr>
+<td><a href="#val">val</a></td>
+<td><code>String</code>, <code>Number</code></td>
+<td>Содержимое текстовой области.</td>
+</tr>
+<tr>
+<td><a href="#placeholder">placeholder</a></td>
+<td><code>String</code></td>
+<td>Подсказка в текстовой области.</td>
+</tr>
+<tr>
+<td><a href="#id">id</a></td>
+<td><code>String</code></td>
+<td>Уникальный идентификатор текстовой области.</td>
+</tr>
+<tr>
+<td><a href="#tab">tabIndex</a></td>
+<td><code>Number</code></td>
+<td>Последовательность перехода между контролами при нажатии на <code>Tab</code>.</td>
+</tr>
+</tbody>
+</table>
+</div><h2 id="Описание-блока-36"><a href="#Описание-блока-36" class="anchor"></a>Описание блока</h2>
+<p>Блок <code>textarea</code> используется для создания области, в которую можно вводить несколько строк текста.</p>
+<h3 id="Модификаторы-блока-69"><a href="#Модификаторы-блока-69" class="anchor"></a>Модификаторы блока</h3>
+<p><a name="width"></a></p>
+<h4 id="Модификатор-width-5"><a href="#Модификатор-width-5" class="anchor"></a>Модификатор <code>width</code></h4>
+<p>Допустимое значение: <code>&#39;available&#39;</code>.</p>
+<p>Способы использования: <code>BEMJSON</code>.</p>
+<p>Позволяет растягивать текстовую область на максимально допустимую ширину.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-phone.examples/textarea/bvwLqf52VX3rmCXE0ZA2ghxp9j0 -->
+<p><a name="disabled"></a></p>
+<h4 id="Модификатор-disabled-25"><a href="#Модификатор-disabled-25" class="anchor"></a>Модификатор <code>disabled</code></h4>
+<p>Допустимое значение: <code>true</code>.</p>
+<p>Способы использования: <code>BEMJSON</code>, <code>JS</code>.</p>
+<p>Отвечает за неактивное состояние, при котором блок виден, но недоступен для действий пользователя.</p>
+<pre><code class="lang-js"> {
+     block : &#39;textarea&#39;,
+    mods : { theme : &#39;islands&#39;, size : &#39;m&#39;, disabled : true },
+    placeholder : &#39;Ваш текст должен быть здесь&#39;
+ }
+</code></pre>
+<p><a name="focused"></a></p>
+<h4 id="Модификатор-focused-21"><a href="#Модификатор-focused-21" class="anchor"></a>Модификатор <code>focused</code></h4>
+<p>Допустимое значение:<code>true</code>.</p>
+<p>Способы использования: <code>BEMJSON</code>, <code>JS</code>.</p>
+<p>Выставляется автоматически при получении блоком фокуса.</p>
+<p>Отвечает за наличие фокуса на блоке.</p>
+<pre><code class="lang-javascript">{
+    block : &#39;textarea&#39;,
+    mods : { theme : &#39;islands&#39;, size : &#39;m&#39;, focused : true },
+    placeholder : &#39;Ваш текст должен быть здесь&#39;
+}
+</code></pre>
+<p>Способ установки фокуса на блок определяет выбор модификатора: <code>focused</code> или <code>focused-hard</code>. <a href="../../README.ru.md#Модификатор-focused">Читать подробности</a>.</p>
+<p><a name="theme"></a></p>
+<h4 id="Модификатор-theme-31"><a href="#Модификатор-theme-31" class="anchor"></a>Модификатор <code>theme</code></h4>
+<p>Допустимое значение:<code>&#39;islands&#39;</code>.</p>
+<p>Способы использования: <code>BEMJSON</code>.</p>
+<p>Отвечает за стилевое оформление блока.</p>
+<p>Необходимо использовать с модификатором <a href="#size">size</a>.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-phone.examples/textarea/UWzRJQXt7PrIr01vpanCuHXjcbo -->
+<p><a name="size"></a></p>
+<h4 id="Модификатор-size-25"><a href="#Модификатор-size-25" class="anchor"></a>Модификатор <code>size</code></h4>
+<p>Допустимые значения для темы <code>islands</code>: <code>&#39;s&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>, <code>&#39;xl&#39;</code>.</p>
+<p>Способы использования: <code>BEMJSON</code>.</p>
+<p>Необходимо использовать с модификатором <a href="#theme">theme</a> в значении <code>islands</code>.</p>
+<p><strong>s</strong></p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-phone.examples/textarea/VQ09Vb3X83RxLrhsRce7z6wpd1w -->
+<p><strong>m</strong></p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-phone.examples/textarea/p9oYEcz5otGzBEFnMgBXZGaiUbQ -->
+<p><strong>l</strong></p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-phone.examples/textarea/xlHnDwwoLqsV7QdIbT2bZVRTiy4 -->
+<p><strong>xl</strong></p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-phone.examples/textarea/s7JBgZY9kWo4-4na8jxM9VYs3Vc -->
+<h3 id="Специализированные-поля-блока-71"><a href="#Специализированные-поля-блока-71" class="anchor"></a>Специализированные поля блока</h3>
+<p><a name="name"></a></p>
+<h4 id="Поле-name-17"><a href="#Поле-name-17" class="anchor"></a>Поле <code>name</code></h4>
+<p>Тип: <code>String</code>.</p>
+<p>Определяет уникальное имя блока.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-phone.examples/textarea/tBL5R1CTe2KSIaCourrcG4XI9b8 -->
+<p><a name="val"></a></p>
+<h4 id="Поле-val-21"><a href="#Поле-val-21" class="anchor"></a>Поле <code>val</code></h4>
+<p>Тип: <code>String</code>.</p>
+<p>Определяет содержимое текстовой области.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-phone.examples/textarea/W95HPpAnS1Glm8cmX1Jr8ANQyD0 -->
+<p><a name="placeholder"></a></p>
+<h4 id="Поле-placeholder-3"><a href="#Поле-placeholder-3" class="anchor"></a>Поле <code>placeholder</code></h4>
+<p>Тип: <code>String</code>.</p>
+<p>Определяет текст подсказки.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-phone.examples/textarea/6HCzrJD7DkUcueAiaPMUOPJTy-o -->
+<p><a name="id"></a></p>
+<h4 id="Поле-id-7"><a href="#Поле-id-7" class="anchor"></a>Поле <code>id</code></h4>
+<p>Тип: <code>String</code>.</p>
+<p>Определяет уникальный идентификатор текстовой области.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-phone.examples/textarea/FUwfyedZkrceUnQ_m7qgKm6LEiI -->
+<p><a name="tab"></a></p>
+<h4 id="Поле-tabindex-11"><a href="#Поле-tabindex-11" class="anchor"></a>Поле <code>tabIndex</code></h4>
+<p>Тип: <code>Number</code>.</p>
+<p>Определяет последовательность перехода между контролами при нажатии на <code>Tab</code>.</p>
+<!-- bem-example: tmp/data/bem-components-6.0.1/touch-phone.examples/textarea/VNOYTbWUGqakFuQtk5i58EQYQoU -->
