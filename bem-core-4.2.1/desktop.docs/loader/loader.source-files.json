@@ -3,17 +3,17 @@
         "entity": {
             "block": "loader"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "en.md",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/loader/loader.en.md"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/loader/loader.en.md"
     },
     {
         "entity": {
             "block": "loader"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "ru.md",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/loader/loader.ru.md"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/loader/loader.ru.md"
     },
     {
         "entity": {
@@ -21,9 +21,9 @@
             "modName": "type",
             "modVal": "bundle"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/loader/_type/loader_type_bundle.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/loader/_type/loader_type_bundle.js"
     },
     {
         "entity": {
@@ -31,9 +31,9 @@
             "modName": "type",
             "modVal": "js"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/loader/_type/loader_type_js.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/loader/_type/loader_type_js.js"
     },
     {
         "entity": {
@@ -41,8 +41,8 @@
             "modName": "type",
             "modVal": "js"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "spec.js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/loader/_type/loader_type_js.spec.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/loader/_type/loader_type_js.spec.js"
     }
 ]

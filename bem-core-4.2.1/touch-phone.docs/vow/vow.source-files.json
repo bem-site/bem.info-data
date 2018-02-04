@@ -3,24 +3,24 @@
         "entity": {
             "block": "vow"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "en.md",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/vow/vow.en.md"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/vow/vow.en.md"
     },
     {
         "entity": {
             "block": "vow"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "ru.md",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/vow/vow.ru.md"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/vow/vow.ru.md"
     },
     {
         "entity": {
             "block": "vow"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "vanilla.js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/vow/vow.vanilla.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/vow/vow.vanilla.js"
     }
 ]

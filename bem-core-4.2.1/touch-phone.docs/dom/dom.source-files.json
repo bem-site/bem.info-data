@@ -3,40 +3,40 @@
         "entity": {
             "block": "dom"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "deps.js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/dom/dom.deps.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/dom/dom.deps.js"
     },
     {
         "entity": {
             "block": "dom"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "en.md",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/dom/dom.en.md"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/dom/dom.en.md"
     },
     {
         "entity": {
             "block": "dom"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/dom/dom.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/dom/dom.js"
     },
     {
         "entity": {
             "block": "dom"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "ru.md",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/dom/dom.ru.md"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/dom/dom.ru.md"
     },
     {
         "entity": {
             "block": "dom"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "spec.js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/dom/dom.spec.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/dom/dom.spec.js"
     }
 ]

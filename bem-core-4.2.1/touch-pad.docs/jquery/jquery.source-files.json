@@ -3,77 +3,77 @@
         "entity": {
             "block": "jquery"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "deps.js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/jquery.deps.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/jquery.deps.js"
     },
     {
         "entity": {
             "block": "jquery"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "en.md",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/jquery.en.md"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/jquery.en.md"
     },
     {
         "entity": {
             "block": "jquery"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/jquery.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/jquery.js"
     },
     {
         "entity": {
             "block": "jquery"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "ru.md",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/jquery.ru.md"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/jquery.ru.md"
     },
     {
         "entity": {
             "block": "jquery"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "ru.title.txt",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/jquery.ru.title.txt"
-    },
-    {
-        "entity": {
-            "block": "jquery",
-            "elem": "config"
-        },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
-        "tech": "js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/__config/jquery__config.js"
-    },
-    {
-        "entity": {
-            "block": "jquery",
-            "elem": "config"
-        },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
-        "tech": "ru.md",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/__config/jquery__config.ru.md"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/jquery.ru.title.txt"
     },
     {
         "entity": {
             "block": "jquery",
             "elem": "event"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "en.md",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/__event/jquery__event.en.md"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/__event/jquery__event.en.md"
     },
     {
         "entity": {
             "block": "jquery",
             "elem": "event"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "ru.md",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/__event/jquery__event.ru.md"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/__event/jquery__event.ru.md"
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "config"
+        },
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
+        "tech": "js",
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/__config/jquery__config.js"
+    },
+    {
+        "entity": {
+            "block": "jquery",
+            "elem": "config"
+        },
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
+        "tech": "ru.md",
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/__config/jquery__config.ru.md"
     },
     {
         "entity": {
@@ -82,9 +82,9 @@
             "modName": "type",
             "modVal": "pointer"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "deps.js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointer.deps.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointer.deps.js"
     },
     {
         "entity": {
@@ -93,9 +93,9 @@
             "modName": "type",
             "modVal": "pointer"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "ru.title.txt",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointer.ru.title.txt"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointer.ru.title.txt"
     },
     {
         "entity": {
@@ -104,9 +104,9 @@
             "modName": "type",
             "modVal": "pointerclick"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "deps.js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointerclick.deps.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointerclick.deps.js"
     },
     {
         "entity": {
@@ -115,9 +115,9 @@
             "modName": "type",
             "modVal": "pointerclick"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointerclick.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointerclick.js"
     },
     {
         "entity": {
@@ -126,9 +126,9 @@
             "modName": "type",
             "modVal": "pointerclick"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "ru.title.txt",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointerclick.ru.title.txt"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointerclick.ru.title.txt"
     },
     {
         "entity": {
@@ -137,9 +137,9 @@
             "modName": "type",
             "modVal": "pointerclick"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "spec.js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointerclick.spec.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointerclick.spec.js"
     },
     {
         "entity": {
@@ -148,9 +148,9 @@
             "modName": "type",
             "modVal": "pointernative"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "deps.js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointernative.deps.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointernative.deps.js"
     },
     {
         "entity": {
@@ -159,9 +159,9 @@
             "modName": "type",
             "modVal": "pointernative"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointernative.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointernative.js"
     },
     {
         "entity": {
@@ -170,9 +170,9 @@
             "modName": "type",
             "modVal": "pointernative"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "ru.title.txt",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointernative.ru.title.txt"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointernative.ru.title.txt"
     },
     {
         "entity": {
@@ -181,9 +181,9 @@
             "modName": "type",
             "modVal": "pointernative"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "spec.js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointernative.spec.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointernative.spec.js"
     },
     {
         "entity": {
@@ -192,9 +192,9 @@
             "modName": "type",
             "modVal": "pointernative"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "tests",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointernative.tests",
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointernative.tests",
         "isDir": true
     },
     {
@@ -204,9 +204,9 @@
             "modName": "type",
             "modVal": "pointerpressrelease"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "deps.js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointerpressrelease.deps.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointerpressrelease.deps.js"
     },
     {
         "entity": {
@@ -215,9 +215,9 @@
             "modName": "type",
             "modVal": "pointerpressrelease"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointerpressrelease.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointerpressrelease.js"
     },
     {
         "entity": {
@@ -226,9 +226,9 @@
             "modName": "type",
             "modVal": "pointerpressrelease"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "ru.title.txt",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointerpressrelease.ru.title.txt"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointerpressrelease.ru.title.txt"
     },
     {
         "entity": {
@@ -237,9 +237,9 @@
             "modName": "type",
             "modVal": "pointerpressrelease"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "spec.js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointerpressrelease.spec.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointerpressrelease.spec.js"
     },
     {
         "entity": {
@@ -248,9 +248,9 @@
             "modName": "type",
             "modVal": "pointerpressrelease"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "tests",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointerpressrelease.tests",
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/jquery/__event/_type/jquery__event_type_pointerpressrelease.tests",
         "isDir": true
     }
 ]

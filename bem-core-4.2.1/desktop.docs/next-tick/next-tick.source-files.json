@@ -3,32 +3,32 @@
         "entity": {
             "block": "next-tick"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "en.md",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/next-tick/next-tick.en.md"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/next-tick/next-tick.en.md"
     },
     {
         "entity": {
             "block": "next-tick"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "ru.md",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/next-tick/next-tick.ru.md"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/next-tick/next-tick.ru.md"
     },
     {
         "entity": {
             "block": "next-tick"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "spec.js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/next-tick/next-tick.spec.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/next-tick/next-tick.spec.js"
     },
     {
         "entity": {
             "block": "next-tick"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "vanilla.js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/next-tick/next-tick.vanilla.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/next-tick/next-tick.vanilla.js"
     }
 ]

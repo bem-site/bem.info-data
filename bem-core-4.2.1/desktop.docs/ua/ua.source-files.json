@@ -3,57 +3,57 @@
         "entity": {
             "block": "ua"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "bemhtml.js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/ua/ua.bemhtml.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/ua/ua.bemhtml.js"
     },
     {
         "entity": {
             "block": "ua"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "bh.js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/ua/ua.bh.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/ua/ua.bh.js"
     },
     {
         "entity": {
             "block": "ua"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "en.md",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/ua/ua.en.md"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/ua/ua.en.md"
     },
     {
         "entity": {
             "block": "ua"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "en.title.txt",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/ua/ua.en.title.txt"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/ua/ua.en.title.txt"
     },
     {
         "entity": {
             "block": "ua"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "ru.md",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/ua/ua.ru.md"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/ua/ua.ru.md"
     },
     {
         "entity": {
             "block": "ua"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "ru.title.txt",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/ua/ua.ru.title.txt"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/ua/ua.ru.title.txt"
     },
     {
         "entity": {
             "block": "ua"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "tmpl-specs",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/ua/ua.tmpl-specs",
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/ua/ua.tmpl-specs",
         "isDir": true
     },
     {
@@ -61,70 +61,70 @@
             "block": "ua",
             "elem": "svg"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "bemhtml.js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/ua/__svg/ua__svg.bemhtml.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/ua/__svg/ua__svg.bemhtml.js"
     },
     {
         "entity": {
             "block": "ua",
             "elem": "svg"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "bh.js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/ua/__svg/ua__svg.bh.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/ua/__svg/ua__svg.bh.js"
     },
     {
         "entity": {
             "block": "ua",
             "elem": "svg"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "deps.js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/ua/__svg/ua__svg.deps.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/ua/__svg/ua__svg.deps.js"
     },
     {
         "entity": {
             "block": "ua",
             "elem": "svg"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "en.title.txt",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/ua/__svg/ua__svg.en.title.txt"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/ua/__svg/ua__svg.en.title.txt"
     },
     {
         "entity": {
             "block": "ua",
             "elem": "svg"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "ru.title.txt",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/ua/__svg/ua__svg.ru.title.txt"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/ua/__svg/ua__svg.ru.title.txt"
     },
     {
         "entity": {
             "block": "ua",
             "elem": "svg"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "tmpl-specs",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/ua/__svg/ua__svg.tmpl-specs",
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/ua/__svg/ua__svg.tmpl-specs",
         "isDir": true
     },
     {
         "entity": {
             "block": "ua"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/desktop.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/desktop.blocks",
         "tech": "js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/desktop.blocks/ua/ua.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/desktop.blocks/ua/ua.js"
     },
     {
         "entity": {
             "block": "ua"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/desktop.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/desktop.blocks",
         "tech": "ru.md",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/desktop.blocks/ua/ua.ru.md"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/desktop.blocks/ua/ua.ru.md"
     }
 ]

@@ -3,59 +3,59 @@
         "entity": {
             "block": "uri"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "en.md",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/uri/uri.en.md"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/uri/uri.en.md"
     },
     {
         "entity": {
             "block": "uri"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "ru.md",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/uri/uri.ru.md"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/uri/uri.ru.md"
     },
     {
         "entity": {
             "block": "uri"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "spec.js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/uri/uri.spec.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/uri/uri.spec.js"
     },
     {
         "entity": {
             "block": "uri"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "vanilla.js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/uri/uri.vanilla.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/uri/uri.vanilla.js"
     },
     {
         "entity": {
             "block": "uri",
             "elem": "querystring"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "deps.js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/uri/__querystring/uri__querystring.deps.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/uri/__querystring/uri__querystring.deps.js"
     },
     {
         "entity": {
             "block": "uri",
             "elem": "querystring"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "spec.js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/uri/__querystring/uri__querystring.spec.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/uri/__querystring/uri__querystring.spec.js"
     },
     {
         "entity": {
             "block": "uri",
             "elem": "querystring"
         },
-        "level": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks",
+        "level": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks",
         "tech": "vanilla.js",
-        "path": "/Users/vitaly/bem/bem-core-4.2.1/common.blocks/uri/__querystring/uri__querystring.vanilla.js"
+        "path": "/Users/tadatuta/projects/bem/build-libs/bem-core-4.2.1/common.blocks/uri/__querystring/uri__querystring.vanilla.js"
     }
 ]
